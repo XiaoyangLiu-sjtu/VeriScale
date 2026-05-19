@@ -1,0 +1,767 @@
+[
+    {
+        "input": {
+            "input": "111"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b"
+        }
+    },
+    {
+        "input": {
+            "input": "123"
+        }
+    },
+    {
+        "input": {
+            "input": "abc123def"
+        }
+    },
+    {
+        "input": {
+            "input": "1"
+        }
+    },
+    {
+        "input": {
+            "input": "00aa"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes"
+        }
+    },
+    {
+        "input": {
+            "input": "   5   "
+        }
+    },
+    {
+        "input": {
+            "input": " 0"
+        }
+    },
+    {
+        "input": {
+            "input": "aaabbbcc 0"
+        }
+    },
+    {
+        "input": {
+            "input": "1 "
+        }
+    },
+    {
+        "input": {
+            "input": "1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "aaabbbcc_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "111 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "123 0 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 aaaaa"
+        }
+    },
+    {
+        "input": {
+            "input": " 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "abcd 1"
+        }
+    },
+    {
+        "input": {
+            "input": "egde dcba 1"
+        }
+    },
+    {
+        "input": {
+            "input": " 1"
+        }
+    },
+    {
+        "input": {
+            "input": " 0 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1"
+        }
+    },
+    {
+        "input": {
+            "input": "1 mnbvcxzlkjhgfdsapoiuytrewq"
+        }
+    },
+    {
+        "input": {
+            "input": " 0 edge edge"
+        }
+    },
+    {
+        "input": {
+            "input": "bBAaA_x 1 edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_dcba 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x"
+        }
+    },
+    {
+        "input": {
+            "input": "bBAaA 0"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x 0_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "wwwwwwwwwwwwwwwww 0"
+        }
+    },
+    {
+        "input": {
+            "input": "ccbbbaaa_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b_x"
+        }
+    },
+    {
+        "input": {
+            "input": "a 0"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x_x_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "a 1"
+        }
+    },
+    {
+        "input": {
+            "input": "   1"
+        }
+    },
+    {
+        "input": {
+            "input": "~~@@@###*** 0"
+        }
+    },
+    {
+        "input": {
+            "input": "digits?2yes_x"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b_x_x 0 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "  _x 0 0 1"
+        }
+    },
+    {
+        "input": {
+            "input": "!!!$$$%%% 0"
+        }
+    },
+    {
+        "input": {
+            "input": "111 edge 1 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "111 1"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x edge"
+        }
+    },
+    {
+        "input": {
+            "input": "x_b1a"
+        }
+    },
+    {
+        "input": {
+            "input": "a_x 1 0 1"
+        }
+    },
+    {
+        "input": {
+            "input": "5"
+        }
+    },
+    {
+        "input": {
+            "input": "321"
+        }
+    },
+    {
+        "input": {
+            "input": "1 x_x_0 x_sey2?stigid on"
+        }
+    },
+    {
+        "input": {
+            "input": "!!!$$$%%%_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "abc123def_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "abc123def_x"
+        }
+    },
+    {
+        "input": {
+            "input": "abc123def edge edge"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1 1 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_0 a"
+        }
+    },
+    {
+        "input": {
+            "input": "321 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "321 edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_egde 0 "
+        }
+    },
+    {
+        "input": {
+            "input": "aaAAaAaA 1 1"
+        }
+    },
+    {
+        "input": {
+            "input": "x_1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "digits?2yes"
+        }
+    },
+    {
+        "input": {
+            "input": "   _x_x_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "5 edge edge"
+        }
+    },
+    {
+        "input": {
+            "input": "ccbbbaaa_x edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "text 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_aaaaa_x_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "0 .dne"
+        }
+    },
+    {
+        "input": {
+            "input": "\n\n\n 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "\n\n\n 1"
+        }
+    },
+    {
+        "input": {
+            "input": "!!!$$$%%%_x 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": " 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_0"
+        }
+    },
+    {
+        "input": {
+            "input": "🙂🙂🙃🙃🙃 0"
+        }
+    },
+    {
+        "input": {
+            "input": "0 🙂🙂🙃🙃🙃"
+        }
+    },
+    {
+        "input": {
+            "input": "x_0_x edge_x"
+        }
+    },
+    {
+        "input": {
+            "input": "wwwwwwwwwwwwwwwww_x 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 🙃🙃🙃🙂🙂"
+        }
+    },
+    {
+        "input": {
+            "input": "x_x_0 x_sey2?stigid on"
+        }
+    },
+    {
+        "input": {
+            "input": "aaaaaa_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_egde x_γγγββαα 0"
+        }
+    },
+    {
+        "input": {
+            "input": "ααββγγγ 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_x_b1a edge"
+        }
+    },
+    {
+        "input": {
+            "input": "0 γγγββαα"
+        }
+    },
+    {
+        "input": {
+            "input": "ccbbbaaa_x 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 dcba"
+        }
+    },
+    {
+        "input": {
+            "input": "end. 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_zzzzzzzzzzzzzzzzzzzz 0"
+        }
+    },
+    {
+        "input": {
+            "input": "zzzzzzzzzzzzzzzzzzzz 1 1 0"
+        }
+    },
+    {
+        "input": {
+            "input": " 0 1"
+        }
+    },
+    {
+        "input": {
+            "input": " edge 0"
+        }
+    },
+    {
+        "input": {
+            "input": "digits?2yes_x_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "abababab_x_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "zzzzzzzzzzzzzzzzzzzz_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "x_sey2?stigid"
+        }
+    },
+    {
+        "input": {
+            "input": "x_x_b1a"
+        }
+    },
+    {
+        "input": {
+            "input": "γγγββαα edge 0"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1 edge"
+        }
+    },
+    {
+        "input": {
+            "input": "1 ___---____x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_1 0 321"
+        }
+    },
+    {
+        "input": {
+            "input": "on 1"
+        }
+    },
+    {
+        "input": {
+            "input": "egde 0 "
+        }
+    },
+    {
+        "input": {
+            "input": ".,;:!?.,;:!? 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "((((())))) 1_x_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "ccbbbaaa_x 0_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "egde dcba 0"
+        }
+    },
+    {
+        "input": {
+            "input": ")))))((((( 1"
+        }
+    },
+    {
+        "input": {
+            "input": "x_zzzzzzzzzzzzzzzzzzzz 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "a a a   b b 1"
+        }
+    },
+    {
+        "input": {
+            "input": "mixedCASEwithNoDigits_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "0 1 x_tset\nkaerb\nenil"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 egde tset\nkaerb\nenil"
+        }
+    },
+    {
+        "input": {
+            "input": "line\nbreak\ntest 1"
+        }
+    },
+    {
+        "input": {
+            "input": "1 0 1 x_a"
+        }
+    },
+    {
+        "input": {
+            "input": "x_txet\tdetarapes\tbat 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "tab\tseparated\ttext 0"
+        }
+    },
+    {
+        "input": {
+            "input": "tab\tseparated\ttext edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "γγγββαα edge 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_x_b1a edge_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "\"\"'' 1"
+        }
+    },
+    {
+        "input": {
+            "input": "zzzzzzzzzzzzzzzzzzzz_x_x 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 b"
+        }
+    },
+    {
+        "input": {
+            "input": " edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "x_yzzyx 0"
+        }
+    },
+    {
+        "input": {
+            "input": "back\\slash 1"
+        }
+    },
+    {
+        "input": {
+            "input": "no digits?2yes_x 0_x_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "😀😀😀😀😀_x_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "1 end._x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 _x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 wwwwwwwwwwwwwwwww"
+        }
+    },
+    {
+        "input": {
+            "input": "x_yzzyx 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 0_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_1 "
+        }
+    },
+    {
+        "input": {
+            "input": "1 0"
+        }
+    },
+    {
+        "input": {
+            "input": "00aa_x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 aa00"
+        }
+    },
+    {
+        "input": {
+            "input": "x_wwwwwwwwwwwwwwwww_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "0_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1_x_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": " 1 1"
+        }
+    },
+    {
+        "input": {
+            "input": "sey2?stigid on edge"
+        }
+    },
+    {
+        "input": {
+            "input": "!!!$$$%%% 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "sey2?stigid on_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "AaABb 0"
+        }
+    },
+    {
+        "input": {
+            "input": "x_   5   "
+        }
+    },
+    {
+        "input": {
+            "input": "   5   _x_x_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 γγγββαα_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": "   5    1"
+        }
+    }
+]

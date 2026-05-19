@@ -1,0 +1,2082 @@
+[
+    {
+        "input": {
+            "s": "abca"
+        },
+        "expected": "some ('a')",
+        "unexpected": [
+            "some ('b')",
+            "some ('c')",
+            "none"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdef"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'f'",
+            "some 'd'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aabbcc"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": ""
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'e'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abbc"
+        },
+        "expected": "some ('b')",
+        "unexpected": [
+            "some ('a')",
+            "some ('c')",
+            "none"
+        ]
+    },
+    {
+        "input": {
+            "s": "Aa"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'd'",
+            "some 'b'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'd'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ab"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'b'",
+            "some 'd'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abccba"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "112233"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some '3'"
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂🙃😉"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some '😉'",
+            "some 'd'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "éfgé"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '́'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc ABC abc"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'a'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "xyzXYZ"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'Z'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a1!a1!"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some '!'"
+        ]
+    },
+    {
+        "input": {
+            "s": "qwerty"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'y'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "uniq"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some 'q'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'd'",
+            "some 'c'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "01"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'd'",
+            "some 'c'",
+            "some 'a'",
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a‍b‍a"
+        },
+        "expected": "some '‍'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'b'",
+            "some 'd'",
+            "some 'a'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 "
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'a'",
+            "some 'b'",
+            "some 'd'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 _x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'x'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdef edge_x"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdef_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'a'",
+            "some 'd'",
+            "some 'b'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aabbcc_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ 1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "\n\t\n edge_x"
+        },
+        "expected": "some '\\n'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ccbbaa"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'd'",
+            "some 'x'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde ccbbaa"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ccbbaa_x_x"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'x'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'd'",
+            "some 'c'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde  1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some '_'",
+            "some 'd'",
+            "some 'c'",
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0 edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ccbbaa_x_x 1"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'x'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "éèêëé_x_x"
+        },
+        "expected": "some 'é'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aabbcc_x edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA_x 1 edge 1"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some '1'",
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a‍b‍a 1_x"
+        },
+        "expected": "some '‍'",
+        "unexpected": [
+            "some 'a'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "𐍈𐍉𐍈 edge"
+        },
+        "expected": "some '𐍈'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "Aa_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some 'a'",
+            "some 'A'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'd'",
+            "some 'b'",
+            "some '0'",
+            "some 'a'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 a"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_a_x"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aabbcc_x 0"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 a_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'd'",
+            "some 'c'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "fedcba edge_x_x 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 x_x_egde abcdef"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some ' '",
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aa edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some '0'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'd'",
+            "some 'x'",
+            "some 'c'",
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ba 1_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ab_x 0 edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ab_x 0 0 1"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂🙃😉_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'c'",
+            "some 'a'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abccba 0"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "uniq 1 edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge edge"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde ccbbaa 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'a'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde  0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "abca_x 0 1"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde  1 edge"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 a edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 ab edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdea_x_x 1"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge edge_x 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '",
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abccba_x"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcddefg edge edge"
+        },
+        "expected": "some 'd'",
+        "unexpected": [
+            "some 'e'",
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdea_x_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcddefg 1 1"
+        },
+        "expected": "some 'd'",
+        "unexpected": [
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcddefg edge"
+        },
+        "expected": "some 'd'",
+        "unexpected": [
+            "some 'e'",
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": " edge 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some '1'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a 0_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aabbcc_x edge 1_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "332211 1 1"
+        },
+        "expected": "some '3'",
+        "unexpected": [
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 "
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "332211_x_x"
+        },
+        "expected": "some '3'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a_x_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "413121_x_x_x 0"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abca_x_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a‍b‍a 1_x edge edge"
+        },
+        "expected": "some '‍'",
+        "unexpected": [
+            "some 'x'",
+            "some 'e'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "121314 edge"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdea_x edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "Aa_x 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'c'",
+            "some 'b'",
+            "some 'd'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abca_x_x 1"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_𐍈𐍉𐍈_x"
+        },
+        "expected": "some '𐍈'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 abccba"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "́egf́e_x"
+        },
+        "expected": "some '́'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂🙃🙂 edge"
+        },
+        "expected": "some '🙂'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "01_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'b'",
+            "some 'a'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'x'",
+            "some 'd'",
+            "some 'b'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'c'",
+            "some 'x'",
+            "some 'b'",
+            "some 'd'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "10"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'c'",
+            "some 'b'",
+            "some '0'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA 0 edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "😉🙃🙂_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_éëêèé edge_x"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some 'é'"
+        ]
+    },
+    {
+        "input": {
+            "s": "éëêèé_x_x"
+        },
+        "expected": "some 'é'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "413121_x_x_x 0_x_x"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "‮fed‮cba edge"
+        },
+        "expected": "some '‮'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "332211"
+        },
+        "expected": "some '3'",
+        "unexpected": [
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "éfgé 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '́'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 éfgé"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '́'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdef_x edge_x"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "faedacba_x 0_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 ́egf́e"
+        },
+        "expected": "some '́'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'd'",
+            "some '1'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdea_x_x 1_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "AaA 0_x edge"
+        },
+        "expected": "some 'A'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_éëêèé"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some 'é'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x__x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "uniq 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some 'a'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde x_\n\t\n 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'x'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂🙃😉_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdea_x edge_x edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde 0 x_ba"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'x'",
+            "some '_'"
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂🙃🙂 edge_x"
+        },
+        "expected": "some '🙂'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_egde cba CBA cba_x"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_abc ABC abc"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'a'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 egde  edge"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'g'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde abc‮def‮"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '‮'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_abc ABC abc 0_x"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'x'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "漢字かな漢_x_x"
+        },
+        "expected": "some '漢'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "漢字かな漢 1 1 0"
+        },
+        "expected": "some '漢'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "413121_x_x_x"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "𐍈𐍉𐍈_x_x"
+        },
+        "expected": "some '𐍈'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a1!a1!_x_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a1!a1!_x_x_x_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a1!a1! edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "!1a!1a"
+        },
+        "expected": "some '!'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "01_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde egde a1!a1!"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'a'",
+            "some '!'",
+            "some 'g'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'd'",
+            "some 'c'",
+            "some 'x'",
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_x_0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '_'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'C'",
+            "some 'c'",
+            "some 'b'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "qinu edge 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 ccbbaa edge"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'",
+            "some 'e'",
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde égfédcba"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'd'",
+            "some 'é'"
+        ]
+    },
+    {
+        "input": {
+            "s": "qwerty_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'd'",
+            "some 'b'",
+            "some 'x'",
+            "some 'a'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_éëêèé 1"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some 'é'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde 0 "
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "qwerty 1_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'd'",
+            "some 'x'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ytrewq"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'd'",
+            "some 'b'",
+            "some 'c'",
+            "some 'a'",
+            "some 'q'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_qwerty"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some 'y'"
+        ]
+    },
+    {
+        "input": {
+            "s": "qinu"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'd'",
+            "some 'u'",
+            "some 'b'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_qinu_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "uniq 1_x_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde x_aedcba"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'a'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdef_x edge_x_x"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde x_aedcba 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '",
+            "some 'a'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "babababa 1"
+        },
+        "expected": "some 'b'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "aA 0 0_x"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab_x_x"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab 1"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'b'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_babababa"
+        },
+        "expected": "some 'b'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab edge"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_a 0"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'c'",
+            "some 'b'",
+            "some '0'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "babababa edge_x"
+        },
+        "expected": "some 'b'",
+        "unexpected": [
+            "some 'e'",
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1 x_0"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 egde 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x edge_x_x"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some 'x'",
+            "some '_'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'c'",
+            "some 'a'",
+            "some 'd'",
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_10 1_x"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "́egf́e"
+        },
+        "expected": "some '́'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "01 edge 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_égfédcba_x"
+        },
+        "expected": "some 'é'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ab_x 0 edge_x_x"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'x'",
+            "some '_'"
+        ]
+    },
+    {
+        "input": {
+            "s": "010 1"
+        },
+        "expected": "some '0'",
+        "unexpected": [
+            "some '1'"
+        ]
+    },
+    {
+        "input": {
+            "s": "010 edge"
+        },
+        "expected": "some '0'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_0"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some '_'"
+        ]
+    },
+    {
+        "input": {
+            "s": "AaA 0_x_x"
+        },
+        "expected": "some 'A'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 1 x_x_egde abcdef"
+        },
+        "expected": "some '1'",
+        "unexpected": [
+            "some 'e'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": " edge 1"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "a1!a1! 0"
+        },
+        "expected": "some 'a'",
+        "unexpected": [
+            "some '!'"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔞𝔟𝔠𝔞 edge"
+        },
+        "expected": "some '𝔞'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_10"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'c'",
+            "some 'a'",
+            "some 'd'",
+            "some '0'"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_1 aA 0"
+        },
+        "expected": "some 'e'",
+        "unexpected": [
+            "some ' '"
+        ]
+    },
+    {
+        "input": {
+            "s": "ab_x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some 'c'",
+            "some 'x'",
+            "some 'd'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0  edge"
+        },
+        "expected": "some ' '",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000a\u0000_x_x 0"
+        },
+        "expected": "some '\\x00'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000a\u0000_x_x"
+        },
+        "expected": "some '\\x00'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 a‍b‍a_x"
+        },
+        "expected": "some '‍'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 _x"
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'b'",
+            "some 'a'",
+            "some 'c'",
+            "some 'd'",
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC_x_x"
+        },
+        "expected": "some '_'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_egde"
+        },
+        "expected": "some 'x'",
+        "unexpected": [
+            "some 'e'"
+        ]
+    },
+    {
+        "input": {
+            "s": "a‍b‍a 0"
+        },
+        "expected": "some '‍'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    },
+    {
+        "input": {
+            "s": "AaA_x_x"
+        },
+        "expected": "some 'A'",
+        "unexpected": [
+            "some 'x'"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1 "
+        },
+        "expected": "none",
+        "unexpected": [
+            "some 'a'",
+            "some 'b'",
+            "some ' '",
+            "some 'd'",
+            "some 'c'"
+        ]
+    },
+    {
+        "input": {
+            "s": "abccba 0_x"
+        },
+        "expected": "some 'c'",
+        "unexpected": [
+            "some 'a'"
+        ]
+    }
+]

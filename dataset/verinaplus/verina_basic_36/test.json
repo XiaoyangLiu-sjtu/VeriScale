@@ -1,0 +1,865 @@
+[
+    {
+        "input": {
+            "s": "Hello, world. How are you?"
+        },
+        "expected": "Hello::world::How:are:you?",
+        "unexpected": [
+            "Hello,world,How,are,you?",
+            "Hello: world: How: are: you?"
+        ]
+    },
+    {
+        "input": {
+            "s": "No-changes!"
+        },
+        "expected": "No-changes!",
+        "unexpected": [
+            "!segnahc-oN",
+            "NNNNNNNNNNN",
+            "zzzzzzzzzzz",
+            ":::::::::::",
+            "o-changes!N"
+        ]
+    },
+    {
+        "input": {
+            "s": ",. "
+        },
+        "expected": ":::",
+        "unexpected": [
+            "::",
+            ";:;",
+            "::: "
+        ]
+    },
+    {
+        "input": {
+            "s": ""
+        },
+        "expected": "",
+        "unexpected": [
+            " ",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": ":"
+        },
+        "expected": ":",
+        "unexpected": [
+            "z"
+        ]
+    },
+    {
+        "input": {
+            "s": "ú"
+        },
+        "expected": "ú",
+        "unexpected": [
+            "uu",
+            "::",
+            "zz",
+            "́u"
+        ]
+    },
+    {
+        "input": {
+            "s": "sit"
+        },
+        "expected": "sit",
+        "unexpected": [
+            "sss",
+            "zzz",
+            ":::",
+            "tis",
+            "its"
+        ]
+    },
+    {
+        "input": {
+            "s": "你好"
+        },
+        "expected": "你好",
+        "unexpected": [
+            "::",
+            "好你",
+            "你你",
+            "zz"
+        ]
+    },
+    {
+        "input": {
+            "s": "chars"
+        },
+        "expected": "chars",
+        "unexpected": [
+            "srahc",
+            ":::::",
+            "zzzzz",
+            "ccccc",
+            "harsc"
+        ]
+    },
+    {
+        "input": {
+            "s": "No-changes!_x"
+        },
+        "expected": "No-changes!_x",
+        "unexpected": [
+            ":::::::::::::",
+            "zzzzzzzzzzzzz",
+            "o-changes!_xN",
+            "x_!segnahc-oN",
+            "NNNNNNNNNNNNN"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_erolod"
+        },
+        "expected": "x_erolod",
+        "unexpected": [
+            "::::::::",
+            "zzzzzzzz",
+            "_erolodx",
+            "xxxxxxxx",
+            "dolore_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "Tab"
+        },
+        "expected": "Tab",
+        "unexpected": [
+            ":::",
+            "abT",
+            "baT",
+            "zzz",
+            "TTT"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "x_",
+            "__",
+            "::",
+            "zz"
+        ]
+    },
+    {
+        "input": {
+            "s": "consectetur_x"
+        },
+        "expected": "consectetur_x",
+        "unexpected": [
+            "x_rutetcesnoc",
+            "onsectetur_xc",
+            ":::::::::::::",
+            "zzzzzzzzzzzzz",
+            "ccccccccccccc"
+        ]
+    },
+    {
+        "input": {
+            "s": "here"
+        },
+        "expected": "here",
+        "unexpected": [
+            "::::",
+            "hhhh",
+            "ereh",
+            "zzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "end"
+        },
+        "expected": "end",
+        "unexpected": [
+            "nde",
+            "dne",
+            ":::",
+            "zzz",
+            "eee"
+        ]
+    },
+    {
+        "input": {
+            "s": "ipsum"
+        },
+        "expected": "ipsum",
+        "unexpected": [
+            ":::::",
+            "muspi",
+            "iiiii",
+            "zzzzz",
+            "psumi"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_"
+        },
+        "expected": "x_",
+        "unexpected": [
+            "::",
+            "_x",
+            "xx",
+            "zz"
+        ]
+    },
+    {
+        "input": {
+            "s": "trailing_x"
+        },
+        "expected": "trailing_x",
+        "unexpected": [
+            "railing_xt",
+            "x_gniliart",
+            "::::::::::",
+            "zzzzzzzzzz",
+            "tttttttttt"
+        ]
+    },
+    {
+        "input": {
+            "s": "both"
+        },
+        "expected": "both",
+        "unexpected": [
+            "htob",
+            "bbbb",
+            "::::",
+            "zzzz",
+            "othb"
+        ]
+    },
+    {
+        "input": {
+            "s": "dolor"
+        },
+        "expected": "dolor",
+        "unexpected": [
+            ":::::",
+            "olord",
+            "rolod",
+            "zzzzz",
+            "ddddd"
+        ]
+    },
+    {
+        "input": {
+            "s": "Line1"
+        },
+        "expected": "Line1",
+        "unexpected": [
+            ":::::",
+            "1eniL",
+            "LLLLL",
+            "zzzzz",
+            "ine1L"
+        ]
+    },
+    {
+        "input": {
+            "s": "separators"
+        },
+        "expected": "separators",
+        "unexpected": [
+            "::::::::::",
+            "srotarapes",
+            "zzzzzzzzzz",
+            "eparatorss",
+            "ssssssssss"
+        ]
+    },
+    {
+        "input": {
+            "s": "दुनिया_x"
+        },
+        "expected": "दुनिया_x",
+        "unexpected": [
+            "::::::::",
+            "ुनिया_xद",
+            "दददददददद",
+            "zzzzzzzz",
+            "x_ायिनुद"
+        ]
+    },
+    {
+        "input": {
+            "s": "d_x"
+        },
+        "expected": "d_x",
+        "unexpected": [
+            "zzz",
+            ":::",
+            "x_d",
+            "_xd",
+            "ddd"
+        ]
+    },
+    {
+        "input": {
+            "s": "enim"
+        },
+        "expected": "enim",
+        "unexpected": [
+            "nime",
+            "::::",
+            "mine",
+            "zzzz",
+            "eeee"
+        ]
+    },
+    {
+        "input": {
+            "s": "tempor"
+        },
+        "expected": "tempor",
+        "unexpected": [
+            "::::::",
+            "zzzzzz",
+            "ropmet",
+            "tttttt",
+            "emport"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x"
+        },
+        "expected": "_x_x",
+        "unexpected": [
+            "____",
+            "zzzz",
+            "::::",
+            "x_x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_:"
+        },
+        "expected": "x_x_:",
+        "unexpected": [
+            ":::::",
+            ":_x_x",
+            "_x_:x",
+            "zzzzz",
+            "xxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": ":_x"
+        },
+        "expected": ":_x",
+        "unexpected": [
+            "x_:",
+            "zzz",
+            ":::",
+            "_x:"
+        ]
+    },
+    {
+        "input": {
+            "s": "string"
+        },
+        "expected": "string",
+        "unexpected": [
+            "::::::",
+            "trings",
+            "zzzzzz",
+            "ssssss",
+            "gnirts"
+        ]
+    },
+    {
+        "input": {
+            "s": "ut"
+        },
+        "expected": "ut",
+        "unexpected": [
+            "tu",
+            "uu",
+            "zz",
+            "::"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x__x"
+        },
+        "expected": "x_x__x",
+        "unexpected": [
+            "::::::",
+            "x__x_x",
+            "_x__xx",
+            "xxxxxx",
+            "zzzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x"
+        },
+        "expected": "1_x",
+        "unexpected": [
+            "_x1",
+            "111",
+            "zzz",
+            "x_1",
+            ":::"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_gnidael"
+        },
+        "expected": "x_gnidael",
+        "unexpected": [
+            "zzzzzzzzz",
+            "_gnidaelx",
+            "leading_x",
+            ":::::::::",
+            "xxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "😎"
+        },
+        "expected": "😎",
+        "unexpected": [
+            ":",
+            "z"
+        ]
+    },
+    {
+        "input": {
+            "s": "ni"
+        },
+        "expected": "ni",
+        "unexpected": [
+            "nn",
+            "in",
+            "::",
+            "zz"
+        ]
+    },
+    {
+        "input": {
+            "s": "界世"
+        },
+        "expected": "界世",
+        "unexpected": [
+            "::",
+            "世界",
+            "zz",
+            "界界"
+        ]
+    },
+    {
+        "input": {
+            "s": "you?_x"
+        },
+        "expected": "you?_x",
+        "unexpected": [
+            "x_?uoy",
+            "ou?_xy",
+            "zzzzzz",
+            "yyyyyy",
+            "::::::"
+        ]
+    },
+    {
+        "input": {
+            "s": "ायिनुद"
+        },
+        "expected": "ायिनुद",
+        "unexpected": [
+            "यिनुदा",
+            "zzzzzz",
+            "दुनिया",
+            "::::::",
+            "ाााााा"
+        ]
+    },
+    {
+        "input": {
+            "s": "G"
+        },
+        "expected": "G",
+        "unexpected": [
+            "z",
+            ":"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x_x"
+        },
+        "expected": "1_x_x",
+        "unexpected": [
+            "zzzzz",
+            ":::::",
+            "x_x_1",
+            "_x_x1",
+            "11111"
+        ]
+    },
+    {
+        "input": {
+            "s": "leading_x"
+        },
+        "expected": "leading_x",
+        "unexpected": [
+            ":::::::::",
+            "eading_xl",
+            "zzzzzzzzz",
+            "x_gnidael",
+            "lllllllll"
+        ]
+    },
+    {
+        "input": {
+            "s": "eiusmod_x"
+        },
+        "expected": "eiusmod_x",
+        "unexpected": [
+            ":::::::::",
+            "x_domsuie",
+            "iusmod_xe",
+            "eeeeeeeee",
+            "zzzzzzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "xim_x_x"
+        },
+        "expected": "xim_x_x",
+        "unexpected": [
+            "x_x_mix",
+            ":::::::",
+            "im_x_xx",
+            "zzzzzzz",
+            "xxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "magna"
+        },
+        "expected": "magna",
+        "unexpected": [
+            ":::::",
+            "agnam",
+            "angam",
+            "zzzzz",
+            "mmmmm"
+        ]
+    },
+    {
+        "input": {
+            "s": "Проверка"
+        },
+        "expected": "Проверка",
+        "unexpected": [
+            "акреворП",
+            "zzzzzzzz",
+            "роверкаП",
+            "::::::::",
+            "ПППППППП"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge_x_x"
+        },
+        "expected": "edge_x_x",
+        "unexpected": [
+            "x_x_egde",
+            "zzzzzzzz",
+            "::::::::",
+            "eeeeeeee",
+            "dge_x_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "ेत्समन_x"
+        },
+        "expected": "ेत्समन_x",
+        "unexpected": [
+            "zzzzzzzz",
+            "त्समन_xे",
+            "x_नमस्ते",
+            "::::::::",
+            "ेेेेेेेे"
+        ]
+    },
+    {
+        "input": {
+            "s": "consectetur"
+        },
+        "expected": "consectetur",
+        "unexpected": [
+            "onsecteturc",
+            "ccccccccccc",
+            "zzzzzzzzzzz",
+            ":::::::::::",
+            "rutetcesnoc"
+        ]
+    },
+    {
+        "input": {
+            "s": "domsuie"
+        },
+        "expected": "domsuie",
+        "unexpected": [
+            "omsuied",
+            ":::::::",
+            "zzzzzzz",
+            "ddddddd",
+            "eiusmod"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_domsuie_x"
+        },
+        "expected": "x_domsuie_x",
+        "unexpected": [
+            "x_eiusmod_x",
+            ":::::::::::",
+            "_domsuie_xx",
+            "xxxxxxxxxxx",
+            "zzzzzzzzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "many"
+        },
+        "expected": "many",
+        "unexpected": [
+            "ynam",
+            "::::",
+            "zzzz",
+            "anym",
+            "mmmm"
+        ]
+    },
+    {
+        "input": {
+            "s": "}{]["
+        },
+        "expected": "}{][",
+        "unexpected": [
+            "::::",
+            "}}}}",
+            "[]{}",
+            "{][}",
+            "zzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "are_x"
+        },
+        "expected": "are_x",
+        "unexpected": [
+            "x_era",
+            "zzzzz",
+            ":::::",
+            "re_xa",
+            "aaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "srahc"
+        },
+        "expected": "srahc",
+        "unexpected": [
+            "rahcs",
+            ":::::",
+            "zzzzz",
+            "sssss",
+            "chars"
+        ]
+    },
+    {
+        "input": {
+            "s": "domsuie_x"
+        },
+        "expected": "domsuie_x",
+        "unexpected": [
+            ":::::::::",
+            "x_eiusmod",
+            "omsuie_xd",
+            "zzzzzzzzz",
+            "ddddddddd"
+        ]
+    },
+    {
+        "input": {
+            "s": "d"
+        },
+        "expected": "d",
+        "unexpected": [
+            "z",
+            ":"
+        ]
+    },
+    {
+        "input": {
+            "s": "rutetcesnoc"
+        },
+        "expected": "rutetcesnoc",
+        "unexpected": [
+            "rrrrrrrrrrr",
+            ":::::::::::",
+            "utetcesnocr",
+            "zzzzzzzzzzz",
+            "consectetur"
+        ]
+    },
+    {
+        "input": {
+            "s": "😎_x_x"
+        },
+        "expected": "😎_x_x",
+        "unexpected": [
+            "_x_x😎",
+            ":::::",
+            "x_x_😎",
+            "😎😎😎😎😎",
+            "zzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "minim"
+        },
+        "expected": "minim",
+        "unexpected": [
+            "inimm",
+            "zzzzz",
+            ":::::",
+            "mmmmm"
+        ]
+    },
+    {
+        "input": {
+            "s": "ereh"
+        },
+        "expected": "ereh",
+        "unexpected": [
+            "zzzz",
+            "here",
+            "::::",
+            "rehe",
+            "eeee"
+        ]
+    },
+    {
+        "input": {
+            "s": "htiw"
+        },
+        "expected": "htiw",
+        "unexpected": [
+            "tiwh",
+            "with",
+            "::::",
+            "zzzz",
+            "hhhh"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_0"
+        },
+        "expected": "x_x_0",
+        "unexpected": [
+            ":::::",
+            "_x_0x",
+            "0_x_x",
+            "xxxxx",
+            "zzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "नमस्ते"
+        },
+        "expected": "नमस्ते",
+        "unexpected": [
+            "ेत्समन",
+            "::::::",
+            "मस्तेन",
+            "zzzzzz",
+            "नननननन"
+        ]
+    },
+    {
+        "input": {
+            "s": "كيف"
+        },
+        "expected": "كيف",
+        "unexpected": [
+            "zzz",
+            ":::",
+            "ككك",
+            "فيك",
+            "يفك"
+        ]
+    },
+    {
+        "input": {
+            "s": "many_x"
+        },
+        "expected": "many_x",
+        "unexpected": [
+            "::::::",
+            "x_ynam",
+            "any_xm",
+            "mmmmmm",
+            "zzzzzz"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_:_x_x"
+        },
+        "expected": "x_x_:_x_x",
+        "unexpected": [
+            ":::::::::",
+            "zzzzzzzzz",
+            "xxxxxxxxx",
+            "_x_:_x_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x_x"
+        },
+        "expected": "_x_x_x",
+        "unexpected": [
+            "x_x_x_",
+            "zzzzzz",
+            "::::::",
+            "______"
+        ]
+    }
+]

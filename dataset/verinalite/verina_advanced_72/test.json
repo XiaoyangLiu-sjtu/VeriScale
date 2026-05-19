@@ -1,0 +1,586 @@
+[
+    {
+        "input": {
+            "n": 0
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "input": {
+            "n": 98
+        },
+        "expected": 2,
+        "unexpected": [
+            8,
+            0,
+            98
+        ]
+    },
+    {
+        "input": {
+            "n": 9
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 73
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "input": {
+            "n": 529
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "input": {
+            "n": 161
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            1,
+            161
+        ]
+    },
+    {
+        "input": {
+            "n": 3
+        },
+        "expected": 3,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "n": 4
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 5
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 6
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "n": 7
+        },
+        "expected": 7,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "n": 8
+        },
+        "expected": 2,
+        "unexpected": [
+            8,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 15
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            5,
+            15
+        ]
+    },
+    {
+        "input": {
+            "n": 16
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            16,
+            4,
+            6
+        ]
+    },
+    {
+        "input": {
+            "n": 20
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            20
+        ]
+    },
+    {
+        "input": {
+            "n": 21
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1,
+            21
+        ]
+    },
+    {
+        "input": {
+            "n": 24
+        },
+        "expected": 2,
+        "unexpected": [
+            24,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 25
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            1,
+            25
+        ]
+    },
+    {
+        "input": {
+            "n": 27
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            27,
+            7
+        ]
+    },
+    {
+        "input": {
+            "n": 35
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            35
+        ]
+    },
+    {
+        "input": {
+            "n": 49
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            49,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 77
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            77,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 95
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            95
+        ]
+    },
+    {
+        "input": {
+            "n": 36
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            6,
+            36,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 160
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            160
+        ]
+    },
+    {
+        "input": {
+            "n": 93
+        },
+        "expected": 3,
+        "unexpected": [
+            93,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 153
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            153,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 145
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            145,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 333
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1,
+            333
+        ]
+    },
+    {
+        "input": {
+            "n": 184
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            184,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 33
+        },
+        "expected": 3,
+        "unexpected": [
+            33,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 28
+        },
+        "expected": 2,
+        "unexpected": [
+            8,
+            0,
+            28,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 220
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            220,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 159
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            159,
+            9
+        ]
+    },
+    {
+        "input": {
+            "n": 40
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            40,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 360
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            360,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 1000000008
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            8,
+            1000000008,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 668
+        },
+        "expected": 2,
+        "unexpected": [
+            8,
+            4,
+            668,
+            0
+        ]
+    },
+    {
+        "input": {
+            "n": 669
+        },
+        "expected": 3,
+        "unexpected": [
+            669,
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 108
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            108,
+            8
+        ]
+    },
+    {
+        "input": {
+            "n": 183
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            183
+        ]
+    },
+    {
+        "input": {
+            "n": 68
+        },
+        "expected": 2,
+        "unexpected": [
+            68,
+            0,
+            8,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 144
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            144
+        ]
+    },
+    {
+        "input": {
+            "n": 1336
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1336,
+            6,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 96
+        },
+        "expected": 2,
+        "unexpected": [
+            6,
+            96,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 76
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            76,
+            6,
+            4
+        ]
+    },
+    {
+        "input": {
+            "n": 321
+        },
+        "expected": 3,
+        "unexpected": [
+            321,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "n": 243
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            243
+        ]
+    },
+    {
+        "input": {
+            "n": 75
+        },
+        "expected": 3,
+        "unexpected": [
+            75,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "n": 284
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            284
+        ]
+    },
+    {
+        "input": {
+            "n": 1335
+        },
+        "expected": 3,
+        "unexpected": [
+            5,
+            1335,
+            0
+        ]
+    },
+    {
+        "input": {
+            "n": 2000000015
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            2000000015
+        ]
+    },
+    {
+        "input": {
+            "n": 48
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            48,
+            8
+        ]
+    }
+]

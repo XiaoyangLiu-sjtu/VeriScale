@@ -1,0 +1,3891 @@
+[
+    {
+        "input": {
+            "s": "Hello, World!"
+        },
+        "expected": "hello, world!",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "ello, World!H",
+            "Hello, World!",
+            "!dlroW ,olleH",
+            "0101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC"
+        },
+        "expected": "abc",
+        "unexpected": [
+            "ABC",
+            "aaa",
+            "CBA",
+            "BCA",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc"
+        },
+        "expected": "abc",
+        "unexpected": [
+            "cba",
+            "010",
+            "bca",
+            "aaa"
+        ]
+    },
+    {
+        "input": {
+            "s": ""
+        },
+        "expected": "",
+        "unexpected": [
+            " ",
+            "empty",
+            "null"
+        ]
+    },
+    {
+        "input": {
+            "s": "1234!@"
+        },
+        "expected": "1234!@",
+        "unexpected": [
+            "234!@1",
+            "@!4321",
+            "010101",
+            "aaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "MixedCASE123"
+        },
+        "expected": "mixedcase123",
+        "unexpected": [
+            "ixedCASE123M",
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "321ESACdexiM",
+            "MixedCASE123"
+        ]
+    },
+    {
+        "input": {
+            "s": "A"
+        },
+        "expected": "a",
+        "unexpected": [
+            "A",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "a"
+        },
+        "expected": "a",
+        "unexpected": [
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z"
+        },
+        "expected": "z",
+        "unexpected": [
+            "a",
+            "Z",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "z"
+        },
+        "expected": "z",
+        "unexpected": [
+            "a",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "1234!@#$%^&*()"
+        },
+        "expected": "1234!@#$%^&*()",
+        "unexpected": [
+            ")(*&^%$#@!4321",
+            "01010101010101",
+            "aaaaaaaaaaaaaa",
+            "234!@#$%^&*()1"
+        ]
+    },
+    {
+        "input": {
+            "s": "MiXeD CaSe 123"
+        },
+        "expected": "mixed case 123",
+        "unexpected": [
+            "MiXeD CaSe 123",
+            "321 eSaC DeXiM",
+            "aaaaaaaaaaaaaa",
+            "01010101010101",
+            "iXeD CaSe 123M"
+        ]
+    },
+    {
+        "input": {
+            "s": "ALLUPPERCASE"
+        },
+        "expected": "alluppercase",
+        "unexpected": [
+            "ESACREPPULLA",
+            "ALLUPPERCASE",
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "LLUPPERCASEA"
+        ]
+    },
+    {
+        "input": {
+            "s": "alllowercase"
+        },
+        "expected": "alllowercase",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "lllowercasea",
+            "esacrewollla"
+        ]
+    },
+    {
+        "input": {
+            "s": "CamelCaseInput"
+        },
+        "expected": "camelcaseinput",
+        "unexpected": [
+            "aaaaaaaaaaaaaa",
+            "CamelCaseInput",
+            "01010101010101",
+            "tupnIesaClemaC",
+            "amelCaseInputC"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_INPUT"
+        },
+        "expected": "snake_case_input",
+        "unexpected": [
+            "0101010101010101",
+            "nake_case_INPUTs",
+            "aaaaaaaaaaaaaaaa",
+            "TUPNI_esac_ekans",
+            "snake_case_INPUT"
+        ]
+    },
+    {
+        "input": {
+            "s": "kebab-CASE-Input"
+        },
+        "expected": "kebab-case-input",
+        "unexpected": [
+            "0101010101010101",
+            "kebab-CASE-Input",
+            "aaaaaaaaaaaaaaaa",
+            "ebab-CASE-Inputk",
+            "tupnI-ESAC-babek"
+        ]
+    },
+    {
+        "input": {
+            "s": " Title With Leading Space"
+        },
+        "expected": " title with leading space",
+        "unexpected": [
+            "ecapS gnidaeL htiW eltiT ",
+            "0101010101010101010101010",
+            "Title With Leading Space ",
+            " Title With Leading Space",
+            "aaaaaaaaaaaaaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "Trailing Space "
+        },
+        "expected": "trailing space ",
+        "unexpected": [
+            "Trailing Space ",
+            "010101010101010",
+            "railing Space T",
+            "aaaaaaaaaaaaaaa",
+            " ecapS gniliarT"
+        ]
+    },
+    {
+        "input": {
+            "s": "  surrounded by spaces  "
+        },
+        "expected": "  surrounded by spaces  ",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "  secaps yb dednuorrus  ",
+            "010101010101010101010101",
+            " surrounded by spaces   "
+        ]
+    },
+    {
+        "input": {
+            "s": "\tTabbed\tTEXT"
+        },
+        "expected": "\ttabbed\ttext",
+        "unexpected": [
+            "\tTabbed\tTEXT",
+            "aaaaaaaaaaaa",
+            "TXET\tdebbaT\t",
+            "010101010101",
+            "Tabbed\tTEXT\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "Line1\nLINE2\nline3"
+        },
+        "expected": "line1\nline2\nline3",
+        "unexpected": [
+            "Line1\nLINE2\nline3",
+            "aaaaaaaaaaaaaaaaa",
+            "3enil\n2ENIL\n1eniL",
+            "01010101010101010",
+            "ine1\nLINE2\nline3L"
+        ]
+    },
+    {
+        "input": {
+            "s": "CRLF\r\nNEXTLINE"
+        },
+        "expected": "crlf\\x0d\\nnextline",
+        "unexpected": [
+            "ENILTXEN\\n\\x0dFLRC",
+            "CRLF\\x0d\\nNEXTLINE",
+            "aaaaaaaaaaaaaa",
+            "01010101010101",
+            "RLF\\x0d\\nNEXTLINEC"
+        ]
+    },
+    {
+        "input": {
+            "s": "\"QUOTED\" TEXT"
+        },
+        "expected": "\"quoted\" text",
+        "unexpected": [
+            "TXET \"DETOUQ\"",
+            "QUOTED\" TEXT\"",
+            "aaaaaaaaaaaaa",
+            "0101010101010",
+            "\"QUOTED\" TEXT"
+        ]
+    },
+    {
+        "input": {
+            "s": "C:\\PATH\\TO\\FILE.TXT"
+        },
+        "expected": "c:\\path\\to\\file.txt",
+        "unexpected": [
+            "C:\\PATH\\TO\\FILE.TXT",
+            "aaaaaaaaaaaaaaaaaaa",
+            "TXT.ELIF\\OT\\HTAP\\:C",
+            "0101010101010101010",
+            ":\\PATH\\TO\\FILE.TXTC"
+        ]
+    },
+    {
+        "input": {
+            "s": "ÄÖÜ ß"
+        },
+        "expected": "ÄÖÜ ß",
+        "unexpected": [
+            "ß ÜÖÄ",
+            "aaaaa",
+            "ÖÜ ßÄ",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "İIıi"
+        },
+        "expected": "İiıi",
+        "unexpected": [
+            "İIıi",
+            "0101",
+            "Iıiİ",
+            "iıIİ",
+            "aaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "Σσς"
+        },
+        "expected": "Σσς",
+        "unexpected": [
+            "σςΣ",
+            "ςσΣ",
+            "aaa",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ПРИВЕТ мир"
+        },
+        "expected": "ПРИВЕТ мир",
+        "unexpected": [
+            "aaaaaaaaaa",
+            "рим ТЕВИРП",
+            "0101010101",
+            "РИВЕТ мирП"
+        ]
+    },
+    {
+        "input": {
+            "s": "中文ABC日本語"
+        },
+        "expected": "中文abc日本語",
+        "unexpected": [
+            "aaaaaaaa",
+            "文ABC日本語中",
+            "語本日CBA文中",
+            "中文ABC日本語",
+            "01010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "😀ABC😺"
+        },
+        "expected": "😀abc😺",
+        "unexpected": [
+            "aaaaa",
+            "😺CBA😀",
+            "01010",
+            "😀ABC😺",
+            "ABC😺😀"
+        ]
+    },
+    {
+        "input": {
+            "s": "emoji 👍🏽 TEST"
+        },
+        "expected": "emoji 👍🏽 test",
+        "unexpected": [
+            "emoji 👍🏽 TEST",
+            "aaaaaaaaaaaaa",
+            "TSET 🏽👍 ijome",
+            "0101010101010",
+            "moji 👍🏽 TESTe"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔄𝔅ℭ and 𝐀𝐁𝐂"
+        },
+        "expected": "𝔄𝔅ℭ and 𝐀𝐁𝐂",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            "𝔅ℭ and 𝐀𝐁𝐂𝔄",
+            "𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+            "01010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣ fullwidth"
+        },
+        "expected": "ＡＢＣ fullwidth",
+        "unexpected": [
+            "htdiwlluf ＣＢＡ",
+            "aaaaaaaaaaaaa",
+            "ＢＣ fullwidthＡ",
+            "0101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ǅǈǋ"
+        },
+        "expected": "ǅǈǋ",
+        "unexpected": [
+            "010",
+            "aaa",
+            "ǈǋǅ",
+            "ǋǈǅ"
+        ]
+    },
+    {
+        "input": {
+            "s": "áÁ"
+        },
+        "expected": "áá",
+        "unexpected": [
+            "́Áa",
+            "áÁ",
+            "aaaa",
+            "0101"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000NULL\u0000BYTE"
+        },
+        "expected": "\\x00null\\x00byte",
+        "unexpected": [
+            "ETYB\\x00LLUN\\x00",
+            "\\x00NULL\\x00BYTE",
+            "NULL\\x00BYTE\\x00",
+            "0101010101",
+            "aaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u001fcontrolDEL"
+        },
+        "expected": "\\x1fcontrol\\x7fdel",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "\\x1fcontrol\\x7fDEL",
+            "010101010101",
+            "control\\x7fDEL\\x1f",
+            "LED\\x7flortnoc\\x1f"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "unexpected": [
+            "01010101010101010101010101010101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+        },
+        "expected": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "unexpected": [
+            "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101010101010101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "NaN"
+        },
+        "expected": "nan",
+        "unexpected": [
+            "NaN",
+            "aaa",
+            "010",
+            "aNN"
+        ]
+    },
+    {
+        "input": {
+            "s": "null"
+        },
+        "expected": "null",
+        "unexpected": [
+            "llun",
+            "aaaa",
+            "0101",
+            "ulln"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello, World!_x"
+        },
+        "expected": "hello, world!_x",
+        "unexpected": [
+            "Hello, World!_x",
+            "x_!dlroW ,olleH",
+            "010101010101010",
+            "aaaaaaaaaaaaaaa",
+            "ello, World!_xH"
+        ]
+    },
+    {
+        "input": {
+            "s": "Trailing"
+        },
+        "expected": "trailing",
+        "unexpected": [
+            "Trailing",
+            "gniliarT",
+            "aaaaaaaa",
+            "01010101",
+            "railingT"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            "0 ",
+            "aa",
+            "01"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 "
+        },
+        "expected": "0 ",
+        "unexpected": [
+            "01",
+            "aa",
+            " 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 _x"
+        },
+        "expected": "1 _x",
+        "unexpected": [
+            "0101",
+            "x_ 1",
+            " _x1",
+            "aaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "by_x"
+        },
+        "expected": "by_x",
+        "unexpected": [
+            "y_xb",
+            "aaaa",
+            "0101",
+            "x_yb"
+        ]
+    },
+    {
+        "input": {
+            "s": "Space"
+        },
+        "expected": "space",
+        "unexpected": [
+            "aaaaa",
+            "Space",
+            "01010",
+            "ecapS",
+            "paceS"
+        ]
+    },
+    {
+        "input": {
+            "s": "controlDEL 1"
+        },
+        "expected": "control\\x7fdel 1",
+        "unexpected": [
+            "control\\x7fDEL 1",
+            "aaaaaaaaaaaaa",
+            "0101010101010",
+            "ontrol\\x7fDEL 1c",
+            "1 LED\\x7flortnoc"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 LEDlortnoc"
+        },
+        "expected": "0 led\\x7flortnoc",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "0 LED\\x7flortnoc",
+            "control\\x7fDEL 0",
+            " LED\\x7flortnoc0",
+            "0101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello,"
+        },
+        "expected": "hello,",
+        "unexpected": [
+            "Hello,",
+            ",olleH",
+            "aaaaaa",
+            "ello,H",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "CRLF"
+        },
+        "expected": "crlf",
+        "unexpected": [
+            "0101",
+            "FLRC",
+            "CRLF",
+            "aaaa",
+            "RLFC"
+        ]
+    },
+    {
+        "input": {
+            "s": "ß"
+        },
+        "expected": "ß",
+        "unexpected": [
+            "a",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "TEST"
+        },
+        "expected": "test",
+        "unexpected": [
+            "TSET",
+            "aaaa",
+            "TEST",
+            "0101",
+            "ESTT"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC edge_x"
+        },
+        "expected": "abc edge_x",
+        "unexpected": [
+            "ABC edge_x",
+            "aaaaaaaaaa",
+            "x_egde CBA",
+            "0101010101",
+            "BC edge_xA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC_x"
+        },
+        "expected": "abc_x",
+        "unexpected": [
+            "aaaaa",
+            "x_CBA",
+            "BC_xA",
+            "ABC_x",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ecapS"
+        },
+        "expected": "x_ecaps",
+        "unexpected": [
+            "aaaaaaa",
+            "x_ecapS",
+            "Space_x",
+            "_ecapSx",
+            "0101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "cba"
+        },
+        "expected": "cba",
+        "unexpected": [
+            "bac",
+            "abc",
+            "aaa",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc_x"
+        },
+        "expected": "abc_x",
+        "unexpected": [
+            "x_cba",
+            "aaaaa",
+            "bc_xa",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "dna"
+        },
+        "expected": "dna",
+        "unexpected": [
+            "aaa",
+            "nad",
+            "and",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000NULL\u0000BYTE edge_x"
+        },
+        "expected": "\\x00null\\x00byte edge_x",
+        "unexpected": [
+            "x_egde ETYB\\x00LLUN\\x00",
+            "aaaaaaaaaaaaaaaaa",
+            "NULL\\x00BYTE edge_x\\x00",
+            "\\x00NULL\\x00BYTE edge_x",
+            "01010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x"
+        },
+        "expected": "1_x",
+        "unexpected": [
+            "x_1",
+            "aaa",
+            "010",
+            "_x1"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 cba"
+        },
+        "expected": "1 cba",
+        "unexpected": [
+            " cba1",
+            "aaaaa",
+            "abc 1",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "LEDlortnoc\u001f"
+        },
+        "expected": "led\\x7flortnoc\\x1f",
+        "unexpected": [
+            "LED\\x7flortnoc\\x1f",
+            "010101010101",
+            "\\x1fcontrol\\x7fDEL",
+            "aaaaaaaaaaaa",
+            "ED\\x7flortnoc\\x1fL"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x"
+        },
+        "expected": " 1_x",
+        "unexpected": [
+            "aaaa",
+            "x_1 ",
+            "1_x ",
+            "0101"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde cba"
+        },
+        "expected": "egde cba",
+        "unexpected": [
+            "aaaaaaaa",
+            "01010101",
+            "abc edge",
+            "gde cbae"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_cba_x_x"
+        },
+        "expected": "x_cba_x_x",
+        "unexpected": [
+            "aaaaaaaaa",
+            "x_x_abc_x",
+            "010101010",
+            "_cba_x_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "x_",
+            "aa",
+            "01"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x edge"
+        },
+        "expected": " 1_x edge",
+        "unexpected": [
+            "1_x edge ",
+            "egde x_1 ",
+            "010101010",
+            "aaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x"
+        },
+        "expected": "0_x",
+        "unexpected": [
+            "aaa",
+            "010",
+            "x_0",
+            "_x0"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1"
+        },
+        "expected": " 1",
+        "unexpected": [
+            "1 ",
+            "01",
+            "aa"
+        ]
+    },
+    {
+        "input": {
+            "s": " edge"
+        },
+        "expected": " edge",
+        "unexpected": [
+            "egde ",
+            "01010",
+            "edge ",
+            "aaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde  1"
+        },
+        "expected": "egde  1",
+        "unexpected": [
+            "aaaaaaa",
+            "1  edge",
+            "0101010",
+            "gde  1e"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝐀𝐁𝐂"
+        },
+        "expected": "𝐀𝐁𝐂",
+        "unexpected": [
+            "𝐁𝐂𝐀",
+            "aaa",
+            "010",
+            "𝐂𝐁𝐀"
+        ]
+    },
+    {
+        "input": {
+            "s": "emoji"
+        },
+        "expected": "emoji",
+        "unexpected": [
+            "aaaaa",
+            "mojie",
+            "ijome",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_"
+        },
+        "expected": "x_",
+        "unexpected": [
+            "aa",
+            "_x",
+            "01"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0 edge"
+        },
+        "expected": " 0 edge",
+        "unexpected": [
+            "0 edge ",
+            "egde 0 ",
+            "0101010",
+            "aaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "cba 1"
+        },
+        "expected": "cba 1",
+        "unexpected": [
+            "aaaaa",
+            "1 abc",
+            "01010",
+            "ba 1c"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 ,olleH"
+        },
+        "expected": "1 ,olleh",
+        "unexpected": [
+            "1 ,olleH",
+            "aaaaaaaa",
+            "01010101",
+            "Hello, 1",
+            " ,olleH1"
+        ]
+    },
+    {
+        "input": {
+            "s": "1  edge"
+        },
+        "expected": "1  edge",
+        "unexpected": [
+            "egde  1",
+            "aaaaaaa",
+            "0101010",
+            "  edge1"
+        ]
+    },
+    {
+        "input": {
+            "s": "With"
+        },
+        "expected": "with",
+        "unexpected": [
+            "With",
+            "0101",
+            "htiW",
+            "aaaa",
+            "ithW"
+        ]
+    },
+    {
+        "input": {
+            "s": "мир"
+        },
+        "expected": "мир",
+        "unexpected": [
+            "aaa",
+            "010",
+            "ирм",
+            "рим"
+        ]
+    },
+    {
+        "input": {
+            "s": "LINE2_x"
+        },
+        "expected": "line2_x",
+        "unexpected": [
+            "x_2ENIL",
+            "aaaaaaa",
+            "INE2_xL",
+            "LINE2_x",
+            "0101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ПРИВЕТ мир edge"
+        },
+        "expected": "ПРИВЕТ мир edge",
+        "unexpected": [
+            "aaaaaaaaaaaaaaa",
+            "010101010101010",
+            "egde рим ТЕВИРП",
+            "РИВЕТ мир edgeП"
+        ]
+    },
+    {
+        "input": {
+            "s": "With_x"
+        },
+        "expected": "with_x",
+        "unexpected": [
+            "With_x",
+            "aaaaaa",
+            "x_htiW",
+            "010101",
+            "ith_xW"
+        ]
+    },
+    {
+        "input": {
+            "s": "Tabbed"
+        },
+        "expected": "tabbed",
+        "unexpected": [
+            "Tabbed",
+            "debbaT",
+            "abbedT",
+            "aaaaaa",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde"
+        },
+        "expected": "egde",
+        "unexpected": [
+            "aaaa",
+            "edge",
+            "gdee",
+            "0101"
+        ]
+    },
+    {
+        "input": {
+            "s": "321ESACdexiM_x 1 edge 1"
+        },
+        "expected": "321esacdexim_x 1 edge 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaa",
+            "321ESACdexiM_x 1 edge 1",
+            "1 egde 1 x_MixedCASE123",
+            "01010101010101010101010",
+            "21ESACdexiM_x 1 edge 13"
+        ]
+    },
+    {
+        "input": {
+            "s": "LEDlortnoc"
+        },
+        "expected": "led\\x7flortnoc",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            "LED\\x7flortnoc",
+            "01010101010",
+            "control\\x7fDEL",
+            "ED\\x7flortnocL"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣ"
+        },
+        "expected": "ＡＢＣ",
+        "unexpected": [
+            "ＢＣＡ",
+            "ＣＢＡ",
+            "aaa",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "World!_x"
+        },
+        "expected": "world!_x",
+        "unexpected": [
+            "aaaaaaaa",
+            "x_!dlroW",
+            "orld!_xW",
+            "World!_x",
+            "01010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "MixedCASE123 0"
+        },
+        "expected": "mixedcase123 0",
+        "unexpected": [
+            "0 321ESACdexiM",
+            "aaaaaaaaaaaaaa",
+            "MixedCASE123 0",
+            "01010101010101",
+            "ixedCASE123 0M"
+        ]
+    },
+    {
+        "input": {
+            "s": "İIıi_x"
+        },
+        "expected": "İiıi_x",
+        "unexpected": [
+            "İIıi_x",
+            "aaaaaa",
+            "010101",
+            "x_iıIİ",
+            "Iıi_xİ"
+        ]
+    },
+    {
+        "input": {
+            "s": "321ESACdexiM"
+        },
+        "expected": "321esacdexim",
+        "unexpected": [
+            "MixedCASE123",
+            "010101010101",
+            "aaaaaaaaaaaa",
+            "21ESACdexiM3",
+            "321ESACdexiM"
+        ]
+    },
+    {
+        "input": {
+            "s": "321ESACdexiM 0"
+        },
+        "expected": "321esacdexim 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaa",
+            "321ESACdexiM 0",
+            "0 MixedCASE123",
+            "21ESACdexiM 03",
+            "01010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x edge_x"
+        },
+        "expected": " 1_x edge_x",
+        "unexpected": [
+            "x_egde x_1 ",
+            "aaaaaaaaaaa",
+            "01010101010",
+            "1_x edge_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "A 0"
+        },
+        "expected": "a 0",
+        "unexpected": [
+            " 0A",
+            "A 0",
+            "aaa",
+            "010",
+            "0 A"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_A_x"
+        },
+        "expected": "egde x_a_x",
+        "unexpected": [
+            "aaaaaaaaaa",
+            "0101010101",
+            "egde x_A_x",
+            "x_A_x edge",
+            "gde x_A_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "spaces 0"
+        },
+        "expected": "spaces 0",
+        "unexpected": [
+            "aaaaaaaa",
+            "paces 0s",
+            "01010101",
+            "0 secaps"
+        ]
+    },
+    {
+        "input": {
+            "s": "321ESACdexiM_x"
+        },
+        "expected": "321esacdexim_x",
+        "unexpected": [
+            "321ESACdexiM_x",
+            "x_MixedCASE123",
+            "aaaaaaaaaaaaaa",
+            "01010101010101",
+            "21ESACdexiM_x3"
+        ]
+    },
+    {
+        "input": {
+            "s": "A_x"
+        },
+        "expected": "a_x",
+        "unexpected": [
+            "A_x",
+            "010",
+            "aaa",
+            "_xA",
+            "x_A"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x"
+        },
+        "expected": "_x_x",
+        "unexpected": [
+            "0101",
+            "x_x_",
+            "aaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "a 0"
+        },
+        "expected": "a 0",
+        "unexpected": [
+            "0 a",
+            "aaa",
+            " 0a",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 x_0 A"
+        },
+        "expected": "1 x_0 a",
+        "unexpected": [
+            "A 0_x 1",
+            "1 x_0 A",
+            "aaaaaaa",
+            "0101010",
+            " x_0 A1"
+        ]
+    },
+    {
+        "input": {
+            "s": "a edge"
+        },
+        "expected": "a edge",
+        "unexpected": [
+            "aaaaaa",
+            "egde a",
+            " edgea",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "a_x"
+        },
+        "expected": "a_x",
+        "unexpected": [
+            "x_a",
+            "_xa",
+            "aaa",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "kebab-CASE-Input_x 0"
+        },
+        "expected": "kebab-case-input_x 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaa",
+            "kebab-CASE-Input_x 0",
+            "0 x_tupnI-ESAC-babek",
+            "ebab-CASE-Input_x 0k",
+            "01010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "ПРИВЕТ 1"
+        },
+        "expected": "ПРИВЕТ 1",
+        "unexpected": [
+            "aaaaaaaa",
+            "РИВЕТ 1П",
+            "1 ТЕВИРП",
+            "01010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde_x"
+        },
+        "expected": "egde_x",
+        "unexpected": [
+            "aaaaaa",
+            "010101",
+            "x_edge",
+            "gde_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z_x"
+        },
+        "expected": "z_x",
+        "unexpected": [
+            "x_Z",
+            "aaa",
+            "Z_x",
+            "_xZ",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "0"
+        },
+        "expected": "0",
+        "unexpected": [
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z 1"
+        },
+        "expected": "z 1",
+        "unexpected": [
+            "Z 1",
+            "aaa",
+            "1 Z",
+            "010",
+            " 1Z"
+        ]
+    },
+    {
+        "input": {
+            "s": "emoji 👍🏽 TEST 0"
+        },
+        "expected": "emoji 👍🏽 test 0",
+        "unexpected": [
+            "emoji 👍🏽 TEST 0",
+            "010101010101010",
+            "aaaaaaaaaaaaaaa",
+            "0 TSET 🏽👍 ijome",
+            "moji 👍🏽 TEST 0e"
+        ]
+    },
+    {
+        "input": {
+            "s": "123"
+        },
+        "expected": "123",
+        "unexpected": [
+            "aaa",
+            "321",
+            "010",
+            "231"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z_x 0 edge"
+        },
+        "expected": "z_x 0 edge",
+        "unexpected": [
+            "Z_x 0 edge",
+            "aaaaaaaaaa",
+            "0101010101",
+            "_x 0 edgeZ",
+            "egde 0 x_Z"
+        ]
+    },
+    {
+        "input": {
+            "s": "  surrounded by spaces  _x"
+        },
+        "expected": "  surrounded by spaces  _x",
+        "unexpected": [
+            "x_  secaps yb dednuorrus  ",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101010101",
+            " surrounded by spaces  _x "
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 0 0"
+        },
+        "expected": "_x 0 0",
+        "unexpected": [
+            "aaaaaa",
+            "0 0 x_",
+            "x 0 0_",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z 0_x"
+        },
+        "expected": "z 0_x",
+        "unexpected": [
+            "Z 0_x",
+            "x_0 Z",
+            "aaaaa",
+            "01010",
+            " 0_xZ"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_A_x"
+        },
+        "expected": "x_a_x",
+        "unexpected": [
+            "x_A_x",
+            "_A_xx",
+            "aaaaa",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ 1"
+        },
+        "expected": "x_ 1",
+        "unexpected": [
+            "1 _x",
+            "aaaa",
+            "0101",
+            "_ 1x"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 1 edge"
+        },
+        "expected": "_x 1 edge",
+        "unexpected": [
+            "aaaaaaaaa",
+            "010101010",
+            "x 1 edge_",
+            "egde 1 x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "z 1"
+        },
+        "expected": "z 1",
+        "unexpected": [
+            "1 z",
+            "010",
+            " 1z",
+            "aaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "NaN edge"
+        },
+        "expected": "nan edge",
+        "unexpected": [
+            "NaN edge",
+            "01010101",
+            "aaaaaaaa",
+            "egde NaN",
+            "aN edgeN"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_)(*&^%$#@!4321"
+        },
+        "expected": "x_)(*&^%$#@!4321",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaa",
+            "_)(*&^%$#@!4321x",
+            "1234!@#$%^&*()_x",
+            "0101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde ℭ𝔅𝔄 1"
+        },
+        "expected": "egde ℭ𝔅𝔄 1",
+        "unexpected": [
+            "0101010101",
+            "aaaaaaaaaa",
+            "gde ℭ𝔅𝔄 1e",
+            "1 𝔄𝔅ℭ edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "1234!@#$%^&*()_x 0"
+        },
+        "expected": "1234!@#$%^&*()_x 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaa",
+            "0 x_)(*&^%$#@!4321",
+            "234!@#$%^&*()_x 01",
+            "010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "1"
+        },
+        "expected": "1",
+        "unexpected": [
+            "a",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x 1 0 1"
+        },
+        "expected": "0_x 1 0 1",
+        "unexpected": [
+            "1 0 1 x_0",
+            "aaaaaaaaa",
+            "_x 1 0 10",
+            "010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge_x edge"
+        },
+        "expected": "edge_x edge",
+        "unexpected": [
+            "dge_x edgee",
+            "aaaaaaaaaaa",
+            "egde x_egde",
+            "01010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x 1 0 1 0"
+        },
+        "expected": "0_x 1 0 1 0",
+        "unexpected": [
+            "0 1 0 1 x_0",
+            "aaaaaaaaaaa",
+            "_x 1 0 1 00",
+            "01010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "Tabbed edge"
+        },
+        "expected": "tabbed edge",
+        "unexpected": [
+            "abbed edgeT",
+            "Tabbed edge",
+            "01010101010",
+            "aaaaaaaaaaa",
+            "egde debbaT"
+        ]
+    },
+    {
+        "input": {
+            "s": "321 eSaC DeXiM"
+        },
+        "expected": "321 esac dexim",
+        "unexpected": [
+            "321 eSaC DeXiM",
+            "MiXeD CaSe 123",
+            "01010101010101",
+            "21 eSaC DeXiM3",
+            "aaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "ÄÖÜ"
+        },
+        "expected": "ÄÖÜ",
+        "unexpected": [
+            "aaa",
+            "ÜÖÄ",
+            "010",
+            "ÖÜÄ"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 1 LEDlortnoc"
+        },
+        "expected": "1 1 led\\x7flortnoc",
+        "unexpected": [
+            "010101010101010",
+            "control\\x7fDEL 1 1",
+            "aaaaaaaaaaaaaaa",
+            "1 1 LED\\x7flortnoc",
+            " 1 LED\\x7flortnoc1"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000NULL\u0000BYTE edge_x 1"
+        },
+        "expected": "\\x00null\\x00byte edge_x 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaa",
+            "\\x00NULL\\x00BYTE edge_x 1",
+            "NULL\\x00BYTE edge_x 1\\x00",
+            "0101010101010101010",
+            "1 x_egde ETYB\\x00LLUN\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "  surrounded by spaces   edge"
+        },
+        "expected": "  surrounded by spaces   edge",
+        "unexpected": [
+            "01010101010101010101010101010",
+            "egde   secaps yb dednuorrus  ",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            " surrounded by spaces   edge "
+        ]
+    },
+    {
+        "input": {
+            "s": "by"
+        },
+        "expected": "by",
+        "unexpected": [
+            "aa",
+            "yb",
+            "01"
+        ]
+    },
+    {
+        "input": {
+            "s": "ALLUPPERCASE 1 1"
+        },
+        "expected": "alluppercase 1 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaa",
+            "0101010101010101",
+            "LLUPPERCASE 1 1A",
+            "ALLUPPERCASE 1 1",
+            "1 1 ESACREPPULLA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ESACREPPULLA"
+        },
+        "expected": "esacreppulla",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "ESACREPPULLA",
+            "ALLUPPERCASE",
+            "010101010101",
+            "SACREPPULLAE"
+        ]
+    },
+    {
+        "input": {
+            "s": "ALLUPPERCASE edge"
+        },
+        "expected": "alluppercase edge",
+        "unexpected": [
+            "ALLUPPERCASE edge",
+            "egde ESACREPPULLA",
+            "LLUPPERCASE edgeA",
+            "01010101010101010",
+            "aaaaaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde a"
+        },
+        "expected": "egde a",
+        "unexpected": [
+            "aaaaaa",
+            "gde ae",
+            "a edge",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x 1 0 1 0 1"
+        },
+        "expected": "0_x 1 0 1 0 1",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "0101010101010",
+            "1 0 1 0 1 x_0",
+            "_x 1 0 1 0 10"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde"
+        },
+        "expected": "x_egde",
+        "unexpected": [
+            "010101",
+            "_egdex",
+            "aaaaaa",
+            "edge_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "esacrewollla"
+        },
+        "expected": "esacrewollla",
+        "unexpected": [
+            "alllowercase",
+            "010101010101",
+            "aaaaaaaaaaaa",
+            "sacrewolllae"
+        ]
+    },
+    {
+        "input": {
+            "s": "CaSe"
+        },
+        "expected": "case",
+        "unexpected": [
+            "eSaC",
+            "0101",
+            "aSeC",
+            "CaSe",
+            "aaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 _x_x"
+        },
+        "expected": "0 _x_x",
+        "unexpected": [
+            "aaaaaa",
+            " _x_x0",
+            "x_x_ 0",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "CamelCaseInput edge"
+        },
+        "expected": "camelcaseinput edge",
+        "unexpected": [
+            "CamelCaseInput edge",
+            "egde tupnIesaClemaC",
+            "0101010101010101010",
+            "amelCaseInput edgeC",
+            "aaaaaaaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde egde 1 x_"
+        },
+        "expected": "x_egde egde 1 x_",
+        "unexpected": [
+            "0101010101010101",
+            "_x 1 edge edge_x",
+            "aaaaaaaaaaaaaaaa",
+            "_egde egde 1 x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "tupnIesaClemaC 1 1"
+        },
+        "expected": "tupniesaclemac 1 1",
+        "unexpected": [
+            "tupnIesaClemaC 1 1",
+            "aaaaaaaaaaaaaaaaaa",
+            "1 1 CamelCaseInput",
+            "010101010101010101",
+            "upnIesaClemaC 1 1t"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge"
+        },
+        "expected": "edge",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "dgee",
+            "egde"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 "
+        },
+        "expected": "1 ",
+        "unexpected": [
+            "aa",
+            " 1",
+            "01"
+        ]
+    },
+    {
+        "input": {
+            "s": "spaces"
+        },
+        "expected": "spaces",
+        "unexpected": [
+            "010101",
+            "aaaaaa",
+            "secaps",
+            "pacess"
+        ]
+    },
+    {
+        "input": {
+            "s": "TUPNI_esac_ekans_x_x"
+        },
+        "expected": "tupni_esac_ekans_x_x",
+        "unexpected": [
+            "TUPNI_esac_ekans_x_x",
+            "aaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101",
+            "UPNI_esac_ekans_x_xT",
+            "x_x_snake_case_INPUT"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello, World!_x 1"
+        },
+        "expected": "hello, world!_x 1",
+        "unexpected": [
+            "Hello, World!_x 1",
+            "aaaaaaaaaaaaaaaaa",
+            "1 x_!dlroW ,olleH",
+            "01010101010101010",
+            "ello, World!_x 1H"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_INPUT_x"
+        },
+        "expected": "snake_case_input_x",
+        "unexpected": [
+            "snake_case_INPUT_x",
+            "010101010101010101",
+            "aaaaaaaaaaaaaaaaaa",
+            "nake_case_INPUT_xs",
+            "x_TUPNI_esac_ekans"
+        ]
+    },
+    {
+        "input": {
+            "s": "TUPNI_esac_ekans_x_x_x 0"
+        },
+        "expected": "tupni_esac_ekans_x_x_x 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101",
+            "TUPNI_esac_ekans_x_x_x 0",
+            "UPNI_esac_ekans_x_x_x 0T",
+            "0 x_x_x_snake_case_INPUT"
+        ]
+    },
+    {
+        "input": {
+            "s": "ℭ𝔅𝔄_x"
+        },
+        "expected": "ℭ𝔅𝔄_x",
+        "unexpected": [
+            "aaaaa",
+            "x_𝔄𝔅ℭ",
+            "01010",
+            "𝔅𝔄_xℭ"
+        ]
+    },
+    {
+        "input": {
+            "s": "dna edge edge"
+        },
+        "expected": "dna edge edge",
+        "unexpected": [
+            "egde egde and",
+            "0101010101010",
+            "aaaaaaaaaaaaa",
+            "na edge edged"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_INPUT edge"
+        },
+        "expected": "snake_case_input edge",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010",
+            "nake_case_INPUT edges",
+            "egde TUPNI_esac_ekans",
+            "snake_case_INPUT edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc_x edge 0"
+        },
+        "expected": "abc_x edge 0",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "0 egde x_cba",
+            "010101010101",
+            "bc_x edge 0a"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC 0"
+        },
+        "expected": "abc 0",
+        "unexpected": [
+            "ABC 0",
+            "aaaaa",
+            "0 CBA",
+            "01010",
+            "BC 0A"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge 1"
+        },
+        "expected": "edge 1",
+        "unexpected": [
+            "aaaaaa",
+            "1 egde",
+            "dge 1e",
+            "010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "ПРИВЕТ 1_x"
+        },
+        "expected": "ПРИВЕТ 1_x",
+        "unexpected": [
+            "aaaaaaaaaa",
+            "0101010101",
+            "x_1 ТЕВИРП",
+            "РИВЕТ 1_xП"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1 egde 1 x_MixedCASE123"
+        },
+        "expected": "0 1 egde 1 x_mixedcase123",
+        "unexpected": [
+            "321ESACdexiM_x 1 edge 1 0",
+            "0 1 egde 1 x_MixedCASE123",
+            "aaaaaaaaaaaaaaaaaaaaaaaaa",
+            " 1 egde 1 x_MixedCASE1230",
+            "0101010101010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 z_x"
+        },
+        "expected": "1 z_x",
+        "unexpected": [
+            "aaaaa",
+            "01010",
+            "x_z 1",
+            " z_x1"
+        ]
+    },
+    {
+        "input": {
+            "s": " Title With Leading Space 0_x"
+        },
+        "expected": " title with leading space 0_x",
+        "unexpected": [
+            "x_0 ecapS gnidaeL htiW eltiT ",
+            " Title With Leading Space 0_x",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101010101010",
+            "Title With Leading Space 0_x "
+        ]
+    },
+    {
+        "input": {
+            "s": " Title With Leading Space 1"
+        },
+        "expected": " title with leading space 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            " Title With Leading Space 1",
+            "010101010101010101010101010",
+            "1 ecapS gnidaeL htiW eltiT ",
+            "Title With Leading Space 1 "
+        ]
+    },
+    {
+        "input": {
+            "s": " Title With Leading Space edge"
+        },
+        "expected": " title with leading space edge",
+        "unexpected": [
+            " Title With Leading Space edge",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101010101",
+            "Title With Leading Space edge ",
+            "egde ecapS gnidaeL htiW eltiT "
+        ]
+    },
+    {
+        "input": {
+            "s": "kebab-CASE-Input_x 0_x"
+        },
+        "expected": "kebab-case-input_x 0_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaa",
+            "ebab-CASE-Input_x 0_xk",
+            "kebab-CASE-Input_x 0_x",
+            "x_0 x_tupnI-ESAC-babek",
+            "0101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 "
+        },
+        "expected": "x_0 ",
+        "unexpected": [
+            " 0_x",
+            "aaaa",
+            "0101",
+            "_0 x"
+        ]
+    },
+    {
+        "input": {
+            "s": " ecapS gniliarT"
+        },
+        "expected": " ecaps gniliart",
+        "unexpected": [
+            "Trailing Space ",
+            " ecapS gniliarT",
+            "aaaaaaaaaaaaaaa",
+            "010101010101010",
+            "ecapS gniliarT "
+        ]
+    },
+    {
+        "input": {
+            "s": "1234!@#$%^&*()_x"
+        },
+        "expected": "1234!@#$%^&*()_x",
+        "unexpected": [
+            "x_)(*&^%$#@!4321",
+            "234!@#$%^&*()_x1",
+            "0101010101010101",
+            "aaaaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello, World!_x 1_x"
+        },
+        "expected": "hello, world!_x 1_x",
+        "unexpected": [
+            "Hello, World!_x 1_x",
+            "x_1 x_!dlroW ,olleH",
+            "aaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010",
+            "ello, World!_x 1_xH"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0_x"
+        },
+        "expected": " 0_x",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "x_0 ",
+            "0_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "ÜÖÄ"
+        },
+        "expected": "ÜÖÄ",
+        "unexpected": [
+            "aaa",
+            "ÄÖÜ",
+            "010",
+            "ÖÄÜ"
+        ]
+    },
+    {
+        "input": {
+            "s": "ǅǈǋ 0"
+        },
+        "expected": "ǅǈǋ 0",
+        "unexpected": [
+            "aaaaa",
+            "01010",
+            "ǈǋ 0ǅ",
+            "0 ǋǈǅ"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0_x_x_x"
+        },
+        "expected": " 0_x_x_x",
+        "unexpected": [
+            "01010101",
+            "x_x_x_0 ",
+            "aaaaaaaa",
+            "0_x_x_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "egde   surrounded by spaces   edge_x"
+        },
+        "expected": "egde   surrounded by spaces   edge_x",
+        "unexpected": [
+            "x_egde   secaps yb dednuorrus   edge",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101010101010101",
+            "gde   surrounded by spaces   edge_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "321"
+        },
+        "expected": "321",
+        "unexpected": [
+            "010",
+            "aaa",
+            "123",
+            "213"
+        ]
+    },
+    {
+        "input": {
+            "s": "\tTabbed\tTEXT 0"
+        },
+        "expected": "\ttabbed\ttext 0",
+        "unexpected": [
+            "\tTabbed\tTEXT 0",
+            "0 TXET\tdebbaT\t",
+            "aaaaaaaaaaaaaa",
+            "01010101010101",
+            "Tabbed\tTEXT 0\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 \tTabbed\tTEXT"
+        },
+        "expected": "0 \ttabbed\ttext",
+        "unexpected": [
+            "0 \tTabbed\tTEXT",
+            "TXET\tdebbaT\t 0",
+            "01010101010101",
+            "aaaaaaaaaaaaaa",
+            " \tTabbed\tTEXT0"
+        ]
+    },
+    {
+        "input": {
+            "s": "tupnIesaClemaC_x edge_x"
+        },
+        "expected": "tupniesaclemac_x edge_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaa",
+            "tupnIesaClemaC_x edge_x",
+            "01010101010101010101010",
+            "x_egde x_CamelCaseInput",
+            "upnIesaClemaC_x edge_xt"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge_x_x 0_x"
+        },
+        "expected": "edge_x_x 0_x",
+        "unexpected": [
+            "x_0 x_x_egde",
+            "010101010101",
+            "dge_x_x 0_xe",
+            "aaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 TXET\tdebbaT\t"
+        },
+        "expected": "0 txet\tdebbat\t",
+        "unexpected": [
+            "0 TXET\tdebbaT\t",
+            "aaaaaaaaaaaaaa",
+            "\tTabbed\tTEXT 0",
+            "01010101010101",
+            " TXET\tdebbaT\t0"
+        ]
+    },
+    {
+        "input": {
+            "s": "fullwidth edge_x"
+        },
+        "expected": "fullwidth edge_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaa",
+            "x_egde htdiwlluf",
+            "0101010101010101",
+            "ullwidth edge_xf"
+        ]
+    },
+    {
+        "input": {
+            "s": "htdiwlluf"
+        },
+        "expected": "htdiwlluf",
+        "unexpected": [
+            "fullwidth",
+            "aaaaaaaaa",
+            "010101010",
+            "tdiwllufh"
+        ]
+    },
+    {
+        "input": {
+            "s": "LINE2"
+        },
+        "expected": "line2",
+        "unexpected": [
+            "INE2L",
+            "aaaaa",
+            "LINE2",
+            "2ENIL",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "TUPNI_esac_ekans_x_x_x"
+        },
+        "expected": "tupni_esac_ekans_x_x_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaa",
+            "TUPNI_esac_ekans_x_x_x",
+            "x_x_x_snake_case_INPUT",
+            "0101010101010101010101",
+            "UPNI_esac_ekans_x_x_xT"
+        ]
+    },
+    {
+        "input": {
+            "s": "👍🏽"
+        },
+        "expected": "👍🏽",
+        "unexpected": [
+            "01",
+            "🏽👍",
+            "aa"
+        ]
+    },
+    {
+        "input": {
+            "s": "3enil\n2ENIL\n1eniL 0_x edge"
+        },
+        "expected": "3enil\n2enil\n1enil 0_x edge",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "3enil\n2ENIL\n1eniL 0_x edge",
+            "01010101010101010101010101",
+            "egde x_0 Line1\nLINE2\nline3",
+            "enil\n2ENIL\n1eniL 0_x edge3"
+        ]
+    },
+    {
+        "input": {
+            "s": "A 0 0"
+        },
+        "expected": "a 0 0",
+        "unexpected": [
+            "0 0 A",
+            "aaaaa",
+            "A 0 0",
+            "01010",
+            " 0 0A"
+        ]
+    },
+    {
+        "input": {
+            "s": "A 0_x"
+        },
+        "expected": "a 0_x",
+        "unexpected": [
+            "aaaaa",
+            "A 0_x",
+            "x_0 A",
+            "01010",
+            " 0_xA"
+        ]
+    },
+    {
+        "input": {
+            "s": "CRLF\r\nNEXTLINE 0"
+        },
+        "expected": "crlf\\x0d\\nnextline 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaa",
+            "0 ENILTXEN\\n\\x0dFLRC",
+            "CRLF\\x0d\\nNEXTLINE 0",
+            "RLF\\x0d\\nNEXTLINE 0C",
+            "0101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "z_x edge"
+        },
+        "expected": "z_x edge",
+        "unexpected": [
+            "01010101",
+            "aaaaaaaa",
+            "egde x_z",
+            "_x edgez"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔄𝔅ℭ_x"
+        },
+        "expected": "𝔄𝔅ℭ_x",
+        "unexpected": [
+            "aaaaa",
+            "01010",
+            "x_ℭ𝔅𝔄",
+            "𝔅ℭ_x𝔄"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_Space"
+        },
+        "expected": "x_space",
+        "unexpected": [
+            "x_Space",
+            "aaaaaaa",
+            "ecapS_x",
+            "_Spacex",
+            "0101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "Title"
+        },
+        "expected": "title",
+        "unexpected": [
+            "aaaaa",
+            "Title",
+            "01010",
+            "itleT",
+            "eltiT"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 1 edge edge_x"
+        },
+        "expected": "_x 1 edge edge_x",
+        "unexpected": [
+            "0101010101010101",
+            "aaaaaaaaaaaaaaaa",
+            "x_egde egde 1 x_",
+            "x 1 edge edge_x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_\"QUOTED\" TEXT_x_x"
+        },
+        "expected": "x_\"quoted\" text_x_x",
+        "unexpected": [
+            "x_\"QUOTED\" TEXT_x_x",
+            "aaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010",
+            "x_x_TXET \"DETOUQ\"_x",
+            "_\"QUOTED\" TEXT_x_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXET \"DETOUQ\"_x"
+        },
+        "expected": "txet \"detouq\"_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaa",
+            "TXET \"DETOUQ\"_x",
+            "XET \"DETOUQ\"_xT",
+            "010101010101010",
+            "x_\"QUOTED\" TEXT"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXT.ELIF\\OT\\HTAP\\:C_x"
+        },
+        "expected": "txt.elif\\ot\\htap\\:c_x",
+        "unexpected": [
+            "TXT.ELIF\\OT\\HTAP\\:C_x",
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010",
+            "XT.ELIF\\OT\\HTAP\\:C_xT",
+            "x_C:\\PATH\\TO\\FILE.TXT"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXT.ELIF\\OT\\HTAP\\:C edge"
+        },
+        "expected": "txt.elif\\ot\\htap\\:c edge",
+        "unexpected": [
+            "TXT.ELIF\\OT\\HTAP\\:C edge",
+            "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "egde C:\\PATH\\TO\\FILE.TXT",
+            "010101010101010101010101",
+            "XT.ELIF\\OT\\HTAP\\:C edgeT"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_INPUT edge_x_x_x"
+        },
+        "expected": "snake_case_input edge_x_x_x",
+        "unexpected": [
+            "snake_case_INPUT edge_x_x_x",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101010",
+            "nake_case_INPUT edge_x_x_xs",
+            "x_x_x_egde TUPNI_esac_ekans"
+        ]
+    },
+    {
+        "input": {
+            "s": "controlDEL 0"
+        },
+        "expected": "control\\x7fdel 0",
+        "unexpected": [
+            "control\\x7fDEL 0",
+            "aaaaaaaaaaaaa",
+            "0101010101010",
+            "0 LED\\x7flortnoc",
+            "ontrol\\x7fDEL 0c"
+        ]
+    },
+    {
+        "input": {
+            "s": "ПРИВЕТ"
+        },
+        "expected": "ПРИВЕТ",
+        "unexpected": [
+            "ТЕВИРП",
+            "010101",
+            "aaaaaa",
+            "РИВЕТП"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXT.ELIF\\OT\\HTAP\\:C"
+        },
+        "expected": "txt.elif\\ot\\htap\\:c",
+        "unexpected": [
+            "TXT.ELIF\\OT\\HTAP\\:C",
+            "XT.ELIF\\OT\\HTAP\\:CT",
+            "aaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010",
+            "C:\\PATH\\TO\\FILE.TXT"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde  1 edge"
+        },
+        "expected": "egde  1 edge",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "gde  1 edgee",
+            "egde 1  edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "C:\\PATH\\TO\\FILE.TXT 0"
+        },
+        "expected": "c:\\path\\to\\file.txt 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "C:\\PATH\\TO\\FILE.TXT 0",
+            "010101010101010101010",
+            ":\\PATH\\TO\\FILE.TXT 0C",
+            "0 TXT.ELIF\\OT\\HTAP\\:C"
+        ]
+    },
+    {
+        "input": {
+            "s": "ℭ𝔅𝔄_x 1"
+        },
+        "expected": "ℭ𝔅𝔄_x 1",
+        "unexpected": [
+            "aaaaaaa",
+            "𝔅𝔄_x 1ℭ",
+            "1 x_𝔄𝔅ℭ",
+            "0101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "C:\\PATH\\TO\\FILE.TXT_x"
+        },
+        "expected": "c:\\path\\to\\file.txt_x",
+        "unexpected": [
+            "C:\\PATH\\TO\\FILE.TXT_x",
+            ":\\PATH\\TO\\FILE.TXT_xC",
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010",
+            "x_TXT.ELIF\\OT\\HTAP\\:C"
+        ]
+    },
+    {
+        "input": {
+            "s": "C:\\PATH\\TO\\FILE.TXT_x_x 0"
+        },
+        "expected": "c:\\path\\to\\file.txt_x_x 0",
+        "unexpected": [
+            "C:\\PATH\\TO\\FILE.TXT_x_x 0",
+            ":\\PATH\\TO\\FILE.TXT_x_x 0C",
+            "aaaaaaaaaaaaaaaaaaaaaaaaa",
+            "0 x_x_TXT.ELIF\\OT\\HTAP\\:C",
+            "0101010101010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde 1  edge_x"
+        },
+        "expected": "egde 1  edge_x",
+        "unexpected": [
+            "x_egde  1 edge",
+            "aaaaaaaaaaaaaa",
+            "gde 1  edge_xe",
+            "01010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "ÄÖÜ ß_x"
+        },
+        "expected": "ÄÖÜ ß_x",
+        "unexpected": [
+            "aaaaaaa",
+            "0101010",
+            "x_ß ÜÖÄ",
+            "ÖÜ ß_xÄ"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde _x"
+        },
+        "expected": "egde _x",
+        "unexpected": [
+            "aaaaaaa",
+            "x_ edge",
+            "0101010",
+            "gde _xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_Space 0"
+        },
+        "expected": "x_space 0",
+        "unexpected": [
+            "x_Space 0",
+            "aaaaaaaaa",
+            "0 ecapS_x",
+            "010101010",
+            "_Space 0x"
+        ]
+    },
+    {
+        "input": {
+            "s": "İIıi 0"
+        },
+        "expected": "İiıi 0",
+        "unexpected": [
+            "aaaaaa",
+            "0 iıIİ",
+            "İIıi 0",
+            "010101",
+            "Iıi 0İ"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 LEDlortnoc edge"
+        },
+        "expected": "0 led\\x7flortnoc edge",
+        "unexpected": [
+            "egde control\\x7fDEL 0",
+            "0 LED\\x7flortnoc edge",
+            "aaaaaaaaaaaaaaaaaa",
+            "010101010101010101",
+            " LED\\x7flortnoc edge0"
+        ]
+    },
+    {
+        "input": {
+            "s": "İIıi edge"
+        },
+        "expected": "İiıi edge",
+        "unexpected": [
+            "egde iıIİ",
+            "aaaaaaaaa",
+            "İIıi edge",
+            "Iıi edgeİ",
+            "010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ℭ𝔅𝔄"
+        },
+        "expected": "ℭ𝔅𝔄",
+        "unexpected": [
+            "𝔄𝔅ℭ",
+            "aaa",
+            "010",
+            "𝔅𝔄ℭ"
+        ]
+    },
+    {
+        "input": {
+            "s": "iıIİ"
+        },
+        "expected": "iıiİ",
+        "unexpected": [
+            "ıIİi",
+            "aaaa",
+            "İIıi",
+            "0101",
+            "iıIİ"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 egde x_cba"
+        },
+        "expected": "0 egde x_cba",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "abc_x edge 0",
+            " egde x_cba0"
+        ]
+    },
+    {
+        "input": {
+            "s": "ÜÖÄ_x"
+        },
+        "expected": "ÜÖÄ_x",
+        "unexpected": [
+            "aaaaa",
+            "01010",
+            "ÖÄ_xÜ",
+            "x_ÄÖÜ"
+        ]
+    },
+    {
+        "input": {
+            "s": "Z 0_x_x"
+        },
+        "expected": "z 0_x_x",
+        "unexpected": [
+            "aaaaaaa",
+            "0101010",
+            "Z 0_x_x",
+            "x_x_0 Z",
+            " 0_x_xZ"
+        ]
+    },
+    {
+        "input": {
+            "s": "ςσΣ_x_x_x"
+        },
+        "expected": "ςσΣ_x_x_x",
+        "unexpected": [
+            "aaaaaaaaa",
+            "x_x_x_Σσς",
+            "010101010",
+            "σΣ_x_x_xς"
+        ]
+    },
+    {
+        "input": {
+            "s": "tupnIesaClemaC_x 1"
+        },
+        "expected": "tupniesaclemac_x 1",
+        "unexpected": [
+            "tupnIesaClemaC_x 1",
+            "upnIesaClemaC_x 1t",
+            "aaaaaaaaaaaaaaaaaa",
+            "010101010101010101",
+            "1 x_CamelCaseInput"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde "
+        },
+        "expected": "egde ",
+        "unexpected": [
+            "aaaaa",
+            "01010",
+            " edge",
+            "gde e"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0 1"
+        },
+        "expected": " 0 1",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "0 1 ",
+            "1 0 "
+        ]
+    },
+    {
+        "input": {
+            "s": "Σσς_x_x_x_x"
+        },
+        "expected": "Σσς_x_x_x_x",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            "x_x_x_x_ςσΣ",
+            "σς_x_x_x_xΣ",
+            "01010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "рим ТЕВИРП"
+        },
+        "expected": "рим ТЕВИРП",
+        "unexpected": [
+            "им ТЕВИРПр",
+            "0101010101",
+            "aaaaaaaaaa",
+            "ПРИВЕТ мир"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde egde ПРИВЕТ мир"
+        },
+        "expected": "x_egde egde ПРИВЕТ мир",
+        "unexpected": [
+            "рим ТЕВИРП edge edge_x",
+            "0101010101010101010101",
+            "aaaaaaaaaaaaaaaaaaaaaa",
+            "_egde egde ПРИВЕТ мирx"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_A_x edge 1"
+        },
+        "expected": "x_a_x edge 1",
+        "unexpected": [
+            "x_A_x edge 1",
+            "aaaaaaaaaaaa",
+            "1 egde x_A_x",
+            "_A_x edge 1x",
+            "010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde ПРИВЕТ мир"
+        },
+        "expected": "egde x_egde ПРИВЕТ мир",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaa",
+            "рим ТЕВИРП edge_x edge",
+            "gde x_egde ПРИВЕТ мирe",
+            "0101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde egde 1 x__x"
+        },
+        "expected": "x_egde egde 1 x__x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaa",
+            "x__x 1 edge edge_x",
+            "_egde egde 1 x__xx",
+            "010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 egde 中文ABC日本語"
+        },
+        "expected": "0 egde 中文abc日本語",
+        "unexpected": [
+            "0 egde 中文ABC日本語",
+            "aaaaaaaaaaaaaaa",
+            "語本日CBA文中 edge 0",
+            " egde 中文ABC日本語0",
+            "010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_!dlroW ,olleH 0"
+        },
+        "expected": "x_!dlrow ,olleh 0",
+        "unexpected": [
+            "x_!dlroW ,olleH 0",
+            "aaaaaaaaaaaaaaaaa",
+            "01010101010101010",
+            "_!dlroW ,olleH 0x",
+            "0 Hello, World!_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "😺CBA😀 1"
+        },
+        "expected": "😺cba😀 1",
+        "unexpected": [
+            "aaaaaaa",
+            "CBA😀 1😺",
+            "0101010",
+            "1 😀ABC😺",
+            "😺CBA😀 1"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde 😺CBA😀_x"
+        },
+        "expected": "egde 😺cba😀_x",
+        "unexpected": [
+            "aaaaaaaaaaaa",
+            "x_😀ABC😺 edge",
+            "egde 😺CBA😀_x",
+            "gde 😺CBA😀_xe",
+            "010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "😀ABC😺_x"
+        },
+        "expected": "😀abc😺_x",
+        "unexpected": [
+            "😀ABC😺_x",
+            "ABC😺_x😀",
+            "x_😺CBA😀",
+            "0101010",
+            "aaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 😀ABC😺 1"
+        },
+        "expected": "0 😀abc😺 1",
+        "unexpected": [
+            "0 😀ABC😺 1",
+            "010101010",
+            "aaaaaaaaa",
+            "1 😺CBA😀 0",
+            " 😀ABC😺 10"
+        ]
+    },
+    {
+        "input": {
+            "s": "😺CBA😀"
+        },
+        "expected": "😺cba😀",
+        "unexpected": [
+            "01010",
+            "aaaaa",
+            "😺CBA😀",
+            "😀ABC😺",
+            "CBA😀😺"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_emoji 👍🏽 TEST"
+        },
+        "expected": "x_emoji 👍🏽 test",
+        "unexpected": [
+            "x_emoji 👍🏽 TEST",
+            "TSET 🏽👍 ijome_x",
+            "aaaaaaaaaaaaaaa",
+            "010101010101010",
+            "_emoji 👍🏽 TESTx"
+        ]
+    },
+    {
+        "input": {
+            "s": "TSET 🏽👍 ijome"
+        },
+        "expected": "tset 🏽👍 ijome",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "TSET 🏽👍 ijome",
+            "emoji 👍🏽 TEST",
+            "0101010101010",
+            "SET 🏽👍 ijomeT"
+        ]
+    },
+    {
+        "input": {
+            "s": "рим"
+        },
+        "expected": "рим",
+        "unexpected": [
+            "aaa",
+            "мир",
+            "010",
+            "имр"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_TSET 🏽👍 ijome_x"
+        },
+        "expected": "x_tset 🏽👍 ijome_x",
+        "unexpected": [
+            "x_emoji 👍🏽 TEST_x",
+            "aaaaaaaaaaaaaaaaa",
+            "x_TSET 🏽👍 ijome_x",
+            "01010101010101010",
+            "_TSET 🏽👍 ijome_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "emoji 👍🏽 TEST 1_x_x_x"
+        },
+        "expected": "emoji 👍🏽 test 1_x_x_x",
+        "unexpected": [
+            "emoji 👍🏽 TEST 1_x_x_x",
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "x_x_x_1 TSET 🏽👍 ijome",
+            "moji 👍🏽 TEST 1_x_x_xe",
+            "010101010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "With 1"
+        },
+        "expected": "with 1",
+        "unexpected": [
+            "With 1",
+            "1 htiW",
+            "010101",
+            "aaaaaa",
+            "ith 1W"
+        ]
+    },
+    {
+        "input": {
+            "s": "TEXT_x_x 0"
+        },
+        "expected": "text_x_x 0",
+        "unexpected": [
+            "0 x_x_TXET",
+            "aaaaaaaaaa",
+            "TEXT_x_x 0",
+            "EXT_x_x 0T",
+            "0101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝐂𝐁𝐀 dna ℭ𝔅𝔄 1"
+        },
+        "expected": "𝐂𝐁𝐀 dna ℭ𝔅𝔄 1",
+        "unexpected": [
+            "1 𝔄𝔅ℭ and 𝐀𝐁𝐂",
+            "0101010101010",
+            "aaaaaaaaaaaaa",
+            "𝐁𝐀 dna ℭ𝔅𝔄 1𝐂"
+        ]
+    },
+    {
+        "input": {
+            "s": "рим ТЕВИРП 0"
+        },
+        "expected": "рим ТЕВИРП 0",
+        "unexpected": [
+            "0 ПРИВЕТ мир",
+            "aaaaaaaaaaaa",
+            "010101010101",
+            "им ТЕВИРП 0р"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔄𝔅ℭ and 𝐀𝐁𝐂_x_x"
+        },
+        "expected": "𝔄𝔅ℭ and 𝐀𝐁𝐂_x_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaa",
+            "x_x_𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+            "𝔅ℭ and 𝐀𝐁𝐂_x_x𝔄",
+            "010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔄𝔅ℭ and 𝐀𝐁𝐂 1"
+        },
+        "expected": "𝔄𝔅ℭ and 𝐀𝐁𝐂 1",
+        "unexpected": [
+            "1 𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+            "0101010101010",
+            "aaaaaaaaaaaaa",
+            "𝔅ℭ and 𝐀𝐁𝐂 1𝔄"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_𝐂𝐁𝐀 dna ℭ𝔅𝔄"
+        },
+        "expected": "x_𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "𝔄𝔅ℭ and 𝐀𝐁𝐂_x",
+            "_𝐂𝐁𝐀 dna ℭ𝔅𝔄x",
+            "0101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔄𝔅ℭ and 𝐀𝐁𝐂 edge"
+        },
+        "expected": "𝔄𝔅ℭ and 𝐀𝐁𝐂 edge",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaa",
+            "egde 𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+            "0101010101010101",
+            "𝔅ℭ and 𝐀𝐁𝐂 edge𝔄"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝐂𝐁𝐀 dna ℭ𝔅𝔄"
+        },
+        "expected": "𝐂𝐁𝐀 dna ℭ𝔅𝔄",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            "𝐁𝐀 dna ℭ𝔅𝔄𝐂",
+            "01010101010",
+            "𝔄𝔅ℭ and 𝐀𝐁𝐂"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_  secaps yb dednuorrus  "
+        },
+        "expected": "x_  secaps yb dednuorrus  ",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101010101",
+            "  surrounded by spaces  _x",
+            "_  secaps yb dednuorrus  x"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde x_1 "
+        },
+        "expected": "x_egde x_1 ",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            " 1_x edge_x",
+            "01010101010",
+            "_egde x_1 x"
+        ]
+    },
+    {
+        "input": {
+            "s": "ESACREPPULLA edge_x_x"
+        },
+        "expected": "esacreppulla edge_x_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "ESACREPPULLA edge_x_x",
+            "x_x_egde ALLUPPERCASE",
+            "010101010101010101010",
+            "SACREPPULLA edge_x_xE"
+        ]
+    },
+    {
+        "input": {
+            "s": "htdiwlluf ＣＢＡ_x"
+        },
+        "expected": "htdiwlluf ＣＢＡ_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaa",
+            "x_ＡＢＣ fullwidth",
+            "010101010101010",
+            "tdiwlluf ＣＢＡ_xh"
+        ]
+    },
+    {
+        "input": {
+            "s": "htdiwlluf ＣＢＡ"
+        },
+        "expected": "htdiwlluf ＣＢＡ",
+        "unexpected": [
+            "aaaaaaaaaaaaa",
+            "ＡＢＣ fullwidth",
+            "0101010101010",
+            "tdiwlluf ＣＢＡh"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1 x_htdiwlluf ＣＢＡ"
+        },
+        "expected": "0 1 x_htdiwlluf ＣＢＡ",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaa",
+            "ＡＢＣ fullwidth_x 1 0",
+            "0101010101010101010",
+            " 1 x_htdiwlluf ＣＢＡ0"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 egde htdiwlluf ＣＢＡ"
+        },
+        "expected": "0 egde htdiwlluf ＣＢＡ",
+        "unexpected": [
+            "01010101010101010101",
+            "aaaaaaaaaaaaaaaaaaaa",
+            " egde htdiwlluf ＣＢＡ0",
+            "ＡＢＣ fullwidth edge 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣ fullwidth_x edge_x_x"
+        },
+        "expected": "ＡＢＣ fullwidth_x edge_x_x",
+        "unexpected": [
+            "x_x_egde x_htdiwlluf ＣＢＡ",
+            "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101",
+            "ＢＣ fullwidth_x edge_x_xＡ"
+        ]
+    },
+    {
+        "input": {
+            "s": "ǅǈǋ 1"
+        },
+        "expected": "ǅǈǋ 1",
+        "unexpected": [
+            "aaaaa",
+            "1 ǋǈǅ",
+            "ǈǋ 1ǅ",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "Trailing Space  0"
+        },
+        "expected": "trailing space  0",
+        "unexpected": [
+            "Trailing Space  0",
+            "aaaaaaaaaaaaaaaaa",
+            "railing Space  0T",
+            "0  ecapS gniliarT",
+            "01010101010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ǅǈǋ 0 1 1"
+        },
+        "expected": "ǅǈǋ 0 1 1",
+        "unexpected": [
+            "aaaaaaaaa",
+            "1 1 0 ǋǈǅ",
+            "010101010",
+            "ǈǋ 0 1 1ǅ"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0"
+        },
+        "expected": "x_0",
+        "unexpected": [
+            "aaa",
+            "0_x",
+            "010",
+            "_0x"
+        ]
+    },
+    {
+        "input": {
+            "s": "and"
+        },
+        "expected": "and",
+        "unexpected": [
+            "nda",
+            "aaa",
+            "dna",
+            "010"
+        ]
+    },
+    {
+        "input": {
+            "s": "ǅǈǋ edge"
+        },
+        "expected": "ǅǈǋ edge",
+        "unexpected": [
+            "aaaaaaaa",
+            "egde ǋǈǅ",
+            "ǈǋ edgeǅ",
+            "01010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 egde ́Áa"
+        },
+        "expected": "0 egde ́áa",
+        "unexpected": [
+            "0 egde ́Áa",
+            "aaaaaaaaaaa",
+            "áÁ edge 0",
+            "01010101010",
+            " egde ́Áa0"
+        ]
+    },
+    {
+        "input": {
+            "s": "TUPNI_esac_ekans_x_x edge_x"
+        },
+        "expected": "tupni_esac_ekans_x_x edge_x",
+        "unexpected": [
+            "TUPNI_esac_ekans_x_x edge_x",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "010101010101010101010101010",
+            "x_egde x_x_snake_case_INPUT",
+            "UPNI_esac_ekans_x_x edge_xT"
+        ]
+    },
+    {
+        "input": {
+            "s": "áÁ 1"
+        },
+        "expected": "áá 1",
+        "unexpected": [
+            "áÁ 1",
+            "010101",
+            "1 ́Áa",
+            "́Á 1a",
+            "aaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1 1 CamelCaseInput"
+        },
+        "expected": "x_1 1 camelcaseinput",
+        "unexpected": [
+            "x_1 1 CamelCaseInput",
+            "aaaaaaaaaaaaaaaaaaaa",
+            "01010101010101010101",
+            "tupnIesaClemaC 1 1_x",
+            "_1 1 CamelCaseInputx"
+        ]
+    },
+    {
+        "input": {
+            "s": "́Áa"
+        },
+        "expected": "́áa",
+        "unexpected": [
+            "́Áa",
+            "áÁ",
+            "Áá",
+            "0101",
+            "aaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "yb_x"
+        },
+        "expected": "yb_x",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "x_by",
+            "b_xy"
+        ]
+    },
+    {
+        "input": {
+            "s": "áÁ_x"
+        },
+        "expected": "áá_x",
+        "unexpected": [
+            "áÁ_x",
+            "aaaaaa",
+            "010101",
+            "x_́Áa",
+            "́Á_xa"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 1"
+        },
+        "expected": "_x 1",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "x 1_",
+            "1 x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_́Áa"
+        },
+        "expected": "x_́áa",
+        "unexpected": [
+            "x_́Áa",
+            "áÁ_x",
+            "010101",
+            "aaaaaa",
+            "_́Áax"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000NULL\u0000BYTE edge"
+        },
+        "expected": "\\x00null\\x00byte edge",
+        "unexpected": [
+            "aaaaaaaaaaaaaaa",
+            "010101010101010",
+            "\\x00NULL\\x00BYTE edge",
+            "egde ETYB\\x00LLUN\\x00",
+            "NULL\\x00BYTE edge\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "TUPNI_esac_ekans_x_x edge_x 1_x"
+        },
+        "expected": "tupni_esac_ekans_x_x edge_x 1_x",
+        "unexpected": [
+            "x_1 x_egde x_x_snake_case_INPUT",
+            "TUPNI_esac_ekans_x_x edge_x 1_x",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010101010101010",
+            "UPNI_esac_ekans_x_x edge_x 1_xT"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x_x"
+        },
+        "expected": "_x_x_x",
+        "unexpected": [
+            "010101",
+            "x_x_x_",
+            "aaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 x_x_x_Σσς"
+        },
+        "expected": "1 x_x_x_Σσς",
+        "unexpected": [
+            "aaaaaaaaaaa",
+            "ςσΣ_x_x_x 1",
+            " x_x_x_Σσς1",
+            "01010101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "TEXT_x_x 1 edge 1"
+        },
+        "expected": "text_x_x 1 edge 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaa",
+            "TEXT_x_x 1 edge 1",
+            "EXT_x_x 1 edge 1T",
+            "01010101010101010",
+            "1 egde 1 x_x_TXET"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 egde 1 x_x_TXET 0"
+        },
+        "expected": "1 egde 1 x_x_txet 0",
+        "unexpected": [
+            "1 egde 1 x_x_TXET 0",
+            "0 TEXT_x_x 1 edge 1",
+            "aaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010",
+            " egde 1 x_x_TXET 01"
+        ]
+    },
+    {
+        "input": {
+            "s": "ETYB\u0000LLUN\u0000"
+        },
+        "expected": "etyb\\x00llun\\x00",
+        "unexpected": [
+            "aaaaaaaaaa",
+            "\\x00NULL\\x00BYTE",
+            "ETYB\\x00LLUN\\x00",
+            "TYB\\x00LLUN\\x00E",
+            "0101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXT.ELIF\\OT\\HTAP\\:C 1"
+        },
+        "expected": "txt.elif\\ot\\htap\\:c 1",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaa",
+            "TXT.ELIF\\OT\\HTAP\\:C 1",
+            "010101010101010101010",
+            "XT.ELIF\\OT\\HTAP\\:C 1T",
+            "1 C:\\PATH\\TO\\FILE.TXT"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u001fcontrolDEL_x"
+        },
+        "expected": "\\x1fcontrol\\x7fdel_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaa",
+            "01010101010101",
+            "control\\x7fDEL_x\\x1f",
+            "\\x1fcontrol\\x7fDEL_x",
+            "x_LED\\x7flortnoc\\x1f"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_LEDlortnoc\u001f"
+        },
+        "expected": "egde x_led\\x7flortnoc\\x1f",
+        "unexpected": [
+            "egde x_LED\\x7flortnoc\\x1f",
+            "\\x1fcontrol\\x7fDEL_x edge",
+            "0101010101010101010",
+            "aaaaaaaaaaaaaaaaaaa",
+            "gde x_LED\\x7flortnoc\\x1fe"
+        ]
+    },
+    {
+        "input": {
+            "s": "NaN edge_x"
+        },
+        "expected": "nan edge_x",
+        "unexpected": [
+            "NaN edge_x",
+            "aaaaaaaaaa",
+            "0101010101",
+            "aN edge_xN",
+            "x_egde NaN"
+        ]
+    },
+    {
+        "input": {
+            "s": "TXET \"DETOUQ\""
+        },
+        "expected": "txet \"detouq\"",
+        "unexpected": [
+            "XET \"DETOUQ\"T",
+            "0101010101010",
+            "\"QUOTED\" TEXT",
+            "TXET \"DETOUQ\"",
+            "aaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "🏽👍_x 0"
+        },
+        "expected": "🏽👍_x 0",
+        "unexpected": [
+            "aaaaaa",
+            "010101",
+            "0 x_👍🏽",
+            "👍_x 0🏽"
+        ]
+    },
+    {
+        "input": {
+            "s": "NaN edge_x_x_x"
+        },
+        "expected": "nan edge_x_x_x",
+        "unexpected": [
+            "01010101010101",
+            "x_x_x_egde NaN",
+            "aaaaaaaaaaaaaa",
+            "aN edge_x_x_xN",
+            "NaN edge_x_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 \tTabbed\tTEXT_x"
+        },
+        "expected": "0 \ttabbed\ttext_x",
+        "unexpected": [
+            "x_TXET\tdebbaT\t 0",
+            "0 \tTabbed\tTEXT_x",
+            " \tTabbed\tTEXT_x0",
+            "0101010101010101",
+            "aaaaaaaaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_x_x 0"
+        },
+        "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_x_x 0",
+        "unexpected": [
+            "0 x_x_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_x_x 0a",
+            "01010101010101010101010101010101010101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_0 ecapS gnidaeL htiW eltiT  1"
+        },
+        "expected": "x_x_0 ecaps gnidael htiw eltit  1",
+        "unexpected": [
+            "x_x_0 ecapS gnidaeL htiW eltiT  1",
+            "010101010101010101010101010101010",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "1  Title With Leading Space 0_x_x",
+            "_x_0 ecapS gnidaeL htiW eltiT  1x"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "expected": "x_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_x",
+            "_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax",
+            "0101010101010101010101010101010101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0"
+        },
+        "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "0 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0a",
+            "0101010101010101010101010101010101010101010101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "\"DETOUQ\"_x"
+        },
+        "expected": "\"detouq\"_x",
+        "unexpected": [
+            "aaaaaaaaaa",
+            "x_\"QUOTED\"",
+            "\"DETOUQ\"_x",
+            "DETOUQ\"_x\"",
+            "0101010101"
+        ]
+    },
+    {
+        "input": {
+            "s": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_x"
+        },
+        "expected": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz_x",
+        "unexpected": [
+            "x_ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "0101010101010101010101010101010101010101010101010101",
+            "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_xZ",
+            "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "z 1_x"
+        },
+        "expected": "z 1_x",
+        "unexpected": [
+            " 1_xz",
+            "01010",
+            "x_1 z",
+            "aaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "!dlroW"
+        },
+        "expected": "!dlrow",
+        "unexpected": [
+            "!dlroW",
+            "dlroW!",
+            "010101",
+            "World!",
+            "aaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "tupnIesaClemaC_x 1 0_x"
+        },
+        "expected": "tupniesaclemac_x 1 0_x",
+        "unexpected": [
+            "tupnIesaClemaC_x 1 0_x",
+            "aaaaaaaaaaaaaaaaaaaaaa",
+            "x_0 1 x_CamelCaseInput",
+            "0101010101010101010101",
+            "upnIesaClemaC_x 1 0_xt"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde ПРИВЕТ мир_x"
+        },
+        "expected": "egde x_egde ПРИВЕТ мир_x",
+        "unexpected": [
+            "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "x_рим ТЕВИРП edge_x edge",
+            "010101010101010101010101",
+            "gde x_egde ПРИВЕТ мир_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "ijome"
+        },
+        "expected": "ijome",
+        "unexpected": [
+            "aaaaa",
+            "emoji",
+            "jomei",
+            "01010"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1 "
+        },
+        "expected": "x_1 ",
+        "unexpected": [
+            "aaaa",
+            " 1_x",
+            "0101",
+            "_1 x"
+        ]
+    },
+    {
+        "input": {
+            "s": "NaN_x edge"
+        },
+        "expected": "nan_x edge",
+        "unexpected": [
+            "aN_x edgeN",
+            "0101010101",
+            "egde x_NaN",
+            "NaN_x edge",
+            "aaaaaaaaaa"
+        ]
+    },
+    {
+        "input": {
+            "s": "x__x"
+        },
+        "expected": "x__x",
+        "unexpected": [
+            "aaaa",
+            "0101",
+            "__xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "secaps"
+        },
+        "expected": "secaps",
+        "unexpected": [
+            "aaaaaa",
+            "spaces",
+            "010101",
+            "ecapss"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣ fullwidth edge 0"
+        },
+        "expected": "ＡＢＣ fullwidth edge 0",
+        "unexpected": [
+            "01010101010101010101",
+            "aaaaaaaaaaaaaaaaaaaa",
+            "0 egde htdiwlluf ＣＢＡ",
+            "ＢＣ fullwidth edge 0Ａ"
+        ]
+    },
+    {
+        "input": {
+            "s": "htiW"
+        },
+        "expected": "htiw",
+        "unexpected": [
+            "htiW",
+            "aaaa",
+            "With",
+            "tiWh",
+            "0101"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_abc_x edge 0"
+        },
+        "expected": "x_abc_x edge 0",
+        "unexpected": [
+            "01010101010101",
+            "aaaaaaaaaaaaaa",
+            "_abc_x edge 0x",
+            "0 egde x_cba_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde llun"
+        },
+        "expected": "egde x_egde llun",
+        "unexpected": [
+            "0101010101010101",
+            "aaaaaaaaaaaaaaaa",
+            "null edge_x edge",
+            "gde x_egde llune"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x_x_x"
+        },
+        "expected": "1_x_x_x",
+        "unexpected": [
+            "aaaaaaa",
+            "_x_x_x1",
+            "x_x_x_1",
+            "0101010"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 1 yb"
+        },
+        "expected": "1 1 yb",
+        "unexpected": [
+            "aaaaaa",
+            " 1 yb1",
+            "by 1 1",
+            "010101"
+        ]
+    }
+]

@@ -1,0 +1,606 @@
+[
+    {
+        "input": {
+            "digits": ""
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"a\"]",
+            "[\"b\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2"
+        },
+        "expected": "[\"a\", \"b\", \"c\"]",
+        "unexpected": [
+            "[\"x\"]",
+            "[\"2\"]",
+            "[\"\"]",
+            "[]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9"
+        },
+        "expected": "[\"w\", \"x\", \"y\", \"z\"]",
+        "unexpected": [
+            "[\"x\"]",
+            "[]",
+            "[\"\"]",
+            "[\"9\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "23"
+        },
+        "expected": "[\"ad\", \"ae\", \"af\", \"bd\", \"be\", \"bf\", \"cd\", \"ce\", \"cf\"]",
+        "unexpected": [
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\"]",
+            "[\"23\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "27"
+        },
+        "expected": "[\"ap\", \"aq\", \"ar\", \"as\", \"bp\", \"bq\", \"br\", \"bs\", \"cp\", \"cq\", \"cr\", \"cs\"]",
+        "unexpected": [
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\"]",
+            "[\"27\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "0"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"0\"]",
+            "[\"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "21"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"x\", \"x\"]",
+            "[\"21\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "79"
+        },
+        "expected": "[\"pw\", \"px\", \"py\", \"pz\", \"qw\", \"qx\", \"qy\", \"qz\", \"rw\", \"rx\", \"ry\", \"rz\", \"sw\", \"sx\", \"sy\", \"sz\"]",
+        "unexpected": [
+            "[\"79\"]",
+            "[]",
+            "[\"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "222"
+        },
+        "expected": "\"bcc\", \"caa\", \"cab\", \"cac\", \"cba\", \"cbb\", \"cbc\", \"cca\", \"ccb\", \"ccc\"]",
+        "unexpected": [
+            "[\"x\", \"x\", \"x\"]",
+            "[]",
+            "[\"222\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "999"
+        },
+        "expected": "\"zwz\", \"zxw\", \"zxx\", \"zxy\", \"zxz\", \"zyw\", \"zyx\", \"zyy\", \"zyz\", \"zzw\", \"zzx\", \"zzy\", \"zzz\"]",
+        "unexpected": [
+            "[\"999\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "234"
+        },
+        "expected": "\"bfi\", \"cdg\", \"cdh\", \"cdi\", \"ceg\", \"ceh\", \"cei\", \"cfg\", \"cfh\", \"cfi\"]",
+        "unexpected": [
+            "[]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[\"234\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "568"
+        },
+        "expected": "\"kov\", \"lmt\", \"lmu\", \"lmv\", \"lnt\", \"lnu\", \"lnv\", \"lot\", \"lou\", \"lov\"]",
+        "unexpected": [
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"568\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "762"
+        },
+        "expected": "\"sob\", \"soc\"]",
+        "unexpected": [
+            "[]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[\"762\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "843"
+        },
+        "expected": "\"uif\", \"vgd\", \"vge\", \"vgf\", \"vhd\", \"vhe\", \"vhf\", \"vid\", \"vie\", \"vif\"]",
+        "unexpected": [
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[\"843\"]",
+            "[]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "294"
+        },
+        "expected": "\"czh\", \"czi\"]",
+        "unexpected": [
+            "[\"294\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "5678"
+        },
+        "expected": "\"lost\", \"losu\", \"losv\"]",
+        "unexpected": [
+            "[]",
+            "[\"5678\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2345"
+        },
+        "expected": "\"cfhj\", \"cfhk\", \"cfhl\", \"cfij\", \"cfik\", \"cfil\"]",
+        "unexpected": [
+            "[]",
+            "[\"2345\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "6789"
+        },
+        "expected": "\"ostz\", \"osuw\", \"osux\", \"osuy\", \"osuz\", \"osvw\", \"osvx\", \"osvy\", \"osvz\"]",
+        "unexpected": [
+            "[]",
+            "[\"6789\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2222"
+        },
+        "expected": "\"ccba\", \"ccbb\", \"ccbc\", \"ccca\", \"cccb\", \"cccc\"]",
+        "unexpected": [
+            "[]",
+            "[\"\"]",
+            "[\"2222\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "7777"
+        },
+        "expected": "\"ssss\"]",
+        "unexpected": [
+            "[\"7777\"]",
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9999"
+        },
+        "expected": "\"zzzz\"]",
+        "unexpected": [
+            "[\"9999\"]",
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "23456789"
+        },
+        "expected": "\"cfilosvw\", \"cfilosvx\", \"cfilosvy\", \"cfilosvz\"]",
+        "unexpected": [
+            "[\"23456789\"]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "98765432"
+        },
+        "expected": "\"zvsoliec\", \"zvsolifa\", \"zvsolifb\", \"zvsolifc\"]",
+        "unexpected": [
+            "[\"98765432\"]",
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "272727"
+        },
+        "expected": "\"cscsap\", \"cscsaq\", \"cscsar\", \"cscsas\", \"cscsbp\", \"cscsbq\", \"cscsbr\", \"cscsbs\", \"cscscp\", \"cscscq\", \"cscscr\", \"cscscs\"]",
+        "unexpected": [
+            "[\"272727\"]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "739"
+        },
+        "expected": "\"rfy\", \"rfz\", \"sdw\", \"sdx\", \"sdy\", \"sdz\", \"sew\", \"sex\", \"sey\", \"sez\", \"sfw\", \"sfx\", \"sfy\", \"sfz\"]",
+        "unexpected": [
+            "[]",
+            "[\"739\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "4856"
+        },
+        "expected": "\"ivkm\", \"ivkn\", \"ivko\", \"ivlm\", \"ivln\", \"ivlo\"]",
+        "unexpected": [
+            "[]",
+            "[\"4856\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9327"
+        },
+        "expected": "\"zfas\", \"zfbp\", \"zfbq\", \"zfbr\", \"zfbs\", \"zfcp\", \"zfcq\", \"zfcr\", \"zfcs\"]",
+        "unexpected": [
+            "[\"9327\"]",
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2468"
+        },
+        "expected": "\"cint\", \"cinu\", \"cinv\", \"ciot\", \"ciou\", \"ciov\"]",
+        "unexpected": [
+            "[]",
+            "[\"2468\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "8642"
+        },
+        "expected": "\"voha\", \"vohb\", \"vohc\", \"voia\", \"voib\", \"voic\"]",
+        "unexpected": [
+            "[\"8642\"]",
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "3579"
+        },
+        "expected": "\"flqz\", \"flrw\", \"flrx\", \"flry\", \"flrz\", \"flsw\", \"flsx\", \"flsy\", \"flsz\"]",
+        "unexpected": [
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"3579\"]",
+            "[]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2793"
+        },
+        "expected": "\"csxd\", \"csxe\", \"csxf\", \"csyd\", \"csye\", \"csyf\", \"cszd\", \"csze\", \"cszf\"]",
+        "unexpected": [
+            "[\"2793\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "222999"
+        },
+        "expected": "\"ccczxw\", \"ccczxx\", \"ccczxy\", \"ccczxz\", \"ccczyw\", \"ccczyx\", \"ccczyy\", \"ccczyz\", \"ccczzw\", \"ccczzx\", \"ccczzy\", \"ccczzz\"]",
+        "unexpected": [
+            "[]",
+            "[\"222999\"]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "789234"
+        },
+        "expected": "\"svzbfg\", \"svzbfh\", \"svzbfi\", \"svzcdg\", \"svzcdh\", \"svzcdi\", \"svzceg\", \"svzceh\", \"svzcei\", \"svzcfg\", \"svzcfh\", \"svzcfi\"]",
+        "unexpected": [
+            "[\"789234\"]",
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9384756"
+        },
+        "expected": "\"zfvisjn\", \"zfvisjo\", \"zfviskm\", \"zfviskn\", \"zfvisko\", \"zfvislm\", \"zfvisln\", \"zfvislo\"]",
+        "unexpected": [
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[\"9384756\"]",
+            "[]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "1"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"1\"]",
+            "[\"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "10"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"10\"]",
+            "[\"\"]",
+            "[\"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "201"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"201\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "2a3"
+        },
+        "expected": "[]",
+        "unexpected": [
+            "[\"2a3\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "3972"
+        },
+        "expected": "\"fzqa\", \"fzqb\", \"fzqc\", \"fzra\", \"fzrb\", \"fzrc\", \"fzsa\", \"fzsb\", \"fzsc\"]",
+        "unexpected": [
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[\"3972\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "32"
+        },
+        "expected": "[\"da\", \"db\", \"dc\", \"ea\", \"eb\", \"ec\", \"fa\", \"fb\", \"fc\"]",
+        "unexpected": [
+            "[]",
+            "[\"32\"]",
+            "[\"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "999222"
+        },
+        "expected": "\"zzzbca\", \"zzzbcb\", \"zzzbcc\", \"zzzcaa\", \"zzzcab\", \"zzzcac\", \"zzzcba\", \"zzzcbb\", \"zzzcbc\", \"zzzcca\", \"zzzccb\", \"zzzccc\"]",
+        "unexpected": [
+            "[\"999222\"]",
+            "[\"\"]",
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "97"
+        },
+        "expected": "[\"wp\", \"wq\", \"wr\", \"ws\", \"xp\", \"xq\", \"xr\", \"xs\", \"yp\", \"yq\", \"yr\", \"ys\", \"zp\", \"zq\", \"zr\", \"zs\"]",
+        "unexpected": [
+            "[]",
+            "[\"97\"]",
+            "[\"\"]",
+            "[\"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "865"
+        },
+        "expected": "\"uol\", \"vmj\", \"vmk\", \"vml\", \"vnj\", \"vnk\", \"vnl\", \"voj\", \"vok\", \"vol\"]",
+        "unexpected": [
+            "[]",
+            "[\"865\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "267"
+        },
+        "expected": "\"cor\", \"cos\"]",
+        "unexpected": [
+            "[]",
+            "[\"267\"]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "492"
+        },
+        "expected": "\"izb\", \"izc\"]",
+        "unexpected": [
+            "[\"492\"]",
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9876"
+        },
+        "expected": "\"zvqm\", \"zvqn\", \"zvqo\", \"zvrm\", \"zvrn\", \"zvro\", \"zvsm\", \"zvsn\", \"zvso\"]",
+        "unexpected": [
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[]",
+            "[\"9876\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "7239"
+        },
+        "expected": "\"scdz\", \"scew\", \"scex\", \"scey\", \"scez\", \"scfw\", \"scfx\", \"scfy\", \"scfz\"]",
+        "unexpected": [
+            "[]",
+            "[\"7239\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "9753"
+        },
+        "expected": "\"zsjd\", \"zsje\", \"zsjf\", \"zskd\", \"zske\", \"zskf\", \"zsld\", \"zsle\", \"zslf\"]",
+        "unexpected": [
+            "[\"9753\"]",
+            "[]",
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "432987"
+        },
+        "expected": "\"ifcztp\", \"ifcztq\", \"ifcztr\", \"ifczts\", \"ifczup\", \"ifczuq\", \"ifczur\", \"ifczus\", \"ifczvp\", \"ifczvq\", \"ifczvr\", \"ifczvs\"]",
+        "unexpected": [
+            "[]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[\"432987\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "6574839"
+        },
+        "expected": "\"olsivew\", \"olsivex\", \"olsivey\", \"olsivez\", \"olsivfw\", \"olsivfx\", \"olsivfy\", \"olsivfz\"]",
+        "unexpected": [
+            "[\"\"]",
+            "[\"x\", \"x\", \"x\", \"x\", \"x\", \"x\", \"x\"]",
+            "[]",
+            "[\"6574839\"]"
+        ]
+    },
+    {
+        "input": {
+            "digits": "348"
+        },
+        "expected": "\"eiv\", \"fgt\", \"fgu\", \"fgv\", \"fht\", \"fhu\", \"fhv\", \"fit\", \"fiu\", \"fiv\"]",
+        "unexpected": [
+            "[\"348\"]",
+            "[\"x\", \"x\", \"x\"]",
+            "[\"\"]",
+            "[]"
+        ]
+    }
+]

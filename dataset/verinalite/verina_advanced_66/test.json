@@ -1,0 +1,652 @@
+[
+    {
+        "input": {
+            "words_str": "the sky is blue"
+        },
+        "expected": "blue is sky the",
+        "unexpected": [
+            "the sky is blue",
+            " ",
+            "xxxxxxxxxxxxxxx",
+            "",
+            "the sky is blue the sky is blue"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "  hello world  "
+        },
+        "expected": "world hello",
+        "unexpected": [
+            "  hello world  ",
+            " ",
+            "  hello world     hello world  ",
+            "xxxxxxxxxxxxxxx",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "words_str": "a good   example"
+        },
+        "expected": "example good a",
+        "unexpected": [
+            "",
+            "a good   example",
+            " ",
+            "xxxxxxxxxxxxxxxx",
+            "a good   example a good   example"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "  Bob    Loves  Alice   "
+        },
+        "expected": "Alice Loves Bob",
+        "unexpected": [
+            "  Bob    Loves  Alice      Bob    Loves  Alice   ",
+            "xxxxxxxxxxxxxxxxxxxxxxxx",
+            " ",
+            "",
+            "  Bob    Loves  Alice   "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "this lab is interesting"
+        },
+        "expected": "interesting is lab this",
+        "unexpected": [
+            "this lab is interesting",
+            "",
+            "this lab is interesting this lab is interesting",
+            " ",
+            "xxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "   single"
+        },
+        "expected": "single",
+        "unexpected": [
+            "   single",
+            " ",
+            "",
+            "   single    single",
+            "xxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "single   "
+        },
+        "expected": "single",
+        "unexpected": [
+            "single    single   ",
+            "xxxxxxxxx",
+            "",
+            " ",
+            "single   "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "   single   "
+        },
+        "expected": "single",
+        "unexpected": [
+            "xxxxxxxxxxxx",
+            "   single   ",
+            "",
+            " ",
+            "   single       single   "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "one two"
+        },
+        "expected": "two one",
+        "unexpected": [
+            " ",
+            "",
+            "one two",
+            "one two one two",
+            "xxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "one  two"
+        },
+        "expected": "two one",
+        "unexpected": [
+            "",
+            " ",
+            "one  two",
+            "one  two one  two",
+            "xxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "one   two   three"
+        },
+        "expected": "three two one",
+        "unexpected": [
+            " ",
+            "",
+            "one   two   three",
+            "xxxxxxxxxxxxxxxxx",
+            "one   two   three one   two   three"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "   one   two   three   "
+        },
+        "expected": "three two one",
+        "unexpected": [
+            "",
+            "   one   two   three   ",
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "   one   two   three       one   two   three   ",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "a b c d e"
+        },
+        "expected": "e d c b a",
+        "unexpected": [
+            " ",
+            "a b c d e",
+            "",
+            "xxxxxxxxx",
+            "a b c d e a b c d e"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "word1 word2 word3 word4"
+        },
+        "expected": "word4 word3 word2 word1",
+        "unexpected": [
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "word1 word2 word3 word4 word1 word2 word3 word4",
+            "",
+            "word1 word2 word3 word4",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "words_str": " punctuation, stays; attached! "
+        },
+        "expected": "attached! stays; punctuation,",
+        "unexpected": [
+            "",
+            " punctuation, stays; attached! ",
+            " ",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            " punctuation, stays; attached!   punctuation, stays; attached! "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "mixOfUPPERAndLower CASE words"
+        },
+        "expected": "words CASE mixOfUPPERAndLower",
+        "unexpected": [
+            "",
+            " ",
+            "mixOfUPPERAndLower CASE words",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "mixOfUPPERAndLower CASE words mixOfUPPERAndLower CASE words"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "123 456 789"
+        },
+        "expected": "789 456 123",
+        "unexpected": [
+            "123 456 789 123 456 789",
+            " ",
+            "",
+            "123 456 789",
+            "xxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "alpha-beta gamma_delta epsilon.zeta"
+        },
+        "expected": "epsilon.zeta gamma_delta alpha-beta",
+        "unexpected": [
+            "",
+            "alpha-beta gamma_delta epsilon.zeta",
+            " ",
+            "alpha-beta gamma_delta epsilon.zeta alpha-beta gamma_delta epsilon.zeta",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "he said \"hello\" world"
+        },
+        "expected": "world \"hello\" said he",
+        "unexpected": [
+            "xxxxxxxxxxxxxxxxxxxxx",
+            "",
+            "he said \"hello\" world he said \"hello\" world",
+            "he said \"hello\" world",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "path\\\\to\\\\file name"
+        },
+        "expected": "name path\\\\to\\\\file",
+        "unexpected": [
+            "",
+            "xxxxxxxxxxxxxxxxxxx",
+            "path\\\\to\\\\file name path\\\\to\\\\file name",
+            " ",
+            "path\\\\to\\\\file name"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "你好 世界"
+        },
+        "expected": "世界 你好",
+        "unexpected": [
+            "",
+            " ",
+            "你好 世界",
+            "你好 世界 你好 世界",
+            "xxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "こんにちは 世界  テスト"
+        },
+        "expected": "テスト 世界 こんにちは",
+        "unexpected": [
+            " ",
+            "",
+            "xxxxxxxxxxxxx",
+            "こんにちは 世界  テスト",
+            "こんにちは 世界  テスト こんにちは 世界  テスト"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "🙂 🙃 😉"
+        },
+        "expected": "😉 🙃 🙂",
+        "unexpected": [
+            "🙂 🙃 😉",
+            " ",
+            "xxxxx",
+            "",
+            "🙂 🙃 😉 🙂 🙃 😉"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "café naïve résumé"
+        },
+        "expected": "résumé naïve café",
+        "unexpected": [
+            "café naïve résumé",
+            "",
+            "café naïve résumé café naïve résumé",
+            " ",
+            "xxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "mañana será otro día"
+        },
+        "expected": "día otro será mañana",
+        "unexpected": [
+            " ",
+            "xxxxxxxxxxxxxxxxxxxx",
+            "",
+            "mañana será otro día mañana será otro día",
+            "mañana será otro día"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "foo    bar\tbaz"
+        },
+        "expected": "bar\tbaz foo",
+        "unexpected": [
+            "foo    bar\tbaz",
+            " ",
+            "foo    bar\tbaz foo    bar\tbaz",
+            "",
+            "xxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "line1\nline2 line3"
+        },
+        "expected": "line3 line1\nline2",
+        "unexpected": [
+            "",
+            " ",
+            "line1\nline2 line3",
+            "xxxxxxxxxxxxxxxxx",
+            "line1\nline2 line3 line1\nline2 line3"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "line1\r\nline2   line3"
+        },
+        "expected": "line3 line1\\x0d\\nline2",
+        "unexpected": [
+            " ",
+            "",
+            "line1\\x0d\\nline2   line3",
+            "line1\\x0d\\nline2   line3 line1\\x0d\\nline2   line3",
+            "xxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "​hidden zero width space"
+        },
+        "expected": "space width zero ​hidden",
+        "unexpected": [
+            "",
+            "​hidden zero width space",
+            " ",
+            "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "​hidden zero width space ​hidden zero width space"
+        ]
+    },
+    {
+        "input": {
+            "words_str": " leading em-space and normal space "
+        },
+        "expected": "space normal and leading em-space",
+        "unexpected": [
+            "",
+            " leading em-space and normal space   leading em-space and normal space ",
+            " ",
+            " leading em-space and normal space ",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "word\u0000withnullchar middle"
+        },
+        "expected": "middle word\\x00withnullchar",
+        "unexpected": [
+            "",
+            "word\\x00withnullchar middle",
+            "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "word\\x00withnullchar middle word\\x00withnullchar middle",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "\t  surrounded by tabs and spaces \t"
+        },
+        "expected": "\t spaces and tabs by surrounded \t",
+        "unexpected": [
+            "",
+            "\t  surrounded by tabs and spaces \t \t  surrounded by tabs and spaces \t",
+            " ",
+            "\t  surrounded by tabs and spaces \t",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "multiple\n\nblank lines"
+        },
+        "expected": "lines multiple\n\nblank",
+        "unexpected": [
+            "multiple\n\nblank lines multiple\n\nblank lines",
+            "multiple\n\nblank lines",
+            " ",
+            "",
+            "xxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "the sky is blue_x"
+        },
+        "expected": "blue_x is sky the",
+        "unexpected": [
+            "",
+            " ",
+            "the sky is blue_x",
+            "xxxxxxxxxxxxxxxxx",
+            "the sky is blue_x the sky is blue_x"
+        ]
+    },
+    {
+        "input": {
+            "words_str": " 0"
+        },
+        "expected": "0",
+        "unexpected": [
+            "",
+            "xx",
+            " 0  0",
+            " ",
+            " 0"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "eulb si yks eht"
+        },
+        "expected": "eht yks si eulb",
+        "unexpected": [
+            "xxxxxxxxxxxxxxx",
+            "eulb si yks eht",
+            "eulb si yks eht eulb si yks eht",
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "words_str": "the sky is blue 0"
+        },
+        "expected": "0 blue is sky the",
+        "unexpected": [
+            " ",
+            "the sky is blue 0",
+            "",
+            "xxxxxxxxxxxxxxxxx",
+            "the sky is blue 0 the sky is blue 0"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "1 "
+        },
+        "expected": "1",
+        "unexpected": [
+            "",
+            "1  1 ",
+            " ",
+            "1 ",
+            "xx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "eulb si yks eht_x"
+        },
+        "expected": "eht_x yks si eulb",
+        "unexpected": [
+            "eulb si yks eht_x",
+            " ",
+            "",
+            "eulb si yks eht_x eulb si yks eht_x",
+            "xxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "normal 1_x"
+        },
+        "expected": "1_x normal",
+        "unexpected": [
+            " ",
+            "",
+            "normal 1_x",
+            "normal 1_x normal 1_x",
+            "xxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "0 界世 好你"
+        },
+        "expected": "好你 界世 0",
+        "unexpected": [
+            "0 界世 好你",
+            "",
+            "0 界世 好你 0 界世 好你",
+            "xxxxxxx",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "words_str": "x_x_1 0"
+        },
+        "expected": "0 x_x_1",
+        "unexpected": [
+            " ",
+            "",
+            "x_x_1 0",
+            "x_x_1 0 x_x_1 0",
+            "xxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "0 界世 好你 edge"
+        },
+        "expected": "edge 好你 界世 0",
+        "unexpected": [
+            "",
+            " ",
+            "0 界世 好你 edge",
+            "0 界世 好你 edge 0 界世 好你 edge",
+            "xxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "  hello world  _x"
+        },
+        "expected": "_x world hello",
+        "unexpected": [
+            "",
+            " ",
+            "  hello world  _x",
+            "xxxxxxxxxxxxxxxxx",
+            "  hello world  _x   hello world  _x"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "elpmaxe   doog a"
+        },
+        "expected": "a doog elpmaxe",
+        "unexpected": [
+            "",
+            "elpmaxe   doog a",
+            " ",
+            "elpmaxe   doog a elpmaxe   doog a",
+            "xxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "middle edge"
+        },
+        "expected": "edge middle",
+        "unexpected": [
+            "",
+            " ",
+            "xxxxxxxxxxx",
+            "middle edge",
+            "middle edge middle edge"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "one  two 0 1_x"
+        },
+        "expected": "1_x 0 two one",
+        "unexpected": [
+            "",
+            "one  two 0 1_x",
+            " ",
+            "one  two 0 1_x one  two 0 1_x",
+            "xxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "1 elpmaxe   doog a"
+        },
+        "expected": "a doog elpmaxe 1",
+        "unexpected": [
+            " ",
+            "1 elpmaxe   doog a",
+            "",
+            "1 elpmaxe   doog a 1 elpmaxe   doog a",
+            "xxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": " 1_x"
+        },
+        "expected": "1_x",
+        "unexpected": [
+            " ",
+            "",
+            " 1_x",
+            " 1_x  1_x",
+            "xxxx"
+        ]
+    },
+    {
+        "input": {
+            "words_str": "egde elpmaxe   doog a"
+        },
+        "expected": "a doog elpmaxe egde",
+        "unexpected": [
+            " ",
+            "",
+            "egde elpmaxe   doog a",
+            "egde elpmaxe   doog a egde elpmaxe   doog a",
+            "xxxxxxxxxxxxxxxxxxxxx"
+        ]
+    }
+]

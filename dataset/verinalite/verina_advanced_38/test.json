@@ -1,0 +1,203 @@
+[
+    {
+        "input": {
+            "intervals": "[(1, 3), (2, 5), (6, 8)]"
+        },
+        "expected": 5,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 4), (2, 6), (8, 10), (9, 12)]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 2), (2, 3), (3, 4)]"
+        },
+        "expected": 2,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 10), (2, 3), (4, 5)]"
+        },
+        "expected": 9,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(5, 6), (1, 2), (3, 4)]"
+        },
+        "expected": 2,
+        "unexpected": [
+            5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(2, 5), (3, 4)]"
+        },
+        "expected": 3,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 10), (2, 3), (4, 5), (6, 7)]"
+        },
+        "expected": 9,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(10, 20), (1, 2), (3, 15)]"
+        },
+        "expected": 17,
+        "unexpected": [
+            13,
+            11
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(100, 200), (150, 250), (300, 400)]"
+        },
+        "expected": 200,
+        "unexpected": [
+            150
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(0, 2), (1, 3), (2, 4), (3, 5)]"
+        },
+        "expected": 5,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(5, 5), (0, 10)]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(0, 10), (5, 5)]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 1000000), (2, 999999), (500000, 500000)]"
+        },
+        "expected": 999999,
+        "unexpected": [
+            999997
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(8, 12), (1, 3), (4, 6), (7, 10)]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(3, 8), (1, 2), (9, 10), (2, 9)]"
+        },
+        "expected": 9,
+        "unexpected": [
+            8,
+            7
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(0, 0), (0, 1), (1, 1)]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(6, 9), (2, 4), (4, 6), (9, 12)]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(1, 5), (1, 5), (2, 6), (0, 7)]"
+        },
+        "expected": 7,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(0, 3), (3, 3), (3, 6)]"
+        },
+        "expected": 6,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(2, 2), (2, 8), (8, 8), (1, 9)]"
+        },
+        "expected": 8,
+        "unexpected": [
+            6
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(4, 10), (10, 15), (15, 20), (0, 25)]"
+        },
+        "expected": 25,
+        "unexpected": [
+            16
+        ]
+    },
+    {
+        "input": {
+            "intervals": "[(0, 100), (20, 30), (30, 40), (40, 90), (90, 100)]"
+        },
+        "expected": 100,
+        "unexpected": [
+            80
+        ]
+    }
+]

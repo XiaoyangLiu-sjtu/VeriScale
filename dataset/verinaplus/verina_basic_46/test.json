@@ -1,0 +1,3395 @@
+[
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 2
+        },
+        "expected": 2,
+        "unexpected": [
+            -1,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 5
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": 1
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1, 1]",
+            "elem": 1
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 3, 3]",
+            "elem": 3
+        },
+        "expected": 4,
+        "unexpected": [
+            3,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": -5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 0
+        },
+        "expected": 2,
+        "unexpected": [
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": -2
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            3,
+            -2,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            -4,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 2
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0,
+            4,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 3
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            -1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 5
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            -1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 9
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            -1,
+            9
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 10
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            10,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": 0
+        },
+        "expected": 2,
+        "unexpected": [
+            -1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": -10
+        },
+        "expected": 0,
+        "unexpected": [
+            -10,
+            4,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": 11
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": 2
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            2,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": 3
+        },
+        "expected": 6,
+        "unexpected": [
+            -1,
+            3,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": 4
+        },
+        "expected": 7,
+        "unexpected": [
+            -1,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 2147483647
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            2147483647,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": -2147483648
+        },
+        "expected": 0,
+        "unexpected": [
+            4,
+            -1,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 42
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            42,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1]",
+            "elem": -4
+        },
+        "expected": 4,
+        "unexpected": [
+            -1,
+            -4,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            -2,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 10
+        },
+        "expected": 5,
+        "unexpected": [
+            -1,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 7
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 11
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            11,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": -3
+        },
+        "expected": 3,
+        "unexpected": [
+            -3,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 3, 4, 5]",
+            "elem": 2
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            0,
+            2,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5, 42]",
+            "elem": -2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483648,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 3
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 4, 5]",
+            "elem": 4
+        },
+        "expected": 3,
+        "unexpected": [
+            4,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5, 2147483647]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 11]",
+            "elem": 2
+        },
+        "expected": 2,
+        "unexpected": [
+            -1,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 5]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            -4,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 4, 5]",
+            "elem": -2147483649
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2147483649,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5, 11]",
+            "elem": 11
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            11,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 3, 4, 5]",
+            "elem": 5
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 5]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5, 5]",
+            "elem": 10
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            10,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 10]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 4, 5]",
+            "elem": -5
+        },
+        "expected": -1,
+        "unexpected": [
+            -5,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2147483647]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": -2147483649
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2147483649
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": 8
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2]",
+            "elem": 1
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 1]",
+            "elem": 0
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-43]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-1, 0]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1, 1]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1, 1]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -6,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1, 1, 4]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 1, 2]",
+            "elem": 1
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            -1,
+            1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 3, 3, 8]",
+            "elem": 3
+        },
+        "expected": 4,
+        "unexpected": [
+            3,
+            0,
+            -1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 3, 3, 3, 3]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 3, 9]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            -6,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 3, 3]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 3, 3]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 3, 6]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-6, 0]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": 0
+        },
+        "expected": 0,
+        "unexpected": [
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 4]",
+            "elem": 0
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": -2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483648,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": -2147483651
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2147483651
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 3]",
+            "elem": 1
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            1,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[3, 6]",
+            "elem": 8
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 3]",
+            "elem": 2
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -1,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 1, 2, 3]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 3]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": -2147483649
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2147483649,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": -4294967296
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0,
+            -4294967296
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[]",
+            "elem": 8
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[12]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 1]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[43]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 11]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 1]",
+            "elem": 0
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            2,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -3,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0, 0]",
+            "elem": -2147483651
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            -2147483651,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 12
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            12,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-1, 0]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0, 0, 0]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0, 0]",
+            "elem": 0
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0, 12]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            -2,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": 11
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1,
+            11
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 3]",
+            "elem": 2147483647
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2147483647,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 9
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": 0
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -43
+        },
+        "expected": -1,
+        "unexpected": [
+            -43,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": -4294967300
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1,
+            -4294967300
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -10,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0, 0]",
+            "elem": -8
+        },
+        "expected": -1,
+        "unexpected": [
+            -8,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": -2147483649
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            -2147483649
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": -4294967300
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            -4294967300
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, 4]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": -3
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            -3,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, 0]",
+            "elem": -3
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            -3,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1, 0]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2, -2, -1, 0]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -6,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1, 0]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -2, -2, -1, 0]",
+            "elem": -1
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            -1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3]",
+            "elem": -3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -3,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            -4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 2, 2, 2, 3]",
+            "elem": 2
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            -1,
+            4,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 86
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            86,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 3, 3]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            2,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 6]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3]",
+            "elem": -2147483649
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483649,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 18
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            18,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3, 86]",
+            "elem": 3
+        },
+        "expected": 4,
+        "unexpected": [
+            5,
+            3,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": -3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3]",
+            "elem": 87
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            87
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3, 43]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 87]",
+            "elem": 11
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 3]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": -5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 2, 3]",
+            "elem": -2147483651
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            -2147483651,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 3]",
+            "elem": 174
+        },
+        "expected": -1,
+        "unexpected": [
+            174,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 43
+        },
+        "expected": -1,
+        "unexpected": [
+            43,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 7, 8, 9, 18]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 7, 9]",
+            "elem": -8
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -8,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": -174
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -174,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 10]",
+            "elem": -9
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            -9
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 8
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            4,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 7, 8, 9]",
+            "elem": 14
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            14,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 20
+        },
+        "expected": -1,
+        "unexpected": [
+            20,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[6, 7, 8, 9]",
+            "elem": -7
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            -7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 6, 7, 8, 9]",
+            "elem": 12
+        },
+        "expected": -1,
+        "unexpected": [
+            12,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 5, 10]",
+            "elem": -4294967294
+        },
+        "expected": -1,
+        "unexpected": [
+            -4294967294,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, 0, 5, 10, 42]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            -4,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 5, 10]",
+            "elem": -8
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -8,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 5, 10]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, 0, 10]",
+            "elem": -10
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            -10,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-11, -5, 5, 10]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, 0, 5, 10]",
+            "elem": -10
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -10,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 10, 10]",
+            "elem": -10
+        },
+        "expected": 0,
+        "unexpected": [
+            -10,
+            4,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": 42
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            42,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            -2,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": -2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2147483648,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 20]",
+            "elem": 36
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            36,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-10, -5, 0, 5, 10]",
+            "elem": 10
+        },
+        "expected": 4,
+        "unexpected": [
+            10,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[5, 10]",
+            "elem": -8589934588
+        },
+        "expected": -1,
+        "unexpected": [
+            -8589934588,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 2, 2, 2, 2, 2, 29]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            6,
+            -2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": -2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483648,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2]",
+            "elem": -21
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            -21,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2]",
+            "elem": 41
+        },
+        "expected": -1,
+        "unexpected": [
+            41,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2]",
+            "elem": -7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 7]",
+            "elem": 2147483647
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            2147483647
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 2, 6]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[2, 2, 2, 2, 43]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 3, 3, 3]",
+            "elem": 3
+        },
+        "expected": 5,
+        "unexpected": [
+            3,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": -4
+        },
+        "expected": -1,
+        "unexpected": [
+            -4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 3, 3, 3, 4]",
+            "elem": 4
+        },
+        "expected": 6,
+        "unexpected": [
+            -1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4, 6]",
+            "elem": 16
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            16,
+            8
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": 2147483647
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            7,
+            2147483647
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 1, 2, 2, 3, 3, 3, 4]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            -2,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -4, 0, 1, 2147483647]",
+            "elem": 0
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            -1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, 0, 1, 2147483647]",
+            "elem": 4294967294
+        },
+        "expected": -1,
+        "unexpected": [
+            4294967294,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 2, 2147483647]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 4294967294
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4294967294,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": -2147483650
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            -2147483650
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 8589934588
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            8589934588,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 0
+        },
+        "expected": 2,
+        "unexpected": [
+            -1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, 0, 1, 2147483647]",
+            "elem": 2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2147483648,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, 0, 0, 1, 2147483647]",
+            "elem": -2147483648
+        },
+        "expected": 0,
+        "unexpected": [
+            4,
+            -2147483648,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": -4294967296
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4294967296,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 8
+        },
+        "expected": -1,
+        "unexpected": [
+            8,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 1, 2147483647]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 21
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            21,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 4294967296
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4294967296,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647, 2147483648]",
+            "elem": -2147483648
+        },
+        "expected": 0,
+        "unexpected": [
+            -2147483648,
+            -1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 2, 2147483647]",
+            "elem": -2147483648
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            4,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-1, 0, 3, 2147483647]",
+            "elem": 0
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-2147483648, -1, 0, 1, 2147483647]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1, 0, 0]",
+            "elem": 0
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -3, 0]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -4, -4, -1, 0]",
+            "elem": -5
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            -5,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1, 0, 0]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            6,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -4, -4, -1]",
+            "elem": -4294967295
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4294967295,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1]",
+            "elem": 4
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1, 1]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            6,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1, 9]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            6,
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -2]",
+            "elem": 86
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            86,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1, 18]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            -2,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4]",
+            "elem": 2147483648
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2147483648,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4]",
+            "elem": -4
+        },
+        "expected": 4,
+        "unexpected": [
+            -1,
+            0,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-5, -5, -5, -4, -4, -1]",
+            "elem": -1
+        },
+        "expected": 5,
+        "unexpected": [
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 9, 10, 10, 10]",
+            "elem": 14
+        },
+        "expected": -1,
+        "unexpected": [
+            14,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 9, 10, 10, 18]",
+            "elem": 21
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            21
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10, 174]",
+            "elem": -3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -3,
+            6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 10, 10, 10]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": -15
+        },
+        "expected": -1,
+        "unexpected": [
+            -15,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 8
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -1,
+            8,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 14
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5,
+            14
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[9, 10, 10, 10]",
+            "elem": 10
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": 23
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            5,
+            23
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[7, 8, 9, 10, 10, 10]",
+            "elem": -11
+        },
+        "expected": -1,
+        "unexpected": [
+            -11,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 13]",
+            "elem": -3
+        },
+        "expected": 3,
+        "unexpected": [
+            -3,
+            -1,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 16]",
+            "elem": 0
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 0, 0]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -6,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": -5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 0]",
+            "elem": -6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": 1
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 0]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            6,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": 174
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            0,
+            174
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": 41
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            41,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3]",
+            "elem": -1
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, 0, 0]",
+            "elem": 5
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            4,
+            5
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -2]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": -7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3, 0]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-6, -3, -3]",
+            "elem": -6
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            2,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, 0, 0, 0, 0]",
+            "elem": 0
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, -3, -3]",
+            "elem": -22
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            3,
+            -22
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, 4]",
+            "elem": 3
+        },
+        "expected": -1,
+        "unexpected": [
+            3,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 3, 3, 4]",
+            "elem": 2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 4]",
+            "elem": 2
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            -1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2]",
+            "elem": 2
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -1,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-1, 0]",
+            "elem": -8589934588
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            -8589934588,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 0]",
+            "elem": -3
+        },
+        "expected": -1,
+        "unexpected": [
+            -3,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-1, 0]",
+            "elem": -1
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[-3, -3, 0]",
+            "elem": -3
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            0,
+            -3,
+            2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 3, 4, 5]",
+            "elem": 1
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            -1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[1, 2, 2, 4, 5]",
+            "elem": -41
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -41,
+            4
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[10]",
+            "elem": 2147483647
+        },
+        "expected": -1,
+        "unexpected": [
+            2147483647,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0, 9, 10]",
+            "elem": 7
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[9, 10]",
+            "elem": 19
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            19,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[9]",
+            "elem": -2
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[9, 58]",
+            "elem": 6
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            6,
+            1
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[9, 10]",
+            "elem": 2147483651
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            1,
+            2147483651
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[8, 10]",
+            "elem": 10
+        },
+        "expected": 1,
+        "unexpected": [
+            10,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "arr": "#[0]",
+            "elem": -9
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -9
+        ]
+    }
+]

@@ -1,0 +1,616 @@
+[
+    {
+        "input": {
+            "s": "123abc456"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            1,
+            9
+        ]
+    },
+    {
+        "input": {
+            "s": "no digits here!"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "input": {
+            "s": "1234567890"
+        },
+        "expected": 10,
+        "unexpected": [
+            9,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": ""
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            2,
+            10
+        ]
+    },
+    {
+        "input": {
+            "s": "a1b2c3"
+        },
+        "expected": 3,
+        "unexpected": [
+            1,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "s": "0"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            2,
+            10
+        ]
+    },
+    {
+        "input": {
+            "s": "abc"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            8,
+            9
+        ]
+    },
+    {
+        "input": {
+            "s": "line1\nline2\n3"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            13,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "-123.45"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            7,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "+00123"
+        },
+        "expected": 5,
+        "unexpected": [
+            1,
+            6,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "s": "version2.0.1"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            12,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "Room 101"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            8,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "０1２3"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂2🙃3"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "²³45"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "1e10"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "s": "abc123XYZ789!0?"
+        },
+        "expected": 7,
+        "unexpected": [
+            1,
+            0,
+            15
+        ]
+    },
+    {
+        "input": {
+            "s": "\"123\""
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "mix٠1٢2३3४4"
+        },
+        "expected": 4,
+        "unexpected": [
+            11,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "The year is 2026, room 42, code 007."
+        },
+        "expected": 9,
+        "unexpected": [
+            36,
+            1,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "123abc456_x"
+        },
+        "expected": 6,
+        "unexpected": [
+            11,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "2026,_x"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "123abc456 edge"
+        },
+        "expected": 6,
+        "unexpected": [
+            14,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "1e10 edge"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "1234567890_x"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            12,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "2026, 0 1_x"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            1,
+            11,
+            2
+        ]
+    },
+    {
+        "input": {
+            "s": "1 0987654321"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            1,
+            12
+        ]
+    },
+    {
+        "input": {
+            "s": "egde 0987654321"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            1,
+            15
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0987654321_x_x"
+        },
+        "expected": 10,
+        "unexpected": [
+            1,
+            0,
+            16
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂2🙃3 1"
+        },
+        "expected": 3,
+        "unexpected": [
+            6,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "🙂2🙃3 1_x"
+        },
+        "expected": 3,
+        "unexpected": [
+            1,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "101 edge"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            8,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "3c2b1a_x 1 edge 1"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            17,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "101 0"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            2,
+            1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "s": "9 0"
+        },
+        "expected": 2,
+        "unexpected": [
+            3,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "9 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            3,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "\"321\""
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "123abc456 1"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            1,
+            11
+        ]
+    },
+    {
+        "input": {
+            "s": "abcDEF_x_x 1 1 edge"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            19
+        ]
+    },
+    {
+        "input": {
+            "s": "00000 1"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            1,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_0 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            10,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 1 0 1"
+        },
+        "expected": 4,
+        "unexpected": [
+            2,
+            9,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "+00123 edge"
+        },
+        "expected": 5,
+        "unexpected": [
+            11,
+            2,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "1 .700"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            6,
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "   1    0"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "   1   _x 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            1,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "s": "\n\t\r 1 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            7,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_1234567890_x"
+        },
+        "expected": 10,
+        "unexpected": [
+            16,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "s": "3\n2enil\n1enil"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1,
+            13
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde 654cba321"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            16,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": ")(*&^%$#@! 1 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            14
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000\u00015\u0002 edge_x 1"
+        },
+        "expected": 2,
+        "unexpected": [
+            1,
+            0,
+            13
+        ]
+    },
+    {
+        "input": {
+            "s": "2026,_x edge 0"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            14,
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "s": "carriage\r9 0"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            12
+        ]
+    },
+    {
+        "input": {
+            "s": "3c2b1a_x 1"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            10,
+            1
+        ]
+    }
+]

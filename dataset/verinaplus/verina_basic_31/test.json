@@ -1,0 +1,3788 @@
+[
+    {
+        "input": {
+            "s": "Hello, World!"
+        },
+        "expected": "HELLO, WORLD!",
+        "unexpected": [
+            "hello, world!",
+            "HeLLo, WORld!"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc"
+        },
+        "expected": "ABC",
+        "unexpected": [
+            "AAA",
+            "abc",
+            "cba",
+            "bca"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC"
+        },
+        "expected": "ABC",
+        "unexpected": [
+            "abc",
+            "CBA",
+            "BCA",
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "123!?@"
+        },
+        "expected": "123!?@",
+        "unexpected": [
+            "@?!321",
+            "23!?@1",
+            "AAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": ""
+        },
+        "expected": "",
+        "unexpected": [
+            " ",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": "a"
+        },
+        "expected": "A",
+        "unexpected": [
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": "aBcDeF"
+        },
+        "expected": "ABCDEF",
+        "unexpected": [
+            "FeDcBa",
+            "BcDeFa",
+            "AAAAAA",
+            "abcdef",
+            "aBcDeF"
+        ]
+    },
+    {
+        "input": {
+            "s": "   "
+        },
+        "expected": "   ",
+        "unexpected": [
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": " leading and trailing "
+        },
+        "expected": " LEADING AND TRAILING ",
+        "unexpected": [
+            " leading and trailing ",
+            "AAAAAAAAAAAAAAAAAAAAAA",
+            "leading and trailing  ",
+            " gniliart dna gnidael "
+        ]
+    },
+    {
+        "input": {
+            "s": "\t\n\r"
+        },
+        "expected": "\\t\\n\\x0d",
+        "unexpected": [
+            "AAA",
+            "\\x0d\\n\\t",
+            "\\n\\x0d\\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "line1\nline2\nline3"
+        },
+        "expected": "LINE1\nLINE2\nLINE3",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAA",
+            "line1\nline2\nline3",
+            "3enil\n2enil\n1enil",
+            "ine1\nline2\nline3l"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_example"
+        },
+        "expected": "SNAKE_CASE_EXAMPLE",
+        "unexpected": [
+            "snake_case_example",
+            "elpmaxe_esac_ekans",
+            "AAAAAAAAAAAAAAAAAA",
+            "nake_case_examples"
+        ]
+    },
+    {
+        "input": {
+            "s": "kebab-case-example"
+        },
+        "expected": "KEBAB-CASE-EXAMPLE",
+        "unexpected": [
+            "kebab-case-example",
+            "elpmaxe-esac-babek",
+            "AAAAAAAAAAAAAAAAAA",
+            "ebab-case-examplek"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample"
+        },
+        "expected": "CAMELCASEEXAMPLE",
+        "unexpected": [
+            "camelCaseExample",
+            "elpmaxEesaClemac",
+            "AAAAAAAAAAAAAAAA",
+            "camelcaseexample",
+            "amelCaseExamplec"
+        ]
+    },
+    {
+        "input": {
+            "s": "UPPER_lower_MIX123"
+        },
+        "expected": "UPPER_LOWER_MIX123",
+        "unexpected": [
+            "UPPER_lower_MIX123",
+            "AAAAAAAAAAAAAAAAAA",
+            "PPER_lower_MIX123U",
+            "upper_lower_mix123",
+            "321XIM_rewol_REPPU"
+        ]
+    },
+    {
+        "input": {
+            "s": "the quick brown fox jumps over the lazy dog"
+        },
+        "expected": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",
+        "unexpected": [
+            "the quick brown fox jumps over the lazy dog",
+            "god yzal eht revo spmuj xof nworb kciuq eht",
+            "he quick brown fox jumps over the lazy dogt",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+        },
+        "expected": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "HE QUICK BROWN FOX JUMPS OVER THE LAZY DOGT",
+            "GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT",
+            "the quick brown fox jumps over the lazy dog"
+        ]
+    },
+    {
+        "input": {
+            "s": "mañana"
+        },
+        "expected": "MAñANA",
+        "unexpected": [
+            "AAAAAA",
+            "mañana",
+            "anañam",
+            "añanam"
+        ]
+    },
+    {
+        "input": {
+            "s": "façade naïve rôle"
+        },
+        "expected": "FAçADE NAïVE RôLE",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAA",
+            "façade naïve rôle",
+            "açade naïve rôlef",
+            "elôr evïan edaçaf"
+        ]
+    },
+    {
+        "input": {
+            "s": "straße"
+        },
+        "expected": "STRAßE",
+        "unexpected": [
+            "straße",
+            "AAAAAA",
+            "eßarts",
+            "traßes"
+        ]
+    },
+    {
+        "input": {
+            "s": "istanbul iıİI"
+        },
+        "expected": "ISTANBUL IıİI",
+        "unexpected": [
+            "istanbul iıİI",
+            "AAAAAAAAAAAAA",
+            "istanbul iıİi",
+            "Iİıi lubnatsi",
+            "stanbul iıİIi"
+        ]
+    },
+    {
+        "input": {
+            "s": "σὲ γνωρίζω ἀπὸ τὴν κόψη"
+        },
+        "expected": "σὲ γνωρίζω ἀπὸ τὴν κόψη",
+        "unexpected": [
+            "ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ",
+            "AAAAAAAAAAAAAAAAAAAAAAA",
+            "ὲ γνωρίζω ἀπὸ τὴν κόψησ"
+        ]
+    },
+    {
+        "input": {
+            "s": "привет мир"
+        },
+        "expected": "привет мир",
+        "unexpected": [
+            "ривет мирп",
+            "AAAAAAAAAA",
+            "рим тевирп"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا بالعالم"
+        },
+        "expected": "مرحبا بالعالم",
+        "unexpected": [
+            "AAAAAAAAAAAAA",
+            "ملاعلاب ابحرم",
+            "رحبا بالعالمم"
+        ]
+    },
+    {
+        "input": {
+            "s": "こんにちは世界"
+        },
+        "expected": "こんにちは世界",
+        "unexpected": [
+            "界世はちにんこ",
+            "AAAAAAA",
+            "んにちは世界こ"
+        ]
+    },
+    {
+        "input": {
+            "s": "你好，世界"
+        },
+        "expected": "你好，世界",
+        "unexpected": [
+            "AAAAA",
+            "界世，好你",
+            "好，世界你"
+        ]
+    },
+    {
+        "input": {
+            "s": "😀😃😄😁"
+        },
+        "expected": "😀😃😄😁",
+        "unexpected": [
+            "😁😄😃😀",
+            "😃😄😁😀",
+            "AAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc😀def"
+        },
+        "expected": "ABC😀DEF",
+        "unexpected": [
+            "abc😀def",
+            "bc😀defa",
+            "fed😀cba",
+            "AAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "école"
+        },
+        "expected": "ÉCOLE",
+        "unexpected": [
+            "eloće",
+            "école",
+            "́colee",
+            "AAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔞𝔟𝔠"
+        },
+        "expected": "𝔞𝔟𝔠",
+        "unexpected": [
+            "𝔠𝔟𝔞",
+            "𝔟𝔠𝔞",
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣａｂｃ"
+        },
+        "expected": "ＡＢＣａｂｃ",
+        "unexpected": [
+            "ｃｂａＣＢＡ",
+            "AAAAAA",
+            "ＢＣａｂｃＡ"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000abc\u0000"
+        },
+        "expected": "\\x00ABC\\x00",
+        "unexpected": [
+            "\\x00cba\\x00",
+            "\\x00abc\\x00",
+            "AAAAA",
+            "abc\\x00\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0001\u0002test\u0003"
+        },
+        "expected": "\\x01\\x02TEST\\x03",
+        "unexpected": [
+            "\\x01\\x02test\\x03",
+            "AAAAAAA",
+            "\\x02test\\x03\\x01",
+            "\\x03tset\\x02\\x01"
+        ]
+    },
+    {
+        "input": {
+            "s": "⁦abc⁩"
+        },
+        "expected": "⁦ABC⁩",
+        "unexpected": [
+            "⁩cba⁦",
+            "AAAAA",
+            "⁦abc⁩",
+            "abc⁩⁦"
+        ]
+    },
+    {
+        "input": {
+            "s": "private"
+        },
+        "expected": "PRIVATE",
+        "unexpected": [
+            "etavirp",
+            "AAAAAAAA",
+            "private",
+            "private"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+        },
+        "expected": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+            "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba",
+            "bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza"
+        ]
+    },
+    {
+        "input": {
+            "s": "mixed\nCASE\twith 123 and symbols !@#"
+        },
+        "expected": "MIXED\nCASE\tWITH 123 AND SYMBOLS !@#",
+        "unexpected": [
+            "#@! slobmys dna 321 htiw\tESAC\ndexim",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "mixed\nCASE\twith 123 and symbols !@#",
+            "mixed\ncase\twith 123 and symbols !@#",
+            "ixed\nCASE\twith 123 and symbols !@#m"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello, World!_x"
+        },
+        "expected": "HELLO, WORLD!_X",
+        "unexpected": [
+            "Hello, World!_x",
+            "x_!dlroW ,olleH",
+            "AAAAAAAAAAAAAAA",
+            "hello, world!_x",
+            "ello, World!_xH"
+        ]
+    },
+    {
+        "input": {
+            "s": "κόψη"
+        },
+        "expected": "κόψη",
+        "unexpected": [
+            "AAAA",
+            "ηψόκ",
+            "όψηκ"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            "AA",
+            "0 "
+        ]
+    },
+    {
+        "input": {
+            "s": "0 "
+        },
+        "expected": "0 ",
+        "unexpected": [
+            "AA",
+            " 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 _x"
+        },
+        "expected": "1 _X",
+        "unexpected": [
+            "1 _x",
+            "x_ 1",
+            "AAAA",
+            " _x1"
+        ]
+    },
+    {
+        "input": {
+            "s": "мир_x"
+        },
+        "expected": "мир_X",
+        "unexpected": [
+            "ир_xм",
+            "AAAAA",
+            "x_рим",
+            "мир_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1"
+        },
+        "expected": "0 1",
+        "unexpected": [
+            "AAA",
+            "1 0",
+            " 10"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 0"
+        },
+        "expected": "0 0",
+        "unexpected": [
+            "AAA",
+            " 00"
+        ]
+    },
+    {
+        "input": {
+            "s": "lazy"
+        },
+        "expected": "LAZY",
+        "unexpected": [
+            "lazy",
+            "AAAA",
+            "yzal",
+            "azyl"
+        ]
+    },
+    {
+        "input": {
+            "s": "quick"
+        },
+        "expected": "QUICK",
+        "unexpected": [
+            "quick",
+            "AAAAA",
+            "kciuq",
+            "uickq"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc edge_x"
+        },
+        "expected": "ABC EDGE_X",
+        "unexpected": [
+            "abc edge_x",
+            "AAAAAAAAAA",
+            "bc edge_xa",
+            "x_egde cba"
+        ]
+    },
+    {
+        "input": {
+            "s": "abc_x"
+        },
+        "expected": "ABC_X",
+        "unexpected": [
+            "AAAAA",
+            "bc_xa",
+            "abc_x",
+            "x_cba"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_321"
+        },
+        "expected": "X_321",
+        "unexpected": [
+            "AAAAA",
+            "_321x",
+            "x_321",
+            "123_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "CBA"
+        },
+        "expected": "CBA",
+        "unexpected": [
+            "AAA",
+            "ABC",
+            "cba",
+            "BAC"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC_x"
+        },
+        "expected": "ABC_X",
+        "unexpected": [
+            "ABC_x",
+            "AAAAA",
+            "abc_x",
+            "x_CBA",
+            "BC_xA"
+        ]
+    },
+    {
+        "input": {
+            "s": "YZAL"
+        },
+        "expected": "YZAL",
+        "unexpected": [
+            "ZALY",
+            "AAAA",
+            "yzal",
+            "LAZY"
+        ]
+    },
+    {
+        "input": {
+            "s": "line1 edge_x"
+        },
+        "expected": "LINE1 EDGE_X",
+        "unexpected": [
+            "x_egde 1enil",
+            "line1 edge_x",
+            "AAAAAAAAAAAA",
+            "ine1 edge_xl"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 CBA"
+        },
+        "expected": "1 CBA",
+        "unexpected": [
+            "AAAAA",
+            "ABC 1",
+            "1 cba",
+            " CBA1"
+        ]
+    },
+    {
+        "input": {
+            "s": "nworb"
+        },
+        "expected": "NWORB",
+        "unexpected": [
+            "AAAAA",
+            "nworb",
+            "brown",
+            "worbn"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا"
+        },
+        "expected": "مرحبا",
+        "unexpected": [
+            "ابحرم",
+            "AAAAA",
+            "رحبام"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x"
+        },
+        "expected": " 1_X",
+        "unexpected": [
+            "AAAA",
+            " 1_x",
+            "1_x ",
+            "x_1 "
+        ]
+    },
+    {
+        "input": {
+            "s": "egde CBA"
+        },
+        "expected": "EGDE CBA",
+        "unexpected": [
+            "egde CBA",
+            "gde CBAe",
+            "AAAAAAAA",
+            "egde cba",
+            "ABC edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_CBA_x_x"
+        },
+        "expected": "X_CBA_X_X",
+        "unexpected": [
+            "x_CBA_x_x",
+            "x_x_ABC_x",
+            "x_cba_x_x",
+            "_CBA_x_xx",
+            "AAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "123!?@_x"
+        },
+        "expected": "123!?@_X",
+        "unexpected": [
+            "AAAAAAAA",
+            "123!?@_x",
+            "x_@?!321",
+            "23!?@_x1"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x"
+        },
+        "expected": "_X",
+        "unexpected": [
+            "_x",
+            "x_",
+            "AA"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x edge"
+        },
+        "expected": " 1_X EDGE",
+        "unexpected": [
+            " 1_x edge",
+            "1_x edge ",
+            "egde x_1 ",
+            "AAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "private_x"
+        },
+        "expected": "PRIVATE_X",
+        "unexpected": [
+            "private_x",
+            "x_etavirp",
+            "AAAAAAAAAA",
+            "private_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "123!?@ 1"
+        },
+        "expected": "123!?@ 1",
+        "unexpected": [
+            "AAAAAAAA",
+            "1 @?!321",
+            "23!?@ 11"
+        ]
+    },
+    {
+        "input": {
+            "s": "123!?@ edge"
+        },
+        "expected": "123!?@ EDGE",
+        "unexpected": [
+            "AAAAAAAAAAA",
+            "23!?@ edge1",
+            "123!?@ edge",
+            "egde @?!321"
+        ]
+    },
+    {
+        "input": {
+            "s": "@?!321"
+        },
+        "expected": "@?!321",
+        "unexpected": [
+            "123!?@",
+            "AAAAAA",
+            "?!321@"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde @?!321 1"
+        },
+        "expected": "EGDE @?!321 1",
+        "unexpected": [
+            "egde @?!321 1",
+            "AAAAAAAAAAAAA",
+            "1 123!?@ edge",
+            "gde @?!321 1e"
+        ]
+    },
+    {
+        "input": {
+            "s": "JUMPS"
+        },
+        "expected": "JUMPS",
+        "unexpected": [
+            "SPMUJ",
+            "AAAAA",
+            "jumps",
+            "UMPSJ"
+        ]
+    },
+    {
+        "input": {
+            "s": "κόσμε"
+        },
+        "expected": "κόσμε",
+        "unexpected": [
+            "AAAAA",
+            "όσμεκ",
+            "εμσόκ"
+        ]
+    },
+    {
+        "input": {
+            "s": "τὴν"
+        },
+        "expected": "τὴν",
+        "unexpected": [
+            "AAA",
+            "ὴντ",
+            "νὴτ"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1"
+        },
+        "expected": " 1",
+        "unexpected": [
+            "AA",
+            "1 "
+        ]
+    },
+    {
+        "input": {
+            "s": "x_"
+        },
+        "expected": "X_",
+        "unexpected": [
+            "_x",
+            "x_",
+            "AA"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0 edge"
+        },
+        "expected": " 0 EDGE",
+        "unexpected": [
+            " 0 edge",
+            "AAAAAAA",
+            "egde 0 ",
+            "0 edge "
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا 1"
+        },
+        "expected": "مرحبا 1",
+        "unexpected": [
+            "رحبا 1م",
+            "1 ابحرم",
+            "AAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 0 0"
+        },
+        "expected": "1 0 0",
+        "unexpected": [
+            "0 0 1",
+            " 0 01",
+            "AAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "γνωρίζω"
+        },
+        "expected": "γνωρίζω",
+        "unexpected": [
+            "AAAAAAA",
+            "ωζίρωνγ",
+            "νωρίζωγ"
+        ]
+    },
+    {
+        "input": {
+            "s": "istanbul"
+        },
+        "expected": "ISTANBUL",
+        "unexpected": [
+            "AAAAAAAA",
+            "istanbul",
+            "lubnatsi",
+            "stanbuli"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000abc\u0000_x"
+        },
+        "expected": "\\x00ABC\\x00_X",
+        "unexpected": [
+            "\\x00abc\\x00_x",
+            "AAAAAAA",
+            "x_\\x00cba\\x00",
+            "abc\\x00_x\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "naïve edge"
+        },
+        "expected": "NAïVE EDGE",
+        "unexpected": [
+            "naïve edge",
+            "aïve edgen",
+            "egde evïan",
+            "AAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "a‏b‎c_x"
+        },
+        "expected": "A‏B‎C_X",
+        "unexpected": [
+            "a‏b‎c_x",
+            "x_c‎b‏a",
+            "AAAAAAA",
+            "‏b‎c_xa"
+        ]
+    },
+    {
+        "input": {
+            "s": "a_x 1 edge"
+        },
+        "expected": "A_X 1 EDGE",
+        "unexpected": [
+            "a_x 1 edge",
+            "egde 1 x_a",
+            "AAAAAAAAAA",
+            "_x 1 edgea"
+        ]
+    },
+    {
+        "input": {
+            "s": "dog"
+        },
+        "expected": "DOG",
+        "unexpected": [
+            "god",
+            "dog",
+            "ogd",
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_ 1 1_x"
+        },
+        "expected": "X_X_ 1 1_X",
+        "unexpected": [
+            "AAAAAAAAAA",
+            "x_x_ 1 1_x",
+            "x_1 1 _x_x",
+            "_x_ 1 1_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "line2"
+        },
+        "expected": "LINE2",
+        "unexpected": [
+            "2enil",
+            "line2",
+            "AAAAA",
+            "ine2l"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x edge"
+        },
+        "expected": "1_X EDGE",
+        "unexpected": [
+            "egde x_1",
+            "1_x edge",
+            "AAAAAAAA",
+            "_x edge1"
+        ]
+    },
+    {
+        "input": {
+            "s": "σου"
+        },
+        "expected": "σου",
+        "unexpected": [
+            "υοσ",
+            "AAA",
+            "ουσ"
+        ]
+    },
+    {
+        "input": {
+            "s": "!@# 0"
+        },
+        "expected": "!@# 0",
+        "unexpected": [
+            "AAAAA",
+            "@# 0!",
+            "0 #@!"
+        ]
+    },
+    {
+        "input": {
+            "s": "with"
+        },
+        "expected": "WITH",
+        "unexpected": [
+            "ithw",
+            "with",
+            "htiw",
+            "AAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_NWORB"
+        },
+        "expected": "X_NWORB",
+        "unexpected": [
+            "AAAAAAA",
+            "x_NWORB",
+            "BROWN_x",
+            "_NWORBx",
+            "x_nworb"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde a 0"
+        },
+        "expected": "EGDE A 0",
+        "unexpected": [
+            "gde a 0e",
+            "0 a edge",
+            "AAAAAAAA",
+            "egde a 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "z 0_x"
+        },
+        "expected": "Z 0_X",
+        "unexpected": [
+            "z 0_x",
+            "AAAAA",
+            "x_0 z",
+            " 0_xz"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_z_x_x"
+        },
+        "expected": "EGDE X_Z_X_X",
+        "unexpected": [
+            "egde x_z_x_x",
+            "gde x_z_x_xe",
+            "AAAAAAAAAAAA",
+            "x_x_z_x edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello, 0"
+        },
+        "expected": "HELLO, 0",
+        "unexpected": [
+            "AAAAAAAA",
+            "0 ,olleH",
+            "Hello, 0",
+            "hello, 0",
+            "ello, 0H"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1_x"
+        },
+        "expected": "0 1_X",
+        "unexpected": [
+            "0 1_x",
+            "AAAAA",
+            "x_1 0",
+            " 1_x0"
+        ]
+    },
+    {
+        "input": {
+            "s": "z_x"
+        },
+        "expected": "Z_X",
+        "unexpected": [
+            "AAA",
+            "z_x",
+            "x_z",
+            "_xz"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x_x"
+        },
+        "expected": "_X_X",
+        "unexpected": [
+            "_x_x",
+            "AAAA",
+            "x_x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "aBcDeF 0"
+        },
+        "expected": "ABCDEF 0",
+        "unexpected": [
+            "0 FeDcBa",
+            "AAAAAAAA",
+            "abcdef 0",
+            "aBcDeF 0",
+            "BcDeF 0a"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 x_x_c‎b‏a"
+        },
+        "expected": "1 X_X_C‎B‏A",
+        "unexpected": [
+            "AAAAAAAAAAA",
+            "1 x_x_c‎b‏a",
+            " x_x_c‎b‏a1",
+            "a‏b‎c_x_x 1"
+        ]
+    },
+    {
+        "input": {
+            "s": "1"
+        },
+        "expected": "1",
+        "unexpected": [
+            "A"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa edge"
+        },
+        "expected": "FEDCBA EDGE",
+        "unexpected": [
+            "fedcba edge",
+            "egde aBcDeF",
+            "AAAAAAAAAAA",
+            "FeDcBa edge",
+            "eDcBa edgeF"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa"
+        },
+        "expected": "FEDCBA",
+        "unexpected": [
+            "FeDcBa",
+            "fedcba",
+            "aBcDeF",
+            "AAAAAA",
+            "eDcBaF"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa_x"
+        },
+        "expected": "FEDCBA_X",
+        "unexpected": [
+            "AAAAAAAA",
+            "FeDcBa_x",
+            "x_aBcDeF",
+            "eDcBa_xF",
+            "fedcba_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "τὴν_x 0"
+        },
+        "expected": "τὴν_X 0",
+        "unexpected": [
+            "AAAAAAA",
+            "0 x_νὴτ",
+            "τὴν_x 0",
+            "ὴν_x 0τ"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0 1"
+        },
+        "expected": " 0 1",
+        "unexpected": [
+            "1 0 ",
+            "AAAA",
+            "0 1 "
+        ]
+    },
+    {
+        "input": {
+            "s": "jumps"
+        },
+        "expected": "JUMPS",
+        "unexpected": [
+            "jumps",
+            "spmuj",
+            "umpsj",
+            "AAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "line1\nline2\nline3_x"
+        },
+        "expected": "LINE1\nLINE2\nLINE3_X",
+        "unexpected": [
+            "line1\nline2\nline3_x",
+            "AAAAAAAAAAAAAAAAAAA",
+            "ine1\nline2\nline3_xl",
+            "x_3enil\n2enil\n1enil"
+        ]
+    },
+    {
+        "input": {
+            "s": "   _x"
+        },
+        "expected": "   _X",
+        "unexpected": [
+            "   _x",
+            "AAAAA",
+            "x_   ",
+            "  _x "
+        ]
+    },
+    {
+        "input": {
+            "s": "naïve"
+        },
+        "expected": "NAïVE",
+        "unexpected": [
+            "AAAAA",
+            "naïve",
+            "evïan",
+            "aïven"
+        ]
+    },
+    {
+        "input": {
+            "s": "    1"
+        },
+        "expected": "    1",
+        "unexpected": [
+            "1    ",
+            "   1 ",
+            "AAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "   _x 0 edge"
+        },
+        "expected": "   _X 0 EDGE",
+        "unexpected": [
+            "   _x 0 edge",
+            "AAAAAAAAAAAA",
+            "  _x 0 edge ",
+            "egde 0 x_   "
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000abc\u0000_x_x"
+        },
+        "expected": "\\x00ABC\\x00_X_X",
+        "unexpected": [
+            "AAAAAAAAA",
+            "\\x00abc\\x00_x_x",
+            "x_x_\\x00cba\\x00",
+            "abc\\x00_x_x\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 0 0"
+        },
+        "expected": "_X 0 0",
+        "unexpected": [
+            "_x 0 0",
+            "0 0 x_",
+            "AAAAAA",
+            "x 0 0_"
+        ]
+    },
+    {
+        "input": {
+            "s": "    0_x"
+        },
+        "expected": "    0_X",
+        "unexpected": [
+            "AAAAAAA",
+            "    0_x",
+            "x_0    ",
+            "   0_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "THE"
+        },
+        "expected": "THE",
+        "unexpected": [
+            "the",
+            "EHT",
+            "AAA",
+            "HET"
+        ]
+    },
+    {
+        "input": {
+            "s": "νὴτ"
+        },
+        "expected": "νὴτ",
+        "unexpected": [
+            "AAA",
+            "ὴτν",
+            "τὴν"
+        ]
+    },
+    {
+        "input": {
+            "s": "@?!321 1"
+        },
+        "expected": "@?!321 1",
+        "unexpected": [
+            "AAAAAAAA",
+            "?!321 1@",
+            "1 123!?@"
+        ]
+    },
+    {
+        "input": {
+            "s": " gniliart dna gnidael "
+        },
+        "expected": " GNILIART DNA GNIDAEL ",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAA",
+            " gniliart dna gnidael ",
+            " leading and trailing ",
+            "gniliart dna gnidael  "
+        ]
+    },
+    {
+        "input": {
+            "s": "line2 1 edge"
+        },
+        "expected": "LINE2 1 EDGE",
+        "unexpected": [
+            "AAAAAAAAAAAA",
+            "line2 1 edge",
+            "egde 1 2enil",
+            "ine2 1 edgel"
+        ]
+    },
+    {
+        "input": {
+            "s": " leading and trailing  1"
+        },
+        "expected": " LEADING AND TRAILING  1",
+        "unexpected": [
+            " leading and trailing  1",
+            "1  gniliart dna gnidael ",
+            "AAAAAAAAAAAAAAAAAAAAAAAA",
+            "leading and trailing  1 "
+        ]
+    },
+    {
+        "input": {
+            "s": "FOX edge"
+        },
+        "expected": "FOX EDGE",
+        "unexpected": [
+            "FOX edge",
+            "egde XOF",
+            "fox edge",
+            "AAAAAAAA",
+            "OX edgeF"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_\r\n\t"
+        },
+        "expected": "X_\\x0d\\n\\t",
+        "unexpected": [
+            "\\t\\n\\x0d_x",
+            "AAAAA",
+            "x_\\x0d\\n\\t",
+            "_\\x0d\\n\\tx"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde egde evïan 1"
+        },
+        "expected": "EGDE EGDE EVïAN 1",
+        "unexpected": [
+            "egde egde evïan 1",
+            "AAAAAAAAAAAAAAAAA",
+            "gde egde evïan 1e",
+            "1 naïve edge edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "\t\n\r_x 0"
+        },
+        "expected": "\\t\\n\\x0d_X 0",
+        "unexpected": [
+            "AAAAAAA",
+            "\\t\\n\\x0d_x 0",
+            "\\n\\x0d_x 0\\t",
+            "0 x_\\x0d\\n\\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "ἀπὸ 1 0 1"
+        },
+        "expected": "ἀπὸ 1 0 1",
+        "unexpected": [
+            "1 0 1 ὸπἀ",
+            "AAAAAAAAA",
+            "πὸ 1 0 1ἀ"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا بالعالم edge"
+        },
+        "expected": "مرحبا بالعالم EDGE",
+        "unexpected": [
+            "مرحبا بالعالم edge",
+            "egde ملاعلاب ابحرم",
+            "AAAAAAAAAAAAAAAAAA",
+            "رحبا بالعالم edgeم"
+        ]
+    },
+    {
+        "input": {
+            "s": "and 0"
+        },
+        "expected": "AND 0",
+        "unexpected": [
+            "and 0",
+            "AAAAA",
+            "0 dna",
+            "nd 0a"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_example edge"
+        },
+        "expected": "SNAKE_CASE_EXAMPLE EDGE",
+        "unexpected": [
+            "snake_case_example edge",
+            "nake_case_example edges",
+            "egde elpmaxe_esac_ekans",
+            "AAAAAAAAAAAAAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "3enil\n2enil\n1enil"
+        },
+        "expected": "3ENIL\n2ENIL\n1ENIL",
+        "unexpected": [
+            "line1\nline2\nline3",
+            "3enil\n2enil\n1enil",
+            "enil\n2enil\n1enil3",
+            "AAAAAAAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_c‎b‏a"
+        },
+        "expected": "X_X_C‎B‏A",
+        "unexpected": [
+            "x_x_c‎b‏a",
+            "AAAAAAAAA",
+            "_x_c‎b‏ax",
+            "a‏b‎c_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 REVO"
+        },
+        "expected": "1 REVO",
+        "unexpected": [
+            "1 revo",
+            "AAAAAA",
+            " REVO1",
+            "OVER 1"
+        ]
+    },
+    {
+        "input": {
+            "s": "γειά"
+        },
+        "expected": "γειά",
+        "unexpected": [
+            "AAAA",
+            "άιεγ",
+            "ειάγ"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 line1\nline2\nline3"
+        },
+        "expected": "1 LINE1\nLINE2\nLINE3",
+        "unexpected": [
+            "1 line1\nline2\nline3",
+            "3enil\n2enil\n1enil 1",
+            "AAAAAAAAAAAAAAAAAAA",
+            " line1\nline2\nline31"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1 0"
+        },
+        "expected": "X_1 0",
+        "unexpected": [
+            "x_1 0",
+            "AAAAA",
+            "0 1_x",
+            "_1 0x"
+        ]
+    },
+    {
+        "input": {
+            "s": "_x 1"
+        },
+        "expected": "_X 1",
+        "unexpected": [
+            "_x 1",
+            "AAAA",
+            "x 1_",
+            "1 x_"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde 0 "
+        },
+        "expected": "EGDE 0 ",
+        "unexpected": [
+            "egde 0 ",
+            "AAAAAAA",
+            " 0 edge",
+            "gde 0 e"
+        ]
+    },
+    {
+        "input": {
+            "s": "FOX edge edge"
+        },
+        "expected": "FOX EDGE EDGE",
+        "unexpected": [
+            "FOX edge edge",
+            "AAAAAAAAAAAAA",
+            "OX edge edgeF",
+            "fox edge edge",
+            "egde egde XOF"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_example 1 1"
+        },
+        "expected": "SNAKE_CASE_EXAMPLE 1 1",
+        "unexpected": [
+            "1 1 elpmaxe_esac_ekans",
+            "snake_case_example 1 1",
+            "AAAAAAAAAAAAAAAAAAAAAA",
+            "nake_case_example 1 1s"
+        ]
+    },
+    {
+        "input": {
+            "s": "elpmaxe_esac_ekans"
+        },
+        "expected": "ELPMAXE_ESAC_EKANS",
+        "unexpected": [
+            "elpmaxe_esac_ekans",
+            "AAAAAAAAAAAAAAAAAA",
+            "snake_case_example",
+            "lpmaxe_esac_ekanse"
+        ]
+    },
+    {
+        "input": {
+            "s": " edge"
+        },
+        "expected": " EDGE",
+        "unexpected": [
+            " edge",
+            "egde ",
+            "AAAAA",
+            "edge "
+        ]
+    },
+    {
+        "input": {
+            "s": "elôr evïan edaçaf"
+        },
+        "expected": "ELôR EVïAN EDAçAF",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAA",
+            "elôr evïan edaçaf",
+            "lôr evïan edaçafe",
+            "façade naïve rôle"
+        ]
+    },
+    {
+        "input": {
+            "s": "2enil"
+        },
+        "expected": "2ENIL",
+        "unexpected": [
+            "AAAAA",
+            "2enil",
+            "line2",
+            "enil2"
+        ]
+    },
+    {
+        "input": {
+            "s": "τὴν_x 0 1"
+        },
+        "expected": "τὴν_X 0 1",
+        "unexpected": [
+            "AAAAAAAAA",
+            "τὴν_x 0 1",
+            "1 0 x_νὴτ",
+            "ὴν_x 0 1τ"
+        ]
+    },
+    {
+        "input": {
+            "s": "рим тевирп"
+        },
+        "expected": "рим тевирп",
+        "unexpected": [
+            "AAAAAAAAAA",
+            "им тевирпр",
+            "привет мир"
+        ]
+    },
+    {
+        "input": {
+            "s": "тевирп"
+        },
+        "expected": "тевирп",
+        "unexpected": [
+            "AAAAAA",
+            "привет",
+            "евирпт"
+        ]
+    },
+    {
+        "input": {
+            "s": "elpmaxe-esac-babek"
+        },
+        "expected": "ELPMAXE-ESAC-BABEK",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAA",
+            "elpmaxe-esac-babek",
+            "kebab-case-example",
+            "lpmaxe-esac-babeke"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_"
+        },
+        "expected": "X_X_",
+        "unexpected": [
+            "x_x_",
+            "AAAA",
+            "_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "rôle_x_x"
+        },
+        "expected": "RôLE_X_X",
+        "unexpected": [
+            "rôle_x_x",
+            "AAAAAAAA",
+            "x_x_elôr",
+            "ôle_x_xr"
+        ]
+    },
+    {
+        "input": {
+            "s": "trailing"
+        },
+        "expected": "TRAILING",
+        "unexpected": [
+            "AAAAAAAA",
+            "trailing",
+            "gniliart",
+            "railingt"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample edge"
+        },
+        "expected": "CAMELCASEEXAMPLE EDGE",
+        "unexpected": [
+            "camelCaseExample edge",
+            "camelcaseexample edge",
+            "amelCaseExample edgec",
+            "AAAAAAAAAAAAAAAAAAAAA",
+            "egde elpmaxEesaClemac"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample edge_x"
+        },
+        "expected": "CAMELCASEEXAMPLE EDGE_X",
+        "unexpected": [
+            "camelCaseExample edge_x",
+            "x_egde elpmaxEesaClemac",
+            "AAAAAAAAAAAAAAAAAAAAAAA",
+            "camelcaseexample edge_x",
+            "amelCaseExample edge_xc"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample 1 1"
+        },
+        "expected": "CAMELCASEEXAMPLE 1 1",
+        "unexpected": [
+            "camelCaseExample 1 1",
+            "camelcaseexample 1 1",
+            "1 1 elpmaxEesaClemac",
+            "AAAAAAAAAAAAAAAAAAAA",
+            "amelCaseExample 1 1c"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample 1 0"
+        },
+        "expected": "CAMELCASEEXAMPLE 1 0",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAA",
+            "0 1 elpmaxEesaClemac",
+            "camelCaseExample 1 0",
+            "camelcaseexample 1 0",
+            "amelCaseExample 1 0c"
+        ]
+    },
+    {
+        "input": {
+            "s": "3enil"
+        },
+        "expected": "3ENIL",
+        "unexpected": [
+            "3enil",
+            "line3",
+            "AAAAA",
+            "enil3"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_ 1 1_x_x"
+        },
+        "expected": "X_X_ 1 1_X_X",
+        "unexpected": [
+            "x_x_ 1 1_x_x",
+            "AAAAAAAAAAAA",
+            "x_x_1 1 _x_x",
+            "_x_ 1 1_x_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "rôle"
+        },
+        "expected": "RôLE",
+        "unexpected": [
+            "elôr",
+            "rôle",
+            "AAAA",
+            "ôler"
+        ]
+    },
+    {
+        "input": {
+            "s": "Hello,"
+        },
+        "expected": "HELLO,",
+        "unexpected": [
+            "Hello,",
+            "AAAAAA",
+            ",olleH",
+            "hello,",
+            "ello,H"
+        ]
+    },
+    {
+        "input": {
+            "s": "321XIM_rewol_REPPU_x_x"
+        },
+        "expected": "321XIM_REWOL_REPPU_X_X",
+        "unexpected": [
+            "321XIM_rewol_REPPU_x_x",
+            "x_x_UPPER_lower_MIX123",
+            "321xim_rewol_reppu_x_x",
+            "AAAAAAAAAAAAAAAAAAAAAA",
+            "21XIM_rewol_REPPU_x_x3"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge_x_x 1"
+        },
+        "expected": "EDGE_X_X 1",
+        "unexpected": [
+            "edge_x_x 1",
+            "1 x_x_egde",
+            "AAAAAAAAAA",
+            "dge_x_x 1e"
+        ]
+    },
+    {
+        "input": {
+            "s": "UPPER_lower_MIX123_x"
+        },
+        "expected": "UPPER_LOWER_MIX123_X",
+        "unexpected": [
+            "x_321XIM_rewol_REPPU",
+            "AAAAAAAAAAAAAAAAAAAA",
+            "UPPER_lower_MIX123_x",
+            "upper_lower_mix123_x",
+            "PPER_lower_MIX123_xU"
+        ]
+    },
+    {
+        "input": {
+            "s": "line1"
+        },
+        "expected": "LINE1",
+        "unexpected": [
+            "1enil",
+            "line1",
+            "AAAAA",
+            "ine1l"
+        ]
+    },
+    {
+        "input": {
+            "s": "!@#"
+        },
+        "expected": "!@#",
+        "unexpected": [
+            "@#!",
+            "#@!",
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "321XIM_rewol_REPPU_x_x_x 0"
+        },
+        "expected": "321XIM_REWOL_REPPU_X_X_X 0",
+        "unexpected": [
+            "321XIM_rewol_REPPU_x_x_x 0",
+            "0 x_x_x_UPPER_lower_MIX123",
+            "21XIM_rewol_REPPU_x_x_x 03",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "321xim_rewol_reppu_x_x_x 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "edge_x_x"
+        },
+        "expected": "EDGE_X_X",
+        "unexpected": [
+            "edge_x_x",
+            "AAAAAAAA",
+            "x_x_egde",
+            "dge_x_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa edge edge"
+        },
+        "expected": "FEDCBA EDGE EDGE",
+        "unexpected": [
+            "FeDcBa edge edge",
+            "AAAAAAAAAAAAAAAA",
+            "egde egde aBcDeF",
+            "fedcba edge edge",
+            "eDcBa edge edgeF"
+        ]
+    },
+    {
+        "input": {
+            "s": "UPPER_lower_MIX123 edge"
+        },
+        "expected": "UPPER_LOWER_MIX123 EDGE",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAA",
+            "UPPER_lower_MIX123 edge",
+            "egde 321XIM_rewol_REPPU",
+            "upper_lower_mix123 edge",
+            "PPER_lower_MIX123 edgeU"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ edge 0"
+        },
+        "expected": "X_ EDGE 0",
+        "unexpected": [
+            "x_ edge 0",
+            "0 egde _x",
+            "_ edge 0x",
+            "AAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "elpmaxe_esac_ekans_x"
+        },
+        "expected": "ELPMAXE_ESAC_EKANS_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAA",
+            "x_snake_case_example",
+            "lpmaxe_esac_ekans_xe",
+            "elpmaxe_esac_ekans_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "god yzal eht revo spmuj xof nworb kciuq eht_x"
+        },
+        "expected": "GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT_X",
+        "unexpected": [
+            "god yzal eht revo spmuj xof nworb kciuq eht_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_the quick brown fox jumps over the lazy dog",
+            "od yzal eht revo spmuj xof nworb kciuq eht_xg"
+        ]
+    },
+    {
+        "input": {
+            "s": "gnidael"
+        },
+        "expected": "GNIDAEL",
+        "unexpected": [
+            "gnidael",
+            "AAAAAAA",
+            "leading",
+            "nidaelg"
+        ]
+    },
+    {
+        "input": {
+            "s": "aBcDeF 1"
+        },
+        "expected": "ABCDEF 1",
+        "unexpected": [
+            "aBcDeF 1",
+            "1 FeDcBa",
+            "AAAAAAAA",
+            "abcdef 1",
+            "BcDeF 1a"
+        ]
+    },
+    {
+        "input": {
+            "s": "façade_x"
+        },
+        "expected": "FAçADE_X",
+        "unexpected": [
+            "AAAAAAAA",
+            "façade_x",
+            "x_edaçaf",
+            "açade_xf"
+        ]
+    },
+    {
+        "input": {
+            "s": "ἀπὸ"
+        },
+        "expected": "ἀπὸ",
+        "unexpected": [
+            "AAA",
+            "ὸπἀ",
+            "πὸἀ"
+        ]
+    },
+    {
+        "input": {
+            "s": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1"
+        },
+        "expected": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_X 0_X 1",
+        "unexpected": [
+            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1",
+            "1 x_0 x_GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT",
+            "the quick brown fox jumps over the lazy dog_x 0_x 1",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "HE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1T"
+        ]
+    },
+    {
+        "input": {
+            "s": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG edge"
+        },
+        "expected": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG EDGE",
+        "unexpected": [
+            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG edge",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "HE QUICK BROWN FOX JUMPS OVER THE LAZY DOG edgeT",
+            "egde GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT",
+            "the quick brown fox jumps over the lazy dog edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde CBA_x"
+        },
+        "expected": "EGDE CBA_X",
+        "unexpected": [
+            "egde CBA_x",
+            "AAAAAAAAAA",
+            "egde cba_x",
+            "x_ABC edge",
+            "gde CBA_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_x_1 1 _x_x"
+        },
+        "expected": "X_X_X_1 1 _X_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAA",
+            "x_x_x_1 1 _x_x",
+            "x_x_ 1 1_x_x_x",
+            "_x_x_1 1 _x_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "anañam"
+        },
+        "expected": "ANAñAM",
+        "unexpected": [
+            "anañam",
+            "mañana",
+            "AAAAAA",
+            "nañama"
+        ]
+    },
+    {
+        "input": {
+            "s": "snake_case_example edge_x"
+        },
+        "expected": "SNAKE_CASE_EXAMPLE EDGE_X",
+        "unexpected": [
+            "snake_case_example edge_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_egde elpmaxe_esac_ekans",
+            "nake_case_example edge_xs"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC edge"
+        },
+        "expected": "ABC EDGE",
+        "unexpected": [
+            "ABC edge",
+            "abc edge",
+            "egde CBA",
+            "BC edgeA",
+            "AAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0_x"
+        },
+        "expected": " 0_X",
+        "unexpected": [
+            "AAAA",
+            " 0_x",
+            "x_0 ",
+            "0_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "evïan"
+        },
+        "expected": "EVïAN",
+        "unexpected": [
+            "evïan",
+            "AAAAA",
+            "naïve",
+            "vïane"
+        ]
+    },
+    {
+        "input": {
+            "s": "ἀπὸ 1 0 1 edge"
+        },
+        "expected": "ἀπὸ 1 0 1 EDGE",
+        "unexpected": [
+            "πὸ 1 0 1 edgeἀ",
+            "ἀπὸ 1 0 1 edge",
+            "AAAAAAAAAAAAAA",
+            "egde 1 0 1 ὸπἀ"
+        ]
+    },
+    {
+        "input": {
+            "s": "façade naïve rôle_x"
+        },
+        "expected": "FAçADE NAïVE RôLE_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAA",
+            "açade naïve rôle_xf",
+            "façade naïve rôle_x",
+            "x_elôr evïan edaçaf"
+        ]
+    },
+    {
+        "input": {
+            "s": "lazy 1"
+        },
+        "expected": "LAZY 1",
+        "unexpected": [
+            "AAAAAA",
+            "1 yzal",
+            "lazy 1",
+            "azy 1l"
+        ]
+    },
+    {
+        "input": {
+            "s": "elôr evïan edaçaf_x_x"
+        },
+        "expected": "ELôR EVïAN EDAçAF_X_X",
+        "unexpected": [
+            "x_x_façade naïve rôle",
+            "AAAAAAAAAAAAAAAAAAAAA",
+            "elôr evïan edaçaf_x_x",
+            "lôr evïan edaçaf_x_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1_x_x"
+        },
+        "expected": " 1_X_X",
+        "unexpected": [
+            "AAAAAA",
+            "x_x_1 ",
+            " 1_x_x",
+            "1_x_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "рим тевирп_x_x"
+        },
+        "expected": "рим тевирп_X_X",
+        "unexpected": [
+            "рим тевирп_x_x",
+            "AAAAAAAAAAAAAA",
+            "x_x_привет мир",
+            "им тевирп_x_xр"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_1"
+        },
+        "expected": "X_1",
+        "unexpected": [
+            "x_1",
+            "1_x",
+            "AAA",
+            "_1x"
+        ]
+    },
+    {
+        "input": {
+            "s": "ملاعلاب edge"
+        },
+        "expected": "ملاعلاب EDGE",
+        "unexpected": [
+            "ملاعلاب edge",
+            "لاعلاب edgeم",
+            "egde بالعالم",
+            "AAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "straße_x"
+        },
+        "expected": "STRAßE_X",
+        "unexpected": [
+            "straße_x",
+            "AAAAAAAA",
+            "x_eßarts",
+            "traße_xs"
+        ]
+    },
+    {
+        "input": {
+            "s": "straße 0"
+        },
+        "expected": "STRAßE 0",
+        "unexpected": [
+            "straße 0",
+            "AAAAAAAA",
+            "traße 0s",
+            "0 eßarts"
+        ]
+    },
+    {
+        "input": {
+            "s": "REVO"
+        },
+        "expected": "REVO",
+        "unexpected": [
+            "AAAA",
+            "revo",
+            "OVER",
+            "EVOR"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 straße"
+        },
+        "expected": "0 STRAßE",
+        "unexpected": [
+            "0 straße",
+            "AAAAAAAA",
+            "eßarts 0",
+            " straße0"
+        ]
+    },
+    {
+        "input": {
+            "s": "leading"
+        },
+        "expected": "LEADING",
+        "unexpected": [
+            "AAAAAAA",
+            "leading",
+            "gnidael",
+            "eadingl"
+        ]
+    },
+    {
+        "input": {
+            "s": "istanbul iıİI_x"
+        },
+        "expected": "ISTANBUL IıİI_X",
+        "unexpected": [
+            "stanbul iıİI_xi",
+            "AAAAAAAAAAAAAAA",
+            "x_Iİıi lubnatsi",
+            "istanbul iıİi_x",
+            "istanbul iıİI_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "\t\n\r_x 0_x 0"
+        },
+        "expected": "\\t\\n\\x0d_X 0_X 0",
+        "unexpected": [
+            "\\t\\n\\x0d_x 0_x 0",
+            "AAAAAAAAAAA",
+            "0 x_0 x_\\x0d\\n\\t",
+            "\\n\\x0d_x 0_x 0\\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "istanbul iıİI_x 0"
+        },
+        "expected": "ISTANBUL IıİI_X 0",
+        "unexpected": [
+            "istanbul iıİI_x 0",
+            "AAAAAAAAAAAAAAAAA",
+            "istanbul iıİi_x 0",
+            "stanbul iıİI_x 0i",
+            "0 x_Iİıi lubnatsi"
+        ]
+    },
+    {
+        "input": {
+            "s": "Iİıi lubnatsi"
+        },
+        "expected": "IİıI LUBNATSI",
+        "unexpected": [
+            "AAAAAAAAAAAAA",
+            "Iİıi lubnatsi",
+            "iİıi lubnatsi",
+            "İıi lubnatsiI",
+            "istanbul iıİI"
+        ]
+    },
+    {
+        "input": {
+            "s": "god yzal eht revo spmuj xof nworb kciuq eht_x_x"
+        },
+        "expected": "GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT_X_X",
+        "unexpected": [
+            "god yzal eht revo spmuj xof nworb kciuq eht_x_x",
+            "x_x_the quick brown fox jumps over the lazy dog",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "od yzal eht revo spmuj xof nworb kciuq eht_x_xg"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_z_x_x edge"
+        },
+        "expected": "EGDE X_Z_X_X EDGE",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAA",
+            "egde x_z_x_x edge",
+            "egde x_x_z_x edge",
+            "gde x_z_x_x edgee"
+        ]
+    },
+    {
+        "input": {
+            "s": "ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ"
+        },
+        "expected": "ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAA",
+            "ψόκ νὴτ ὸπἀ ωζίρωνγ ὲση",
+            "σὲ γνωρίζω ἀπὸ τὴν κόψη"
+        ]
+    },
+    {
+        "input": {
+            "s": "0  edge"
+        },
+        "expected": "0  EDGE",
+        "unexpected": [
+            "  edge0",
+            "0  edge",
+            "AAAAAAA",
+            "egde  0"
+        ]
+    },
+    {
+        "input": {
+            "s": "σὲ γνωρίζω ἀπὸ τὴν κόψη 1 1_x"
+        },
+        "expected": "σὲ γνωρίζω ἀπὸ τὴν κόψη 1 1_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_1 1 ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ",
+            "σὲ γνωρίζω ἀπὸ τὴν κόψη 1 1_x",
+            "ὲ γνωρίζω ἀπὸ τὴν κόψη 1 1_xσ"
+        ]
+    },
+    {
+        "input": {
+            "s": "σὲ γνωρίζω ἀπὸ τὴν κόψη_x_x"
+        },
+        "expected": "σὲ γνωρίζω ἀπὸ τὴν κόψη_X_X",
+        "unexpected": [
+            "σὲ γνωρίζω ἀπὸ τὴν κόψη_x_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "ὲ γνωρίζω ἀπὸ τὴν κόψη_x_xσ",
+            "x_x_ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ"
+        ]
+    },
+    {
+        "input": {
+            "s": "привет"
+        },
+        "expected": "привет",
+        "unexpected": [
+            "тевирп",
+            "AAAAAA",
+            "риветп"
+        ]
+    },
+    {
+        "input": {
+            "s": "σὲ γνωρίζω ἀπὸ τὴν κόψη 0_x_x"
+        },
+        "expected": "σὲ γνωρίζω ἀπὸ τὴν κόψη 0_X_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "σὲ γνωρίζω ἀπὸ τὴν κόψη 0_x_x",
+            "ὲ γνωρίζω ἀπὸ τὴν κόψη 0_x_xσ",
+            "x_x_0 ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ"
+        ]
+    },
+    {
+        "input": {
+            "s": "DOG_x"
+        },
+        "expected": "DOG_X",
+        "unexpected": [
+            "DOG_x",
+            "x_GOD",
+            "AAAAA",
+            "dog_x",
+            "OG_xD"
+        ]
+    },
+    {
+        "input": {
+            "s": "123_x_x"
+        },
+        "expected": "123_X_X",
+        "unexpected": [
+            "123_x_x",
+            "AAAAAAA",
+            "x_x_321",
+            "23_x_x1"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ 0 edge"
+        },
+        "expected": "X_ 0 EDGE",
+        "unexpected": [
+            "x_ 0 edge",
+            "egde 0 _x",
+            "AAAAAAAAA",
+            "_ 0 edgex"
+        ]
+    },
+    {
+        "input": {
+            "s": " 0_x 0_x"
+        },
+        "expected": " 0_X 0_X",
+        "unexpected": [
+            " 0_x 0_x",
+            "x_0 x_0 ",
+            "0_x 0_x ",
+            "AAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_egde εμσόκ υοσ άιεγ_x"
+        },
+        "expected": "X_X_EGDE εμσόκ υοσ άιεγ_X",
+        "unexpected": [
+            "x_x_egde εμσόκ υοσ άιεγ_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_γειά σου κόσμε edge_x_x",
+            "_x_egde εμσόκ υοσ άιεγ_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_γειά σου κόσμε"
+        },
+        "expected": "X_γειά σου κόσμε",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAA",
+            "x_γειά σου κόσμε",
+            "εμσόκ υοσ άιεγ_x",
+            "_γειά σου κόσμεx"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_cba edge"
+        },
+        "expected": "X_CBA EDGE",
+        "unexpected": [
+            "x_cba edge",
+            "AAAAAAAAAA",
+            "egde abc_x",
+            "_cba edgex"
+        ]
+    },
+    {
+        "input": {
+            "s": "!@# 0_x"
+        },
+        "expected": "!@# 0_X",
+        "unexpected": [
+            "AAAAAAA",
+            "!@# 0_x",
+            "x_0 #@!",
+            "@# 0_x!"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x_x 0"
+        },
+        "expected": "1_X_X 0",
+        "unexpected": [
+            "1_x_x 0",
+            "_x_x 01",
+            "AAAAAAA",
+            "0 x_x_1"
+        ]
+    },
+    {
+        "input": {
+            "s": "γειά σου κόσμε_x"
+        },
+        "expected": "γειά σου κόσμε_X",
+        "unexpected": [
+            "γειά σου κόσμε_x",
+            "AAAAAAAAAAAAAAAA",
+            "ειά σου κόσμε_xγ",
+            "x_εμσόκ υοσ άιεγ"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا بالعالم_x"
+        },
+        "expected": "مرحبا بالعالم_X",
+        "unexpected": [
+            "AAAAAAAAAAAAAAA",
+            "مرحبا بالعالم_x",
+            "x_ملاعلاب ابحرم",
+            "رحبا بالعالم_xم"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا بالعالم_x edge"
+        },
+        "expected": "مرحبا بالعالم_X EDGE",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAA",
+            "مرحبا بالعالم_x edge",
+            "egde x_ملاعلاب ابحرم",
+            "رحبا بالعالم_x edgeم"
+        ]
+    },
+    {
+        "input": {
+            "s": "over"
+        },
+        "expected": "OVER",
+        "unexpected": [
+            "over",
+            "revo",
+            "vero",
+            "AAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ABC edge_x"
+        },
+        "expected": "ABC EDGE_X",
+        "unexpected": [
+            "ABC edge_x",
+            "abc edge_x",
+            "AAAAAAAAAA",
+            "x_egde CBA",
+            "BC edge_xA"
+        ]
+    },
+    {
+        "input": {
+            "s": "World!"
+        },
+        "expected": "WORLD!",
+        "unexpected": [
+            "!dlroW",
+            "AAAAAA",
+            "orld!W",
+            "World!",
+            "world!"
+        ]
+    },
+    {
+        "input": {
+            "s": "fox"
+        },
+        "expected": "FOX",
+        "unexpected": [
+            "fox",
+            "xof",
+            "oxf",
+            "AAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "straße 0 0"
+        },
+        "expected": "STRAßE 0 0",
+        "unexpected": [
+            "straße 0 0",
+            "traße 0 0s",
+            "0 0 eßarts",
+            "AAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_界世はちにんこ 0"
+        },
+        "expected": "X_界世はちにんこ 0",
+        "unexpected": [
+            "AAAAAAAAAAA",
+            "x_界世はちにんこ 0",
+            "0 こんにちは世界_x",
+            "_界世はちにんこ 0x"
+        ]
+    },
+    {
+        "input": {
+            "s": "こんにちは世界 1 1 0"
+        },
+        "expected": "こんにちは世界 1 1 0",
+        "unexpected": [
+            "AAAAAAAAAAAAA",
+            "0 1 1 界世はちにんこ",
+            "んにちは世界 1 1 0こ"
+        ]
+    },
+    {
+        "input": {
+            "s": "0_x"
+        },
+        "expected": "0_X",
+        "unexpected": [
+            "x_0",
+            "0_x",
+            "AAA",
+            "_x0"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample edge_x edge"
+        },
+        "expected": "CAMELCASEEXAMPLE EDGE_X EDGE",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "camelCaseExample edge_x edge",
+            "egde x_egde elpmaxEesaClemac",
+            "camelcaseexample edge_x edge",
+            "amelCaseExample edge_x edgec"
+        ]
+    },
+    {
+        "input": {
+            "s": "你好，世界_x 1_x"
+        },
+        "expected": "你好，世界_X 1_X",
+        "unexpected": [
+            "你好，世界_x 1_x",
+            "x_1 x_界世，好你",
+            "AAAAAAAAAAA",
+            "好，世界_x 1_x你"
+        ]
+    },
+    {
+        "input": {
+            "s": "line3_x_x"
+        },
+        "expected": "LINE3_X_X",
+        "unexpected": [
+            "line3_x_x",
+            "x_x_3enil",
+            "AAAAAAAAA",
+            "ine3_x_xl"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_\r\n\t_x"
+        },
+        "expected": "X_\\x0d\\n\\t_X",
+        "unexpected": [
+            "x_\\x0d\\n\\t_x",
+            "AAAAAAA",
+            "x_\\t\\n\\x0d_x",
+            "_\\x0d\\n\\t_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "界世，好你_x_x_x"
+        },
+        "expected": "界世，好你_X_X_X",
+        "unexpected": [
+            "界世，好你_x_x_x",
+            "世，好你_x_x_x界",
+            "AAAAAAAAAAA",
+            "x_x_x_你好，世界"
+        ]
+    },
+    {
+        "input": {
+            "s": "😁😄😃😀"
+        },
+        "expected": "😁😄😃😀",
+        "unexpected": [
+            "AAAA",
+            "😀😃😄😁",
+            "😄😃😀😁"
+        ]
+    },
+    {
+        "input": {
+            "s": "elpmaxe-esac-babek 1"
+        },
+        "expected": "ELPMAXE-ESAC-BABEK 1",
+        "unexpected": [
+            "1 kebab-case-example",
+            "lpmaxe-esac-babek 1e",
+            "elpmaxe-esac-babek 1",
+            "AAAAAAAAAAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "😀😃😄😁_x_x_x_x"
+        },
+        "expected": "😀😃😄😁_X_X_X_X",
+        "unexpected": [
+            "😀😃😄😁_x_x_x_x",
+            "AAAAAAAAAAAA",
+            "x_x_x_x_😁😄😃😀",
+            "😃😄😁_x_x_x_x😀"
+        ]
+    },
+    {
+        "input": {
+            "s": "😀😃😄😁 edge"
+        },
+        "expected": "😀😃😄😁 EDGE",
+        "unexpected": [
+            "😀😃😄😁 edge",
+            "AAAAAAAAA",
+            "egde 😁😄😃😀",
+            "😃😄😁 edge😀"
+        ]
+    },
+    {
+        "input": {
+            "s": "dog_x"
+        },
+        "expected": "DOG_X",
+        "unexpected": [
+            "dog_x",
+            "x_god",
+            "AAAAA",
+            "og_xd"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_egde egde 😀😃😄😁"
+        },
+        "expected": "X_EGDE EGDE 😀😃😄😁",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAA",
+            "😁😄😃😀 edge edge_x",
+            "x_egde egde 😀😃😄😁",
+            "_egde egde 😀😃😄😁x"
+        ]
+    },
+    {
+        "input": {
+            "s": "κόσμε 1"
+        },
+        "expected": "κόσμε 1",
+        "unexpected": [
+            "όσμε 1κ",
+            "AAAAAAA",
+            "1 εμσόκ"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000abc\u0000_x_x_x"
+        },
+        "expected": "\\x00ABC\\x00_X_X_X",
+        "unexpected": [
+            "AAAAAAAAAAA",
+            "\\x00abc\\x00_x_x_x",
+            "x_x_x_\\x00cba\\x00",
+            "abc\\x00_x_x_x\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_egde façade naïve rôle"
+        },
+        "expected": "EGDE X_EGDE FAçADE NAïVE RôLE",
+        "unexpected": [
+            "elôr evïan edaçaf edge_x edge",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "egde x_egde façade naïve rôle",
+            "gde x_egde façade naïve rôlee"
+        ]
+    },
+    {
+        "input": {
+            "s": "naïve edge_x"
+        },
+        "expected": "NAïVE EDGE_X",
+        "unexpected": [
+            "naïve edge_x",
+            "AAAAAAAAAAAA",
+            "x_egde evïan",
+            "aïve edge_xn"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ"
+        },
+        "expected": "X_X_ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "σὲ γνωρίζω ἀπὸ τὴν κόψη_x_x",
+            "x_x_ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσ",
+            "_x_ηψόκ νὴτ ὸπἀ ωζίρωνγ ὲσx"
+        ]
+    },
+    {
+        "input": {
+            "s": "Iİıi"
+        },
+        "expected": "IİıI",
+        "unexpected": [
+            "Iİıi",
+            "iıİI",
+            "AAAA",
+            "iİıi",
+            "İıiI"
+        ]
+    },
+    {
+        "input": {
+            "s": "camelCaseExample 1 0 edge"
+        },
+        "expected": "CAMELCASEEXAMPLE 1 0 EDGE",
+        "unexpected": [
+            "amelCaseExample 1 0 edgec",
+            "camelCaseExample 1 0 edge",
+            "egde 0 1 elpmaxEesaClemac",
+            "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            "camelcaseexample 1 0 edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 eloće"
+        },
+        "expected": "X_0 ELOĆE",
+        "unexpected": [
+            "école 0_x",
+            "x_0 eloće",
+            "AAAAAAAAAA",
+            "_0 eloćex"
+        ]
+    },
+    {
+        "input": {
+            "s": "the"
+        },
+        "expected": "THE",
+        "unexpected": [
+            "AAA",
+            "the",
+            "eht",
+            "het"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_fox 0"
+        },
+        "expected": "X_FOX 0",
+        "unexpected": [
+            "x_fox 0",
+            "_fox 0x",
+            "AAAAAAA",
+            "0 xof_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "eloće 1"
+        },
+        "expected": "ELOĆE 1",
+        "unexpected": [
+            "eloće 1",
+            "1 école",
+            "AAAAAAAA",
+            "loće 1e"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde eloće_x"
+        },
+        "expected": "EGDE ELOĆE_X",
+        "unexpected": [
+            "egde eloće_x",
+            "AAAAAAAAAAAAA",
+            "gde eloće_xe",
+            "x_école edge"
+        ]
+    },
+    {
+        "input": {
+            "s": "你好，世界_x_x"
+        },
+        "expected": "你好，世界_X_X",
+        "unexpected": [
+            "好，世界_x_x你",
+            "你好，世界_x_x",
+            "AAAAAAAAA",
+            "x_x_界世，好你"
+        ]
+    },
+    {
+        "input": {
+            "s": "école_x"
+        },
+        "expected": "ÉCOLE_X",
+        "unexpected": [
+            "́cole_xe",
+            "école_x",
+            "AAAAAAAA",
+            "x_eloće"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 école 1"
+        },
+        "expected": "0 ÉCOLE 1",
+        "unexpected": [
+            "1 eloće 0",
+            "AAAAAAAAAA",
+            "0 école 1",
+            " école 10"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔠𝔟𝔞"
+        },
+        "expected": "𝔠𝔟𝔞",
+        "unexpected": [
+            "AAA",
+            "𝔞𝔟𝔠",
+            "𝔟𝔞𝔠"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_𝔞𝔟𝔠"
+        },
+        "expected": "X_𝔞𝔟𝔠",
+        "unexpected": [
+            "x_𝔞𝔟𝔠",
+            "AAAAA",
+            "𝔠𝔟𝔞_x",
+            "_𝔞𝔟𝔠x"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_𝔠𝔟𝔞_x"
+        },
+        "expected": "X_𝔠𝔟𝔞_X",
+        "unexpected": [
+            "x_𝔠𝔟𝔞_x",
+            "AAAAAAA",
+            "x_𝔞𝔟𝔠_x",
+            "_𝔠𝔟𝔞_xx"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔞𝔟𝔠 1_x_x_x"
+        },
+        "expected": "𝔞𝔟𝔠 1_X_X_X",
+        "unexpected": [
+            "AAAAAAAAAAA",
+            "𝔟𝔠 1_x_x_x𝔞",
+            "𝔞𝔟𝔠 1_x_x_x",
+            "x_x_x_1 𝔠𝔟𝔞"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_x_1 1 _x_x 1"
+        },
+        "expected": "X_X_X_1 1 _X_X 1",
+        "unexpected": [
+            "x_x_x_1 1 _x_x 1",
+            "AAAAAAAAAAAAAAAA",
+            "_x_x_1 1 _x_x 1x",
+            "1 x_x_ 1 1_x_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣａｂｃ edge_x"
+        },
+        "expected": "ＡＢＣａｂｃ EDGE_X",
+        "unexpected": [
+            "ＡＢＣａｂｃ edge_x",
+            "AAAAAAAAAAAAA",
+            "x_egde ｃｂａＣＢＡ",
+            "ＢＣａｂｃ edge_xＡ"
+        ]
+    },
+    {
+        "input": {
+            "s": "ｃｂａＣＢＡ 1"
+        },
+        "expected": "ｃｂａＣＢＡ 1",
+        "unexpected": [
+            "1 ＡＢＣａｂｃ",
+            "AAAAAAAA",
+            "ｂａＣＢＡ 1ｃ"
+        ]
+    },
+    {
+        "input": {
+            "s": "тевирп_x_x"
+        },
+        "expected": "тевирп_X_X",
+        "unexpected": [
+            "тевирп_x_x",
+            "x_x_привет",
+            "AAAAAAAAAA",
+            "евирп_x_xт"
+        ]
+    },
+    {
+        "input": {
+            "s": "elôr evïan edaçaf 0"
+        },
+        "expected": "ELôR EVïAN EDAçAF 0",
+        "unexpected": [
+            "elôr evïan edaçaf 0",
+            "AAAAAAAAAAAAAAAAAAA",
+            "0 façade naïve rôle",
+            "lôr evïan edaçaf 0e"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣａｂｃ_x_x"
+        },
+        "expected": "ＡＢＣａｂｃ_X_X",
+        "unexpected": [
+            "x_x_ｃｂａＣＢＡ",
+            "AAAAAAAAAA",
+            "ＡＢＣａｂｃ_x_x",
+            "ＢＣａｂｃ_x_xＡ"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣａｂｃ 1"
+        },
+        "expected": "ＡＢＣａｂｃ 1",
+        "unexpected": [
+            "1 ｃｂａＣＢＡ",
+            "AAAAAAAA",
+            "ＢＣａｂｃ 1Ａ"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_ｃｂａＣＢＡ"
+        },
+        "expected": "X_ｃｂａＣＢＡ",
+        "unexpected": [
+            "ＡＢＣａｂｃ_x",
+            "_ｃｂａＣＢＡx",
+            "x_ｃｂａＣＢＡ",
+            "AAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ＡＢＣａｂｃ edge"
+        },
+        "expected": "ＡＢＣａｂｃ EDGE",
+        "unexpected": [
+            "ＡＢＣａｂｃ edge",
+            "egde ｃｂａＣＢＡ",
+            "AAAAAAAAAAA",
+            "ＢＣａｂｃ edgeＡ"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_\u0000cba\u0000"
+        },
+        "expected": "X_\\x00CBA\\x00",
+        "unexpected": [
+            "x_\\x00cba\\x00",
+            "\\x00abc\\x00_x",
+            "_\\x00cba\\x00x",
+            "AAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000cba\u0000"
+        },
+        "expected": "\\x00CBA\\x00",
+        "unexpected": [
+            "AAAAA",
+            "\\x00cba\\x00",
+            "\\x00abc\\x00",
+            "cba\\x00\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 0 1"
+        },
+        "expected": "0 0 1",
+        "unexpected": [
+            "1 0 0",
+            "AAAAA",
+            " 0 10"
+        ]
+    },
+    {
+        "input": {
+            "s": "UPPER_lower_MIX123 edge_x_x"
+        },
+        "expected": "UPPER_LOWER_MIX123 EDGE_X_X",
+        "unexpected": [
+            "UPPER_lower_MIX123 edge_x_x",
+            "PPER_lower_MIX123 edge_x_xU",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_x_egde 321XIM_rewol_REPPU",
+            "upper_lower_mix123 edge_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0000abc\u0000 1"
+        },
+        "expected": "\\x00ABC\\x00 1",
+        "unexpected": [
+            "AAAAAAA",
+            "1 \\x00cba\\x00",
+            "\\x00abc\\x00 1",
+            "abc\\x00 1\\x00"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 1 x_\u0000cba\u0000"
+        },
+        "expected": "0 1 X_\\x00CBA\\x00",
+        "unexpected": [
+            "0 1 x_\\x00cba\\x00",
+            "AAAAAAAAAAA",
+            "\\x00abc\\x00_x 1 0",
+            " 1 x_\\x00cba\\x000"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_0 "
+        },
+        "expected": "X_0 ",
+        "unexpected": [
+            "x_0 ",
+            " 0_x",
+            "_0 x",
+            "AAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ESAC"
+        },
+        "expected": "ESAC",
+        "unexpected": [
+            "CASE",
+            "esac",
+            "AAAA",
+            "SACE"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0001\u0002test\u0003 0"
+        },
+        "expected": "\\x01\\x02TEST\\x03 0",
+        "unexpected": [
+            "0 \\x03tset\\x02\\x01",
+            "\\x01\\x02test\\x03 0",
+            "AAAAAAAAA",
+            "\\x02test\\x03 0\\x01"
+        ]
+    },
+    {
+        "input": {
+            "s": "a_x"
+        },
+        "expected": "A_X",
+        "unexpected": [
+            "a_x",
+            "x_a",
+            "AAA",
+            "_xa"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0001\u0002test\u0003_x"
+        },
+        "expected": "\\x01\\x02TEST\\x03_X",
+        "unexpected": [
+            "\\x02test\\x03_x\\x01",
+            "x_\\x03tset\\x02\\x01",
+            "\\x01\\x02test\\x03_x",
+            "AAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "brown"
+        },
+        "expected": "BROWN",
+        "unexpected": [
+            "brown",
+            "nworb",
+            "AAAAA",
+            "rownb"
+        ]
+    },
+    {
+        "input": {
+            "s": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1_x"
+        },
+        "expected": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_X 0_X 1_X",
+        "unexpected": [
+            "HE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1_xT",
+            "x_1 x_0 x_GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT",
+            "the quick brown fox jumps over the lazy dog_x 0_x 1_x",
+            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG_x 0_x 1_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "0 \u0003tset\u0002\u0001"
+        },
+        "expected": "0 \\x03TSET\\x02\\x01",
+        "unexpected": [
+            "AAAAAAAAA",
+            "0 \\x03tset\\x02\\x01",
+            "\\x01\\x02test\\x03 0",
+            " \\x03tset\\x02\\x010"
+        ]
+    },
+    {
+        "input": {
+            "s": "spmuj 0"
+        },
+        "expected": "SPMUJ 0",
+        "unexpected": [
+            "spmuj 0",
+            "AAAAAAA",
+            "0 jumps",
+            "pmuj 0s"
+        ]
+    },
+    {
+        "input": {
+            "s": "c‎b‏a 0"
+        },
+        "expected": "C‎B‏A 0",
+        "unexpected": [
+            "c‎b‏a 0",
+            "0 a‏b‎c",
+            "AAAAAAA",
+            "‎b‏a 0c"
+        ]
+    },
+    {
+        "input": {
+            "s": "yzal edge"
+        },
+        "expected": "YZAL EDGE",
+        "unexpected": [
+            "yzal edge",
+            "zal edgey",
+            "AAAAAAAAA",
+            "egde lazy"
+        ]
+    },
+    {
+        "input": {
+            "s": " edge 1"
+        },
+        "expected": " EDGE 1",
+        "unexpected": [
+            " edge 1",
+            "1 egde ",
+            "AAAAAAA",
+            "edge 1 "
+        ]
+    },
+    {
+        "input": {
+            "s": "a‏b‎c edge"
+        },
+        "expected": "A‏B‎C EDGE",
+        "unexpected": [
+            "AAAAAAAAAA",
+            "a‏b‎c edge",
+            "egde c‎b‏a",
+            "‏b‎c edgea"
+        ]
+    },
+    {
+        "input": {
+            "s": " 1 edge edge_x"
+        },
+        "expected": " 1 EDGE EDGE_X",
+        "unexpected": [
+            " 1 edge edge_x",
+            "AAAAAAAAAAAAAA",
+            "x_egde egde 1 ",
+            "1 edge edge_x "
+        ]
+    },
+    {
+        "input": {
+            "s": "egde c‎b‏a"
+        },
+        "expected": "EGDE C‎B‏A",
+        "unexpected": [
+            "AAAAAAAAAA",
+            "egde c‎b‏a",
+            "a‏b‎c edge",
+            "gde c‎b‏ae"
+        ]
+    },
+    {
+        "input": {
+            "s": "εμσόκ υοσ άιεγ"
+        },
+        "expected": "εμσόκ υοσ άιεγ",
+        "unexpected": [
+            "γειά σου κόσμε",
+            "AAAAAAAAAAAAAA",
+            "μσόκ υοσ άιεγε"
+        ]
+    },
+    {
+        "input": {
+            "s": "gniliart_x_x"
+        },
+        "expected": "GNILIART_X_X",
+        "unexpected": [
+            "gniliart_x_x",
+            "niliart_x_xg",
+            "AAAAAAAAAAAA",
+            "x_x_trailing"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_⁩cba⁦"
+        },
+        "expected": "X_⁩CBA⁦",
+        "unexpected": [
+            "x_⁩cba⁦",
+            "⁦abc⁩_x",
+            "AAAAAAA",
+            "_⁩cba⁦x"
+        ]
+    },
+    {
+        "input": {
+            "s": "⁦abc⁩ 1"
+        },
+        "expected": "⁦ABC⁩ 1",
+        "unexpected": [
+            "⁦abc⁩ 1",
+            "1 ⁩cba⁦",
+            "AAAAAAA",
+            "abc⁩ 1⁦"
+        ]
+    },
+    {
+        "input": {
+            "s": "⁦abc⁩ edge"
+        },
+        "expected": "⁦ABC⁩ EDGE",
+        "unexpected": [
+            "abc⁩ edge⁦",
+            "AAAAAAAAAA",
+            "⁦abc⁩ edge",
+            "egde ⁩cba⁦"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa edge edge 1_x"
+        },
+        "expected": "FEDCBA EDGE EDGE 1_X",
+        "unexpected": [
+            "FeDcBa edge edge 1_x",
+            "x_1 egde egde aBcDeF",
+            "AAAAAAAAAAAAAAAAAAAA",
+            "eDcBa edge edge 1_xF",
+            "fedcba edge edge 1_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0003tset\u0002\u0001_x"
+        },
+        "expected": "\\x03TSET\\x02\\x01_X",
+        "unexpected": [
+            "\\x03tset\\x02\\x01_x",
+            "tset\\x02\\x01_x\\x03",
+            "AAAAAAAAA",
+            "x_\\x01\\x02test\\x03"
+        ]
+    },
+    {
+        "input": {
+            "s": "1 界世はちにんこ"
+        },
+        "expected": "1 界世はちにんこ",
+        "unexpected": [
+            "こんにちは世界 1",
+            "AAAAAAAAA",
+            " 界世はちにんこ1"
+        ]
+    },
+    {
+        "input": {
+            "s": "edaçaf_x_x"
+        },
+        "expected": "EDAçAF_X_X",
+        "unexpected": [
+            "edaçaf_x_x",
+            "x_x_façade",
+            "AAAAAAAAAA",
+            "daçaf_x_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "istanbul iıİI 1 edge 1"
+        },
+        "expected": "ISTANBUL IıİI 1 EDGE 1",
+        "unexpected": [
+            "istanbul iıİI 1 edge 1",
+            "AAAAAAAAAAAAAAAAAAAAAA",
+            "istanbul iıİi 1 edge 1",
+            "1 egde 1 Iİıi lubnatsi",
+            "stanbul iıİI 1 edge 1i"
+        ]
+    },
+    {
+        "input": {
+            "s": "1_x_x_x"
+        },
+        "expected": "1_X_X_X",
+        "unexpected": [
+            "AAAAAAA",
+            "x_x_x_1",
+            "_x_x_x1",
+            "1_x_x_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "THE_x"
+        },
+        "expected": "THE_X",
+        "unexpected": [
+            "AAAAA",
+            "x_EHT",
+            "THE_x",
+            "the_x",
+            "HE_xT"
+        ]
+    },
+    {
+        "input": {
+            "s": "etavirp 0"
+        },
+        "expected": "ETAVIRP 0",
+        "unexpected": [
+            "etavirp 0",
+            "AAAAAAAAAA",
+            "tavirp 0e",
+            "0 private"
+        ]
+    },
+    {
+        "input": {
+            "s": "etavirp"
+        },
+        "expected": "ETAVIRP",
+        "unexpected": [
+            "etavirp",
+            "private",
+            "AAAAAAAA",
+            "tavirpe"
+        ]
+    },
+    {
+        "input": {
+            "s": "private 1"
+        },
+        "expected": "PRIVATE 1",
+        "unexpected": [
+            "private 1",
+            "AAAAAAAAAA",
+            "1 etavirp",
+            "private 1"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde x_zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
+        },
+        "expected": "EGDE X_ZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBAZYXWVUTSRQPONMLKJIHGFEDCBA",
+        "unexpected": [
+            "egde x_zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba",
+            "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz_x edge",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "gde x_zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbae"
+        ]
+    },
+    {
+        "input": {
+            "s": "GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT"
+        },
+        "expected": "GOD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHT",
+        "unexpected": [
+            "god yzal eht revo spmuj xof nworb kciuq eht",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",
+            "OD YZAL EHT REVO SPMUJ XOF NWORB KCIUQ EHTG"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_x_egde εμσόκ υοσ άιεγ_x 0 0"
+        },
+        "expected": "X_X_EGDE εμσόκ υοσ άιεγ_X 0 0",
+        "unexpected": [
+            "x_x_egde εμσόκ υοσ άιεγ_x 0 0",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "0 0 x_γειά σου κόσμε edge_x_x",
+            "_x_egde εμσόκ υοσ άιεγ_x 0 0x"
+        ]
+    },
+    {
+        "input": {
+            "s": "\t\n\r_x 0_x_x"
+        },
+        "expected": "\\t\\n\\x0d_X 0_X_X",
+        "unexpected": [
+            "\\t\\n\\x0d_x 0_x_x",
+            "AAAAAAAAAAA",
+            "x_x_0 x_\\x0d\\n\\t",
+            "\\n\\x0d_x 0_x_x\\t"
+        ]
+    },
+    {
+        "input": {
+            "s": "FeDcBa edge edge_x"
+        },
+        "expected": "FEDCBA EDGE EDGE_X",
+        "unexpected": [
+            "FeDcBa edge edge_x",
+            "x_egde egde aBcDeF",
+            "AAAAAAAAAAAAAAAAAA",
+            "eDcBa edge edge_xF",
+            "fedcba edge edge_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz_x_x 0"
+        },
+        "expected": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ_X_X 0",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz_x_x 0",
+            "0 x_x_zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba",
+            "bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz_x_x 0a"
+        ]
+    },
+    {
+        "input": {
+            "s": "eht_x_x"
+        },
+        "expected": "EHT_X_X",
+        "unexpected": [
+            "eht_x_x",
+            "AAAAAAA",
+            "x_x_the",
+            "ht_x_xe"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝔞𝔟𝔠 edge"
+        },
+        "expected": "𝔞𝔟𝔠 EDGE",
+        "unexpected": [
+            "𝔞𝔟𝔠 edge",
+            "𝔟𝔠 edge𝔞",
+            "egde 𝔠𝔟𝔞",
+            "AAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "egde line2"
+        },
+        "expected": "EGDE LINE2",
+        "unexpected": [
+            "AAAAAAAAAA",
+            "2enil edge",
+            "egde line2",
+            "gde line2e"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_line2 1"
+        },
+        "expected": "X_LINE2 1",
+        "unexpected": [
+            "x_line2 1",
+            "AAAAAAAAA",
+            "1 2enil_x",
+            "_line2 1x"
+        ]
+    },
+    {
+        "input": {
+            "s": "x_mixed\nCASE\twith 123 and symbols !@#"
+        },
+        "expected": "X_MIXED\nCASE\tWITH 123 AND SYMBOLS !@#",
+        "unexpected": [
+            "#@! slobmys dna 321 htiw\tESAC\ndexim_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "_mixed\nCASE\twith 123 and symbols !@#x",
+            "x_mixed\ncase\twith 123 and symbols !@#",
+            "x_mixed\nCASE\twith 123 and symbols !@#"
+        ]
+    },
+    {
+        "input": {
+            "s": "mixed\nCASE\twith 123 and symbols !@# 0"
+        },
+        "expected": "MIXED\nCASE\tWITH 123 AND SYMBOLS !@# 0",
+        "unexpected": [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "mixed\nCASE\twith 123 and symbols !@# 0",
+            "0 #@! slobmys dna 321 htiw\tESAC\ndexim",
+            "mixed\ncase\twith 123 and symbols !@# 0",
+            "ixed\nCASE\twith 123 and symbols !@# 0m"
+        ]
+    },
+    {
+        "input": {
+            "s": "mixed\nCASE\twith 123 and symbols !@#_x"
+        },
+        "expected": "MIXED\nCASE\tWITH 123 AND SYMBOLS !@#_X",
+        "unexpected": [
+            "mixed\nCASE\twith 123 and symbols !@#_x",
+            "mixed\ncase\twith 123 and symbols !@#_x",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "x_#@! slobmys dna 321 htiw\tESAC\ndexim",
+            "ixed\nCASE\twith 123 and symbols !@#_xm"
+        ]
+    },
+    {
+        "input": {
+            "s": "123!?@_x_x"
+        },
+        "expected": "123!?@_X_X",
+        "unexpected": [
+            "123!?@_x_x",
+            "23!?@_x_x1",
+            "x_x_@?!321",
+            "AAAAAAAAAA"
+        ]
+    },
+    {
+        "input": {
+            "s": "BROWN"
+        },
+        "expected": "BROWN",
+        "unexpected": [
+            "AAAAA",
+            "brown",
+            "ROWNB",
+            "NWORB"
+        ]
+    }
+]

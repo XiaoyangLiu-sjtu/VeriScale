@@ -1,0 +1,6527 @@
+[
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 4]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            4,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 3]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 3, 4, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 3, 2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 1, 2, 1, 2]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            9,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 10, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            5,
+            7,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 3, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 11, 1, 15]"
+        },
+        "expected": 14,
+        "unexpected": [
+            11,
+            6,
+            4,
+            15
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 60, 50, 40]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100,
+            7,
+            60,
+            40
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 50, 60, 70, 80, 90, 100]"
+        },
+        "expected": 60,
+        "unexpected": [
+            0,
+            7,
+            40
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 8]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            8,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 8, 2, 5, 1, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            3,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 4, 0, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            4,
+            7,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 2, 5, 0, 0, 3, 1, 4]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            0,
+            5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000000]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 999999998, 1000000001]"
+        },
+        "expected": 3,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 0, 4294967296]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            3,
+            4294967295,
+            1,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 9007199254740991]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 1, 9007199254740990]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            21,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 3, 10, 2, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 5, 1, 5, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            9,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5]"
+        },
+        "expected": 7,
+        "unexpected": [
+            6,
+            5,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 5, 3, 6, 4]"
+        },
+        "expected": 3,
+        "unexpected": [
+            7,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[13, 1, 5, 3, 6, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            13,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 0, 3, 6, 4, 0, 0, 1000000001]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 6, 3, 6, 4]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 6, 3, 5, 1, 7, 0, 0, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            0,
+            4,
+            9,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 6, 4]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7,
+            4,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 6, 4, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 6, 3, 5, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            4,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 19, 6, 4]"
+        },
+        "expected": 18,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 4, 0, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 7, 4, 6, 3, 5, 1, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            8,
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 12, 4, 0, 0, 90]"
+        },
+        "expected": 90,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 4, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 50]"
+        },
+        "expected": 49,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4, 6, 3, 5, 1, 7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 3, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 3, 4, 6, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1, 100]"
+        },
+        "expected": 99,
+        "unexpected": [
+            93,
+            100,
+            6,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999998, 20, 6, 7]"
+        },
+        "expected": 1,
+        "unexpected": [
+            4,
+            0,
+            999999992,
+            7,
+            999999998
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 6, 4, 3, 9007199254740991]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            5,
+            7,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1, 0, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 6, 4, 3, 1, 4294967296, 0]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            20,
+            7,
+            4294967296,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9007199254740991, 4, 5]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            9007199254740991,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 4, 6, 7, 60]"
+        },
+        "expected": 59,
+        "unexpected": [
+            60,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1, 0, 4294967296, 3]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0,
+            7,
+            4294967289
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 4, 3, 1, 11, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            7,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 4, 6, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 3, 4, 6, 7, 14, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4, 1, 0, 40, 50]"
+        },
+        "expected": 50,
+        "unexpected": [
+            6,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 4, 2, 0, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 12, 1, 14, 14]"
+        },
+        "expected": 13,
+        "unexpected": [
+            5,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 14, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 2]"
+        },
+        "expected": 2,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 1, 11]"
+        },
+        "expected": 11,
+        "unexpected": [
+            2,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1, 90]"
+        },
+        "expected": 89,
+        "unexpected": [
+            0,
+            90,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 1, 13, 70]"
+        },
+        "expected": 69,
+        "unexpected": [
+            4,
+            7,
+            70,
+            66,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[14, 4, 1, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            14
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 0, 80, 18]"
+        },
+        "expected": 80,
+        "unexpected": [
+            2,
+            7,
+            5,
+            18,
+            0,
+            78
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1, 5, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 100, 2]"
+        },
+        "expected": 100,
+        "unexpected": [
+            2,
+            7,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 4294967295, 7, 90]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            4294967295,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 100, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            98,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            7,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 13]"
+        },
+        "expected": 12,
+        "unexpected": [
+            1,
+            13,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 4]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 19]"
+        },
+        "expected": 17,
+        "unexpected": [
+            2,
+            7,
+            19
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 16]"
+        },
+        "expected": 14,
+        "unexpected": [
+            2,
+            16
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            1,
+            5,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 50, 0, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            1,
+            999999999,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 90]"
+        },
+        "expected": 90,
+        "unexpected": [
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[70, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            70,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999]"
+        },
+        "expected": 0,
+        "unexpected": [
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[16, 0, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 1000000001]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            7,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 15, 80]"
+        },
+        "expected": 80,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 90, 80]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            9007199254740991,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 17]"
+        },
+        "expected": 17,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 15, 0, 11]"
+        },
+        "expected": 15,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 90]"
+        },
+        "expected": 90,
+        "unexpected": [
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 40, 0, 0]"
+        },
+        "expected": 40,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 13, 0]"
+        },
+        "expected": 13,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 8]"
+        },
+        "expected": 3,
+        "unexpected": [
+            7,
+            0,
+            8,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 8, 7, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            8,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 0, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8]"
+        },
+        "expected": 0,
+        "unexpected": [
+            8,
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6,
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10]"
+        },
+        "expected": 0,
+        "unexpected": [
+            10,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 100]"
+        },
+        "expected": 96,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 70, 1]"
+        },
+        "expected": 70,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            2,
+            3,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 60]"
+        },
+        "expected": 60,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 90]"
+        },
+        "expected": 90,
+        "unexpected": [
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 1000000000, 0]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            7,
+            0,
+            4,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 4, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            1,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 3]"
+        },
+        "expected": 3,
+        "unexpected": [
+            2,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            2,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 2, 13, 4, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 11, 1000000001]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            1000000001,
+            999999999,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967296, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1000000001, 60]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            1000000001,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 17]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            17,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 7, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 1, 4294967295, 17]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            4294967292,
+            0,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 6, 2, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 3, 2]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[11]"
+        },
+        "expected": 0,
+        "unexpected": [
+            11
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 3, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 4, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            9007199254740991,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[19, 3, 3, 0, 999999999]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0, 18, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[14, 0, 0, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            6,
+            0,
+            7,
+            14
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 999999999, 0]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 0, 6, 4294967296, 0]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            7,
+            4294967276,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0, 0, 15, 0, 1]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 5, 1, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            5,
+            0,
+            6,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 18, 16, 4, 6, 3, 5, 1, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            9007199254740990,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 6, 3, 5, 1, 17]"
+        },
+        "expected": 16,
+        "unexpected": [
+            7,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 4, 3, 6, 4]"
+        },
+        "expected": 5,
+        "unexpected": [
+            6,
+            7,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 4, 999999998, 0, 6, 3]"
+        },
+        "expected": 999999997,
+        "unexpected": [
+            7,
+            999999998
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 3, 4, 6, 3, 5, 1, 7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 6, 16, 80]"
+        },
+        "expected": 79,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 6, 3, 5, 1, 7, 17]"
+        },
+        "expected": 16,
+        "unexpected": [
+            17,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 4]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 0, 9007199254740990]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            9007199254740983,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 3, 4, 0, 70, 0]"
+        },
+        "expected": 70,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 5, 1, 7, 8]"
+        },
+        "expected": 7,
+        "unexpected": [
+            4,
+            0,
+            8,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 6, 3, 5, 1, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 3, 6, 4, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 6, 3, 5, 1, 13, 70]"
+        },
+        "expected": 69,
+        "unexpected": [
+            67,
+            70,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 999999999, 4, 6, 7, 0, 5, 0]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 3, 1, 9007199254740991, 19, 80]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            9007199254740984,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 40, 4, 6, 7]"
+        },
+        "expected": 39,
+        "unexpected": [
+            5,
+            0,
+            7,
+            40
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 80, 1]"
+        },
+        "expected": 76,
+        "unexpected": [
+            7,
+            79,
+            1,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 4, 6, 7, 0, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 1, 0, 0, 15]"
+        },
+        "expected": 15,
+        "unexpected": [
+            7,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 6, 4, 3, 1, 16, 2]"
+        },
+        "expected": 15,
+        "unexpected": [
+            5,
+            7,
+            2,
+            0,
+            16
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 19, 4, 3, 1, 999999998, 18, 0]"
+        },
+        "expected": 999999997,
+        "unexpected": [
+            999999998,
+            7,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 3, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 5, 3, 1, 18, 999999998]"
+        },
+        "expected": 999999997,
+        "unexpected": [
+            0,
+            999999998
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 7, 6, 4, 3, 1, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4, 6]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967296, 7, 6, 3, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            4294967296,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 4, 1, 999999999]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            999999999,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[60, 1, 4, 2]"
+        },
+        "expected": 3,
+        "unexpected": [
+            59,
+            0,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 999999998]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 1, 5, 4294967295]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            4294967295,
+            4,
+            0,
+            4294967291
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4294967296]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            2,
+            4294967296,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            0,
+            2,
+            5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 0, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            3,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 4, 1, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9, 19, 15, 4, 2]"
+        },
+        "expected": 19,
+        "unexpected": [
+            0,
+            2,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 4, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 4, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 0, 4, 60]"
+        },
+        "expected": 60,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[18, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            0,
+            18,
+            3,
+            17
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 4, 3, 2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            999999998,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 5, 4, 3, 2, 1, 16]"
+        },
+        "expected": 16,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 0, 2, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            7,
+            5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 4, 3, 2, 1]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 3, 4, 5]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 2, 1]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 3, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 3, 4, 5, 0, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 3, 4, 5, 1000000001]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            1000000001,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 4, 5, 0, 0, 0, 40]"
+        },
+        "expected": 40,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 3, 5, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 4294967295, 4, 5]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 1, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 3, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            5,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[11, 1, 2, 3, 4, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            10,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[12, 999999998, 4, 2, 1]"
+        },
+        "expected": 999999986,
+        "unexpected": [
+            999999997,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 3, 2, 1, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            7,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 3, 2, 1, 0, 19]"
+        },
+        "expected": 19,
+        "unexpected": [
+            0,
+            14
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 2, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740990, 1, 2, 3, 4, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            9007199254740990,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 1, 2, 3, 4, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 3, 2, 1, 19, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[60, 1, 1, 1, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            5,
+            60
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 0, 17]"
+        },
+        "expected": 17,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 999999998]"
+        },
+        "expected": 999999997,
+        "unexpected": [
+            5,
+            1,
+            999999998
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 18]"
+        },
+        "expected": 17,
+        "unexpected": [
+            18,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 40, 1, 1]"
+        },
+        "expected": 39,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 3, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 1, 9, 70]"
+        },
+        "expected": 69,
+        "unexpected": [
+            70
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 50, 0]"
+        },
+        "expected": 49,
+        "unexpected": [
+            7,
+            50,
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 10]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            4,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 8, 1, 16]"
+        },
+        "expected": 15,
+        "unexpected": [
+            6,
+            7,
+            16,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 1, 2, 1, 2, 1000000000]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            8,
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 13, 2, 1, 2, 1, 2]"
+        },
+        "expected": 11,
+        "unexpected": [
+            12,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 2, 1, 2, 1, 0, 60, 9]"
+        },
+        "expected": 60,
+        "unexpected": [
+            7,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 1, 2, 1, 2, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            2,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 1, 2, 2, 80]"
+        },
+        "expected": 79,
+        "unexpected": [
+            80
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 2, 2, 2, 1, 5, 7, 15]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            15
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 9007199254740991, 2, 1, 2, 2]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            2,
+            6,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1, 1, 2, 2, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            6,
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 2, 1, 2, 1, 2]"
+        },
+        "expected": 1,
+        "unexpected": [
+            6,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 18, 2, 1, 2, 1, 2, 0, 999999998]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 1000000000, 2, 1, 2, 1, 0]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            1000000000,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 9]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            3,
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740990, 9]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            7,
+            9007199254740981
+        ]
+    },
+    {
+        "input": {
+            "prices": "[50, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            49,
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 9, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            2,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 9, 1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 0, 9, 999999998, 0]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 18]"
+        },
+        "expected": 17,
+        "unexpected": [
+            18,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            4,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 16]"
+        },
+        "expected": 15,
+        "unexpected": [
+            4,
+            16,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 4294967295]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 9, 1, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 4, 6]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 1000000001]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            4,
+            0,
+            7,
+            1000000001
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9, 1000000001]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            1000000001
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 18, 19]"
+        },
+        "expected": 18,
+        "unexpected": [
+            9,
+            19,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9, 40, 0]"
+        },
+        "expected": 39,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 9, 1]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4, 1, 8]"
+        },
+        "expected": 8,
+        "unexpected": [
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            1,
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9, 40, 16]"
+        },
+        "expected": 39,
+        "unexpected": [
+            40,
+            16
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 2, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 0, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            8,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 9, 1, 9, 0, 6, 16, 60, 11]"
+        },
+        "expected": 60,
+        "unexpected": [
+            7,
+            1,
+            9,
+            11
+        ]
+    },
+    {
+        "input": {
+            "prices": "[13, 10, 0, 10, 0, 10, 9007199254740991, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            9007199254740978,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 20, 9]"
+        },
+        "expected": 20,
+        "unexpected": [
+            5,
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 11, 0, 10]"
+        },
+        "expected": 11,
+        "unexpected": [
+            10,
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 10, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 10, 0, 10, 11, 0, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            7,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 10, 0, 10, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 10, 10]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            7,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 0, 10, 0, 10, 0, 1000000001]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            10,
+            999999991,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 10, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            5,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 5, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 0, 0, 6, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 10, 16, 50]"
+        },
+        "expected": 40,
+        "unexpected": [
+            10,
+            0,
+            50,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 6, 10, 0, 10, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 0, 11, 0, 10, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10, 0, 1]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            7,
+            1,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10, 1, 6, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            6,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9, 0, 0, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 0, 10, 0, 18]"
+        },
+        "expected": 18,
+        "unexpected": [
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000001, 0, 0, 10, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            6,
+            1000000001,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 1, 10, 0, 0, 4294967296]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 10, 90, 10, 0, 2]"
+        },
+        "expected": 90,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 3, 0, 100, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            9007199254740991,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[12, 9, 1, 8, 2, 6]"
+        },
+        "expected": 7,
+        "unexpected": [
+            12,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 14, 90]"
+        },
+        "expected": 88,
+        "unexpected": [
+            84,
+            7,
+            0,
+            90
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 1, 18]"
+        },
+        "expected": 17,
+        "unexpected": [
+            18,
+            5,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 16, 1, 9]"
+        },
+        "expected": 14,
+        "unexpected": [
+            15,
+            16,
+            0,
+            9,
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 0, 1, 8, 2, 6]"
+        },
+        "expected": 8,
+        "unexpected": [
+            6,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 1, 9, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            3,
+            9,
+            6,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 9, 0, 14]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            4,
+            6,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 9]"
+        },
+        "expected": 7,
+        "unexpected": [
+            2,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 1, 9, 4294967296]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            6,
+            7,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[6, 2, 8, 2, 9, 0, 19]"
+        },
+        "expected": 19,
+        "unexpected": [
+            6,
+            7,
+            13
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 1, 8, 2, 6]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            5,
+            8,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 9, 1, 8, 0, 6]"
+        },
+        "expected": 7,
+        "unexpected": [
+            10,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 2, 8, 1, 6]"
+        },
+        "expected": 6,
+        "unexpected": [
+            5,
+            40,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4, 9, 1, 2, 6]"
+        },
+        "expected": 9,
+        "unexpected": [
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 0, 3, 5, 7, 6, 8, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            8,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 3, 0, 9, 13, 1, 0]"
+        },
+        "expected": 13,
+        "unexpected": [
+            7,
+            0,
+            10,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 6, 7, 0, 3, 0, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 3, 0, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            1,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 8, 6, 7, 5, 3, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 3, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 0, 7, 5, 100, 0, 9, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            8,
+            0,
+            92
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 14, 5, 3, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            14,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 3, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            8,
+            7,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 70, 3, 0, 9]"
+        },
+        "expected": 64,
+        "unexpected": [
+            70,
+            0,
+            6,
+            9,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 3, 5, 7, 6, 8, 80]"
+        },
+        "expected": 80,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 3, 0, 19, 0, 60, 0, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            92,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 6, 7, 5, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            6,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 0, 0, 5, 7, 6, 8, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9, 0, 3, 5, 7, 6, 8, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            11,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 15, 1, 11, 2, 9, 4]"
+        },
+        "expected": 15,
+        "unexpected": [
+            7,
+            8,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[15, 1, 11, 2, 9, 4, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            15
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 11, 2, 9, 5]"
+        },
+        "expected": 7,
+        "unexpected": [
+            999999997,
+            0,
+            5,
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 11, 1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 9, 70, 11, 20]"
+        },
+        "expected": 67,
+        "unexpected": [
+            20,
+            70,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 15, 1, 11, 2, 9, 4]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            7,
+            0,
+            20,
+            19
+        ]
+    },
+    {
+        "input": {
+            "prices": "[15, 1, 11, 2, 9, 4]"
+        },
+        "expected": 10,
+        "unexpected": [
+            15,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[15, 1, 11, 2, 9, 4, 0, 0, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            15,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 11, 1, 15, 0, 6, 0, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            15,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 15, 0, 80]"
+        },
+        "expected": 80,
+        "unexpected": [
+            6,
+            76,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 11, 1, 15, 0, 0, 12, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            7,
+            4,
+            0,
+            15
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 15, 1, 11, 1, 9, 3, 0]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 11, 1, 15, 17, 3]"
+        },
+        "expected": 16,
+        "unexpected": [
+            8,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 11, 0, 15]"
+        },
+        "expected": 15,
+        "unexpected": [
+            6,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 9, 2, 1000000001, 15, 9007199254740990, 0]"
+        },
+        "expected": 9007199254740988,
+        "unexpected": [
+            7,
+            4,
+            9007199254740986,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 51, 60, 70, 80, 90, 100]"
+        },
+        "expected": 60,
+        "unexpected": [
+            7,
+            0,
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 50, 40]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 89, 80, 70, 60, 50, 40]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 90, 80, 70, 12, 50, 40]"
+        },
+        "expected": 90,
+        "unexpected": [
+            7,
+            40,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 70, 60, 50, 40, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 60, 50, 40]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6,
+            100,
+            40,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 60, 51, 40, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            100,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 40, 50, 60, 70, 80, 90, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 60, 50, 40, 19]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100,
+            19,
+            81
+        ]
+    },
+    {
+        "input": {
+            "prices": "[14, 89, 80, 70, 60, 20, 40]"
+        },
+        "expected": 75,
+        "unexpected": [
+            89,
+            14,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 69, 60, 50, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            100,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 60, 18, 40]"
+        },
+        "expected": 22,
+        "unexpected": [
+            0,
+            100,
+            40,
+            82
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 70, 60, 50, 40, 60, 18]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0,
+            100,
+            18,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 90, 80, 70, 60, 50, 40, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 80, 70, 60, 50, 40, 69, 11, 0, 7]"
+        },
+        "expected": 29,
+        "unexpected": [
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 50, 60, 70, 80, 90, 100, 0, 0]"
+        },
+        "expected": 60,
+        "unexpected": [
+            7,
+            0,
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 50, 999999998, 70, 80, 90, 100]"
+        },
+        "expected": 999999958,
+        "unexpected": [
+            999999998,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 80, 140, 60, 40, 0]"
+        },
+        "expected": 60,
+        "unexpected": [
+            140,
+            0,
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 50, 13, 70, 80, 90, 0]"
+        },
+        "expected": 77,
+        "unexpected": [
+            90,
+            7,
+            0,
+            40
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 60, 70, 90, 100]"
+        },
+        "expected": 60,
+        "unexpected": [
+            40,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[41, 50, 70, 80, 90, 999999998, 0]"
+        },
+        "expected": 999999957,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[70, 9007199254740990, 41, 100, 90, 80, 70, 60, 50, 40, 0]"
+        },
+        "expected": 9007199254740920,
+        "unexpected": [
+            9007199254740990,
+            70,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 50, 60, 70, 80, 90, 100, 0]"
+        },
+        "expected": 60,
+        "unexpected": [
+            0,
+            8,
+            100
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 40, 50, 60, 70, 80, 14, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[100, 90, 70, 60, 39]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            39,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[90, 80, 70, 60, 50, 40]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 100, 90, 80, 70, 60, 50, 40, 4, 9]"
+        },
+        "expected": 100,
+        "unexpected": [
+            10,
+            7,
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 51]"
+        },
+        "expected": 50,
+        "unexpected": [
+            10,
+            0,
+            51,
+            7,
+            46
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 8, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            8,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 100, 6, 6, 1, 1, 8, 8, 999999998]"
+        },
+        "expected": 999999997,
+        "unexpected": [
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 8, 8, 1, 1, 6, 6, 3, 11, 5]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 8, 1, 1, 6, 6, 3, 3, 5, 5, 51, 0, 0, 20]"
+        },
+        "expected": 50,
+        "unexpected": [
+            43,
+            20,
+            14,
+            51,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 8, 41, 6, 1000000001, 9007199254740990]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            9007199254740985,
+            9007199254740990,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 8, 1, 1, 6, 6, 3, 3, 5, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            8,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 8, 2, 1, 6, 6, 3, 3, 5, 5, 70]"
+        },
+        "expected": 69,
+        "unexpected": [
+            11,
+            70,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 8, 8, 1, 2, 6, 6, 3, 5, 5]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            7,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 8, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 60, 0]"
+        },
+        "expected": 59,
+        "unexpected": [
+            11,
+            5,
+            0,
+            60
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 3, 3, 6, 6, 1, 1, 8, 8, 40]"
+        },
+        "expected": 39,
+        "unexpected": [
+            11,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 8, 1, 0, 6, 3, 3, 5, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            999999992,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 40, 41, 8, 8, 1, 1, 6, 6, 3, 1, 5, 5]"
+        },
+        "expected": 41,
+        "unexpected": [
+            13,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999998, 0, 8, 8, 1, 1, 6, 6, 3, 3, 5, 5, 1000000001]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            999999998,
+            3,
+            0,
+            13
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 8, 0, 5, 2, 7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            6,
+            8,
+            3,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 8, 2, 5, 1, 7, 9007199254740990]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            7,
+            9007199254740986,
+            0,
+            9007199254740990
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 5, 2, 8, 3]"
+        },
+        "expected": 6,
+        "unexpected": [
+            8,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 2, 5, 1, 7, 0, 0, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            3,
+            7,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 2, 8, 3, 0, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            7,
+            0,
+            8,
+            13
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 8, 2, 4, 1, 7]"
+        },
+        "expected": 6,
+        "unexpected": [
+            3,
+            7,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 2, 8, 3, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 5, 2, 3, 4294967296]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            0,
+            4294967289,
+            4294967296,
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 8, 2, 5, 1, 7, 15, 13, 4294967295, 6]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            4294967295,
+            7,
+            10,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[7, 1, 5, 2, 8, 3]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            0,
+            3,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 7, 1, 5, 2, 8, 3, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 7, 1, 5, 2, 8, 3]"
+        },
+        "expected": 8,
+        "unexpected": [
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 2, 5, 1, 7, 0, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            7,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 0, 5, 90, 16, 0]"
+        },
+        "expected": 90,
+        "unexpected": [
+            89,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 0, 5, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            4,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[15, 0, 4, 2, 3, 1]"
+        },
+        "expected": 4,
+        "unexpected": [
+            15,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 4, 0, 5, 70, 51]"
+        },
+        "expected": 70,
+        "unexpected": [
+            51,
+            8,
+            7,
+            69
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 4, 0, 5, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 2, 4, 0, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 4, 0, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 2, 0, 0, 5, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            3,
+            6,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 0, 4, 3, 1]"
+        },
+        "expected": 5,
+        "unexpected": [
+            1,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[13, 3, 2, 0, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            13,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            3,
+            1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 0, 4, 2, 3, 1, 1, 14]"
+        },
+        "expected": 14,
+        "unexpected": [
+            7,
+            5,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 4, 0, 5, 50]"
+        },
+        "expected": 50,
+        "unexpected": [
+            49,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 3, 2, 50, 0, 5]"
+        },
+        "expected": 49,
+        "unexpected": [
+            5,
+            50,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[30, 5, 0, 4, 41, 3, 1, 1000000001]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            8,
+            999999971,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 2, 5, 0, 0, 3, 1, 4, 0, 0, 1000000001, 0]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            0,
+            999999999,
+            12
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 5, 0, 0, 3, 1, 0, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            9,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 5, 0, 0, 3, 1, 4]"
+        },
+        "expected": 4,
+        "unexpected": [
+            5,
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 4, 1, 3, 0, 0, 5, 2, 2, 999999998]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0,
+            999999997,
+            10,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[14, 4, 1, 3, 0, 0, 5, 2, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            14,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[17, 4, 4, 1, 3, 0, 0, 5, 2, 2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            10,
+            17
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 0, 6, 1]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 5, 0, 0, 3, 4]"
+        },
+        "expected": 4,
+        "unexpected": [
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 2, 5, 0, 0, 3, 4, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 14, 4, 1, 3, 0, 0, 5, 0, 2]"
+        },
+        "expected": 12,
+        "unexpected": [
+            14,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 1, 3, 0, 0, 5, 2, 2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 2, 0, 0, 3, 1, 4, 39]"
+        },
+        "expected": 39,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[3, 3, 0, 0, 5, 2, 2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            7,
+            3,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 1, 3, 0, 0, 5, 2, 2, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            9,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[19, 4, 1, 2, 0, 0, 5, 2, 2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            9,
+            19,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0, 1, 14]"
+        },
+        "expected": 14,
+        "unexpected": [
+            13
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0, 1, 90, 0, 0]"
+        },
+        "expected": 90,
+        "unexpected": [
+            0,
+            7,
+            10,
+            89
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 17, 0, 1, 0, 1, 0, 1]"
+        },
+        "expected": 17,
+        "unexpected": [
+            7,
+            1,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 0, 1, 0, 1, 0, 1000000000, 0, 0]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 4294967296, 1, 0, 1, 0, 1]"
+        },
+        "expected": 4294967288,
+        "unexpected": [
+            7,
+            8,
+            0,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 4, 1, 89, 999999998]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 0, 40, 0]"
+        },
+        "expected": 40,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 1, 0, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 1, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 1, 0, 1, 0, 1, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 17, 1, 0, 12]"
+        },
+        "expected": 17,
+        "unexpected": [
+            12,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[14, 0, 1, 0, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            14,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 0, 1, 0, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 2, 0, 1, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            8,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[51, 0, 1, 0, 1, 1, 0, 3]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            51,
+            7,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 8, 0, 1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4, 0, 1, 0, 1, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 1, 0, 1, 0, 1, 0, 4294967296]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 12, 0, 1, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            11,
+            0,
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 1, 9007199254740990, 1, 0, 1000000001, 0, 0]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            7,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999998, 1, 0, 0, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 0, 0, 1, 0, 4294967296, 0]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000000, 1000000000]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0,
+            7,
+            1000000000,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 1, 1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1000000000,
+            7,
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000002, 0, 9]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            5,
+            999999999,
+            1000000002,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 1000000000, 1, 999999999]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 1, 999999999, 0]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            1000000000,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000000, 0, 4294967295, 0]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            0,
+            7,
+            6,
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 1, 999999999, 0, 19]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            5,
+            1000000000,
+            19
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1,
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000000, 6, 1, 0]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0,
+            7,
+            1000000000,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 999999999, 80]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            999999998,
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 1, 999999999, 16, 999999998]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            999999999,
+            1000000000,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 1000000000]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            7,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 999999998, 1, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 1, 1000000000, 0]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            7,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 999999998]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1000000000,
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999998, 999999999, 1000000000, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            7,
+            0,
+            999999998
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000001, 999999998, 999999999, 1000000000, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            5,
+            1000000001,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 999999998, 1000000001, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            7,
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "prices": "[140, 999999999, 1000000001]"
+        },
+        "expected": 999999861,
+        "unexpected": [
+            140,
+            1000000001,
+            3,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000002, 999999999, 999999998, 1000000001, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            5,
+            0,
+            7,
+            1000000002
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000001, 999999997, 999999999, 0, 9, 7]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            6,
+            1000000001
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 70, 1000000001, 0]"
+        },
+        "expected": 999999931,
+        "unexpected": [
+            1000000001,
+            7,
+            0,
+            1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 999999998, 1000000001, 12]"
+        },
+        "expected": 3,
+        "unexpected": [
+            1000000000,
+            5,
+            12
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 999999998, 1000000001, 0, 89, 0]"
+        },
+        "expected": 89,
+        "unexpected": [
+            1000000001,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000001, 17, 4294967296]"
+        },
+        "expected": 4294967279,
+        "unexpected": [
+            7,
+            3,
+            4294967296,
+            1000000001,
+            3294967295
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000001, 999999998, 0, 9007199254740991]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            9007198254740990,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000000, 999999999, 1000000001, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            1000000001,
+            1000000000,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[999999999, 999999998, 1000000001, 9007199254740991, 0]"
+        },
+        "expected": 9007198254740993,
+        "unexpected": [
+            5,
+            7,
+            9007199254740991,
+            0,
+            999999999
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4294967296]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0,
+            7,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967294, 0, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            4,
+            4294967294,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967296, 0, 4294967295, 0, 0]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            4294967296,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967296, 90]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            2,
+            90,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 0, 4294967296, 0, 0, 100]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            7,
+            6,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4294967295,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967296, 0, 4294967295]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            3,
+            0,
+            7,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 0, 4294967296, 39]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            1,
+            4294967295,
+            39
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 1, 4294967296, 1000000000, 7, 20]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            7,
+            6,
+            20,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 0, 4294967296, 0]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[18, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            18,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4294967295
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 0, 4294967296, 1000000001]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            4294967295,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 4294967296, 0, 4]"
+        },
+        "expected": 4294967296,
+        "unexpected": [
+            0,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[4294967295, 999999997, 4294967296, 51]"
+        },
+        "expected": 3294967299,
+        "unexpected": [
+            4,
+            4294967295,
+            7,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            9007199254740991
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 9007199254740991, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 18, 9007199254740991]"
+        },
+        "expected": 9007199254740973,
+        "unexpected": [
+            9007199254740991,
+            7,
+            3
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 999999998, 0, 9007199254740991]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            5,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 9007199254740991, 0, 4294967296, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 9007199254740991]"
+        },
+        "expected": 0,
+        "unexpected": [
+            9007199254740991,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 9007199254740991, 8]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 0, 9007199254740991, 4294967295]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            7,
+            4294967295
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 0, 17]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            9007199254740991
+        ]
+    },
+    {
+        "input": {
+            "prices": "[70, 9007199254740991, 1, 9007199254740990, 8]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            9007199254740990
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740990, 1, 0, 0, 0]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            6,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740990, 1, 0, 0, 999999999]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0,
+            9007199254740990,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740992, 2, 9007199254740991, 0, 0, 0]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            0,
+            9007199254740992,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 0, 9007199254740990, 1, 9007199254740991, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740990, 9007199254740992, 0]"
+        },
+        "expected": 9007199254740992,
+        "unexpected": [
+            4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 70]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 90]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            3,
+            90
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 9007199254740990, 69]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740991, 1, 9007199254740990, 0]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            0,
+            9007199254740991
+        ]
+    },
+    {
+        "input": {
+            "prices": "[9007199254740990, 1, 9007199254740991, 0, 4294967294]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            9007199254740991,
+            0,
+            1,
+            4294967294
+        ]
+    },
+    {
+        "input": {
+            "prices": "[89, 9007199254740990, 10, 0]"
+        },
+        "expected": 9007199254740901,
+        "unexpected": [
+            9007199254740990,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 0, 9007199254740990, 80, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 9007199254740991, 1, 9007199254740990, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 0]"
+        },
+        "expected": 20,
+        "unexpected": [
+            21,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 0, 19]"
+        },
+        "expected": 20,
+        "unexpected": [
+            7,
+            19
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 6, 1, 1000000002, 999999999]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            21,
+            0,
+            999999982,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 4294967294, 3, 4, 60, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            0,
+            20,
+            21
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 24, 13, 14, 15, 16, 17, 18, 19, 20, 4, 51]"
+        },
+        "expected": 51,
+        "unexpected": [
+            23,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 1000000002]"
+        },
+        "expected": 1000000002,
+        "unexpected": [
+            22,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1000000002, 80, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            1000000002,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 999999998, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            0,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 14, 13, 4294967295, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]"
+        },
+        "expected": 4294967282,
+        "unexpected": [
+            4294967275,
+            4294967295,
+            20,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 13, 14, 15, 16, 17, 18, 19, 20, 0, 0]"
+        },
+        "expected": 20,
+        "unexpected": [
+            23,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[11, 20, 19, 18, 17, 16, 15, 14, 13, 12, 12, 10, 8, 7, 6, 5, 4, 3, 2, 1, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            21,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 8]"
+        },
+        "expected": 20,
+        "unexpected": [
+            22,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 9007199254740992, 1, 0]"
+        },
+        "expected": 9007199254740989,
+        "unexpected": [
+            9007199254740992,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18, 20, 9007199254740991, 0, 0]"
+        },
+        "expected": 9007199254740991,
+        "unexpected": [
+            24,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 1000000002, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 4294967295]"
+        },
+        "expected": 4294967295,
+        "unexpected": [
+            20,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            20,
+            80
+        ]
+    },
+    {
+        "input": {
+            "prices": "[41, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 0, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            7,
+            0,
+            41
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 40, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 2, 1, 0]"
+        },
+        "expected": 22,
+        "unexpected": [
+            7,
+            40,
+            0,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 89, 6]"
+        },
+        "expected": 89,
+        "unexpected": [
+            0,
+            23,
+            7,
+            6,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 5, 12]"
+        },
+        "expected": 19,
+        "unexpected": [
+            22,
+            18,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 7, 0, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            25
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 3, 4, 0, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 14]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0,
+            14,
+            21
+        ]
+    },
+    {
+        "input": {
+            "prices": "[20, 19, 18, 0, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 15, 4, 3, 2, 1, 0, 0]"
+        },
+        "expected": 16,
+        "unexpected": [
+            7,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 999999999, 9007199254740992]"
+        },
+        "expected": 9007199254740992,
+        "unexpected": [
+            21
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 1000000002, 1, 10, 1, 10, 1, 10]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            10,
+            20,
+            1,
+            0,
+            1000000002
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 10, 1, 10, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 51]"
+        },
+        "expected": 50,
+        "unexpected": [
+            19,
+            7,
+            1,
+            51
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 1, 10, 1, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            19,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10]"
+        },
+        "expected": 9,
+        "unexpected": [
+            10,
+            0,
+            20,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 1, 10, 1, 10, 1, 10, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 0, 0, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 0, 10, 1, 10, 1, 10, 1, 19, 1, 10, 1, 10, 1, 10, 0, 0]"
+        },
+        "expected": 19,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 0, 1, 10, 1, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            9,
+            0,
+            7,
+            20
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 24]"
+        },
+        "expected": 23,
+        "unexpected": [
+            5,
+            19,
+            24,
+            7,
+            22
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 9]"
+        },
+        "expected": 10,
+        "unexpected": [
+            9,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 10, 1, 10, 10]"
+        },
+        "expected": 9,
+        "unexpected": [
+            18,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 3, 9007199254740991, 0, 20]"
+        },
+        "expected": 9007199254740990,
+        "unexpected": [
+            9007199254740991,
+            23,
+            10,
+            20,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 19]"
+        },
+        "expected": 18,
+        "unexpected": [
+            0,
+            7,
+            1,
+            21
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 1, 10, 1, 10, 1, 10, 1, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[10, 1, 10, 1, 10, 1, 11, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            11,
+            7,
+            0,
+            21
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 7, 10, 1, 10]"
+        },
+        "expected": 9,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 10, 2, 12, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            8,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 12, 2, 10, 3, 0, 1, 4, 2, 1, 8]"
+        },
+        "expected": 12,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[12, 2, 0, 6, 4, 2, 1, 8, 0, 60]"
+        },
+        "expected": 60,
+        "unexpected": [
+            12,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 0, 4, 6, 0, 3, 10, 2, 12, 0, 11]"
+        },
+        "expected": 12,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 3, 10, 2, 7]"
+        },
+        "expected": 10,
+        "unexpected": [
+            7,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 3, 10, 2, 12, 1000000000]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            7,
+            8,
+            10
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 4, 6, 0, 3, 10, 2, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 1, 2, 4, 6, 0, 3, 10, 2, 12, 0, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 3, 2, 12, 0, 0, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            7,
+            0,
+            4,
+            8
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 12, 2, 1000000000, 3, 0, 6, 4, 2, 1]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 2, 4, 0, 3, 10, 2, 12, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 3, 10, 2, 12, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 10, 2, 12, 0, 140, 0]"
+        },
+        "expected": 140,
+        "unexpected": [
+            0,
+            12,
+            132
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 0, 0, 10, 2, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            7,
+            8,
+            4
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 1, 2, 4, 6, 0, 3, 10, 12, 999999998, 0]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            8,
+            0,
+            7,
+            11
+        ]
+    },
+    {
+        "input": {
+            "prices": "[40, 1, 5, 1, 5, 1, 5, 1, 5, 12, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            40
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 6, 1, 5, 1, 11, 1]"
+        },
+        "expected": 10,
+        "unexpected": [
+            6,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 1, 5, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            5,
+            8,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 3, 1, 5, 1, 5, 1, 5, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 5, 1, 5, 1, 5, 5, 89, 19]"
+        },
+        "expected": 88,
+        "unexpected": [
+            1,
+            19,
+            9,
+            89
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 1, 5, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 5, 1, 5, 1, 5, 6]"
+        },
+        "expected": 5,
+        "unexpected": [
+            10,
+            1
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 5, 1, 1, 5, 1, 5, 0, 0, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 1, 5, 1, 5, 1, 5, 9]"
+        },
+        "expected": 8,
+        "unexpected": [
+            5,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 1, 5, 1, 0, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            5,
+            999999995,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[8, 18, 999999997, 5, 1, 5, 1, 5, 1, 5, 4294967295, 5]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 5, 1, 5, 6, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 6, 5, 1, 5, 1, 5, 1, 5]"
+        },
+        "expected": 4,
+        "unexpected": [
+            6,
+            7,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 1, 5, 1, 5, 1, 5, 1, 5, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            7,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[1, 5, 1, 5, 1, 5, 1, 5, 999999999]"
+        },
+        "expected": 999999998,
+        "unexpected": [
+            999999999,
+            9
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 8, 2, 8, 1, 8, 2, 8, 3, 5, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            2,
+            12
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 1, 0, 2, 8, 1, 8, 2, 8, 4, 5, 80]"
+        },
+        "expected": 80,
+        "unexpected": [
+            78,
+            2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[24, 2, 7, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5]"
+        },
+        "expected": 7,
+        "unexpected": [
+            24,
+            13,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 8, 2, 8, 1, 8, 2, 8, 1, 7, 2]"
+        },
+        "expected": 7,
+        "unexpected": [
+            5,
+            11,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 5, 4, 8, 2, 0, 1, 8, 8, 1, 7, 2]"
+        },
+        "expected": 8,
+        "unexpected": [
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[0, 2, 7, 1, 9, 2, 1, 8, 2, 8, 4, 5]"
+        },
+        "expected": 9,
+        "unexpected": [
+            12,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 0, 4, 8, 1, 8, 2, 8, 4, 5, 90]"
+        },
+        "expected": 90,
+        "unexpected": [
+            88
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 8, 2, 8, 1, 8, 2, 8, 1, 7, 2, 51]"
+        },
+        "expected": 50,
+        "unexpected": [
+            0,
+            51,
+            46
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 11, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            12,
+            5,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[18, 5, 8, 2, 8, 1, 8, 2, 8, 1, 7, 2]"
+        },
+        "expected": 7,
+        "unexpected": [
+            18,
+            12,
+            2
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 1, 8, 2, 8, 50, 8, 2, 8, 4, 5, 0, 0]"
+        },
+        "expected": 49,
+        "unexpected": [
+            14,
+            48,
+            50,
+            0
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5, 1000000000]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            1000000000,
+            7
+        ]
+    },
+    {
+        "input": {
+            "prices": "[18, 2, 7, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            18
+        ]
+    },
+    {
+        "input": {
+            "prices": "[2, 7, 1, 8, 2, 8, 1, 8, 2, 8, 4, 5, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            13
+        ]
+    },
+    {
+        "input": {
+            "prices": "[5, 4, 8, 2, 8, 1, 8, 2, 8, 1, 7, 2, 0, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            8,
+            3,
+            0
+        ]
+    }
+]

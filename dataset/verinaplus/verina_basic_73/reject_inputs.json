@@ -1,0 +1,3026 @@
+[
+    {
+        "input": {
+            "s": "abc",
+            "p": "ac"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "ab",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "short",
+            "p": "shorter"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "long"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x",
+            "p": "a?c"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "a?c"
+        }
+    },
+    {
+        "input": {
+            "s": "cba",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "a?c 0"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "a?c"
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x",
+            "p": "c?a"
+        }
+    },
+    {
+        "input": {
+            "s": "t?et",
+            "p": "🙂"
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x",
+            "p": "line 1"
+        }
+    },
+    {
+        "input": {
+            "s": "tset",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "1"
+        }
+    },
+    {
+        "input": {
+            "s": "0 tset",
+            "p": "a?c"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a?c"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$%_x",
+            "p": "c?a 0"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "he?lo"
+        }
+    },
+    {
+        "input": {
+            "s": "olleh",
+            "p": "def"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "he?lo edge"
+        }
+    },
+    {
+        "input": {
+            "s": "t?et",
+            "p": "he?lo"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "world"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "abc def"
+        }
+    },
+    {
+        "input": {
+            "s": "hello edge",
+            "p": "he?lo_x"
+        }
+    },
+    {
+        "input": {
+            "s": "hello_x",
+            "p": "he?lo"
+        }
+    },
+    {
+        "input": {
+            "s": "olleh",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "world_x",
+            "p": "w?rld"
+        }
+    },
+    {
+        "input": {
+            "s": "hello_x_x",
+            "p": "w?rld"
+        }
+    },
+    {
+        "input": {
+            "s": "x_d?ba??ba",
+            "p": "w?rld_x"
+        }
+    },
+    {
+        "input": {
+            "s": "world_x",
+            "p": "en?."
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t 1",
+            "p": "w?rld 0_x"
+        }
+    },
+    {
+        "input": {
+            "s": "world 1",
+            "p": "dlr?w"
+        }
+    },
+    {
+        "input": {
+            "s": "zyx",
+            "p": "dlr?w"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "w?rld"
+        }
+    },
+    {
+        "input": {
+            "s": "world",
+            "p": " 1_x"
+        }
+    },
+    {
+        "input": {
+            "s": "dlrow",
+            "p": "w?rld edge"
+        }
+    },
+    {
+        "input": {
+            "s": "world_x",
+            "p": "dlr?w_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "test_x",
+            "p": "te?t"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "te?t_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "test edge",
+            "p": "🙂"
+        }
+    },
+    {
+        "input": {
+            "s": "hello",
+            "p": "te?t edge 0_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "tset",
+            "p": "te?t_x"
+        }
+    },
+    {
+        "input": {
+            "s": "test",
+            "p": "te?t 1"
+        }
+    },
+    {
+        "input": {
+            "s": "test edge",
+            "p": "te?t"
+        }
+    },
+    {
+        "input": {
+            "s": "tset",
+            "p": "te?t edge 1"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "!@#??"
+        }
+    },
+    {
+        "input": {
+            "s": "test",
+            "p": "aaaaaaaaaa"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "te?t"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "abd"
+        }
+    },
+    {
+        "input": {
+            "s": "x_cba",
+            "p": "abd"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "dba edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "a?c 1"
+        }
+    },
+    {
+        "input": {
+            "s": "1 ab??ab?d_x",
+            "p": "abd_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "%$#@!"
+        }
+    },
+    {
+        "input": {
+            "s": "U?PE?",
+            "p": "abd_x 1"
+        }
+    },
+    {
+        "input": {
+            "s": "abc?def",
+            "p": "test"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "abd_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "!@#$%_x"
+        }
+    },
+    {
+        "input": {
+            "s": "he?lo edge edge",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "hello",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "en?.",
+            "p": "ac"
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x_x",
+            "p": "0"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#??",
+            "p": "ac"
+        }
+    },
+    {
+        "input": {
+            "s": "?字",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "cba_x edge",
+            "p": "ac 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 1",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "edge",
+            "p": "ac"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "é 1"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "ca"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "UPPER"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x",
+            "p": "zyx"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "ac 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a?c",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_",
+            "p": "he?lo_x"
+        }
+    },
+    {
+        "input": {
+            "s": "0 ",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "ab??ab?d"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "abc def_x"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x",
+            "p": "0 "
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": " 0 edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "U?PE?"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "egde x_"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz_x_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "a_x"
+        }
+    },
+    {
+        "input": {
+            "s": "line 1",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "def_x",
+            "p": "en?."
+        }
+    },
+    {
+        "input": {
+            "s": "a 1 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "a 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": "1 x_d?ba??ba"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "ac"
+        }
+    },
+    {
+        "input": {
+            "s": "a edge",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "he?lo edge",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "longer 1",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "a edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "?字"
+        }
+    },
+    {
+        "input": {
+            "s": "x_t?et_x",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "egde ",
+            "p": "1 x_d?ba??ba"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "tset",
+            "p": "?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "a 1",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "a 0",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂🙃",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "a_x edge",
+            "p": "? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "he?lo edge edge_x",
+            "p": "end."
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "1 x_d?ba??ba_x 0"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": " 1_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "x_d?ba??ba"
+        }
+    },
+    {
+        "input": {
+            "s": "def_x 1",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "a?c 1"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "line"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "?en?l"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "?o?e?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a 1 1 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": " 1"
+        }
+    },
+    {
+        "input": {
+            "s": "a 1",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "x_b"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "egde x_a",
+            "p": "字?"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "te?t 1",
+            "p": "b_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "ab"
+        }
+    },
+    {
+        "input": {
+            "s": "x_",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "x_0 dlr?w",
+            "p": "b edge 1"
+        }
+    },
+    {
+        "input": {
+            "s": "line",
+            "p": "abc def_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc edge",
+            "p": "short"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 0",
+            "p": "c?a 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "te?t edge 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "abc 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 0",
+            "p": "ab"
+        }
+    },
+    {
+        "input": {
+            "s": "a?c 1",
+            "p": "abc def_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "egde "
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "1 x_0"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 1",
+            "p": "he?lo edge edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "cba",
+            "p": "w?rld 0_x"
+        }
+    },
+    {
+        "input": {
+            "s": "a edge 1",
+            "p": "???"
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "%$#@!",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "a?a?a?a?a?",
+            "p": "zyx"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "line"
+        }
+    },
+    {
+        "input": {
+            "s": "a 1",
+            "p": " 1"
+        }
+    },
+    {
+        "input": {
+            "s": "a edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": " edge"
+        }
+    },
+    {
+        "input": {
+            "s": "hello edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "abc",
+            "p": "!@#$%"
+        }
+    },
+    {
+        "input": {
+            "s": "abc edge",
+            "p": "test"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "zyx"
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": "ab?"
+        }
+    },
+    {
+        "input": {
+            "s": "cba",
+            "p": "12?4? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "cba",
+            "p": "1 x_0"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "ab?"
+        }
+    },
+    {
+        "input": {
+            "s": "cba",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "ba_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "egde ac",
+            "p": "a_x"
+        }
+    },
+    {
+        "input": {
+            "s": "ab 1 1",
+            "p": "a"
+        }
+    },
+    {
+        "input": {
+            "s": "ab",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "ab",
+            "p": "!@#$%"
+        }
+    },
+    {
+        "input": {
+            "s": "egde x_",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "test",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "ab_x",
+            "p": "egde "
+        }
+    },
+    {
+        "input": {
+            "s": "ab 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "ab edge_x",
+            "p": "abd_x"
+        }
+    },
+    {
+        "input": {
+            "s": "ab",
+            "p": "a_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa",
+            "p": "longer_x 1"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa_x",
+            "p": "a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "x_cba",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "?o?e?",
+            "p": "te?t_x_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "tab\t"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a?a? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "hello edge_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "?a?a"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa",
+            "p": "a?a?_x_x_x 0"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa",
+            "p": "dba edge edge"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa",
+            "p": "a?a? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaa_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "w?rld 0_x edge 0",
+            "p": "a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "ab 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz_x",
+            "p": "line"
+        }
+    },
+    {
+        "input": {
+            "s": "1 ab??ab?d_x",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "world",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz_x 0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "def 1",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "???? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz",
+            "p": "b_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "dlr?w",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz",
+            "p": "12?4? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x 1",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "x_zzzz_x",
+            "p": "b"
+        }
+    },
+    {
+        "input": {
+            "s": "a_x",
+            "p": "?? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "?? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "bat",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "🙂🙃"
+        }
+    },
+    {
+        "input": {
+            "s": "x_a",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "?? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "test_x",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "a edge",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "xyz_x",
+            "p": "?? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_d?ba??ba",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "é 1_x",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "zzzz"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 0 edge",
+            "p": "12?4?"
+        }
+    },
+    {
+        "input": {
+            "s": "1 ab??ab?d_x",
+            "p": "tset"
+        }
+    },
+    {
+        "input": {
+            "s": "    ",
+            "p": "12?4?"
+        }
+    },
+    {
+        "input": {
+            "s": "12345",
+            "p": "b 0"
+        }
+    },
+    {
+        "input": {
+            "s": "12345",
+            "p": "ac_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "12?4? 0"
+        }
+    },
+    {
+        "input": {
+            "s": " edge",
+            "p": "te?t 1"
+        }
+    },
+    {
+        "input": {
+            "s": "12345 0_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "12345",
+            "p": "x_b"
+        }
+    },
+    {
+        "input": {
+            "s": "x_zzzz_x",
+            "p": "hello"
+        }
+    },
+    {
+        "input": {
+            "s": "%$#@!",
+            "p": "x_"
+        }
+    },
+    {
+        "input": {
+            "s": "?en?l",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "a_x edge",
+            "p": "12?4?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "1 x_d?ba??ba_x 0",
+            "p": "!@#??"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaa 0",
+            "p": "!@#??"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$%",
+            "p": "x_a"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$% edge",
+            "p": "!@#??"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "0"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$%",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "hello_x_x_x",
+            "p": "!@#??_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$%_x",
+            "p": "zzzz_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "egde !@#$% edge",
+            "p": "!@#??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_%$#@!",
+            "p": "x_0 dlr?w"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "!@#??"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "abc?def edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": "tab"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": "abc?def 0"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": "x_t?et_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "he?lo_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def 0",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": "longer"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t edge 0_x edge",
+            "p": "abc?def_x"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def edge_x 0",
+            "p": "abc 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def_x 0",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "def 1"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": "a_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "REPPU",
+            "p": "abc_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER_x 1",
+            "p": "te?t_x_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "bat",
+            "p": "0 "
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x edge",
+            "p": "1 x_fed"
+        }
+    },
+    {
+        "input": {
+            "s": "x_b",
+            "p": "U?PE?"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER",
+            "p": "U?PE?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t",
+            "p": "w?rld 0_x edge 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER edge",
+            "p": "abc?def"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER 1_x",
+            "p": "U?PE? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "cba_x edge",
+            "p": "U?PE?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER",
+            "p": "U?PE?_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "trohs",
+            "p": "tset"
+        }
+    },
+    {
+        "input": {
+            "s": "w?rld",
+            "p": " 0"
+        }
+    },
+    {
+        "input": {
+            "s": "short_x",
+            "p": "shorter 0_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "shorter"
+        }
+    },
+    {
+        "input": {
+            "s": "short",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "x_",
+            "p": "xyz"
+        }
+    },
+    {
+        "input": {
+            "s": " 1_x",
+            "p": "ba_x 1"
+        }
+    },
+    {
+        "input": {
+            "s": "he?lo edge edge_x",
+            "p": "shorter"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "xyz_x"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "x_retrohs"
+        }
+    },
+    {
+        "input": {
+            "s": "edge",
+            "p": "?e?o?"
+        }
+    },
+    {
+        "input": {
+            "s": "?字_x edge",
+            "p": "?o?e? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "rewol_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "w?rld 0_x edge 0",
+            "p": "?o?e? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "abc 0 edge",
+            "p": "?o?e?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "fed cba edge"
+        }
+    },
+    {
+        "input": {
+            "s": "lower 1_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "lower 0 0",
+            "p": "_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_egde rewol",
+            "p": "?o?e?_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "lower",
+            "p": "x_?o?e?"
+        }
+    },
+    {
+        "input": {
+            "s": "egde cba edge",
+            "p": "?o?e?_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "字?",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "M?X?D"
+        }
+    },
+    {
+        "input": {
+            "s": "MiXeD 0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "U?PE?_x 0",
+            "p": "D?X?M_x"
+        }
+    },
+    {
+        "input": {
+            "s": "line",
+            "p": "M?X?D"
+        }
+    },
+    {
+        "input": {
+            "s": " 0",
+            "p": "D?X?M"
+        }
+    },
+    {
+        "input": {
+            "s": "DeXiM",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "MiXeD",
+            "p": "M?X?D_x"
+        }
+    },
+    {
+        "input": {
+            "s": "MiXeD",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "MiXeD_x",
+            "p": "M?X?D"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x 1",
+            "p": "M?X?D"
+        }
+    },
+    {
+        "input": {
+            "s": "MiXeD",
+            "p": "M?X?D_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "????",
+            "p": "xyz"
+        }
+    },
+    {
+        "input": {
+            "s": "ac",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def_x 0",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t_x_x 1",
+            "p": "???? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "U?PE?_x 0",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "????",
+            "p": "????_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_????",
+            "p": "dcbadcba"
+        }
+    },
+    {
+        "input": {
+            "s": "dba edge",
+            "p": "????_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "???"
+        }
+    },
+    {
+        "input": {
+            "s": "????_x",
+            "p": "a edge 1"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#??",
+            "p": "UPPER_x 1 0"
+        }
+    },
+    {
+        "input": {
+            "s": "????",
+            "p": "w?rld 0_x edge 0"
+        }
+    },
+    {
+        "input": {
+            "s": "???? 1 0",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "rewol",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "     1 1 0",
+            "p": "????"
+        }
+    },
+    {
+        "input": {
+            "s": "x_0 dlr?w edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "    ",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "abc def_x 0"
+        }
+    },
+    {
+        "input": {
+            "s": "    ",
+            "p": "x_???? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "    ",
+            "p": "???? 0 0 1"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "???? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "abc 1 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "    _x 1",
+            "p": "????_x"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "a_x edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "regnol",
+            "p": "gnol"
+        }
+    },
+    {
+        "input": {
+            "s": "longer_x_x",
+            "p": "gnol_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "long"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "longer 1",
+            "p": "x_cba"
+        }
+    },
+    {
+        "input": {
+            "s": "egde ",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "!@#??_x 1"
+        }
+    },
+    {
+        "input": {
+            "s": "longer_x_x_x",
+            "p": "long_x"
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": "aaaaaaaaaa 0"
+        }
+    },
+    {
+        "input": {
+            "s": "longer edge",
+            "p": "long"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "gnol"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "x_retrohs_x"
+        }
+    },
+    {
+        "input": {
+            "s": "longer",
+            "p": "long edge edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "?o?e?_x_x",
+            "p": " 1"
+        }
+    },
+    {
+        "input": {
+            "s": "1 x_0",
+            "p": "0"
+        }
+    },
+    {
+        "input": {
+            "s": "1 x_d?ba??ba_x 0",
+            "p": "0_x"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz_x 0 edge",
+            "p": "x_egde 0"
+        }
+    },
+    {
+        "input": {
+            "s": "0 edge 1",
+            "p": "ab 1"
+        }
+    },
+    {
+        "input": {
+            "s": "te?t 1",
+            "p": "M?X?D_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "test_x",
+            "p": "!@#??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "?a?a",
+            "p": "0"
+        }
+    },
+    {
+        "input": {
+            "s": "egde ",
+            "p": "1_x"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "a_x edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "ca edge",
+            "p": "0 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a",
+            "p": "abc 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "a 1 1 edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "zzzz edge"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def_x edge",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": " edge",
+            "p": "???"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "1 x_fed",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": " edge",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "ac_x"
+        }
+    },
+    {
+        "input": {
+            "s": "0 1",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "é_x",
+            "p": "egde ?"
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": "x_egde"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂🙃",
+            "p": "ab_x"
+        }
+    },
+    {
+        "input": {
+            "s": "a?c 1_x",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": "?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a 1"
+        }
+    },
+    {
+        "input": {
+            "s": "edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": "UPPER_x 1 0"
+        }
+    },
+    {
+        "input": {
+            "s": "x_",
+            "p": "? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "é",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "x_é",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "ab_x"
+        }
+    },
+    {
+        "input": {
+            "s": "ab??ab?d",
+            "p": "?字"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "abc_x",
+            "p": "?字"
+        }
+    },
+    {
+        "input": {
+            "s": "字漢",
+            "p": "?字_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字 1_x_x",
+            "p": "?字_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_0 dlr?w 1",
+            "p": "hello edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "x_retrohs_x",
+            "p": "字?"
+        }
+    },
+    {
+        "input": {
+            "s": "?o?e?",
+            "p": "字?"
+        }
+    },
+    {
+        "input": {
+            "s": "egde x_a",
+            "p": "dcbadcba 0"
+        }
+    },
+    {
+        "input": {
+            "s": " edge",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "漢字",
+            "p": "字? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "0 ",
+            "p": "? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "hello 0",
+            "p": "line"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂_x",
+            "p": "??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "?? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "x_🙂",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "?? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "te?t_x_x"
+        }
+    },
+    {
+        "input": {
+            "s": " 0 edge",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "xyz_x",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "x_??"
+        }
+    },
+    {
+        "input": {
+            "s": "x_0 54321",
+            "p": "?? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "12345",
+            "p": "??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂_x",
+            "p": "字? edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "UPPER_x",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂🙃_x 0",
+            "p": "1 ??"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "abc def_x 0"
+        }
+    },
+    {
+        "input": {
+            "s": "0 egde 🙃🙂",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "?? edge",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "abc 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂🙃_x edge_x",
+            "p": "??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "??"
+        }
+    },
+    {
+        "input": {
+            "s": "_x",
+            "p": "egde ac"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂",
+            "p": "dba edge edge"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#$%_x",
+            "p": "??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "🙂🙃",
+            "p": "?? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "shorter",
+            "p": "?? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "\nenil",
+            "p": "_x"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n 1 1",
+            "p": "l?ne? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n 1",
+            "p": "l?ne?"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n",
+            "p": "🙃🙂"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n edge",
+            "p": "l?ne?"
+        }
+    },
+    {
+        "input": {
+            "s": "0 \nenil",
+            "p": "l?ne? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "line\n_x",
+            "p": "edge"
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "1 x_0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t edge_x",
+            "p": "trohs"
+        }
+    },
+    {
+        "input": {
+            "s": "abc def",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t_x",
+            "p": "ta??"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "??at_x"
+        }
+    },
+    {
+        "input": {
+            "s": "\tbat",
+            "p": "ta??_x"
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t 1",
+            "p": "ta??"
+        }
+    },
+    {
+        "input": {
+            "s": "a?a?_x_x_x 0",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t",
+            "p": "ta?? edge"
+        }
+    },
+    {
+        "input": {
+            "s": "tab\t_x",
+            "p": "!@#??_x 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "!@#??_x 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "_x_x_x",
+            "p": "ta??"
+        }
+    },
+    {
+        "input": {
+            "s": "x_",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "abcdabcd",
+            "p": "1 x_egde x_a"
+        }
+    },
+    {
+        "input": {
+            "s": "w?rld 0_x edge 0 edge",
+            "p": "1 x_egde x_a"
+        }
+    },
+    {
+        "input": {
+            "s": "?_x_x",
+            "p": "ab??ab?d"
+        }
+    },
+    {
+        "input": {
+            "s": "abcdabcd 1 edge 1",
+            "p": "🙂🙃"
+        }
+    },
+    {
+        "input": {
+            "s": "U?PE? 1",
+            "p": "ab??ab?d"
+        }
+    },
+    {
+        "input": {
+            "s": "abcdabcd",
+            "p": "ab??ab?d edge"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "ab??ab?d 0_x"
+        }
+    },
+    {
+        "input": {
+            "s": "ba_x",
+            "p": "ab??ab?d edge"
+        }
+    },
+    {
+        "input": {
+            "s": "regnol",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "l?ne? 0",
+            "p": "ab??ab?d 1"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaa_x",
+            "p": "a?a?a?a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a?a?a?a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "line 1",
+            "p": "a?a?a?a?a? 0"
+        }
+    },
+    {
+        "input": {
+            "s": "a 1 1",
+            "p": "?4?21 edge"
+        }
+    },
+    {
+        "input": {
+            "s": "egde aaaaaaaaaa",
+            "p": "a?a?a?a?a?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "longer_x_x_x_x",
+            "p": "ab 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "0 fed?cba",
+            "p": "a?a?a?a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaa",
+            "p": "tab\t_x"
+        }
+    },
+    {
+        "input": {
+            "s": "0 edge_x",
+            "p": "short_x"
+        }
+    },
+    {
+        "input": {
+            "s": "12345_x 0",
+            "p": "a?a?a?a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "en?._x",
+            "p": "U?PE?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "short_x",
+            "p": "a?a?a?a?a?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "aaaaaaaaaa_x_x 0",
+            "p": "a?a?a?a?a?"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "a?a?a?a?a?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "w?rld 0_x edge 0"
+        }
+    },
+    {
+        "input": {
+            "s": "egde x_a",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "ta??_x edge_x",
+            "p": "c?a 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "x_retrohs_x",
+            "p": "1 x_d?ba??ba"
+        }
+    },
+    {
+        "input": {
+            "s": "he?lo edge",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "12345_x 0",
+            "p": "rewol"
+        }
+    },
+    {
+        "input": {
+            "s": "c?a 1 1_x",
+            "p": "? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "字漢_x",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字 0",
+            "p": "?"
+        }
+    },
+    {
+        "input": {
+            "s": "?o?e? 0",
+            "p": "     1 1 0"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字",
+            "p": "?_x"
+        }
+    },
+    {
+        "input": {
+            "s": "漢字",
+            "p": "a_x edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "w?rld edge"
+        }
+    },
+    {
+        "input": {
+            "s": "zzzz edge",
+            "p": "en?."
+        }
+    },
+    {
+        "input": {
+            "s": "end. 0",
+            "p": "1 "
+        }
+    },
+    {
+        "input": {
+            "s": "abc def edge",
+            "p": "egde .?ne"
+        }
+    },
+    {
+        "input": {
+            "s": "ab",
+            "p": "en?. 0"
+        }
+    },
+    {
+        "input": {
+            "s": "trohs",
+            "p": "b_x edge"
+        }
+    },
+    {
+        "input": {
+            "s": "end._x",
+            "p": "abc_x 0"
+        }
+    },
+    {
+        "input": {
+            "s": "x?z",
+            "p": "en?. 0 edge"
+        }
+    },
+    {
+        "input": {
+            "s": ".dne",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "end._x",
+            "p": "te?t"
+        }
+    },
+    {
+        "input": {
+            "s": "1 ab??ab?d_x_x",
+            "p": ".?ne"
+        }
+    },
+    {
+        "input": {
+            "s": "0 ",
+            "p": ".?ne"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "en?. 1"
+        }
+    },
+    {
+        "input": {
+            "s": "end. 1",
+            "p": "x_"
+        }
+    },
+    {
+        "input": {
+            "s": "longer 1",
+            "p": "te?t 1"
+        }
+    },
+    {
+        "input": {
+            "s": "xyz_x edge",
+            "p": "x?z"
+        }
+    },
+    {
+        "input": {
+            "s": "???? edge",
+            "p": "x?z"
+        }
+    },
+    {
+        "input": {
+            "s": "",
+            "p": "x?z"
+        }
+    },
+    {
+        "input": {
+            "s": "ac 1 1",
+            "p": "x?z_x"
+        }
+    },
+    {
+        "input": {
+            "s": " 1",
+            "p": "x?z"
+        }
+    },
+    {
+        "input": {
+            "s": "0 1 ",
+            "p": "?o?e? 1"
+        }
+    },
+    {
+        "input": {
+            "s": "a?a?a?a?a? edge",
+            "p": "x?z 0"
+        }
+    },
+    {
+        "input": {
+            "s": "0",
+            "p": "line\n 1 1"
+        }
+    },
+    {
+        "input": {
+            "s": "b_x",
+            "p": "tab\t edge_x"
+        }
+    },
+    {
+        "input": {
+            "s": "???? edge",
+            "p": "a?c 1"
+        }
+    },
+    {
+        "input": {
+            "s": "xyz 1",
+            "p": ""
+        }
+    },
+    {
+        "input": {
+            "s": "xyz",
+            "p": ""
+        }
+    }
+]

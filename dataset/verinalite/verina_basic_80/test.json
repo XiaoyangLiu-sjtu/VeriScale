@@ -1,0 +1,542 @@
+[
+    {
+        "input": {
+            "a": "#[1, 2, 3, 4]",
+            "key": 2
+        },
+        "expected": "true",
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 2, 2, 3, 4]",
+            "key": 2
+        },
+        "expected": "false",
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 1, 1, 1]",
+            "key": 1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[10]",
+            "key": 10
+        },
+        "expected": "true",
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[]",
+            "key": 5
+        },
+        "expected": "false",
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[4, 4]",
+            "key": 4
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 1, 1, 1, 1]",
+            "key": 1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-5, -5, 0, 5]",
+            "key": -5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 0, 1, 0, 1, 0]",
+            "key": 1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[8, 6, 7, 5, 3, 0, 9]",
+            "key": 9
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[4, 5, 6, 4, 7, 8]",
+            "key": 4
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 0, 0, 0, 0]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[3, 1, 4, 2, 3]",
+            "key": 2
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[2, 2, 3, 4]",
+            "key": 2
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-4, 3, 2, 2]",
+            "key": 2
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[2, 2, 3, 4, 0]",
+            "key": 2
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 2, 2, 3, 4, 0]",
+            "key": 2
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[4, 3, 2, 2, 1, 0]",
+            "key": 1
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 1, 1, 17]",
+            "key": 1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[11]",
+            "key": -10
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0]",
+            "key": 12
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0]",
+            "key": 7
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0]",
+            "key": 5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 16]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0]",
+            "key": -1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[7]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-1000000000000, 3]",
+            "key": 3
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[999999999999]",
+            "key": 6
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[3, 0]",
+            "key": 3
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 2, 4, 5, 0]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[5, 6, 7, 8, 9, 0, 132]",
+            "key": 9
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[2, 9, 2, 9, 2, 20, 0]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[2, 9, 2, 132, 2]",
+            "key": 2
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[9, 2, 9, 2, 0]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-3, -2, -1, 0, 1, 0, 0]",
+            "key": -2
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-5, 0, 5]",
+            "key": -5
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[5, 0, -5, -5, 34]",
+            "key": -5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-5, -5, 0, 5, 1000000000000000]",
+            "key": -5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-5, -5, 0, 5]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-1, 0, 1, 2, -2, 0, 0, 0]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-1, 0, 1, -2]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[-1, 0, 1, 2, -2]",
+            "key": -1
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1000000000000000, 3, 2, 1, -1]",
+            "key": 1
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[20, 30, 0]",
+            "key": 0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[10]",
+            "key": 1000000000002
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 1, 0, 1, 0, 1]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[35, 34, 33, 32, 31, 0, 0]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 3, 0, 2, 0, 1, 0]",
+            "key": 1
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 1, 0, 0, 3, 0, 1000000000000000, 9007199254740991]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 3, 0, 2, 0, 1, 0]",
+            "key": 2
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 12, 12, 12]",
+            "key": 12
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 0, 0, 0]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[0, 0, 0, 1, 0, 0]",
+            "key": 0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "a": "#[1, 4, 2, 3, -1]",
+            "key": 2
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    }
+]

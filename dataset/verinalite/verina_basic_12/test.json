@@ -1,0 +1,612 @@
+[
+    {
+        "input": {
+            "size": 3
+        },
+        "expected": 54,
+        "unexpected": [
+            3,
+            9,
+            18,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 1
+        },
+        "expected": 6,
+        "unexpected": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "input": {
+            "size": 10
+        },
+        "expected": 600,
+        "unexpected": [
+            0,
+            100,
+            10,
+            60
+        ]
+    },
+    {
+        "input": {
+            "size": 5
+        },
+        "expected": 150,
+        "unexpected": [
+            25,
+            0,
+            30,
+            5
+        ]
+    },
+    {
+        "input": {
+            "size": 2
+        },
+        "expected": 24,
+        "unexpected": [
+            12,
+            2,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "size": 4
+        },
+        "expected": 96,
+        "unexpected": [
+            4,
+            0,
+            16,
+            24
+        ]
+    },
+    {
+        "input": {
+            "size": 6
+        },
+        "expected": 216,
+        "unexpected": [
+            6,
+            0,
+            36
+        ]
+    },
+    {
+        "input": {
+            "size": 7
+        },
+        "expected": 294,
+        "unexpected": [
+            0,
+            7,
+            42,
+            49
+        ]
+    },
+    {
+        "input": {
+            "size": 8
+        },
+        "expected": 384,
+        "unexpected": [
+            48,
+            8,
+            64,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 9
+        },
+        "expected": 486,
+        "unexpected": [
+            9,
+            0,
+            81,
+            54
+        ]
+    },
+    {
+        "input": {
+            "size": 11
+        },
+        "expected": 726,
+        "unexpected": [
+            66,
+            121,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 12
+        },
+        "expected": 864,
+        "unexpected": [
+            0,
+            12,
+            72,
+            144
+        ]
+    },
+    {
+        "input": {
+            "size": 15
+        },
+        "expected": 1350,
+        "unexpected": [
+            0,
+            15,
+            225,
+            90
+        ]
+    },
+    {
+        "input": {
+            "size": 16
+        },
+        "expected": 1536,
+        "unexpected": [
+            16,
+            256,
+            0,
+            96
+        ]
+    },
+    {
+        "input": {
+            "size": 17
+        },
+        "expected": 1734,
+        "unexpected": [
+            289,
+            102,
+            17,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 31
+        },
+        "expected": 5766,
+        "unexpected": [
+            0,
+            186,
+            961,
+            31
+        ]
+    },
+    {
+        "input": {
+            "size": 32
+        },
+        "expected": 6144,
+        "unexpected": [
+            32,
+            1024,
+            0,
+            192
+        ]
+    },
+    {
+        "input": {
+            "size": 33
+        },
+        "expected": 6534,
+        "unexpected": [
+            0,
+            33,
+            1089,
+            198
+        ]
+    },
+    {
+        "input": {
+            "size": 63
+        },
+        "expected": 23814,
+        "unexpected": [
+            0,
+            3969,
+            378,
+            63
+        ]
+    },
+    {
+        "input": {
+            "size": 64
+        },
+        "expected": 24576,
+        "unexpected": [
+            64,
+            384,
+            4096,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 65
+        },
+        "expected": 25350,
+        "unexpected": [
+            0,
+            4225,
+            65,
+            390
+        ]
+    },
+    {
+        "input": {
+            "size": 99
+        },
+        "expected": 58806,
+        "unexpected": [
+            0,
+            9801,
+            594,
+            99
+        ]
+    },
+    {
+        "input": {
+            "size": 100
+        },
+        "expected": 60000,
+        "unexpected": [
+            600,
+            10000,
+            100,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 101
+        },
+        "expected": 61206,
+        "unexpected": [
+            0,
+            101,
+            606,
+            10201
+        ]
+    },
+    {
+        "input": {
+            "size": 255
+        },
+        "expected": 390150,
+        "unexpected": [
+            0,
+            255,
+            65025,
+            1530
+        ]
+    },
+    {
+        "input": {
+            "size": 256
+        },
+        "expected": 393216,
+        "unexpected": [
+            256,
+            65536,
+            0,
+            1536
+        ]
+    },
+    {
+        "input": {
+            "size": 257
+        },
+        "expected": 396294,
+        "unexpected": [
+            1542,
+            257,
+            0,
+            66049
+        ]
+    },
+    {
+        "input": {
+            "size": 999
+        },
+        "expected": 5988006,
+        "unexpected": [
+            0,
+            999,
+            5994,
+            998001
+        ]
+    },
+    {
+        "input": {
+            "size": 1000
+        },
+        "expected": 6000000,
+        "unexpected": [
+            6000,
+            1000000,
+            0,
+            1000
+        ]
+    },
+    {
+        "input": {
+            "size": 1024
+        },
+        "expected": 6291456,
+        "unexpected": [
+            0,
+            1024,
+            1048576,
+            6144
+        ]
+    },
+    {
+        "input": {
+            "size": 4096
+        },
+        "expected": 100663296,
+        "unexpected": [
+            24576,
+            16777216,
+            4096,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 10000
+        },
+        "expected": 600000000,
+        "unexpected": [
+            60000,
+            100000000,
+            0,
+            10000
+        ]
+    },
+    {
+        "input": {
+            "size": 65535
+        },
+        "expected": 25769017350,
+        "unexpected": [
+            0,
+            393210,
+            65535,
+            4294836225
+        ]
+    },
+    {
+        "input": {
+            "size": 65536
+        },
+        "expected": 25769803776,
+        "unexpected": [
+            0,
+            393216,
+            65536,
+            4294967296
+        ]
+    },
+    {
+        "input": {
+            "size": 1000000
+        },
+        "expected": 6000000000000,
+        "unexpected": [
+            0,
+            1000000,
+            6000000,
+            1000000000000
+        ]
+    },
+    {
+        "input": {
+            "size": 1000000000
+        },
+        "expected": 6000000000000000000,
+        "unexpected": [
+            1000000000,
+            0,
+            1000000000000000000,
+            6000000000
+        ]
+    },
+    {
+        "input": {
+            "size": 2147483647
+        },
+        "expected": 27670116084794523654,
+        "unexpected": [
+            0,
+            4611686014132420609,
+            12884901882,
+            2147483647
+        ]
+    },
+    {
+        "input": {
+            "size": 4294967295
+        },
+        "expected": 110680464390717702150,
+        "unexpected": [
+            4294967295,
+            0,
+            18446744065119617025,
+            25769803770
+        ]
+    },
+    {
+        "input": {
+            "size": 9223372036854775807
+        },
+        "expected": 510423550381407695084381446705395007494,
+        "unexpected": [
+            0,
+            55340232221128654842,
+            9223372036854775807,
+            85070591730234615847396907784232501249
+        ]
+    },
+    {
+        "input": {
+            "size": 18
+        },
+        "expected": 1944,
+        "unexpected": [
+            0,
+            18,
+            324,
+            108
+        ]
+    },
+    {
+        "input": {
+            "size": 60
+        },
+        "expected": 21600,
+        "unexpected": [
+            60,
+            3600,
+            0,
+            360
+        ]
+    },
+    {
+        "input": {
+            "size": 4097
+        },
+        "expected": 100712454,
+        "unexpected": [
+            4097,
+            0,
+            16785409,
+            24582
+        ]
+    },
+    {
+        "input": {
+            "size": 66
+        },
+        "expected": 26136,
+        "unexpected": [
+            0,
+            396,
+            66,
+            4356
+        ]
+    },
+    {
+        "input": {
+            "size": 4294967296
+        },
+        "expected": 110680464442257309696,
+        "unexpected": [
+            25769803776,
+            18446744073709551616,
+            4294967296,
+            0
+        ]
+    },
+    {
+        "input": {
+            "size": 10001
+        },
+        "expected": 600120006,
+        "unexpected": [
+            0,
+            60006,
+            10001,
+            100020001
+        ]
+    },
+    {
+        "input": {
+            "size": 1023
+        },
+        "expected": 6279174,
+        "unexpected": [
+            0,
+            1023,
+            6138,
+            1046529
+        ]
+    },
+    {
+        "input": {
+            "size": 20
+        },
+        "expected": 2400,
+        "unexpected": [
+            20,
+            0,
+            400,
+            120
+        ]
+    },
+    {
+        "input": {
+            "size": 1000001
+        },
+        "expected": 6000012000006,
+        "unexpected": [
+            1000002000001,
+            0,
+            1000001,
+            6000006
+        ]
+    },
+    {
+        "input": {
+            "size": 263
+        },
+        "expected": 415014,
+        "unexpected": [
+            69169,
+            263,
+            0,
+            1578
+        ]
+    },
+    {
+        "input": {
+            "size": 202
+        },
+        "expected": 244824,
+        "unexpected": [
+            0,
+            202,
+            40804,
+            1212
+        ]
+    },
+    {
+        "input": {
+            "size": 131071
+        },
+        "expected": 103077642246,
+        "unexpected": [
+            786426,
+            0,
+            131071,
+            17179607041
+        ]
+    }
+]

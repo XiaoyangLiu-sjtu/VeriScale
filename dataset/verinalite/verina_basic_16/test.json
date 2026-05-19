@@ -1,0 +1,782 @@
+[
+    {
+        "input": {
+            "s": "hello, world!",
+            "oldChar": ",",
+            "newChar": ";"
+        },
+        "expected": "hello; world!",
+        "unexpected": [
+            "hello, world!",
+            "ello, world!,",
+            "xxxxxxxxxxxxx",
+            "!dlrow ,olleh",
+            ",;,;,;,;,;,;,"
+        ]
+    },
+    {
+        "input": {
+            "s": "a,b.c",
+            "oldChar": ",",
+            "newChar": ":"
+        },
+        "expected": "a:b.c",
+        "unexpected": [
+            "a,b.c",
+            "xxxxx",
+            ",b.c,",
+            ",:,:,",
+            "c.b,a"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world!",
+            "oldChar": "o",
+            "newChar": "O"
+        },
+        "expected": "hellO, wOrld!",
+        "unexpected": [
+            "!dlrow ,olleh",
+            "xxxxxxxxxxxxx",
+            "ello, world!o",
+            "oOoOoOoOoOoOo",
+            "hello, world!"
+        ]
+    },
+    {
+        "input": {
+            "s": "",
+            "oldChar": "x",
+            "newChar": "y"
+        },
+        "expected": "",
+        "unexpected": [
+            " ",
+            "abc"
+        ]
+    },
+    {
+        "input": {
+            "s": "test",
+            "oldChar": "x",
+            "newChar": "y"
+        },
+        "expected": "test",
+        "unexpected": [
+            "testy",
+            "tset",
+            "yxest"
+        ]
+    },
+    {
+        "input": {
+            "s": "unchanged",
+            "oldChar": "u",
+            "newChar": "u"
+        },
+        "expected": "unchanged",
+        "unexpected": [
+            "nchanged",
+            "unchanged!",
+            "unchangEd"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaa",
+            "oldChar": "a",
+            "newChar": "b"
+        },
+        "expected": "bbb",
+        "unexpected": [
+            "aaa",
+            "abb",
+            "bba"
+        ]
+    },
+    {
+        "input": {
+            "s": "a",
+            "oldChar": "a",
+            "newChar": "b"
+        },
+        "expected": "b",
+        "unexpected": [
+            "a",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s": "a b  c   d",
+            "oldChar": " ",
+            "newChar": "_"
+        },
+        "expected": "_ b  c   d",
+        "unexpected": [
+            "xxxxxxxxxx",
+            "a_a_a_a_a_",
+            "a b  c   d",
+            " b  c   da",
+            "d   c  b a"
+        ]
+    },
+    {
+        "input": {
+            "s": "123-456-7890",
+            "oldChar": "-",
+            "newChar": ":"
+        },
+        "expected": "123:456:7890",
+        "unexpected": [
+            "xxxxxxxxxxxx",
+            "23-456-7890-",
+            "-:-:-:-:-:-:",
+            "0987-654-321",
+            "123-456-7890"
+        ]
+    },
+    {
+        "input": {
+            "s": "AbrAcadAbrA",
+            "oldChar": "A",
+            "newChar": "a"
+        },
+        "expected": "abracadabra",
+        "unexpected": [
+            "AaAaAaAaAaA",
+            "xxxxxxxxxxx",
+            "AbrAcadAbrA",
+            "brAcadAbrAA",
+            "ArbAdacArbA"
+        ]
+    },
+    {
+        "input": {
+            "s": "ha😂ha😂!",
+            "oldChar": "😂",
+            "newChar": "🤣"
+        },
+        "expected": "ha🤣ha🤣!",
+        "unexpected": [
+            "😂🤣😂🤣😂🤣😂",
+            "!😂ah😂ah",
+            "xxxxxxx",
+            "a😂ha😂!😂",
+            "ha😂ha😂!"
+        ]
+    },
+    {
+        "input": {
+            "s": "𝄞music𝄞",
+            "oldChar": "𝄞",
+            "newChar": "♪"
+        },
+        "expected": "♪music♪",
+        "unexpected": [
+            "𝄞music𝄞",
+            "music𝄞𝄞",
+            "xxxxxxx",
+            "𝄞cisum𝄞",
+            "𝄞♪𝄞♪𝄞♪𝄞"
+        ]
+    },
+    {
+        "input": {
+            "s": "élan",
+            "oldChar": "́",
+            "newChar": "~"
+        },
+        "expected": "e~lan",
+        "unexpected": [
+            "naĺe",
+            "́~́~́",
+            "xxxxx",
+            "élan",
+            "́lań"
+        ]
+    },
+    {
+        "input": {
+            "s": "path\\to\\file",
+            "oldChar": "\\",
+            "newChar": "/"
+        },
+        "expected": "path/to/file",
+        "unexpected": [
+            "\\/\\/\\/\\/\\/\\/",
+            "xxxxxxxxxxxx",
+            "path\\to\\file",
+            "ath\\to\\file\\",
+            "elif\\ot\\htap"
+        ]
+    },
+    {
+        "input": {
+            "s": "abababab",
+            "oldChar": "a",
+            "newChar": "b"
+        },
+        "expected": "bbbbbbbb",
+        "unexpected": [
+            "babababa",
+            "xxxxxxxx",
+            "abababab"
+        ]
+    },
+    {
+        "input": {
+            "s": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "oldChar": "x",
+            "newChar": "y"
+        },
+        "expected": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+        "unexpected": [
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "xyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxy"
+        ]
+    },
+    {
+        "input": {
+            "s": "zero​width​space",
+            "oldChar": "​",
+            "newChar": "-"
+        },
+        "expected": "zero-width-space",
+        "unexpected": [
+            "​-​-​-​-​-​-​-​-",
+            "xxxxxxxxxxxxxxxx",
+            "ero​width​space​",
+            "zero​width​space",
+            "ecaps​htdiw​orez"
+        ]
+    },
+    {
+        "input": {
+            "s": "🔥🔥🔥",
+            "oldChar": "🔥",
+            "newChar": "❄"
+        },
+        "expected": "❄❄❄",
+        "unexpected": [
+            "xxx",
+            "🔥🔥🔥",
+            "🔥❄🔥"
+        ]
+    },
+    {
+        "input": {
+            "s": "\u0001\u0002\u0003abc\u0003\u0002\u0001",
+            "oldChar": "\u0003",
+            "newChar": "*"
+        },
+        "expected": "\\x01\\x02*abc*\\x02\\x01",
+        "unexpected": [
+            "\\x01\\x02\\x03abc\\x03\\x02\\x01",
+            "\\x03*\\x03*\\x03*\\x03*\\x03",
+            "\\x02\\x03abc\\x03\\x02\\x01\\x03",
+            "\\x01\\x02\\x03cba\\x03\\x02\\x01",
+            "xxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "مرحبا بالعالم",
+            "oldChar": "ا",
+            "newChar": "أ"
+        },
+        "expected": "مرحبأ بألعألم",
+        "unexpected": [
+            "اأاأاأاأاأاأا",
+            "xxxxxxxxxxxxx",
+            "ملاعلاب ابحرم",
+            "رحبا بالعالما",
+            "مرحبا بالعالم"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world!_x",
+            "oldChar": ",",
+            "newChar": ";"
+        },
+        "expected": "hello; world!_x",
+        "unexpected": [
+            "hello, world!_x",
+            ",;,;,;,;,;,;,;,",
+            "ello, world!_x,",
+            "x_!dlrow ,olleh",
+            "xxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world!",
+            "oldChar": "e",
+            "newChar": ""
+        },
+        "expected": "hallo, world!",
+        "unexpected": [
+            "ello, world!e",
+            "eaeaeaeaeaeae",
+            "xxxxxxxxxxxxx",
+            "!dlrow ,olleh",
+            "hello, world!"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world!",
+            "oldChar": ",",
+            "newChar": "x_x_ナカタカ"
+        },
+        "expected": "hellox world!",
+        "unexpected": [
+            "ello, world!,",
+            ",x,x,x,x,x,x,",
+            "hello, world!",
+            "xxxxxxxxxxxxx",
+            "!dlrow ,olleh"
+        ]
+    },
+    {
+        "input": {
+            "s": "c.b,a",
+            "oldChar": ",",
+            "newChar": ":"
+        },
+        "expected": "c.b:a",
+        "unexpected": [
+            ",:,:,",
+            "a,b.c",
+            "xxxxx",
+            ".b,a,",
+            "c.b,a"
+        ]
+    },
+    {
+        "input": {
+            "s": "c.b,a",
+            "oldChar": ",",
+            "newChar": ""
+        },
+        "expected": "c.baa",
+        "unexpected": [
+            "a,b.c",
+            "c.b,a",
+            ".b,a,",
+            "xxxxx",
+            ",a,a,"
+        ]
+    },
+    {
+        "input": {
+            "s": "a,b.c_x",
+            "oldChar": ",",
+            "newChar": ":"
+        },
+        "expected": "a:b.c_x",
+        "unexpected": [
+            "xxxxxxx",
+            "a,b.c_x",
+            ",:,:,:,",
+            ",b.c_x,",
+            "x_c.b,a"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world! 1",
+            "oldChar": "hello, 0",
+            "newChar": "O_x"
+        },
+        "expected": "Oello, world! 1",
+        "unexpected": [
+            "1 !dlrow ,olleh",
+            "ello, world! 1h",
+            "hello, world! 1",
+            "hOhOhOhOhOhOhOh",
+            "xxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "hello, world! edge",
+            "oldChar": "o_x",
+            "newChar": "O 1"
+        },
+        "expected": "hellO, wOrld! edge",
+        "unexpected": [
+            "hello, world! edge",
+            "ello, world! edgeo",
+            "egde !dlrow ,olleh",
+            "xxxxxxxxxxxxxxxxxx",
+            "oOoOoOoOoOoOoOoOoO"
+        ]
+    },
+    {
+        "input": {
+            "s": "_",
+            "oldChar": "_x",
+            "newChar": "O_x"
+        },
+        "expected": "O",
+        "unexpected": [
+            "x",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s": "a edge_x",
+            "oldChar": "x",
+            "newChar": "y edge"
+        },
+        "expected": "a edge_y",
+        "unexpected": [
+            "x_egde a",
+            "xxxxxxxx",
+            "xyxyxyxy",
+            " edge_xx",
+            "a edge_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "degnahcnu 0",
+            "oldChar": "u",
+            "newChar": ""
+        },
+        "expected": "degnahcna 0",
+        "unexpected": [
+            "0 unchanged",
+            "degnahcnu 0",
+            "xxxxxxxxxxx",
+            "egnahcnu 0u",
+            "uauauauauau"
+        ]
+    },
+    {
+        "input": {
+            "s": "degnahcnu",
+            "oldChar": "a,b.c",
+            "newChar": "u"
+        },
+        "expected": "degnuhcnu",
+        "unexpected": [
+            "auauauaua",
+            "unchanged",
+            "egnahcnua",
+            "xxxxxxxxx",
+            "degnahcnu"
+        ]
+    },
+    {
+        "input": {
+            "s": "a",
+            "oldChar": "a_x",
+            "newChar": "row2_x"
+        },
+        "expected": "r",
+        "unexpected": [
+            "x",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": "a/b/c/d",
+            "oldChar": "a",
+            "newChar": "b"
+        },
+        "expected": "b/b/c/d",
+        "unexpected": [
+            "/b/c/da",
+            "abababa",
+            "d/c/b/a",
+            "a/b/c/d",
+            "xxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "a",
+            "oldChar": "a",
+            "newChar": "O 1"
+        },
+        "expected": "O",
+        "unexpected": [
+            "x",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaaaaa",
+            "oldChar": "",
+            "newChar": "z"
+        },
+        "expected": "zzzzzz",
+        "unexpected": [
+            "aaaaaa",
+            "xxxxxx",
+            "azazaz"
+        ]
+    },
+    {
+        "input": {
+            "s": "aaaaaa 0",
+            "oldChar": "a",
+            "newChar": "z"
+        },
+        "expected": "zzzzzz 0",
+        "unexpected": [
+            "aaaaa 0a",
+            "xxxxxxxx",
+            "aaaaaa 0",
+            "0 aaaaaa",
+            "azazazaz"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes 1",
+            "oldChar": "",
+            "newChar": "e"
+        },
+        "expected": "replece nothing chenges 1",
+        "unexpected": [
+            "1 segnahc gnihton ecalper",
+            "replace nothing changes 1",
+            "eplace nothing changes 1a",
+            "aeaeaeaeaeaeaeaeaeaeaeaea",
+            "xxxxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "élan 0",
+            "oldChar": "e",
+            "newChar": "x_e"
+        },
+        "expected": "x́lan 0",
+        "unexpected": [
+            "0 naĺe",
+            "xxxxxxx",
+            "́lan 0e",
+            "exexexe",
+            "élan 0"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes 0_x",
+            "oldChar": "",
+            "newChar": "e"
+        },
+        "expected": "replece nothing chenges 0_x",
+        "unexpected": [
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "aeaeaeaeaeaeaeaeaeaeaeaeaea",
+            "eplace nothing changes 0_xa",
+            "x_0 segnahc gnihton ecalper",
+            "replace nothing changes 0_x"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes",
+            "oldChar": "",
+            "newChar": "row1"
+        },
+        "expected": "replrce nothing chrnges",
+        "unexpected": [
+            "replace nothing changes",
+            "segnahc gnihton ecalper",
+            "eplace nothing changesa",
+            "ararararararararararara",
+            "xxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes",
+            "oldChar": "e",
+            "newChar": "|"
+        },
+        "expected": "r|plac| nothing chang|s",
+        "unexpected": [
+            "e|e|e|e|e|e|e|e|e|e|e|e",
+            "segnahc gnihton ecalper",
+            "eplace nothing changese",
+            "replace nothing changes",
+            "xxxxxxxxxxxxxxxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes_x",
+            "oldChar": "e edge",
+            "newChar": "x_e"
+        },
+        "expected": "rxplacx nothing changxs_x",
+        "unexpected": [
+            "exexexexexexexexexexexexe",
+            "eplace nothing changes_xe",
+            "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            "replace nothing changes_x",
+            "x_segnahc gnihton ecalper"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes",
+            "oldChar": "e",
+            "newChar": "x_e_x"
+        },
+        "expected": "rxplacx nothing changxs",
+        "unexpected": [
+            "segnahc gnihton ecalper",
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "exexexexexexexexexexexe",
+            "replace nothing changes",
+            "eplace nothing changese"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes",
+            "oldChar": "e_x",
+            "newChar": "aaa"
+        },
+        "expected": "raplaca nothing changas",
+        "unexpected": [
+            "segnahc gnihton ecalper",
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "eplace nothing changese",
+            "replace nothing changes",
+            "eaeaeaeaeaeaeaeaeaeaeae"
+        ]
+    },
+    {
+        "input": {
+            "s": "a b  c   d_x",
+            "oldChar": "",
+            "newChar": "_"
+        },
+        "expected": "_ b  c   d_x",
+        "unexpected": [
+            "a b  c   d_x",
+            "xxxxxxxxxxxx",
+            "a_a_a_a_a_a_",
+            " b  c   d_xa",
+            "x_d   c  b a"
+        ]
+    },
+    {
+        "input": {
+            "s": "d   c  b a edge",
+            "oldChar": "",
+            "newChar": "__x"
+        },
+        "expected": "d   c  b _ edge",
+        "unexpected": [
+            "a_a_a_a_a_a_a_a",
+            "   c  b a edgea",
+            "xxxxxxxxxxxxxxx",
+            "d   c  b a edge",
+            "egde a b  c   d"
+        ]
+    },
+    {
+        "input": {
+            "s": "path\\to\\file",
+            "oldChar": " ",
+            "newChar": "_"
+        },
+        "expected": "p_th\\to\\file",
+        "unexpected": [
+            "path\\to\\file",
+            "ath\\to\\filea",
+            "xxxxxxxxxxxx",
+            "elif\\ot\\htap",
+            "a_a_a_a_a_a_"
+        ]
+    },
+    {
+        "input": {
+            "s": "a b  c   d",
+            "oldChar": " ",
+            "newChar": "unchanged"
+        },
+        "expected": "u b  c   d",
+        "unexpected": [
+            " b  c   da",
+            "d   c  b a",
+            "auauauauau",
+            "a b  c   d",
+            "xxxxxxxxxx"
+        ]
+    },
+    {
+        "input": {
+            "s": "a b  c   d",
+            "oldChar": "",
+            "newChar": "_"
+        },
+        "expected": "_ b  c   d",
+        "unexpected": [
+            "d   c  b a",
+            "a b  c   d",
+            "xxxxxxxxxx",
+            "a_a_a_a_a_",
+            " b  c   da"
+        ]
+    },
+    {
+        "input": {
+            "s": "AbrAcadAbrA 0",
+            "oldChar": "A 1",
+            "newChar": "a"
+        },
+        "expected": "abracadabra 0",
+        "unexpected": [
+            "xxxxxxxxxxxxx",
+            "brAcadAbrA 0A",
+            "0 ArbAdacArbA",
+            "AbrAcadAbrA 0",
+            "AaAaAaAaAaAaA"
+        ]
+    },
+    {
+        "input": {
+            "s": "replace nothing changes",
+            "oldChar": "",
+            "newChar": "x_a"
+        },
+        "expected": "replxce nothing chxnges",
+        "unexpected": [
+            "xxxxxxxxxxxxxxxxxxxxxxx",
+            "replace nothing changes",
+            "segnahc gnihton ecalper",
+            "eplace nothing changesa",
+            "axaxaxaxaxaxaxaxaxaxaxa"
+        ]
+    },
+    {
+        "input": {
+            "s": "ArbAdacArbA",
+            "oldChar": "A",
+            "newChar": "a"
+        },
+        "expected": "arbadacarba",
+        "unexpected": [
+            "ArbAdacArbA",
+            "AbrAcadAbrA",
+            "AaAaAaAaAaA",
+            "xxxxxxxxxxx",
+            "rbAdacArbAA"
+        ]
+    }
+]

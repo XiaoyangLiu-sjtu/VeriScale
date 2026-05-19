@@ -1,0 +1,252 @@
+[
+    {
+        "input": {
+            "input": " 0"
+        }
+    },
+    {
+        "input": {
+            "input": "   1"
+        }
+    },
+    {
+        "input": {
+            "input": "   5   "
+        }
+    },
+    {
+        "input": {
+            "input": "0_x"
+        }
+    },
+    {
+        "input": {
+            "input": " 0 1"
+        }
+    },
+    {
+        "input": {
+            "input": "0 .dne"
+        }
+    },
+    {
+        "input": {
+            "input": "   _x_x_x 0"
+        }
+    },
+    {
+        "input": {
+            "input": " 1"
+        }
+    },
+    {
+        "input": {
+            "input": "1 "
+        }
+    },
+    {
+        "input": {
+            "input": "1"
+        }
+    },
+    {
+        "input": {
+            "input": "\n\n\n 1"
+        }
+    },
+    {
+        "input": {
+            "input": "111"
+        }
+    },
+    {
+        "input": {
+            "input": "123"
+        }
+    },
+    {
+        "input": {
+            "input": "321"
+        }
+    },
+    {
+        "input": {
+            "input": "5"
+        }
+    },
+    {
+        "input": {
+            "input": "1 0"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1"
+        }
+    },
+    {
+        "input": {
+            "input": "1 b"
+        }
+    },
+    {
+        "input": {
+            "input": "1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "a 0"
+        }
+    },
+    {
+        "input": {
+            "input": "a 1"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b"
+        }
+    },
+    {
+        "input": {
+            "input": "x_0"
+        }
+    },
+    {
+        "input": {
+            "input": " 0_x"
+        }
+    },
+    {
+        "input": {
+            "input": " 1 1"
+        }
+    },
+    {
+        "input": {
+            "input": " 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "0 _x"
+        }
+    },
+    {
+        "input": {
+            "input": "00aa"
+        }
+    },
+    {
+        "input": {
+            "input": "_x 1"
+        }
+    },
+    {
+        "input": {
+            "input": "on 1"
+        }
+    },
+    {
+        "input": {
+            "input": "x_1 "
+        }
+    },
+    {
+        "input": {
+            "input": "0_x_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "111 1"
+        }
+    },
+    {
+        "input": {
+            "input": "a1b_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_0 a"
+        }
+    },
+    {
+        "input": {
+            "input": "x_1_x"
+        }
+    },
+    {
+        "input": {
+            "input": "x_b1a"
+        }
+    },
+    {
+        "input": {
+            "input": "0 aa00"
+        }
+    },
+    {
+        "input": {
+            "input": "00aa_x"
+        }
+    },
+    {
+        "input": {
+            "input": "1 dcba"
+        }
+    },
+    {
+        "input": {
+            "input": "\"\"'' 1"
+        }
+    },
+    {
+        "input": {
+            "input": "abcd 1"
+        }
+    },
+    {
+        "input": {
+            "input": "end. 0"
+        }
+    },
+    {
+        "input": {
+            "input": "text 0"
+        }
+    },
+    {
+        "input": {
+            "input": " 0 edge"
+        }
+    },
+    {
+        "input": {
+            "input": " edge 0"
+        }
+    },
+    {
+        "input": {
+            "input": " edge 1"
+        }
+    },
+    {
+        "input": {
+            "input": "0 🙂🙂🙃🙃🙃"
+        }
+    },
+    {
+        "input": {
+            "input": "0 🙃🙃🙃🙂🙂"
+        }
+    }
+]

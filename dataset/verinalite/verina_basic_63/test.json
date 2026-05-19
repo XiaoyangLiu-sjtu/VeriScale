@@ -1,0 +1,502 @@
+[
+    {
+        "input": {
+            "numbers": "[1.0, 2.0, 3.0]",
+            "threshold": 1.5
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[10.0, 12.0, 15.0]",
+            "threshold": 1.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[5.0, 5.0]",
+            "threshold": 0.1
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[]",
+            "threshold": 2.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.0, 0.5, 1.1, 2.2]",
+            "threshold": 0.6
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[]",
+            "threshold": 0.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[]",
+            "threshold": 10.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0]",
+            "threshold": 0.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0]",
+            "threshold": 5.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.0, 0.0]",
+            "threshold": 0.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.0, 0.0]",
+            "threshold": 1e-06
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 2.0]",
+            "threshold": 1.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 2.0]",
+            "threshold": 1.0000001
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 2.0, 3.0]",
+            "threshold": 0.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 1.4, 2.8]",
+            "threshold": 0.5
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 1.4999999, 3.0]",
+            "threshold": 0.5
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-1.0, -1.2, -3.4]",
+            "threshold": 0.25
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-1.0, -1.2, -3.4]",
+            "threshold": 0.2
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-5.5, -5.5, -5.5]",
+            "threshold": 0.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-5.5, -5.5, -5.5]",
+            "threshold": 1e-05
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1000000.0, 1000000.0001, 999999.9]",
+            "threshold": 0.0002
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1000000.0, 1000000.0001, 999999.9]",
+            "threshold": 0.0001
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1e-09, 2e-09, 3e-09]",
+            "threshold": 1e-09
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1e-09, 2e-09, 3e-09]",
+            "threshold": 1.1e-09
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.1, 0.2, 0.30000000000000004]",
+            "threshold": 0.10000000000000003
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.1, 0.2, 0.30000000000000004]",
+            "threshold": 0.1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-1000.0, 0.0, 1000.0]",
+            "threshold": 500.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[-1000.0, 0.0, 1000.0]",
+            "threshold": 1000.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[2.5, 2.5000000001, 2.5000000002]",
+            "threshold": 1e-10
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[2.5, 2.5000000001, 2.5000000002]",
+            "threshold": 1.1e-10
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[42.0, -42.0, 42.0]",
+            "threshold": 0.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[42.0, -42.0, 42.0]",
+            "threshold": 0.01
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[3.14159, 2.71828, 1.61803, 1.61804]",
+            "threshold": 2e-05
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[3.14159, 2.71828, 1.61803, 1.61804]",
+            "threshold": 1e-05
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[9.0, 9.0, 10.0, 11.0]",
+            "threshold": 2.0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[5.0, 4.0, 3.0, 2.0, 1.0]",
+            "threshold": 0.9999999
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[5.0, 4.0, 3.0, 2.0, 1.0]",
+            "threshold": 1.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 1.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": " 1",
+            "threshold": 1.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[]",
+            "threshold": 1.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[0.0, 0.5, 1.1, 2.2]",
+            "threshold": 1.5
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 0.1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[]",
+            "threshold": 0.1
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "[1.0, 2.0, 3.0]",
+            "threshold": 2.0
+        },
+        "expected": true,
+        "unexpected": [
+            false
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 2.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "0",
+            "threshold": 2.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 0.6
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "1",
+            "threshold": 0.6
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 1.0
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    },
+    {
+        "input": {
+            "numbers": "",
+            "threshold": 0.5
+        },
+        "expected": false,
+        "unexpected": [
+            true
+        ]
+    }
+]

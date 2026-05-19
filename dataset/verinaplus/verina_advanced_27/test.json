@@ -1,0 +1,3441 @@
+[
+    {
+        "input": {
+            "s1": "abcde",
+            "s2": "ace"
+        },
+        "expected": "ace",
+        "unexpected": [
+            "",
+            "a",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaa",
+            "s2": "bbaaa"
+        },
+        "expected": "aaa",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "xyz",
+            "s2": "abc"
+        },
+        "expected": "",
+        "unexpected": [
+            "x",
+            "y",
+            "a",
+            "abc"
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc",
+            "s2": "abxc"
+        },
+        "expected": "abxc",
+        "unexpected": [
+            "a",
+            "",
+            "bxc"
+        ]
+    },
+    {
+        "input": {
+            "s1": "AGGTAB",
+            "s2": "GXTXAYB"
+        },
+        "expected": "GTAB",
+        "unexpected": [
+            "",
+            "B",
+            "G",
+            "A"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a",
+            "s2": "a"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab",
+            "s2": "baba"
+        },
+        "expected": "baba",
+        "unexpected": [
+            "",
+            "a",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e",
+            "s2": "abcde"
+        },
+        "expected": "abcde",
+        "unexpected": [
+            "a",
+            "e",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "  lead and trail  ",
+            "s2": "leadtrail"
+        },
+        "expected": "leadtrail",
+        "unexpected": [
+            "",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "!@#$%^&*()",
+            "s2": "$^&"
+        },
+        "expected": "$^&",
+        "unexpected": [
+            "$",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890",
+            "s2": "24680"
+        },
+        "expected": "24680",
+        "unexpected": [
+            "0",
+            "2",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a1b2c3d4",
+            "s2": "zz1yy2xx3"
+        },
+        "expected": "123",
+        "unexpected": [
+            "1",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar",
+            "s2": "carrace"
+        },
+        "expected": "race",
+        "unexpected": [
+            "r",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "longestcommonsubsequence",
+            "s2": "longestcommonsubsequence"
+        },
+        "expected": "longestcommonsubsequence",
+        "unexpected": [
+            "",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "subsequence",
+            "s2": "sbsqnc"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "",
+            "s"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc",
+            "s2": "subsequence"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "s",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab",
+            "s2": "aaaaaaaab"
+        },
+        "expected": "aaaaaaaab",
+        "unexpected": [
+            "",
+            "aaaaaaaa",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café",
+            "s2": "cafe"
+        },
+        "expected": "caf",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café",
+            "s2": "café"
+        },
+        "expected": "caf",
+        "unexpected": [
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "🙂🙃🙂🙃",
+            "s2": "🙃🙂"
+        },
+        "expected": "🙃🙂",
+        "unexpected": [
+            "🙃",
+            "",
+            "🙂"
+        ]
+    },
+    {
+        "input": {
+            "s1": "👨‍👩‍👧‍👦family",
+            "s2": "👩‍👧fam"
+        },
+        "expected": "👩‍👧fam",
+        "unexpected": [
+            "",
+            "👩",
+            "‍"
+        ]
+    },
+    {
+        "input": {
+            "s1": "你好世界",
+            "s2": "世好"
+        },
+        "expected": "世",
+        "unexpected": [
+            "",
+            "好"
+        ]
+    },
+    {
+        "input": {
+            "s1": "مرحباالعالم",
+            "s2": "العلم"
+        },
+        "expected": "العلم",
+        "unexpected": [
+            "ا",
+            "لم",
+            "",
+            "م"
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3",
+            "s2": "ln1\nln3"
+        },
+        "expected": "ln1\nln3",
+        "unexpected": [
+            "l",
+            "",
+            "3"
+        ]
+    },
+    {
+        "input": {
+            "s1": "col1\tcol2\tcol3",
+            "s2": "c1\tc3"
+        },
+        "expected": "c1\tc3",
+        "unexpected": [
+            "c",
+            "",
+            "3"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef",
+            "s2": "\u0000c\u0000e"
+        },
+        "expected": "\\x00c\\x00e",
+        "unexpected": [
+            "\\x00",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "XMJYAUZ",
+            "s2": "MZJAWXU"
+        },
+        "expected": "MJAU",
+        "unexpected": [
+            "X",
+            "M",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc",
+            "s2": "bac"
+        },
+        "expected": "bc",
+        "unexpected": [
+            "a",
+            "",
+            "c",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "αβγδεζη",
+            "s2": "βδεζ"
+        },
+        "expected": "βδεζ",
+        "unexpected": [
+            "",
+            "β"
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍈𐍉𐍊",
+            "s2": "𐍉𐍋"
+        },
+        "expected": "𐍉",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "He said: \"Lean\\\\4\"",
+            "s2": "Lean\\\\4"
+        },
+        "expected": "Lean\\\\4",
+        "unexpected": [
+            "",
+            "e",
+            "L"
+        ]
+    },
+    {
+        "input": {
+            "s1": "     ",
+            "s2": "  "
+        },
+        "expected": "  ",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcabcabcabcabc",
+            "s2": "aaabbbccc"
+        },
+        "expected": "aaabbbc",
+        "unexpected": [
+            "a",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "s2": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "expected": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "unexpected": [
+            "x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxcxdxexf",
+            "s2": "abcdef"
+        },
+        "expected": "abcdef",
+        "unexpected": [
+            "a",
+            "",
+            "f"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcde_x",
+            "s2": "ace"
+        },
+        "expected": "ace",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "col2",
+            "s2": "👨‍👩‍👧‍👦family"
+        },
+        "expected": "l",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "He said: \"Lean\\\\4\"",
+            "s2": "ace_x"
+        },
+        "expected": "ae",
+        "unexpected": [
+            "",
+            "e",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e_x",
+            "s2": "abababab"
+        },
+        "expected": "ab",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcde",
+            "s2": "ace_x 0"
+        },
+        "expected": "ace",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": " 0",
+            "s2": "ace 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": " 1",
+            "s2": "  "
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaa edge",
+            "s2": "bbaaa_x"
+        },
+        "expected": "aaa",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaa_x",
+            "s2": "bbaaa"
+        },
+        "expected": "aaa",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba",
+            "s2": "abc"
+        },
+        "expected": "ab",
+        "unexpected": [
+            "a",
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "baaaaaaaaaaaaaaaaaaa",
+            "s2": "cba"
+        },
+        "expected": "ba",
+        "unexpected": [
+            "",
+            "a",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "xyz",
+            "s2": "ace_x 0"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "xyz",
+            "s2": " 1_x"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "xyz_x",
+            "s2": "cba_x_x"
+        },
+        "expected": "x_x",
+        "unexpected": [
+            "x",
+            "_x",
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "abxc_x_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "x",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc edge",
+            "s2": "aaaa edge"
+        },
+        "expected": "a edge",
+        "unexpected": [
+            "a",
+            " edge",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace_x 0",
+            "s2": "abxc_x"
+        },
+        "expected": "ac_x",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc",
+            "s2": "abxc 1"
+        },
+        "expected": "abxc",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc edge",
+            "s2": "abxc"
+        },
+        "expected": "abxc",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc",
+            "s2": "cxba"
+        },
+        "expected": "xb",
+        "unexpected": [
+            "",
+            "a",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "cxbxa",
+            "s2": "abxc edge 1"
+        },
+        "expected": "bx",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "cxbxa"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc",
+            "s2": "said:"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x_x",
+            "s2": "abxc"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc",
+            "s2": "x_cxba"
+        },
+        "expected": "xc",
+        "unexpected": [
+            "a",
+            "x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_cxbxa",
+            "s2": "abxc_x"
+        },
+        "expected": "xcx",
+        "unexpected": [
+            "",
+            "x",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": " 0",
+            "s2": "cxba edge"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "xyz",
+            "s2": "GXTXAYB_x 1"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "BATGGA",
+            "s2": "BYAXTXG"
+        },
+        "expected": "BATG",
+        "unexpected": [
+            "B",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abxc",
+            "s2": "acegikmoqsuwy"
+        },
+        "expected": "ac",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "AGGTAB",
+            "s2": "XMJYAUZ_x"
+        },
+        "expected": "A",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ln1 edge",
+            "s2": "\"Lean\\\\4\""
+        },
+        "expected": "e",
+        "unexpected": [
+            "",
+            "n"
+        ]
+    },
+    {
+        "input": {
+            "s1": "AGGTAB_x_x",
+            "s2": "xyz"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x edge",
+            "s2": " 1"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "x_𐍋𐍉 1"
+        },
+        "expected": "x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "aaaa_x_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "0 ",
+            "s2": " edge"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "egde x_cba"
+        },
+        "expected": "x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "abc_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "zz1yy2xx3 0",
+            "s2": "_x"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "0 x_eca_x",
+            "s2": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc_x",
+            "s2": "cba"
+        },
+        "expected": "c",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde ",
+            "s2": " edge"
+        },
+        "expected": "ede",
+        "unexpected": [
+            "",
+            " ",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxc_x",
+            "s2": "a_x"
+        },
+        "expected": "a_x",
+        "unexpected": [
+            "a",
+            "_x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a 1",
+            "s2": "a"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a_x edge",
+            "s2": "a 0"
+        },
+        "expected": "a ",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍈𐍉𐍊_x",
+            "s2": "x_cba"
+        },
+        "expected": "x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": " 0",
+            "s2": "aaaa edge_x 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "a_x",
+            "s2": "a 0"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "cba_x 1",
+            "s2": "b"
+        },
+        "expected": "b",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": " 0",
+            "s2": "egde "
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "  lead and trail  ",
+            "s2": "baba_x edge"
+        },
+        "expected": "aa ",
+        "unexpected": [
+            "a",
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab_x",
+            "s2": "abab"
+        },
+        "expected": "abab",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "e\u0000c\u0000",
+            "s2": "baba edge 1"
+        },
+        "expected": "e",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab_x",
+            "s2": "baba 0"
+        },
+        "expected": "baba",
+        "unexpected": [
+            "b",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef",
+            "s2": "abcabcabcabcabc_x"
+        },
+        "expected": "abc",
+        "unexpected": [
+            "ab",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab edge",
+            "s2": "abcdef"
+        },
+        "expected": "abde",
+        "unexpected": [
+            "",
+            "a",
+            "ab"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab 0",
+            "s2": "baba_x edge 1 1"
+        },
+        "expected": "baba ",
+        "unexpected": [
+            "",
+            "a",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab",
+            "s2": "abc edge"
+        },
+        "expected": "ab",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ABCdef",
+            "s2": "x_b edge"
+        },
+        "expected": "de",
+        "unexpected": [
+            "",
+            "e",
+            "d"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ABCdef 0",
+            "s2": "He"
+        },
+        "expected": "e",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_𐍋𐍉 1 edge",
+            "s2": "0987654321 edge"
+        },
+        "expected": "1 edge",
+        "unexpected": [
+            " ",
+            "1",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ABCdef",
+            "s2": "0 x_egde aaaa"
+        },
+        "expected": "de",
+        "unexpected": [
+            "",
+            "d",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ABCdef",
+            "s2": "1 edge_x"
+        },
+        "expected": "de",
+        "unexpected": [
+            "e",
+            "d",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge_x",
+            "s2": "x_liart"
+        },
+        "expected": "x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_liart",
+            "s2": "abcde edge"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e",
+            "s2": "leadtrail"
+        },
+        "expected": "ad",
+        "unexpected": [
+            "",
+            "e",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e 1",
+            "s2": "abcde 1"
+        },
+        "expected": "abcde 1",
+        "unexpected": [
+            "a",
+            "e 1"
+        ]
+    },
+    {
+        "input": {
+            "s1": "e d c b a",
+            "s2": "abcde"
+        },
+        "expected": "a",
+        "unexpected": [
+            "e",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e edge",
+            "s2": "abcde"
+        },
+        "expected": "abcde",
+        "unexpected": [
+            "",
+            "e",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e",
+            "s2": "cxba"
+        },
+        "expected": "c",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a",
+            "s2": "leadtrail"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "  liart dna dael  ",
+            "s2": "abxc_x_x 1"
+        },
+        "expected": "a ",
+        "unexpected": [
+            " ",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "1 abab",
+            "s2": "leadtrail 1"
+        },
+        "expected": "aa",
+        "unexpected": [
+            "",
+            "1",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "baba_x",
+            "s2": "leadtrail"
+        },
+        "expected": "aa",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "  liart dna dael  ",
+            "s2": "leadtrail"
+        },
+        "expected": "ladal",
+        "unexpected": [
+            "",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "  lead and trail  ",
+            "s2": "line2"
+        },
+        "expected": "li",
+        "unexpected": [
+            "",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "  liart dna dael  ",
+            "s2": "lead"
+        },
+        "expected": "lad",
+        "unexpected": [
+            "l",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "!@#$%^&*()",
+            "s2": "$^& 0"
+        },
+        "expected": "$^&",
+        "unexpected": [
+            "",
+            "$"
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde )(*&^%$#@!",
+            "s2": "$^&_x"
+        },
+        "expected": "$",
+        "unexpected": [
+            "",
+            "&"
+        ]
+    },
+    {
+        "input": {
+            "s1": "!@#$%^&*() 1 1",
+            "s2": "&^$"
+        },
+        "expected": "&",
+        "unexpected": [
+            "",
+            "$"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a b c d e",
+            "s2": " 0"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "!@#$%^&*()_x",
+            "s2": " edge_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890 edge_x",
+            "s2": "edge"
+        },
+        "expected": "edge",
+        "unexpected": [
+            "e",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890",
+            "s2": "08642_x_x"
+        },
+        "expected": "0",
+        "unexpected": [
+            "2",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890",
+            "s2": "cxba_x 1"
+        },
+        "expected": "1",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890_x",
+            "s2": "24680"
+        },
+        "expected": "24680",
+        "unexpected": [
+            "",
+            "2"
+        ]
+    },
+    {
+        "input": {
+            "s1": "edcba_x",
+            "s2": "abababab"
+        },
+        "expected": "ba",
+        "unexpected": [
+            "",
+            "b",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge",
+            "s2": "08642_x_x edge"
+        },
+        "expected": " edge",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "1nl",
+            "s2": "24680 1"
+        },
+        "expected": "1",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "0987654321",
+            "s2": "24680_x_x_x 0"
+        },
+        "expected": "2",
+        "unexpected": [
+            "",
+            "0"
+        ]
+    },
+    {
+        "input": {
+            "s1": "1234567890",
+            "s2": "24680 edge"
+        },
+        "expected": "24680",
+        "unexpected": [
+            "2",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "cxba_x_x",
+            "s2": "3xx2yy1zz"
+        },
+        "expected": "xx",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a1b2c3d4_x",
+            "s2": "x_cba"
+        },
+        "expected": "x",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a1b2c3d4",
+            "s2": "ace 0"
+        },
+        "expected": "ac",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "4d3c2b1a",
+            "s2": "col2"
+        },
+        "expected": "c2",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "4d3c2b1a",
+            "s2": "zz1yy2xx3_x"
+        },
+        "expected": "1",
+        "unexpected": [
+            "3",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde",
+            "s2": "egde 1 x_e"
+        },
+        "expected": "egde",
+        "unexpected": [
+            "e",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3",
+            "s2": "zz1yy2xx3 1"
+        },
+        "expected": "123",
+        "unexpected": [
+            "",
+            "1"
+        ]
+    },
+    {
+        "input": {
+            "s1": "a1b2c3d4",
+            "s2": "ln1\nln3_x"
+        },
+        "expected": "13",
+        "unexpected": [
+            "",
+            "1"
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar",
+            "s2": "0 x_egde aaaa"
+        },
+        "expected": "ea",
+        "unexpected": [
+            "",
+            "a",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar",
+            "s2": "carrace_x"
+        },
+        "expected": "race",
+        "unexpected": [
+            "c",
+            "",
+            "r"
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar_x",
+            "s2": "carrace 0"
+        },
+        "expected": "race",
+        "unexpected": [
+            "r",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar",
+            "s2": "carrace 1"
+        },
+        "expected": "race",
+        "unexpected": [
+            "r",
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "racecar edge",
+            "s2": "carrace"
+        },
+        "expected": "care",
+        "unexpected": [
+            "r",
+            "c",
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace_x_x",
+            "s2": "carrace 0"
+        },
+        "expected": "ace",
+        "unexpected": [
+            "a",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "bac",
+            "s2": "ace_x 0"
+        },
+        "expected": "ac",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "longestcommonsubsequence 0",
+            "s2": "ln1\nln3"
+        },
+        "expected": "lnn",
+        "unexpected": [
+            "l",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "lead",
+            "s2": "ecneuqesbusnommoctsegnol"
+        },
+        "expected": "e",
+        "unexpected": [
+            "",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "c1\tc3",
+            "s2": "ecneuqesbusnommoctsegnol_x"
+        },
+        "expected": "cc",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ln1\nln3",
+            "s2": "cnqsbs"
+        },
+        "expected": "n",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace_x 0 edge",
+            "s2": "abcde 1"
+        },
+        "expected": "acde",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "baba",
+            "s2": "sbsqnc"
+        },
+        "expected": "b",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace 0",
+            "s2": "sbsqnc"
+        },
+        "expected": "c",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "subsequence edge",
+            "s2": "sbsqnc"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "",
+            "s"
+        ]
+    },
+    {
+        "input": {
+            "s1": "subsequence_x_x",
+            "s2": "x_e"
+        },
+        "expected": "x_",
+        "unexpected": [
+            "",
+            "e",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ecneuqesbus",
+            "s2": "sbsqnc 1"
+        },
+        "expected": "sbs",
+        "unexpected": [
+            "",
+            "s",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_ecneuqesbus edge",
+            "s2": "sbsqnc_x_x"
+        },
+        "expected": "sbs",
+        "unexpected": [
+            "",
+            "s",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace_x",
+            "s2": "sbsqnc_x"
+        },
+        "expected": "c_x",
+        "unexpected": [
+            "_x",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ecneuqesbus_x",
+            "s2": "sbsqnc_x"
+        },
+        "expected": "sbs_x",
+        "unexpected": [
+            "",
+            "s",
+            "_x",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde 1nl edge",
+            "s2": "subsequence"
+        },
+        "expected": "eene",
+        "unexpected": [
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc",
+            "s2": "subsequence_x"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "",
+            "s"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc_x_x",
+            "s2": "_x_x"
+        },
+        "expected": "_x_x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc",
+            "s2": "ecneuqesbus"
+        },
+        "expected": "sbs",
+        "unexpected": [
+            "",
+            "s",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc",
+            "s2": "subsequence 0"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "",
+            "s"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_𐍋𐍉 1",
+            "s2": "ace 0"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc 0",
+            "s2": "cxba edge"
+        },
+        "expected": "c ",
+        "unexpected": [
+            "",
+            "c",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc",
+            "s2": "abxc edge 0_x edge"
+        },
+        "expected": "bc",
+        "unexpected": [
+            "b",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc 0",
+            "s2": "subsequence"
+        },
+        "expected": "sbsqnc",
+        "unexpected": [
+            "",
+            "s"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab",
+            "s2": "leadtrail"
+        },
+        "expected": "aa",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab_x edge",
+            "s2": " 0"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab_x 1",
+            "s2": "aaaaaaaab edge"
+        },
+        "expected": "aaaaaaaab ",
+        "unexpected": [
+            "aaaaaaaa",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab_x",
+            "s2": "aaaaaaaab edge 0"
+        },
+        "expected": "aaaaaaaab",
+        "unexpected": [
+            "",
+            "aaaaaaaa",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "  lead and trail   edge",
+            "s2": "cafe"
+        },
+        "expected": "ae",
+        "unexpected": [
+            "e",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café",
+            "s2": "cafe_x"
+        },
+        "expected": "caf",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café",
+            "s2": "efac"
+        },
+        "expected": "f",
+        "unexpected": [
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "café_x",
+            "s2": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "baaaaaaaa",
+            "s2": "cafe"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde x_éfac",
+            "s2": "cafe_x 0"
+        },
+        "expected": "e_",
+        "unexpected": [
+            "c",
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x",
+            "s2": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "éfac",
+            "s2": "efac"
+        },
+        "expected": "fac",
+        "unexpected": [
+            "",
+            "f"
+        ]
+    },
+    {
+        "input": {
+            "s1": "cba_x_x",
+            "s2": "x_x_e d c b a"
+        },
+        "expected": "x_x",
+        "unexpected": [
+            "",
+            "x",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "said: edge edge",
+            "s2": "éfac"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": " 0",
+            "s2": "café 1 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍉𐍋_x",
+            "s2": "café 0_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "café 1",
+            "s2": "subsequence 0"
+        },
+        "expected": "ce ",
+        "unexpected": [
+            "",
+            "e",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café",
+            "s2": "éfac"
+        },
+        "expected": "f",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_egde 🙃🙂🙃🙂",
+            "s2": "🙃🙂_x_x"
+        },
+        "expected": "🙃🙂",
+        "unexpected": [
+            "🙃",
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "🙂🙃🙂🙃",
+            "s2": "x_🙃🙂"
+        },
+        "expected": "🙃🙂",
+        "unexpected": [
+            "",
+            "🙃",
+            "🙂"
+        ]
+    },
+    {
+        "input": {
+            "s1": "🙂🙃🙂🙃",
+            "s2": "🙃🙂_x"
+        },
+        "expected": "🙃🙂",
+        "unexpected": [
+            "",
+            "🙂",
+            "🙃"
+        ]
+    },
+    {
+        "input": {
+            "s1": "👨‍👩‍👧‍👦family_x",
+            "s2": "👩‍👧fam"
+        },
+        "expected": "👩‍👧fam",
+        "unexpected": [
+            "",
+            "👩",
+            "‍"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ace_x_x",
+            "s2": "👩‍👧fam"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "👨‍👩‍👧‍👦family",
+            "s2": "👩‍👧fam_x edge"
+        },
+        "expected": "👩‍👧fam",
+        "unexpected": [
+            "‍",
+            "👩",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab",
+            "s2": "maf👧‍👩"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "0987654321 edge",
+            "s2": "col2"
+        },
+        "expected": "2",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "👨‍👩‍👧‍👦family",
+            "s2": "👩‍👧fam_x"
+        },
+        "expected": "👩‍👧fam",
+        "unexpected": [
+            "",
+            "‍",
+            "👩"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ylimaf👦‍👧‍👩‍👨",
+            "s2": "maf👧‍👩_x"
+        },
+        "expected": "maf👧‍👩",
+        "unexpected": [
+            "",
+            "m"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ylimaf👦‍👧‍👩‍👨",
+            "s2": "👩‍👧fam_x 1 edge"
+        },
+        "expected": "👩‍",
+        "unexpected": [
+            "",
+            "m",
+            "👩"
+        ]
+    },
+    {
+        "input": {
+            "s1": "你好世界_x",
+            "s2": "abcabcabcabcabc_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "_",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_x_e d c b a",
+            "s2": "世好 0"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "你好世界 0",
+            "s2": "x_好世"
+        },
+        "expected": "好世",
+        "unexpected": [
+            "",
+            "好"
+        ]
+    },
+    {
+        "input": {
+            "s1": "你好世界 1 1 0",
+            "s2": "世好"
+        },
+        "expected": "世",
+        "unexpected": [
+            "好",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "你好世界_x",
+            "s2": "世好_x"
+        },
+        "expected": "世_x",
+        "unexpected": [
+            "_x",
+            "",
+            "好",
+            "世"
+        ]
+    },
+    {
+        "input": {
+            "s1": "مرحباالعالم",
+            "s2": "ملعلا"
+        },
+        "expected": "ملعل",
+        "unexpected": [
+            "",
+            "م"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ملاعلاابحرم",
+            "s2": "العلم"
+        },
+        "expected": "اعلم",
+        "unexpected": [
+            "ا",
+            "م",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde ",
+            "s2": "08642_x_x edge"
+        },
+        "expected": "ede",
+        "unexpected": [
+            "",
+            "e",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3",
+            "s2": "3nl\n1nl"
+        },
+        "expected": "nl\nn",
+        "unexpected": [
+            "",
+            "3",
+            "l"
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3",
+            "s2": "aaaa_x_x 1"
+        },
+        "expected": "1",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3_x_x_x",
+            "s2": "ln1\nln3_x"
+        },
+        "expected": "ln1\nln3_x",
+        "unexpected": [
+            "l",
+            "",
+            "_x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "line1\nline2\nline3 edge",
+            "s2": "ln1\nln3"
+        },
+        "expected": "ln1\nln3",
+        "unexpected": [
+            "l",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "sbsqnc 1",
+            "s2": " 1"
+        },
+        "expected": " 1",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "cnqsbs",
+            "s2": "ln1\nln3 1"
+        },
+        "expected": "n",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "a edge",
+            "s2": "line3"
+        },
+        "expected": "e",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "3loc\t2loc\t1loc",
+            "s2": " 1"
+        },
+        "expected": "1",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abxc_x_x",
+            "s2": "cxbxa"
+        },
+        "expected": "cxx",
+        "unexpected": [
+            "c",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_𐍋𐍉 1",
+            "s2": "3c\t1c"
+        },
+        "expected": "1",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_éfac",
+            "s2": "0 x_egde aaaa"
+        },
+        "expected": "x_a",
+        "unexpected": [
+            "x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "col1\tcol2\tcol3",
+            "s2": "carrace"
+        },
+        "expected": "cc",
+        "unexpected": [
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcDEF 0",
+            "s2": "c1\tc3 edge"
+        },
+        "expected": "c ",
+        "unexpected": [
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "café_x",
+            "s2": "racecar"
+        },
+        "expected": "ca",
+        "unexpected": [
+            "",
+            "c",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde 1nl edge",
+            "s2": "a b c d e edge"
+        },
+        "expected": "d  edge",
+        "unexpected": [
+            " ",
+            "",
+            "e",
+            " edge"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef",
+            "s2": "line3 edge"
+        },
+        "expected": "de",
+        "unexpected": [
+            "",
+            "e",
+            "d"
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge",
+            "s2": "\u0000c\u0000e"
+        },
+        "expected": "e",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_éfac",
+            "s2": "cba_x_x"
+        },
+        "expected": "x_",
+        "unexpected": [
+            "x",
+            "",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef 0",
+            "s2": "x_e\u0000c\u0000"
+        },
+        "expected": "\\x00c\\x00",
+        "unexpected": [
+            "",
+            "\\x00",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcde edge",
+            "s2": "\u0000c\u0000e"
+        },
+        "expected": "ce",
+        "unexpected": [
+            "c",
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef",
+            "s2": " 1_x edge"
+        },
+        "expected": "de",
+        "unexpected": [
+            "",
+            "d"
+        ]
+    },
+    {
+        "input": {
+            "s1": "fe\u0000dc\u0000ba 1",
+            "s2": "\u0000c\u0000e"
+        },
+        "expected": "\\x00c\\x00",
+        "unexpected": [
+            "",
+            "\\x00",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef_x",
+            "s2": "egde e\u0000c\u0000"
+        },
+        "expected": "\\x00c\\x00",
+        "unexpected": [
+            "",
+            "\\x00",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef",
+            "s2": "abc edge_x"
+        },
+        "expected": "abcde",
+        "unexpected": [
+            "ab",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "c1\tc3",
+            "s2": "acegikmoqsuwy_x"
+        },
+        "expected": "c",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde 1 x_e_x",
+            "s2": "acegikmoqsuwy_x_x"
+        },
+        "expected": "eg__x",
+        "unexpected": [
+            "e",
+            "",
+            "_x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+            "s2": "baba"
+        },
+        "expected": "bab",
+        "unexpected": [
+            "b",
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_ZUAYJMX",
+            "s2": "UXWAJZM"
+        },
+        "expected": "UAJM",
+        "unexpected": [
+            "",
+            "U",
+            "Z"
+        ]
+    },
+    {
+        "input": {
+            "s1": "XMJYAUZ",
+            "s2": "UXWAJZM"
+        },
+        "expected": "XAZ",
+        "unexpected": [
+            "X",
+            "",
+            "U"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ZUAYJMX",
+            "s2": "MZJAWXU_x_x"
+        },
+        "expected": "ZJX",
+        "unexpected": [
+            "",
+            "Z",
+            "M"
+        ]
+    },
+    {
+        "input": {
+            "s1": "XMJYAUZ 1_x_x",
+            "s2": "MZJAWXU_x"
+        },
+        "expected": "MJAU_x",
+        "unexpected": [
+            "M",
+            "X",
+            "",
+            "_x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "XMJYAUZ",
+            "s2": "MZJAWXU edge_x"
+        },
+        "expected": "MJAU",
+        "unexpected": [
+            "",
+            "M",
+            "X"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc",
+            "s2": "cab 1"
+        },
+        "expected": "ab",
+        "unexpected": [
+            "",
+            "a",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_x_egde liartdael",
+            "s2": "café 0 0"
+        },
+        "expected": "ae",
+        "unexpected": [
+            "",
+            "a",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "liart_x",
+            "s2": "_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_cba",
+            "s2": " edge 0_x"
+        },
+        "expected": "_",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab_x",
+            "s2": "éfac 0_x"
+        },
+        "expected": "a_x",
+        "unexpected": [
+            "",
+            "a",
+            "_x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc",
+            "s2": "x_cab"
+        },
+        "expected": "ab",
+        "unexpected": [
+            "",
+            "c",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "cba",
+            "s2": "bac"
+        },
+        "expected": "ba",
+        "unexpected": [
+            "c",
+            "b",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde baaaaaaaaaaaaaaaaaaa",
+            "s2": "bac edge"
+        },
+        "expected": "ede",
+        "unexpected": [
+            "e",
+            "",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_x_3xx2yy1zz",
+            "s2": "bac_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "x",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc_x",
+            "s2": "c1 edge_x"
+        },
+        "expected": "c_x",
+        "unexpected": [
+            "_x",
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "4d3c2b1a",
+            "s2": "bac"
+        },
+        "expected": "ba",
+        "unexpected": [
+            "c",
+            "",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc 1",
+            "s2": "bac"
+        },
+        "expected": "bc",
+        "unexpected": [
+            "",
+            "b",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abc",
+            "s2": "bac_x"
+        },
+        "expected": "bc",
+        "unexpected": [
+            "",
+            "b",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ηζεδγβα",
+            "s2": "βδεζ"
+        },
+        "expected": "β",
+        "unexpected": [
+            "ζ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "αβγδεζη",
+            "s2": "ζεδβ"
+        },
+        "expected": "ζ",
+        "unexpected": [
+            "",
+            "β"
+        ]
+    },
+    {
+        "input": {
+            "s1": "αβγδεζη_x 0",
+            "s2": "1 ζεδβ"
+        },
+        "expected": " ",
+        "unexpected": [
+            "",
+            "β"
+        ]
+    },
+    {
+        "input": {
+            "s1": "αβγδεζη",
+            "s2": "βδεζ 0"
+        },
+        "expected": "βδεζ",
+        "unexpected": [
+            "",
+            "β"
+        ]
+    },
+    {
+        "input": {
+            "s1": "αβγδεζη",
+            "s2": "βδεζ_x"
+        },
+        "expected": "βδεζ",
+        "unexpected": [
+            "",
+            "β"
+        ]
+    },
+    {
+        "input": {
+            "s1": "_x edge",
+            "s2": "a1b2c3d4 1"
+        },
+        "expected": "d",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍊𐍉𐍈",
+            "s2": "𐍋𐍉"
+        },
+        "expected": "𐍉",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍈𐍉𐍊",
+            "s2": "0 𐍋𐍉"
+        },
+        "expected": "𐍉",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍊𐍉𐍈",
+            "s2": "𐍉𐍋 0"
+        },
+        "expected": "𐍉",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_好世",
+            "s2": "ace_x"
+        },
+        "expected": "_",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge",
+            "s2": "𐍉𐍋 1"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "𐍈𐍉𐍊 edge",
+            "s2": "𐍉𐍋"
+        },
+        "expected": "𐍉",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "      edge",
+            "s2": "Lean\\\\4 edge_x"
+        },
+        "expected": " edge",
+        "unexpected": [
+            "",
+            " ",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "\"4\\\\naeL\" :dias eH",
+            "s2": "Lean\\\\4 edge"
+        },
+        "expected": "\\\\ de",
+        "unexpected": [
+            "",
+            "L",
+            "4"
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge",
+            "s2": "4\\\\naeL"
+        },
+        "expected": "e",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "He said: \"Lean\\\\4\"",
+            "s2": "egde 1 x_e"
+        },
+        "expected": "ed e",
+        "unexpected": [
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "0 x_efac",
+            "s2": "\"4\\\\naeL\" :dias eH"
+        },
+        "expected": "ea",
+        "unexpected": [
+            "",
+            "a",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "He said: \"Lean\\\\4\"_x",
+            "s2": "BATGGA_x"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "\"4\\\\naeL\" :dias eH",
+            "s2": "Lean\\\\4_x"
+        },
+        "expected": "Le",
+        "unexpected": [
+            "",
+            "4",
+            "L"
+        ]
+    },
+    {
+        "input": {
+            "s1": "He said: \"Lean\\\\4\" 1",
+            "s2": "Lean\\\\4"
+        },
+        "expected": "Lean\\\\4",
+        "unexpected": [
+            "",
+            "e",
+            "L"
+        ]
+    },
+    {
+        "input": {
+            "s1": "cba_x",
+            "s2": "Lean\\\\4"
+        },
+        "expected": "a",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "zz1yy2xx3 1",
+            "s2": "egde 4\\\\naeL_x"
+        },
+        "expected": " ",
+        "unexpected": [
+            "x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "carrace 0_x",
+            "s2": "  "
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "     ",
+            "s2": "1 egde 4\\\\naeL"
+        },
+        "expected": "  ",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": " edge 1",
+            "s2": "  "
+        },
+        "expected": "  ",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcde edge",
+            "s2": "  "
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "fxexdxcxbxa",
+            "s2": "c1_x"
+        },
+        "expected": "cx",
+        "unexpected": [
+            "x",
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaab edge 0",
+            "s2": "  "
+        },
+        "expected": "  ",
+        "unexpected": [
+            "",
+            " "
+        ]
+    },
+    {
+        "input": {
+            "s1": "     ",
+            "s2": "   0"
+        },
+        "expected": "   ",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcabcabcabcabc_x",
+            "s2": "aaabbbccc"
+        },
+        "expected": "aaabbbc",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcabcabcabcabc 1",
+            "s2": "aaabbbccc"
+        },
+        "expected": "aaabbbc",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": " 1",
+            "s2": "aaabbbccc 0"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab 0",
+            "s2": "1 🙃🙂🙃🙂 edge"
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "egde cbacbacbacbacba",
+            "s2": "aaabbbccc_x"
+        },
+        "expected": "aaabb",
+        "unexpected": [
+            "",
+            "a",
+            "c"
+        ]
+    },
+    {
+        "input": {
+            "s1": " 1 1_x",
+            "s2": "x_efac"
+        },
+        "expected": "x",
+        "unexpected": [
+            "",
+            "_"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_cxbxa",
+            "s2": "aaabbbccc"
+        },
+        "expected": "a",
+        "unexpected": [
+            "c",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_efac",
+            "s2": "aaaaaaaaaaaaaaaaaaab_x 1"
+        },
+        "expected": "a",
+        "unexpected": [
+            "x",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "e_x 1 edge 0",
+            "s2": "aaabbbccc 0"
+        },
+        "expected": " 0",
+        "unexpected": [
+            " ",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "cba edge_x",
+            "s2": "baaaaaaaaaaaaaaaaaaa_x"
+        },
+        "expected": "ba_x",
+        "unexpected": [
+            "",
+            "b",
+            "_x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "aaaaaaaaaaaaaaaaaaab_x 1",
+            "s2": "aaabbbccc_x"
+        },
+        "expected": "aaab_x",
+        "unexpected": [
+            "",
+            "a",
+            "aaa"
+        ]
+    },
+    {
+        "input": {
+            "s1": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_x_x 0",
+            "s2": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "expected": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "efac_x",
+            "s2": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 1"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_x",
+            "s2": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "expected": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0",
+            "s2": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "expected": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "qwertyuiopasdfghjkl",
+            "s2": "a_x edge_x"
+        },
+        "expected": "adg",
+        "unexpected": [
+            "a",
+            "",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "x_cba",
+            "s2": "zxcvbnm"
+        },
+        "expected": "xcb",
+        "unexpected": [
+            "",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "qwertyuiopasdfghjkl 0",
+            "s2": "1 "
+        },
+        "expected": " ",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "e_x",
+            "s2": "abababab_x edge"
+        },
+        "expected": "_x",
+        "unexpected": [
+            "",
+            "_",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abcde",
+            "s2": "zxcvbnm 0 edge"
+        },
+        "expected": "cde",
+        "unexpected": [
+            "e",
+            "",
+            "c",
+            "b"
+        ]
+    },
+    {
+        "input": {
+            "s1": "said:_x",
+            "s2": "mnbvcxz"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxcxdxexf 1",
+            "s2": "x_"
+        },
+        "expected": "x",
+        "unexpected": [
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxcxdxexf_x edge",
+            "s2": "abcdef"
+        },
+        "expected": "abcdef",
+        "unexpected": [
+            "a",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "ab\u0000cd\u0000ef 0",
+            "s2": "abcdef"
+        },
+        "expected": "abcdef",
+        "unexpected": [
+            "a",
+            "",
+            "ab"
+        ]
+    },
+    {
+        "input": {
+            "s1": "4d3c2b1a",
+            "s2": "egde 1 x_e"
+        },
+        "expected": "d1",
+        "unexpected": [
+            "d",
+            ""
+        ]
+    },
+    {
+        "input": {
+            "s1": "0 1 ",
+            "s2": "ln1\nln3 1"
+        },
+        "expected": "1 ",
+        "unexpected": [
+            "",
+            " ",
+            "1"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ecneuqesbus edge",
+            "s2": "abcdef 0"
+        },
+        "expected": "bde",
+        "unexpected": [
+            "",
+            "b",
+            "e"
+        ]
+    },
+    {
+        "input": {
+            "s1": "abababab_x edge",
+            "s2": "racecar 1"
+        },
+        "expected": "aa ",
+        "unexpected": [
+            "",
+            "a"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ABCdef_x",
+            "s2": "c1\tc3 edge"
+        },
+        "expected": "de",
+        "unexpected": [
+            "",
+            "e",
+            "d"
+        ]
+    },
+    {
+        "input": {
+            "s1": "axbxcxdxexf",
+            "s2": "mnbvcxz"
+        },
+        "expected": "bcx",
+        "unexpected": [
+            "",
+            "b",
+            "x"
+        ]
+    },
+    {
+        "input": {
+            "s1": "ecneuqesbus",
+            "s2": "abcdef"
+        },
+        "expected": "ce",
+        "unexpected": [
+            "",
+            "b",
+            "e"
+        ]
+    }
+]

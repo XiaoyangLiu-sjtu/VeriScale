@@ -1,0 +1,6255 @@
+[
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, 21, -1]"
+        },
+        "expected": 33,
+        "unexpected": [
+            18,
+            10,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            9,
+            1,
+            2,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, -5]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -5,
+            -15,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 5]"
+        },
+        "expected": 15,
+        "unexpected": [
+            1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5]"
+        },
+        "expected": -5,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            2,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            -4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 1]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 1, -3, 4, -1, 2, 1, -5, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            1,
+            4,
+            -2,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1]"
+        },
+        "expected": 100,
+        "unexpected": [
+            -1,
+            96,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3, 4]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            4,
+            -100,
+            -90
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, 5, -4, 20]"
+        },
+        "expected": 21,
+        "unexpected": [
+            10,
+            8,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 4, -1, -2, 1, 5, -3]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -1,
+            0,
+            -3,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 3, 10, -4, 7, 2, -5]"
+        },
+        "expected": 18,
+        "unexpected": [
+            8,
+            0,
+            -5,
+            1,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 0, -1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6,
+            -3,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, 2, -1, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 60, -10, 70, -5]"
+        },
+        "expected": 120,
+        "unexpected": [
+            65,
+            -5,
+            0,
+            6,
+            50
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, -8, -9]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -23,
+            0,
+            4,
+            -9,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1, -1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0,
+            -1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, -1, 1, -1, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, -1000000000, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, 600000000, -200000000]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            -200000000,
+            0,
+            -100000000,
+            -1000000000,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648]"
+        },
+        "expected": -2147483648,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, -2147483648, 2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            2147483646,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, -1, 2, -1, 2, -3, 4]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, 1, 0, -1, 0, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, -15, 20, -1, 2]"
+        },
+        "expected": 21,
+        "unexpected": [
+            10,
+            4,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, 2, -6, 4]"
+        },
+        "expected": 11,
+        "unexpected": [
+            9,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 5, 6, -35, 12, 21, -1]"
+        },
+        "expected": 33,
+        "unexpected": [
+            9,
+            17,
+            10,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -6, 3, 1, 5, 6, -35, 12, -200000000, -1]"
+        },
+        "expected": 19,
+        "unexpected": [
+            -1,
+            0,
+            -200000005,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 6, -35, 12, 21, -1, 0, 0, -16]"
+        },
+        "expected": 33,
+        "unexpected": [
+            -16,
+            10,
+            0,
+            12,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 6, 5, 1, 3, 10]"
+        },
+        "expected": 33,
+        "unexpected": [
+            10,
+            9,
+            22,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, 21]"
+        },
+        "expected": 33,
+        "unexpected": [
+            21,
+            10,
+            19,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            18,
+            0,
+            10,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[20, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0, 6]"
+        },
+        "expected": 38,
+        "unexpected": [
+            12,
+            20,
+            34,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 6, 5, 1, 3, -4, 10, -9, -1000000000, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            -999999991,
+            0,
+            13,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, -1, 12, -36, 6, 5, 1, 3, -4]"
+        },
+        "expected": 15,
+        "unexpected": [
+            -24,
+            9,
+            -4,
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            0,
+            18,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, -4, 3, 1, 5, 6, -35, 12, 21, -1, 8]"
+        },
+        "expected": 40,
+        "unexpected": [
+            8,
+            6,
+            11,
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 0, 6, -35, 12, 21, -1, 0, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            0,
+            10,
+            13,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, -1, -9]"
+        },
+        "expected": 21,
+        "unexpected": [
+            -12,
+            10,
+            0,
+            -9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 21, 12, -35, 6, 5, 1, 3, -4, 10]"
+        },
+        "expected": 33,
+        "unexpected": [
+            18,
+            0,
+            11,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, -4, 6, 5, -5, 1]"
+        },
+        "expected": 11,
+        "unexpected": [
+            2,
+            5,
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 6, -5, 1, -4]"
+        },
+        "expected": 15,
+        "unexpected": [
+            6,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -5, 5, 6, -4, 4, 3, -4, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            2,
+            0,
+            1,
+            9,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, 1, -5, 70, -4, 4, 3, -4, 1, 2, 0]"
+        },
+        "expected": 73,
+        "unexpected": [
+            -6,
+            0,
+            11,
+            62
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, -5, 5, 6, -100, 4, 3, -4, 0, 2, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            -88,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1, -15, 6]"
+        },
+        "expected": 14,
+        "unexpected": [
+            2,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 5, -5, 1]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            3,
+            9,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 70, -4, 3, 4, -4, 6, 5, -5, 1, 12, 0, -19]"
+        },
+        "expected": 90,
+        "unexpected": [
+            71,
+            -19,
+            2,
+            13,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -5, 5, 6, -4, 4, 3, -3, 1, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            10,
+            1,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            11,
+            9,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1, 10]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0,
+            19,
+            10,
+            11,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-36, 1, -5, 5, 6, -4, 4, 3, -4, 1, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            -27,
+            2,
+            -36,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 5, -5, 1, 12, 3]"
+        },
+        "expected": 19,
+        "unexpected": [
+            11,
+            18,
+            3,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -4, 3, 4, -4, 6, 5, -5, -2147483648, 0, 0, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            1,
+            12,
+            -2147483642
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -5, 5, 6, -4, 4, 3, -4, 1, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            9,
+            2,
+            1,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, -5, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -15,
+            -1,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -4, -3, -2, -1, 500000000, 600000000]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            1099999990,
+            0,
+            600000000,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 500000000]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            499999995,
+            -2,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, -5, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -15,
+            -1,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -4, -5, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            -1,
+            -10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -2, -4, -4, -5, -16, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            7,
+            -2,
+            -33
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -4, -3, -4, -5]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -17,
+            0,
+            5,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -4, -3, -2, -1, 6, 0, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            -5,
+            -9,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -4, -3, -4, -5, -2147483648]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483665,
+            0,
+            6,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -3, -4, -5, -200000000]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -200000013,
+            0,
+            -200000000,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, -5, 21]"
+        },
+        "expected": 21,
+        "unexpected": [
+            6,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            4,
+            0,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -5, -4, -3, -2, -4]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6,
+            -18,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-4, -3, -3]"
+        },
+        "expected": -3,
+        "unexpected": [
+            -4,
+            0,
+            -10,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 100, -5, -4, -3, -2, -1]"
+        },
+        "expected": 2147483747,
+        "unexpected": [
+            0,
+            2147483732,
+            7,
+            -1,
+            2147483647
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, 0, -19, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            -12,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, 1, -15]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -15,
+            3,
+            0,
+            -20,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, 0, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -2147483648]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -2147483641,
+            0,
+            -2147483648,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, 0, -15]"
+        },
+        "expected": 8,
+        "unexpected": [
+            3,
+            -7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -1000000000]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            -999999993,
+            2,
+            -1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, 21]"
+        },
+        "expected": 28,
+        "unexpected": [
+            2,
+            7,
+            21,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 7, 4]"
+        },
+        "expected": 11,
+        "unexpected": [
+            3,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 7]"
+        },
+        "expected": 2147483654,
+        "unexpected": [
+            7,
+            2147483647,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[200000000, 0]"
+        },
+        "expected": 200000000,
+        "unexpected": [
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[14, 8, -3, 50, 0]"
+        },
+        "expected": 69,
+        "unexpected": [
+            14,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 5, 0]"
+        },
+        "expected": 15,
+        "unexpected": [
+            6,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 3, 0]"
+        },
+        "expected": 13,
+        "unexpected": [
+            1,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 3, 6, -35, 0]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            1,
+            -20,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 3, 2, 1, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 4, 3, 2, 1]"
+        },
+        "expected": 15,
+        "unexpected": [
+            1,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 3, 4, 5, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            2,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 4, 5, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            1,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0, 3, 4, 5]"
+        },
+        "expected": 13,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 5, 4, 20, 2, 1]"
+        },
+        "expected": 32,
+        "unexpected": [
+            0,
+            1,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 4, 7, 14]"
+        },
+        "expected": 30,
+        "unexpected": [
+            14,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 4, 5, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 5, -2]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            6,
+            1,
+            13,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 4, 4]"
+        },
+        "expected": 9,
+        "unexpected": [
+            4,
+            1,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 5, -6]"
+        },
+        "expected": 15,
+        "unexpected": [
+            1,
+            6,
+            9,
+            -6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 5, 7, 0, 0]"
+        },
+        "expected": 22,
+        "unexpected": [
+            0,
+            1,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -2]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -2,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -2147483648]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[500000000, 0, 0]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 0, -1000000000]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -100,
+            3,
+            -1000000100,
+            -1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6]"
+        },
+        "expected": -6,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0, -200000000]"
+        },
+        "expected": 1,
+        "unexpected": [
+            3,
+            0,
+            -200000000,
+            -199999999
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 20, -36]"
+        },
+        "expected": 20,
+        "unexpected": [
+            -36,
+            0,
+            3,
+            -16
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -19, -15, -36]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -70,
+            -36,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0, 0, 0, -2]"
+        },
+        "expected": 1,
+        "unexpected": [
+            5,
+            -1,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 20, 0, -2147483648]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0,
+            -2147483628,
+            4,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -19]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -19,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -4, -2, 0, -2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 0, 12]"
+        },
+        "expected": 17,
+        "unexpected": [
+            12,
+            3,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 0, 21]"
+        },
+        "expected": 26,
+        "unexpected": [
+            5,
+            0,
+            21,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 5, 200000000, 0]"
+        },
+        "expected": 200000005,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -10]"
+        },
+        "expected": 5,
+        "unexpected": [
+            -10,
+            -5,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 7]"
+        },
+        "expected": 12,
+        "unexpected": [
+            2,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 8, -4]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            -1,
+            -4,
+            3,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, 8]"
+        },
+        "expected": 13,
+        "unexpected": [
+            5,
+            2,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 8, 0, -5, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            -2,
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -5, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1]"
+        },
+        "expected": -1,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[6, -5]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            1,
+            -5,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            -5,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -32]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -32,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -5,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            4,
+            2,
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[70]"
+        },
+        "expected": 70,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -4]"
+        },
+        "expected": -4,
+        "unexpected": [
+            -9,
+            2,
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -1,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50]"
+        },
+        "expected": 50,
+        "unexpected": [
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483649, -1]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -2147483650,
+            -2147483649,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2]"
+        },
+        "expected": -2,
+        "unexpected": [
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[600000000, 0]"
+        },
+        "expected": 600000000,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, -32, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -32,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 1, -2]"
+        },
+        "expected": 2,
+        "unexpected": [
+            -2,
+            0,
+            1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            -1,
+            8,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 10, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1, -32]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -32,
+            -31,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 1, 1000000000]"
+        },
+        "expected": 1000000001,
+        "unexpected": [
+            0,
+            -1,
+            1000000000,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 1, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            1,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 7, -36]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            -36,
+            -29,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[500000000, -200000000, 1, -1]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            -1,
+            300000000,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            2,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 8]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            3,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            11,
+            -1,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 70]"
+        },
+        "expected": 71,
+        "unexpected": [
+            70,
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -6]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -6,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-32, 0, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -32,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -3, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            4,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 7, -19]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -19,
+            -12,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 0, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -1,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, 0, 0, 0, 0]"
+        },
+        "expected": 50,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 0, 0, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -1, 60]"
+        },
+        "expected": 60,
+        "unexpected": [
+            0,
+            59,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, -2, -3, -4, -2, 0, -10, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -3,
+            8,
+            -24
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            -10,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-4, -3, -2, -1]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            4,
+            0,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -4, -32]"
+        },
+        "expected": -1,
+        "unexpected": [
+            5,
+            0,
+            -42,
+            -32
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -4]"
+        },
+        "expected": -2,
+        "unexpected": [
+            -6,
+            0,
+            2,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -3, -4, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -8,
+            4,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, 10]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 10, -4, -3, -2, -1]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            -1,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, -2, -3, -4, 14]"
+        },
+        "expected": 14,
+        "unexpected": [
+            5,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 21, -3, -1, -1]"
+        },
+        "expected": 21,
+        "unexpected": [
+            0,
+            -1,
+            5,
+            16
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -3, -3, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            -9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -4, 6, 12]"
+        },
+        "expected": 18,
+        "unexpected": [
+            0,
+            11,
+            12,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[600000000, -2, -3, -4, 0, -6]"
+        },
+        "expected": 600000000,
+        "unexpected": [
+            599999985,
+            -6,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-4, -3, -2, -1, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -10,
+            -4,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -2, -4, -3]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -10,
+            -3,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, -4, 2147483646]"
+        },
+        "expected": 2147483648,
+        "unexpected": [
+            5,
+            0,
+            2147483646,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 3, 3, 4, -36]"
+        },
+        "expected": 11,
+        "unexpected": [
+            -36,
+            -25,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 3, 4, 0, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            5,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, -100, -1000000000]"
+        },
+        "expected": 6,
+        "unexpected": [
+            5,
+            -1000000000,
+            -1000000094
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            5,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 3, 0, 500000000]"
+        },
+        "expected": 500000005,
+        "unexpected": [
+            4,
+            500000000,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, -15, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            -9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 4, 3, -3, 1]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            8,
+            3,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 3, 4]"
+        },
+        "expected": 7,
+        "unexpected": [
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 5]"
+        },
+        "expected": 8,
+        "unexpected": [
+            3,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 3, 2, 1]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 3, 2, 1, 500000000]"
+        },
+        "expected": 500000010,
+        "unexpected": [
+            4,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 3, 4]"
+        },
+        "expected": 9,
+        "unexpected": [
+            2,
+            4,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 2, 1, -16]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -9,
+            4,
+            0,
+            -16
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2, 3, 4, 100]"
+        },
+        "expected": 110,
+        "unexpected": [
+            100,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, 1, 3, -1, 4]"
+        },
+        "expected": 7,
+        "unexpected": [
+            5,
+            1,
+            0,
+            4,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 2, -1, 4, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            4,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 2]"
+        },
+        "expected": 3,
+        "unexpected": [
+            2,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, -2, 1, -2147483649]"
+        },
+        "expected": 4,
+        "unexpected": [
+            -2147483649,
+            5,
+            -2147483647,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 1, 0, -2, 0, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 1, 1, -8, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            -1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 2, -1, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, -36, -8]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            4,
+            -39
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -1, 4, 0, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 0, 0, 20]"
+        },
+        "expected": 25,
+        "unexpected": [
+            4,
+            20
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, 1, 2147483646, 14]"
+        },
+        "expected": 2147483663,
+        "unexpected": [
+            14,
+            0,
+            2147483662,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 2]"
+        },
+        "expected": 7,
+        "unexpected": [
+            4,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -1, 2, 1, -16, -10]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            0,
+            -20,
+            -10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1000000000, 1, 2, -1, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            -999999994,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 0, 1, 1, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -5, 1, 2, -1, 4, 1, -2, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            0,
+            4,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -2, 1, -3, 4, -1, 2, 1, -5, 4, -1000000000]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            -1000000000,
+            -999999999,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -5, 1, 0, 5, -3, 1, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            0,
+            8,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[12, -2, 1, -3, 4, 2, 1, -5, 4, 0]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            14,
+            10,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 1, -3, 4, -1, 2, -5, 4, -1]"
+        },
+        "expected": 5,
+        "unexpected": [
+            -1,
+            0,
+            9,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 1, -3, 4, 2, 1, -5, 4, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            2,
+            9,
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 1, 4, -1, 1, -5, 4]"
+        },
+        "expected": 5,
+        "unexpected": [
+            2,
+            0,
+            4,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, 4, -5, 1, 2, -1, 4, -3, 1, -2]"
+        },
+        "expected": 1000000005,
+        "unexpected": [
+            -2,
+            1000000001,
+            10,
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 1, -1, 4, -3, 1, -2, 0, -15]"
+        },
+        "expected": 8,
+        "unexpected": [
+            9,
+            -15,
+            0,
+            4,
+            -11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, -3, 4, -1, 2, 1, -5, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            3,
+            9,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -16, 4, -1, 2, 1, -5, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            1,
+            4,
+            -10,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -5, 1, 2, -1, 4, -3, 1, -5, 0, 6]"
+        },
+        "expected": 6,
+        "unexpected": [
+            11,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 1, -3, 4, -1, 2, 1, -5, 4, 12]"
+        },
+        "expected": 17,
+        "unexpected": [
+            13,
+            10,
+            0,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 0, -3, 4, 2, 0, -5, 4, -1000000000]"
+        },
+        "expected": 6,
+        "unexpected": [
+            -1000000000,
+            9,
+            0,
+            -1,
+            -999999999
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -3, 4, -1, 2, 1, -5, 4, 0, 0, 14]"
+        },
+        "expected": 19,
+        "unexpected": [
+            14,
+            1,
+            11,
+            17
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            18,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-8, 50, 21, 12, -35, 6, 5, 1, 3, -4, 10, 0]"
+        },
+        "expected": 83,
+        "unexpected": [
+            -8,
+            0,
+            61,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 6, 5, 4, 3, -8, 10, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            0,
+            -1,
+            17,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[60, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0]"
+        },
+        "expected": 71,
+        "unexpected": [
+            0,
+            68,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 1, 5, 6, -35, 12, 21, -1, 0, 4, 1000000000]"
+        },
+        "expected": 1000000036,
+        "unexpected": [
+            12,
+            1000000019,
+            10,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -1000000000, 3, 1, 6, -35, 12, 21, -1, 5]"
+        },
+        "expected": 37,
+        "unexpected": [
+            -999999978,
+            5,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 6, 5, 1, 3, -4, 10]"
+        },
+        "expected": 33,
+        "unexpected": [
+            0,
+            10,
+            -1,
+            18
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -1, 21, 12, -35, 6, 5, 1, 3, -4, 10, -100]"
+        },
+        "expected": 33,
+        "unexpected": [
+            -100,
+            -82,
+            13,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 1, 5, 6, -35, 0, 21, -1]"
+        },
+        "expected": 21,
+        "unexpected": [
+            10,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -4, 3, 5, 6, -35, 12, 21, -1]"
+        },
+        "expected": 33,
+        "unexpected": [
+            17,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 10, -4, 3, 1, 5, 6, -35, 12, 21, -1, 0]"
+        },
+        "expected": 33,
+        "unexpected": [
+            -1000000000,
+            0,
+            -999999982,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 5, 1, 3, -4, 10]"
+        },
+        "expected": 33,
+        "unexpected": [
+            12,
+            0,
+            9,
+            10,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 21, 12, -35, 6, 5, -4, 10]"
+        },
+        "expected": 33,
+        "unexpected": [
+            14,
+            -1,
+            10,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -4, 3, 4, -4, 6, 5, -5, 1, 0, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            11,
+            2,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1, -32]"
+        },
+        "expected": 14,
+        "unexpected": [
+            -23,
+            2,
+            -32,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -5, 5, 6, -4, 4, 3, -4, 1, 2, -5, 21]"
+        },
+        "expected": 29,
+        "unexpected": [
+            1,
+            25,
+            0,
+            21,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 6, 4, -4, 6, 5, -5, 1, 0, 0]"
+        },
+        "expected": 17,
+        "unexpected": [
+            2,
+            12,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 5, -5, 1, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            3,
+            0,
+            10,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, -200000000, -4, 6, 5, -5, 1]"
+        },
+        "expected": 11,
+        "unexpected": [
+            2,
+            -199999995,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -4, 3, 4, -6, 6, 5, -5, 1, 0]"
+        },
+        "expected": 12,
+        "unexpected": [
+            10,
+            5,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, 6, 5, -5, 1, -200000000]"
+        },
+        "expected": 18,
+        "unexpected": [
+            -199999987,
+            2,
+            -200000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 600000000, 3, 4, -4, 6, 5, -5, 1]"
+        },
+        "expected": 600000016,
+        "unexpected": [
+            9,
+            1,
+            2,
+            600000012,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, 1, -4, 3, 4, -4, 6, 5, -5, 1, -200000000]"
+        },
+        "expected": 14,
+        "unexpected": [
+            -199999991,
+            2,
+            11,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 5, 6, -4, 4, 3, -4, 1, 2]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            1,
+            9,
+            14
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 1, -5, 5, 6, -4, 4, 3, -4, 1, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            -2147483648,
+            0,
+            11,
+            -2147483639,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -5, 5, 6, -4, 4, 3, -4, 1, 2]"
+        },
+        "expected": 14,
+        "unexpected": [
+            9,
+            2,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[14, -15, 1, -4, 3, -4, 6, 5, -5, 1]"
+        },
+        "expected": 14,
+        "unexpected": [
+            10,
+            2,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, 0, 0, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            96,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, 0, 50]"
+        },
+        "expected": 146,
+        "unexpected": [
+            0,
+            100,
+            50
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -1, -1, -1]"
+        },
+        "expected": -1,
+        "unexpected": [
+            0,
+            -4,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-16, -1, -1, -1, -1, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            6,
+            0,
+            80,
+            -16
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -1, -1, -1, -1, 100]"
+        },
+        "expected": 100,
+        "unexpected": [
+            7,
+            0,
+            96
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -1, -1, -1, 50, 0]"
+        },
+        "expected": 50,
+        "unexpected": [
+            46,
+            0,
+            -1,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, -1, -1, -1, -1, 100]"
+        },
+        "expected": 1000000096,
+        "unexpected": [
+            100,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, 0, 500000000]"
+        },
+        "expected": 500000096,
+        "unexpected": [
+            0,
+            500000000,
+            7,
+            100
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, -15]"
+        },
+        "expected": 100,
+        "unexpected": [
+            81,
+            -15,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -1, -1, -1, 100, 0, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            -1,
+            96
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, 0]"
+        },
+        "expected": 100,
+        "unexpected": [
+            6,
+            96,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, -1000000000]"
+        },
+        "expected": 100,
+        "unexpected": [
+            -999999904,
+            6,
+            -1000000000,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1]"
+        },
+        "expected": 100,
+        "unexpected": [
+            97,
+            4,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -8, -1, -1, -1]"
+        },
+        "expected": 100,
+        "unexpected": [
+            0,
+            89,
+            5,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[100, -1, -1, -1, -1, -6, 14, 0]"
+        },
+        "expected": 104,
+        "unexpected": [
+            0,
+            100,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3]"
+        },
+        "expected": 6,
+        "unexpected": [
+            4,
+            -100,
+            -94,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3, 4, 20]"
+        },
+        "expected": 30,
+        "unexpected": [
+            -70,
+            -100,
+            6,
+            20
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, 4, 3, 2, 1, -100]"
+        },
+        "expected": 10,
+        "unexpected": [
+            -92,
+            0,
+            -100,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 3, 2, 1, -100]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            -100,
+            -90,
+            4,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 2, 4]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            4,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 3, 4, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            1,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3, 4, -32]"
+        },
+        "expected": 10,
+        "unexpected": [
+            -122,
+            -100,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 3, 1, -100, -4, -100]"
+        },
+        "expected": 8,
+        "unexpected": [
+            6,
+            0,
+            4,
+            -196,
+            -100
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3, 4, 3]"
+        },
+        "expected": 13,
+        "unexpected": [
+            3,
+            6,
+            -87,
+            0,
+            -100
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 1, 2, 3, 4, -35, 0, 0]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            4,
+            -21,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, 3, 0, 1, -100, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            6,
+            999999912,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 1, 2, 3, 5, -4]"
+        },
+        "expected": 11,
+        "unexpected": [
+            -93,
+            0,
+            6,
+            -4,
+            -100
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 3, 2, -100]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            -100,
+            4,
+            -91
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 2, 2, 4, 5, 7, 20]"
+        },
+        "expected": 40,
+        "unexpected": [
+            -60,
+            20,
+            0,
+            -100
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[20, -5, 2147483646, -19, 8, 0, 0]"
+        },
+        "expected": 2147483661,
+        "unexpected": [
+            0,
+            7,
+            20,
+            2147483650
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, 5, -4, 20]"
+        },
+        "expected": 29,
+        "unexpected": [
+            4,
+            20,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[14, 5, -19, 7]"
+        },
+        "expected": 19,
+        "unexpected": [
+            4,
+            7,
+            0,
+            14
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -8, -19, 14, -4, 20]"
+        },
+        "expected": 30,
+        "unexpected": [
+            0,
+            3,
+            20,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[20, -35, 0]"
+        },
+        "expected": 20,
+        "unexpected": [
+            0,
+            3,
+            -15
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, 5, -4, 70]"
+        },
+        "expected": 71,
+        "unexpected": [
+            70,
+            8,
+            5,
+            60,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -19, 5, -4, 20, 0]"
+        },
+        "expected": 21,
+        "unexpected": [
+            2,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, 5, -4, 20, 0]"
+        },
+        "expected": 21,
+        "unexpected": [
+            0,
+            6,
+            10,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[20, -4, 5, -19, 8]"
+        },
+        "expected": 21,
+        "unexpected": [
+            0,
+            8,
+            10,
+            20,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483649, -19, 5, 4, 20, 21, 0, -16]"
+        },
+        "expected": 50,
+        "unexpected": [
+            -2147483634,
+            -16,
+            8,
+            0,
+            -2147483649
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, 5, -4, 20, -2147483648, 0, 50]"
+        },
+        "expected": 50,
+        "unexpected": [
+            0,
+            -2147483588
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, -4, 20, 0]"
+        },
+        "expected": 20,
+        "unexpected": [
+            8,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[200000000, 0, 20, -4, 5, -19, 8]"
+        },
+        "expected": 200000021,
+        "unexpected": [
+            200000010,
+            0,
+            200000000,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, -4, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            4,
+            8,
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[8, -19, -10, -4, 20, 0, 0]"
+        },
+        "expected": 20,
+        "unexpected": [
+            -5,
+            8,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 4, -1, -2, 1, 5, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            2,
+            -2,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 4, -1, -2, -3, -15, -3]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            -25,
+            -2,
+            -3,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 5, 1, -1, 1, 4, -3, -2, -100]"
+        },
+        "expected": 10,
+        "unexpected": [
+            -98,
+            -100,
+            -3,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -2, -3, 4, -1, -2, 1, 5, -3]"
+        },
+        "expected": 7,
+        "unexpected": [
+            10,
+            -3,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 5, 1, -2, -1, 4, -3, -2]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -1,
+            0,
+            8,
+            -3,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 5, 1, -1, 4, -3, -2]"
+        },
+        "expected": 9,
+        "unexpected": [
+            1,
+            7,
+            -2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 5, 1, -2, -1, 4, -3, -2, 4, -8]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -5,
+            0,
+            -8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 8, -1, -2, 1, 5, -3]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            3,
+            -3,
+            -2,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-32, -2, -3, 5, 1, -2, -1, 4, -3, -2]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -32,
+            -2,
+            -35,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2, -3, 4, 0, 1, 5, -3, 50]"
+        },
+        "expected": 57,
+        "unexpected": [
+            0,
+            50,
+            52,
+            -2,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 5, 1, -2, -1, 4, -3, -2, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -1,
+            0,
+            -3,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -3, 4, -1, -4, 1, 5, 8, -9, -4]"
+        },
+        "expected": 14,
+        "unexpected": [
+            10,
+            -4,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, -3, 5, 100, -2, -1, -4, -3, -2]"
+        },
+        "expected": 105,
+        "unexpected": [
+            80,
+            9,
+            -2,
+            0,
+            -10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, -3, 5, 0, -2, -1, 4, -3, -2]"
+        },
+        "expected": 6,
+        "unexpected": [
+            0,
+            -100,
+            -102,
+            -2,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -4, -3, 5, 1, -2, -1, 4, 8, -2]"
+        },
+        "expected": 15,
+        "unexpected": [
+            0,
+            -2,
+            10,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 2, 7, -4, 10, 3, -2, 1]"
+        },
+        "expected": 18,
+        "unexpected": [
+            12,
+            -5,
+            0,
+            1,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 2, 7, -4, 10, 3, -2, 1, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            12,
+            -5,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 3, 20, -4, 7, 2, -5, -10]"
+        },
+        "expected": 28,
+        "unexpected": [
+            0,
+            12,
+            -10,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 10, -4, 7, 2, -5, -2147483648]"
+        },
+        "expected": 15,
+        "unexpected": [
+            -2147483648,
+            8,
+            0,
+            -2147483639,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[200000000, 2, 7, -4, 10, -3, -2, 1, -19, 0]"
+        },
+        "expected": 200000015,
+        "unexpected": [
+            200000000,
+            0,
+            10,
+            199999992
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, -3, 10, -4, 7, 2, -5, 50]"
+        },
+        "expected": 60,
+        "unexpected": [
+            9,
+            0,
+            50,
+            56,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 3, 10, -4, 6, 2, -5]"
+        },
+        "expected": 17,
+        "unexpected": [
+            8,
+            1,
+            0,
+            -5,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[10, -5, 2, 7, 10, 3, -2, 1, -1]"
+        },
+        "expected": 27,
+        "unexpected": [
+            0,
+            9,
+            -1,
+            25,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, -5, 7, -4, 10, 3, -1, 1, 2147483646]"
+        },
+        "expected": 2147483662,
+        "unexpected": [
+            2147483654,
+            2147483646,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 2, 7, -4, 10, 3, -2, 1]"
+        },
+        "expected": 18,
+        "unexpected": [
+            0,
+            17,
+            1,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 10, 7, 2, -5]"
+        },
+        "expected": 19,
+        "unexpected": [
+            6,
+            1,
+            13,
+            -5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -2, 3, 10, -4, 7, 2, -5, 20]"
+        },
+        "expected": 33,
+        "unexpected": [
+            20,
+            32,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 3, 10, -4, 7, 2, -5]"
+        },
+        "expected": 19,
+        "unexpected": [
+            14,
+            1,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-36, -5, 2, 7, -4, 10, 3, -1, 1, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            -23,
+            0,
+            -36,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 21, -2, 0, -3]"
+        },
+        "expected": 21,
+        "unexpected": [
+            6,
+            15,
+            0,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, -2, 0, -1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -6,
+            -3,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, -2, 0, -1, 0, 3]"
+        },
+        "expected": 3,
+        "unexpected": [
+            -3,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, 0, -1, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -3,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, 5, 0, -1, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            -3,
+            6,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 0, -1, 0, 6, 20]"
+        },
+        "expected": 26,
+        "unexpected": [
+            20,
+            8,
+            -3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 0, -2, 0, -1, 0, -32]"
+        },
+        "expected": 3,
+        "unexpected": [
+            -32,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 0, -2, 0, -3]"
+        },
+        "expected": 0,
+        "unexpected": [
+            6,
+            -6,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 0, -1, 0, -100, 2147483647, 0]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            2147483541,
+            9,
+            0,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 0, -1, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -6,
+            7,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -1, -1, -2, 0, -3, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -7,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 10, -1, 0, 8, 2147483646]"
+        },
+        "expected": 2147483663,
+        "unexpected": [
+            2147483658,
+            0,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -2, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 0, -2, 0, -1, 0, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            7,
+            3,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 9, -2, 0, -2, 0, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            7,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -32, 4, -2, 2, -2]"
+        },
+        "expected": 4,
+        "unexpected": [
+            6,
+            0,
+            -30
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-32, 0, -1, 2, -1, 2, -1, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            -31,
+            -32,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, 3, 2, -1, 0, -200000000, 12]"
+        },
+        "expected": 12,
+        "unexpected": [
+            9,
+            0,
+            -199999983
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, -1, 2, -1, 70, 0]"
+        },
+        "expected": 71,
+        "unexpected": [
+            0,
+            69,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 3, 2, -1, 0, -2147483649, 0]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            8,
+            -2147483646
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, 2, -1, -2]"
+        },
+        "expected": 3,
+        "unexpected": [
+            -1,
+            0,
+            -2,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -2, 2, -1, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, 2, -1, 0, 0, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            1,
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, 2, -1, 0, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            8,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 2, 2, -1, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            5,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, 2, 0, 10]"
+        },
+        "expected": 13,
+        "unexpected": [
+            7,
+            12,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, 0, -1, -1, 3, -1, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 2, -1, -1, 0, -2]"
+        },
+        "expected": 2,
+        "unexpected": [
+            -2,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 2, -1, 2, -1, 0, 21]"
+        },
+        "expected": 23,
+        "unexpected": [
+            -1,
+            22,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[60, 0, 2, -1, 0]"
+        },
+        "expected": 62,
+        "unexpected": [
+            61,
+            0,
+            60,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 60, -10, 70, -4]"
+        },
+        "expected": 120,
+        "unexpected": [
+            0,
+            50,
+            -4,
+            66,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 60, -10, 70, -5, -16]"
+        },
+        "expected": 120,
+        "unexpected": [
+            -16,
+            0,
+            49,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 60, -10, 70, -5, 0]"
+        },
+        "expected": 120,
+        "unexpected": [
+            65,
+            50,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 70, -10, 60, 12, 50, 50]"
+        },
+        "expected": 232,
+        "unexpected": [
+            -5,
+            227,
+            7,
+            50,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 70, -10, 60, -100, 50, 50]"
+        },
+        "expected": 120,
+        "unexpected": [
+            7,
+            115,
+            -5,
+            0,
+            50
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 70, -10, 60, -100, 50]"
+        },
+        "expected": 120,
+        "unexpected": [
+            50,
+            6,
+            0,
+            65
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, -5, 70, -10, 60, -100, 50, -6]"
+        },
+        "expected": 120,
+        "unexpected": [
+            8,
+            -6,
+            0,
+            -10,
+            49
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[49, -100, 61, -10, 70, -5]"
+        },
+        "expected": 121,
+        "unexpected": [
+            6,
+            0,
+            65
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, 60, -10, 70, 5]"
+        },
+        "expected": 175,
+        "unexpected": [
+            5,
+            50,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 4, -5, -10, -100, 50]"
+        },
+        "expected": 50,
+        "unexpected": [
+            0,
+            -61,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 60, -10, 70, -5, 70, 200000000, 2147483647]"
+        },
+        "expected": 2347483832,
+        "unexpected": [
+            2147483647,
+            0,
+            2347483782,
+            9,
+            50
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, -100, 61, -10, 70, -5]"
+        },
+        "expected": 121,
+        "unexpected": [
+            66,
+            -5,
+            6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -7, 70, -10, 60, -100, 50]"
+        },
+        "expected": 120,
+        "unexpected": [
+            50,
+            7,
+            63,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -5, 70, -10, 60, -100, -4]"
+        },
+        "expected": 120,
+        "unexpected": [
+            0,
+            7,
+            11,
+            -4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, -8, -9, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            5,
+            -23,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -5, -1, -8, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -14,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, -8, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -14,
+            -5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -8, 7]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -6,
+            -5,
+            0,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -2, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            3,
+            -5,
+            -7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, -1, -8, -9]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -9,
+            4,
+            -24,
+            -6,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, 1, -8]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -12,
+            3,
+            -8,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-9, -8, -1, -5]"
+        },
+        "expected": -1,
+        "unexpected": [
+            4,
+            -9,
+            -23,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-9, -8, -2, -5]"
+        },
+        "expected": -2,
+        "unexpected": [
+            -5,
+            -9,
+            4,
+            -24
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, -8, -9, -10, -7]"
+        },
+        "expected": -1,
+        "unexpected": [
+            -7,
+            -40,
+            6,
+            -5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-8, -9, 4, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            -13
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -9, -8, 1, -5]"
+        },
+        "expected": 5,
+        "unexpected": [
+            -16,
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -1, -7, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -5,
+            -13,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, -1, -1, -1, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -4,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -1, -1, -1, 1, -1, 9]"
+        },
+        "expected": 9,
+        "unexpected": [
+            -1,
+            7,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1, -8, -3]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            8,
+            -7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 9, -1, -1, -1, -1, -1, -1, 0, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            3,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1, -1, 0, 0, 6, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, -1, -1, -1, 9, 1000000000]"
+        },
+        "expected": 1000000009,
+        "unexpected": [
+            7,
+            1000000005,
+            1000000000,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1, 0, 0, 14, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            9,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, -1, -1, -1, -1, -6, 9, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            -1,
+            0,
+            4,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1]"
+        },
+        "expected": 9,
+        "unexpected": [
+            5,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -2, -1, -1, 100]"
+        },
+        "expected": 102,
+        "unexpected": [
+            100,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -10, -1, -8, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            -14
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, -1, -1, 500000000, -5, -2147483648]"
+        },
+        "expected": 500000003,
+        "unexpected": [
+            -1647483650,
+            0,
+            -2147483648,
+            9,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[9, -1, -1, -1, -1, 1, -1, 10, 50]"
+        },
+        "expected": 65,
+        "unexpected": [
+            9,
+            0,
+            50
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 9, -1, 1, -1, -1, -1, -1, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, 0, -1, 1, -10, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -9,
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 2, -1, 0, 1, -1, 1, -1, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            9,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 2, 0, 1, -1, 1, -1, 1]"
+        },
+        "expected": 3,
+        "unexpected": [
+            9,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[21, 1, -1, 1, -1, 1, -1, 1, 1, 0]"
+        },
+        "expected": 23,
+        "unexpected": [
+            0,
+            10,
+            21
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, -1, 1, -1, 1, -1, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, -1, 1, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            1,
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, -1, 1, -1, 1, 2147483647, 0]"
+        },
+        "expected": 2147483648,
+        "unexpected": [
+            11,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, -1, 1, -1, 1, 1, -1, 1, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            -1,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, 1, -1, 1, -1, 1, 1000000000, -2147483648, 0]"
+        },
+        "expected": 1000000002,
+        "unexpected": [
+            1,
+            -1147483646,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 2, -1, 1, -1, 1, -1, 1, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            11,
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, -2, -1, 1, -1, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            9,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[50, 0, 6, 1, -1, 1, 1, -1, 1, -1, 1]"
+        },
+        "expected": 58,
+        "unexpected": [
+            50,
+            1,
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, -1, -1, 1, 0, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, 1, -1, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            1,
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1, -1, 1, -1, 1, -1, 1, -1, 1, -5]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -4,
+            10,
+            0,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, 1000000000, 2147483646]"
+        },
+        "expected": 4147483646,
+        "unexpected": [
+            1000000000,
+            3,
+            0,
+            2147483646
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[999999999, -1000000000, 1, 0]"
+        },
+        "expected": 999999999,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-36, 0, 1000000000, 1000000000]"
+        },
+        "expected": 2000000000,
+        "unexpected": [
+            1000000000,
+            0,
+            1999999964,
+            4,
+            -36
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1, 1000000000, -1000000000, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            999999999,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1000000000, -1000000000, 1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, 1000000000, 2147483647, 4]"
+        },
+        "expected": 4147483651,
+        "unexpected": [
+            1000000000,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, -1000000000, 1000000000, 0]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2000000000, -1000000000, 1000000000, 0]"
+        },
+        "expected": 2000000000,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -1000000000, 1000000000, 0]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, -1000000000, 1000000000, 200000000, 0]"
+        },
+        "expected": 1200000000,
+        "unexpected": [
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 1000000000, -1000000000]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            -1000000000,
+            0,
+            -2147483648,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-19, -1000000000, 1000000000, -1]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            4,
+            -20,
+            -19,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1000000000, -2147483648]"
+        },
+        "expected": 1000000000,
+        "unexpected": [
+            -1147483648,
+            0,
+            -2147483648,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[1000000000, -1000000000, 1000000000, 70, 0, 0, -4]"
+        },
+        "expected": 1000000070,
+        "unexpected": [
+            7,
+            1000000066,
+            -4,
+            0,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, 600000000, -200000000, 0, 60, 6]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            7,
+            -1000000000,
+            0,
+            -99999934,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, 600000000, -200000000, 0]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            -100000000,
+            0,
+            -1000000000,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -36, -200000000, -199999999, 600000000, 500000000, -1000000000]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            -1000000000,
+            -300000035,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[600000000, -200000000, -36, 21, 5]"
+        },
+        "expected": 600000000,
+        "unexpected": [
+            0,
+            399999990,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-199999999, 600000000, -1000000000]"
+        },
+        "expected": 600000000,
+        "unexpected": [
+            3,
+            0,
+            -599999999,
+            -1000000000,
+            -199999999
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-200000000, 600000001, 500000000, -1000000000]"
+        },
+        "expected": 1100000001,
+        "unexpected": [
+            -200000000,
+            -99999999,
+            0,
+            -1000000000,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, 600000000, -200000000, 0, 0, 0]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            0,
+            -1000000000,
+            7,
+            -100000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, -200000000, 61, 49]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            49,
+            -699999890,
+            -1000000000,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-200000000, 1199999999, 500000000, -1000000000, 600000001]"
+        },
+        "expected": 1699999999,
+        "unexpected": [
+            5,
+            1100000000,
+            0,
+            -200000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-200000000, 5, 500000000, -1000000000, 0, 0]"
+        },
+        "expected": 500000005,
+        "unexpected": [
+            -699999995,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-200000000, 600000000, 500000000, -1000000000]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            -100000000,
+            -1000000000,
+            4,
+            -200000000,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000000, 500000000, 0, -200000000, -15, 2, 0]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            -1000000000,
+            0,
+            -700000013,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[600000000, 500000000, -1000000000]"
+        },
+        "expected": 1100000000,
+        "unexpected": [
+            100000000,
+            0,
+            -1000000000,
+            3,
+            600000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1000000001, 500000000, -200000000, 0, 0]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            0,
+            -1000000001,
+            -700000001,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-200000000, 500000000, -1000000000]"
+        },
+        "expected": 500000000,
+        "unexpected": [
+            -700000000,
+            3,
+            -1000000000,
+            -200000000,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-6, 0, 3, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            -3,
+            4,
+            0,
+            -6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-19]"
+        },
+        "expected": -19,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 3]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483646, 3]"
+        },
+        "expected": 2147483649,
+        "unexpected": [
+            0,
+            3,
+            2147483646
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 21, 12]"
+        },
+        "expected": 36,
+        "unexpected": [
+            3,
+            0,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -5]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            -3,
+            -5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 3, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 49]"
+        },
+        "expected": 52,
+        "unexpected": [
+            3,
+            2,
+            49
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 0, 0, -7, -100, 0]"
+        },
+        "expected": 3,
+        "unexpected": [
+            0,
+            -104,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, 60]"
+        },
+        "expected": 63,
+        "unexpected": [
+            2,
+            3,
+            60
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, -199999999, 20]"
+        },
+        "expected": 20,
+        "unexpected": [
+            -199999976,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, -2147483648, 60, -19]"
+        },
+        "expected": 60,
+        "unexpected": [
+            -2147483610,
+            4,
+            -19
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -2147483648,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-19, -2147483648]"
+        },
+        "expected": -19,
+        "unexpected": [
+            -2147483648,
+            2,
+            0,
+            -2147483667
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[200000000, 0]"
+        },
+        "expected": 200000000,
+        "unexpected": [
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[6, 2, -200000000]"
+        },
+        "expected": 8,
+        "unexpected": [
+            -199999992,
+            -200000000,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[40, -2147483647, -36]"
+        },
+        "expected": 40,
+        "unexpected": [
+            0,
+            -2147483643,
+            -36,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 0, 0, -200000000, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -2347483648,
+            -2147483648,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 0, 2000000000]"
+        },
+        "expected": 2000000000,
+        "unexpected": [
+            0,
+            3,
+            -147483648,
+            -2147483648
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 0, 0]"
+        },
+        "expected": 0,
+        "unexpected": [
+            -2147483648,
+            3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, -36]"
+        },
+        "expected": -36,
+        "unexpected": [
+            -2147483648,
+            -2147483684,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, -9]"
+        },
+        "expected": -9,
+        "unexpected": [
+            0,
+            2,
+            -2147483648,
+            -2147483657
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -2147483648]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -2147483648,
+            -2147483641,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 0, 40, 3, 6]"
+        },
+        "expected": 2147483696,
+        "unexpected": [
+            5,
+            6,
+            2147483647,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 2147483647, 0]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            3,
+            0,
+            2147483647
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 2, -2147483648, 2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            0,
+            -2,
+            -3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-2147483648, 2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            -1,
+            -2147483648,
+            0,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 2147483647]"
+        },
+        "expected": 4294967294,
+        "unexpected": [
+            0,
+            2147483647,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-4294967296, 2147483647, -6]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            -2147483655,
+            -4294967296,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483646, -2147483648, 2147483647, 0]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            2147483645,
+            2147483646,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -2147483648, 2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            -6,
+            -5,
+            3,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, 71, 1]"
+        },
+        "expected": 2147483719,
+        "unexpected": [
+            0,
+            3,
+            2147483647,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, -2147483648, 2147483647, 0]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            0,
+            2147483646,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 21, -2147483648, 2147483647]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            20,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, -2147483648, 2147483647, -2]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            0,
+            4,
+            2147483644,
+            -2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2147483647, -2147483648, 0, 0]"
+        },
+        "expected": 2147483647,
+        "unexpected": [
+            4,
+            -1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -4, 3, -1, 2, -1, -3, 4, 0, -3]"
+        },
+        "expected": 5,
+        "unexpected": [
+            2,
+            10,
+            0,
+            -3
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, -1, 2, -1, 2, 2, 4]"
+        },
+        "expected": 14,
+        "unexpected": [
+            5,
+            9,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-3, 2, 0, 2, -16, 3, -2]"
+        },
+        "expected": 4,
+        "unexpected": [
+            -14,
+            -3,
+            7,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, 1, -2147483647, -1, 2, -3, 4, 0, 0, 0]"
+        },
+        "expected": 7,
+        "unexpected": [
+            12,
+            0,
+            -2147483638,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 4, -1, 2, -2, 2, -3, 4]"
+        },
+        "expected": 9,
+        "unexpected": [
+            0,
+            5,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, 2, 2, 4, 1000000000]"
+        },
+        "expected": 1000000014,
+        "unexpected": [
+            0,
+            5,
+            7,
+            1000000000
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[3, -1, 2, 0, 2, -3, 4]"
+        },
+        "expected": 7,
+        "unexpected": [
+            3,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-5, -2, 3, -1, 3, -1, 2, -3, 4, -4]"
+        },
+        "expected": 7,
+        "unexpected": [
+            -5,
+            -4,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, 2, 2, -3, 4]"
+        },
+        "expected": 11,
+        "unexpected": [
+            5,
+            0,
+            7,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, -1, 2, -1, 2, -3, 4, 0]"
+        },
+        "expected": 9,
+        "unexpected": [
+            5,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 2, -1, 2, -1, 3, -2, 5]"
+        },
+        "expected": 12,
+        "unexpected": [
+            4,
+            8,
+            5,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[5, -2, 3, -1, 2, -1, 3, -3, 4, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            5
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[49, 5, -2, 3, -1, 2, -1, 2, -3, 3]"
+        },
+        "expected": 57,
+        "unexpected": [
+            3,
+            49
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1, 0, -1, 0, 1, 0]"
+        },
+        "expected": 1,
+        "unexpected": [
+            8,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1, 0, -1, 0, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, 1, 0, -1, 0, 1, -1, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            0,
+            1,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, 1, 0, -1, 0, 1, 0, 1, 0]"
+        },
+        "expected": 6,
+        "unexpected": [
+            9,
+            0,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1, 0, 0, 1]"
+        },
+        "expected": 2,
+        "unexpected": [
+            6,
+            0,
+            1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, -1, 0, 1, 0, 1, 0, 12]"
+        },
+        "expected": 14,
+        "unexpected": [
+            0,
+            12,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-1, 0, 1, 0, -1, 0, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            7,
+            0,
+            -1
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, 1, 0, -1, 0, 1, 1000000000, 0]"
+        },
+        "expected": 1000000002,
+        "unexpected": [
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, -3, -1, 1]"
+        },
+        "expected": 1,
+        "unexpected": [
+            -2,
+            0,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 0, 1, -1, 0, -1000000000]"
+        },
+        "expected": 1,
+        "unexpected": [
+            0,
+            -1000000000,
+            6
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 12, 1, 0, -1, 0, 2, 0, 1, 0, 1]"
+        },
+        "expected": 16,
+        "unexpected": [
+            1,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, 1, 1, 0, 1, 0]"
+        },
+        "expected": 4,
+        "unexpected": [
+            0,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, 1, 0, -1, 0, 1, 40, 5, 0]"
+        },
+        "expected": 47,
+        "unexpected": [
+            0,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, 1, 0, -1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-100, 0, -32, 1, 0, -1, 0, 1, 0, 1, 0, 0]"
+        },
+        "expected": 2,
+        "unexpected": [
+            -100,
+            -130,
+            12,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, -15, 20, -2, 2, 2000000000]"
+        },
+        "expected": 2000000020,
+        "unexpected": [
+            11,
+            0,
+            -10,
+            2000000000,
+            2000000003
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, 20, 2]"
+        },
+        "expected": 30,
+        "unexpected": [
+            0,
+            2,
+            -10,
+            20,
+            8
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, -15, 20, -1, 2, 6, 1, 0]"
+        },
+        "expected": 28,
+        "unexpected": [
+            11,
+            13,
+            -10,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 3, 0, 5, -15, 20, -1, 2, 0, -2147483649, 71]"
+        },
+        "expected": 71,
+        "unexpected": [
+            -2147483574,
+            0,
+            -10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -1, 20, -15, 5, 0, -2, 3, 2, -10, 12, -15]"
+        },
+        "expected": 21,
+        "unexpected": [
+            12,
+            1,
+            -15,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 0, -2, 0, 5, -15, -1, 2]"
+        },
+        "expected": 5,
+        "unexpected": [
+            0,
+            9,
+            -10,
+            -19,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -1, 20, -15, 5, 0, -2, 3, 2, -10, 0]"
+        },
+        "expected": 21,
+        "unexpected": [
+            2,
+            0,
+            4,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[0, -10, 2, 0, -2, 0, 5, -15, 20, -1, 2]"
+        },
+        "expected": 21,
+        "unexpected": [
+            1,
+            2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, -15, 20, -1, 2, 0]"
+        },
+        "expected": 21,
+        "unexpected": [
+            0,
+            11,
+            -10,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 2, 3, -2, 0, 5, -15, -1, 2]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            -16,
+            -10,
+            2,
+            9
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[2, -1, -15, 5, 0, -2, 3, 2, -10, 0, 0]"
+        },
+        "expected": 8,
+        "unexpected": [
+            0,
+            11,
+            -16
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[60, -10, 2, -2, 0, -15, 20, -1, 2]"
+        },
+        "expected": 60,
+        "unexpected": [
+            9,
+            0,
+            56,
+            2
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, 1, 3, -2, 0, 5, -15, 20, -2, 2]"
+        },
+        "expected": 20,
+        "unexpected": [
+            2,
+            0,
+            10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-10, -3, 7, -3, 4, -8, 9, -2, 3, -1, 3, -6, 4]"
+        },
+        "expected": 12,
+        "unexpected": [
+            -3,
+            13,
+            -10
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -6, 2, -1, 3, -2, 9, -8, 4, -3, 7, 7, 0]"
+        },
+        "expected": 18,
+        "unexpected": [
+            13,
+            0,
+            16,
+            4
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, 0, 2, -6, 4, 0, -2147483647]"
+        },
+        "expected": 12,
+        "unexpected": [
+            -2147483637,
+            7,
+            13,
+            -2147483647,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, 2, -6, 4, -2]"
+        },
+        "expected": 11,
+        "unexpected": [
+            7,
+            12,
+            -2,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -33, -8, 9, -2, 3, 1, 2, -6, 4, 0]"
+        },
+        "expected": 13,
+        "unexpected": [
+            7,
+            0,
+            -23,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, 2, -12, 4]"
+        },
+        "expected": 11,
+        "unexpected": [
+            3,
+            7,
+            4,
+            0
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, 2, -6, 4, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            7,
+            9,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[4, -6, 2, -1, 3, -2, 9, -8, 4, -3, 7]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            9,
+            4,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, 3, -1, 2, -6, 4, 0]"
+        },
+        "expected": 13,
+        "unexpected": [
+            11,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, 2, -7, 4, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            0,
+            8,
+            7,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, -6, 4, -7, 0]"
+        },
+        "expected": 10,
+        "unexpected": [
+            0,
+            12
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[-4, 4, -6, 2, -1, 3, -2, 9, 4, -3, 6]"
+        },
+        "expected": 18,
+        "unexpected": [
+            12,
+            -4,
+            6,
+            11
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -3, 4, -8, 9, -2, 3, -1, -6, 4]"
+        },
+        "expected": 10,
+        "unexpected": [
+            4,
+            0,
+            7
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, 4, -8, 9, -2, 3, -1, 2, -6, 4, -2147483649]"
+        },
+        "expected": 14,
+        "unexpected": [
+            7,
+            0,
+            -2147483637,
+            11,
+            -2147483649
+        ]
+    },
+    {
+        "input": {
+            "sequence": "[7, -6, 4, -8, 9, -2, 3, -1, 2, -6, 4, 0, 0]"
+        },
+        "expected": 11,
+        "unexpected": [
+            7,
+            13,
+            6,
+            0
+        ]
+    }
+]
